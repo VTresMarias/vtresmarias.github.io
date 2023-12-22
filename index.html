@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="VTresMarias">
+    <title>「VTresMarias - V三人のマリア - 」</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="favicon_light.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="favicon_dark.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <style type="text/css">
+      /* insert custom css here */
+      .vtmLogoWide {
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="「VTresMarias - V三人のマリア - 」">
+    <meta name="og:image" content="https://vtresmarias.github.io/preview.png">
+    <meta name="og:url" content="https://vtresmarias.github.io">
+    <meta name="og:description" content="🍃🪷🌸">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thebelovedmoon">
+    <meta name="twitter:creator" content="@thebelovedmoon">
+    <meta name="theme-color" content="#66a898">
+    <meta name="msapplication-TileColor" content="#66a898">
+    <meta name="msapplication-navbutton-color" content="#66a898">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#66a898">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> <!-- jquery -->
+    <script src="scripts.js" type="text/javascript"></script>
+  </head>
+  <body onload="lotusLoading()">
+    <div id="loading">
+      <div class="lotusRow" id="vtmLotus">
+        <div class="lotusCol"><img class="vtmLotusLoad lotusShadow" alt="" src="vtm_aura.svg"></div>
+        <div class="lotusCol"><img class="vtmLotusLoad lotusShadow" alt="" src="vtm_aga.svg"></div>
+        <div class="lotusCol"><img class="vtmLotusLoad lotusShadow" alt="" src="vtm_hina.svg"></div>
+      </div>
+    </div>
+    <header class="revealHead" style="display: none;">
+      <img class="vtmLogoWide" alt="" src="vtm_typeface_wide.svg">
+    </header>
+    <div class="heroHead">
+      <img class="vtmTypeface" alt="" src="vtm_typeface_normal.svg">
+    </div>
+    <div>
+      <div style="background: linear-gradient(to bottom, #00000000, var(--Aura) 100%);">
+        <div class="textDiv">
+          <h1>the Marias' universal hub!</h1>
+          <p>
+            <b>「VTresMarias - V三人のマリア - 」</b> celebrates the continuing efforts of our VTuber Trio
+            whose the goal is to make every moments universal -- to make them feel the love that they
+            always deserve!!
+          </p>
+          <p>
+            founded by the one who makes everything possible, the goal is to recognize the efforts of the
+            accomplices through the connections they made inside their pact and beyond!!
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="vtm-footer">
+      <div style="position: relative; background: linear-gradient(to top, #00000000, #3d374ca0 100%); height: 50px;"></div>
+      <div style="padding: 0 50px 75px 50px;">
+        <div class="vtm-typeface" style="width: auto; height: 125px;">
+          <div class="vtmLogo"></div>
+        </div>
+        <div class="vtm-lotus">
+          <a class="lotusURL" rel="noopener noreferrer" href="https://twitch.tv/AuraOstara" target="_blank">
+            <img class="vtmLotus lotusShadow" id="aura-hover" src="vtm_aura.svg" alt="mama dearest💚🍃" onmouseover="aura_hover();" onmouseout="aura_hoverOut()">
+          </a>
+          <a class="lotusURL" rel="noopener noreferrer" href="https://twitch.tv/thebelovedmoon" target="_blank">
+            <img class="vtmLotus lotusShadow" id="aga-hover" src="vtm_aga.svg" alt="💚🍃Aga-chuu💗🌸" onmouseover="aga_hover();" onmouseout="aga_hoverOut()">
+          </a>
+          <a class="lotusURL" rel="noopener noreferrer" href="https://twitch.tv/HinaSukii" target="_blank">
+            <img class="vtmLotus lotusShadow" id="hina-hover" src="vtm_hina.svg" alt="mama queenie💗🌸" onmouseover="hina_hover();" onmouseout="hina_hoverOut()">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
