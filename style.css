@@ -273,10 +273,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--vtmFontFace2);
   font-weight: 700;
   font-style: italic;
-  font-size: large;
   text-align: center;
   text-decoration: none;
-  margin: 15px;
+  margin: 10px;
   cursor: pointer;
   -webkit-transition: 0.75s;
   -moz-transition: 0.75s;
@@ -292,4 +291,14 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
+}
+@media screen and (min-width: 1000px) {
+  .vtmBtn {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .vtmBtn {
+    font-size: x-large;
+  }
 }
