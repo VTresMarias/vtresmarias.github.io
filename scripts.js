@@ -40,7 +40,7 @@ var auraDesc = `
   </p>
   <p>Tarot card reader: MystearicaVT</p>
   <br>
-  <p>Click anywhere to dismiss..</p>
+  <p>click anywhere to dismiss..</p>
 `,
 agaDesc = `
   <h2>復活 ～Rebirth～</h2>
@@ -51,7 +51,7 @@ agaDesc = `
   </p>
   <p>Tarot card reader: MystearicaVT</p>
   <br>
-  <p>Click anywhere to dismiss..</p>
+  <p>click anywhere to dismiss..</p>
 `,
 hinaDesc = `
   <h2>落ち着き ～Stability～</h2>
@@ -62,7 +62,7 @@ hinaDesc = `
   </p>
   <p>Tarot card reader: MystearicaVT</p>
   <br>
-  <p>Click anywhere to dismiss..</p>
+  <p>click anywhere to dismiss..</p>
 `;
 
 function showSym(description) {
