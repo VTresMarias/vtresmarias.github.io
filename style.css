@@ -61,6 +61,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--vtmFontFace2);
+  letter-spacing: -2px;
 }
 
 #loading {
@@ -267,16 +268,13 @@ img {
 }
 
 .vtm-lotus {
-  width: auto;
-  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 25px;
 }
 .vtmLotus {
-  width: auto;
-  height: 45px;
+  width: 95px;
   padding-left: 12.5px;
   padding-right: 12.5px;
 }
