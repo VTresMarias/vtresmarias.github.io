@@ -1,31 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* the OFFICIAL google fonts implemented for 「VTresMarias - V三人のマリア - 」 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* official vtm gfont implementation */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
 
-:root {
-  /* vtm primary colors */
-  --Aura: #66a898;
-  --Aga: #793a80;
-  --Hina: #f0a9a9;
-  /* backgrounds */
-  --vtmAuraBack: url(media/images/backgrounds/vtm_auraBG.jpg);
-  --vtmAgaBack: url(media/images/backgrounds/vtm_agaBG.jpg);
-  --vtmHinaBack: url(media/images/backgrounds/vtm_hinaBG.jpg);
-  /* graphics and misc */
-  --vtmBack: url(media/images/backgrounds/vtm_defBG.jpg);
-  --vtmFore: url(media/images/vtm_trioGraphic.png);
-  --vtmTypefaceNormal: url(media/svg/vtm_typeface_normal.svg);
-  --vtmTypefaceWide: url(media/svg/vtm_typeface_wide.svg);
-  --vtmFontFace1: "Satisfy", cursive;
-  --vtmFontFace2: "Noto Serif Display", serif;
-}
+/* main elements */
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  -ms-word-wrap: break-word;
   word-wrap: break-word;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -33,264 +18,84 @@ html, body {
 }
 
 html {
-  background-color: var(--Aura);
-  background-image: var(--vtmFore), url(media/images/backgrounds/vtm_1.jpg);
-  background-blend-mode: normal;
+  background-image: url(media/images/backgrounds/vtm_3.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  scroll-behavior: smooth;
 }
-
 body {
-  font-family: var(--vtmFontFace1);
-  color: white;
-  text-align: center;
+  font-family: "Noto Serif Display", "Noto Serif JP", serif;
+  letter-spacing: -1px;
+  font-weight: 500;
 }
-@media screen and (min-width: 1000px) {
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #dcc6bb;
+    color: #3d374c;
+  }
   body {
-    font-size: x-large;
+    text-shadow: 2px 4px 16px #3d374c80;
   }
 }
-@media screen and (min-width: 2000px) {
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #3d374c;
+    color: #dcc6bb;
+  }
   body {
-    font-size: xx-large;
+    text-shadow: 2px 4px 16px #dcc6bb80;
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--vtmFontFace2);
   letter-spacing: -2px;
 }
-
-#loading {
-  z-index: 9;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--Aura);
-  background-image: var(--vtmBack);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-transition: 1.25s;
-  -moz-transition: 1.25s;
-  -o-transition: 1.25s;
-  transition: 1.25s;
+h1 {
+  font-style: italic;
 }
-.vtmLotusLoad {
-  height: 75px;
-  width: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  opacity: 1;
-  -webkit-animation: lotusLoad 2.5s infinite;
-  animation: lotusLoad 2.5s infinite;
-}
-@-webkit-keyframes lotusLoad {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-@keyframes lotusLoad {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-.lotusCol {
-  float: left;
-  width: 33.33%;
-}
-.lotusRow:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-@media screen and (max-width: 750px) {
-  .lotusCol {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-}
-
-.bgSet {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.heroHead {
-  padding-top: 250px;
-  padding-bottom: 250px;
-  padding-left: 175px;
-  padding-right: 175px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.vtmTypeface {
-  filter: drop-shadow(0 5px 5px #3d374c80);
-}
-@media screen and (max-width: 750px) {
-  .heroHead {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
-
-.textDiv {
-  padding: 100px 25px;
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-.mariaProfile {
-  width: 375px;
-  /* aspect-ratio: 1 / 1; */
-  /* border-radius: 50%; */
-  margin: 0 auto;
-}
-
-.symbolBtn {
-  cursor: pointer;
-  margin: 0 15px 15px 15px;
-  padding: 25px;
-  border-radius: 50%;
-  aspect-ratio: 1 / 1;
-  background-color: #00000000;
-  border: none;
-  box-shadow: 0 0 0 #00000000;
-  transition: box-shadow 0.75s ease-in-out;
-}
-.symbolBtn:hover {
-  box-shadow: 0 5px 5px #3d374c80;
-}
-.symbolImg {
-  width: 150px;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#txtModal {
-  background-color: #ffffffc0;
-  position: fixed;
-  z-index: 7;
-}
-.centerModal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-}
-#textView {
-  width: 750px;
-  max-width: 100vw;
-  padding: 25px;
-  color: #3d374c;
-}
-
-
-/* classes below applies universally to pages affiliated with 🍃🪷🌸 */
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.vtmFullHead-back {
-  background-image: var(--vtmBack);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-}
-.vtmFullHead-fore {
-  background-image: var(--vtmFore);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-}
-.vtmFullHead {
-  background-color: #00000080;
-  width: 100%;
-  height: 100%;
-  /*
-  padding-top: 275px;
-  padding-bottom: 275px;
-  */
-  padding-left: 10%;
-  padding-right: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.vtm-footer {
-  background-image: var(--vtmBack);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  text-align: center;
-  font-family: var(--vtmFontFace1);
-  color: white;
-}
-.vtm-typeface {
-  width: 37.5%;
-  height: 37.5%;
-  filter: drop-shadow(0 5px 5px #3d374c80);
-}
-.vtmDisplayOVL {
   display: block;
 }
-.vtmLogo {
-  background-image: var(--vtmTypefaceWide);
-  background-size: contain;
+
+header {
+  width: 100vw;
+  padding: 25px;
+  background: linear-gradient(#dcc6bb, #00000000);
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+  display: inline-flex;
+  align-items: start;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+footer {
+  padding: 25px;
+  background-image: url(media/images/backgrounds/vtm_defBG.jpg);
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  background-attachment: fixed;
+  text-align: center;
+  text-shadow: 2px 4px 16px #3d374c80;
+  z-index: -2;
 }
 
-.vtm-lotus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 25px;
-}
-.vtmLotus {
-  width: 95px;
-  padding-left: 12.5px;
-  padding-right: 12.5px;
-}
-.lotusShadow {
-  filter: drop-shadow(0 5px 5px #3d374c80);
-}
-
-.vtmBtn {
+button {
   background-color: #793a80;
   border: solid 1.25px white;
   border-radius: 1000px;
   color: white;
   padding: 10px 25px;
-  font-family: var(--vtmFontFace2);
-  font-weight: 700;
+  font-family: inherit;
+  font-weight: 600;
   font-style: italic;
+  font-size: medium;
   text-align: center;
   text-decoration: none;
   margin: 10px;
@@ -299,24 +104,185 @@ img {
   -moz-transition: 0.75s;
   -o-transition: 0.75s;
   transition: 0.75s;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
 }
-.vtmBtn:hover {
+button:hover {
   background-color: #66a898;
 }
-.vtmBtn:active {
+button:active {
   background-color: #f0a9a9;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-@media screen and (min-width: 1000px) {
-  .vtmBtn {
+
+a:link {
+  color: #c4b0a6;
+  text-decoration: none;
+}
+a:hover {
+  color: #eed5c9;
+  text-decoration: none;
+}
+a:active {
+  color: #584b7a;
+  text-decoration: none;
+}
+a:visited {
+  color: #322d3d;
+  text-decoration: none;
+}
+
+/* custom classes */
+
+.vtmLogo {
+  width: 250px;
+  display: unset;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+#navClosed {
+  width: 36px;
+  display: unset;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+  cursor: pointer;
+}
+.navOpen {
+  width: 36px;
+  display: unset;
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 16px #dcc6bb80);
+}
+
+.loading /* splashscreen */ {
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #3d374c;
+  background-image: url(media/images/backgrounds/vtm_1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -webkit-transition: 2.5s;
+  -moz-transition: 2.5s;
+  -o-transition: 2.5s;
+  transition: 2.5s;
+  box-shadow: 2px 4px 100px 16px #3d374c80;
+}
+#removeLoad {
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+
+#mainPage {
+  background-image: url(media/images/20240128_remaster.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #3d374c;
+  text-shadow: 2px 4px 16px #3d374c80;
+}
+.intro {
+  padding: 250px 25px;
+  background-image: url(media/images/20240128_remaster_blurred.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tableLayout:after /* floatfix */ {
+  content: "";
+  display: block;
+  clear: both;
+}
+.twoCol {
+  float: left;
+  width: 50%;
+  max-width: 100%;
+  text-align: center;
+}
+.threeCol {
+  float: left;
+  width: 33.33%;
+  max-width: 100%;
+  text-align: center;
+}
+.fourCol {
+  float: left;
+  width: 25%;
+  max-width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 950px) {
+  .twoCol, .threeCol, .fourCol {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+}
+
+#navPanel, #tarotPanel {
+  z-index: 5;
+  width: 0;
+  max-width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #3d374c;
+  padding: 25px 0;
+  right: 0;
+  text-align: center;
+  -webkit-transition: 1.25s;
+  -moz-transition: 1.25s;
+  -o-transition: 1.25s;
+  transition: 1.25s;
+  box-shadow: 2px 4px 100px 16px #3d374c80;
+  text-shadow: 2px 4px 16px #dcc6bb80;
+  white-space: nowrap;
+  text-overflow: clip;
+  overflow: hidden;
+  display: block;
+}
+.vtmLogoPanel {
+  width: 175px;
+  display: unset;
+  filter: drop-shadow(2px 4px 16px #dcc6bb80);
+}
+
+/* responsive layouts */
+
+@media screen and (min-width: 768px) {
+  body {
     font-size: large;
   }
 }
-@media screen and (min-width: 2000px) {
-  .vtmBtn {
+@media screen and (min-width: 1080px) {
+  body {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
     font-size: x-large;
   }
 }
+@media screen and (min-width: 2160px) {
+  body {
+    font-size: xx-large;
+  }
+}
+
+/* notes */
+
+/*
+
+  box-shadow: 2px 4px 100px 16px [#3d374c80/#dcc6bb80];
+  filter: drop-shadow(2px 4px 16px [#3d374c80/#dcc6bb80]);
+  text-shadow: 2px 4px 16px [#3d374c80/#dcc6bb80];
+
+*/

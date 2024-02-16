@@ -1,76 +1,124 @@
-function lotusLoading() {
+function splash() {
   setTimeout(function() {
-    document.getElementById("vtmLotus").remove();
-    document.getElementById("loading").style.height = "0";
+    document.getElementById("removeLoad").remove();
+    document.getElementById("removeLoadBlock").style.height = "0";
   }, 1000);
 }
 
-//code from https://linuxhint.com/change-image-on-hover-in-javascript 
-function aura_hover() {
-  document.getElementById("aura-hover").src = "https://vtresmarias.github.io/media/svg/vtm_aura_hover.svg";
-  document.getElementById("aura-hover").style.transition = "0.5s";
+function navBarOpen() {
+  document.getElementById("mainPage").style.pointerEvents = "none";
+  document.getElementById("mainPage").style.userSelect = "none";
+  document.getElementById("navPanel").style.width = "500px";
+  document.getElementById("navPanel").style.padding = "25px";
 }
-function aura_hoverOut() {
-  document.getElementById("aura-hover").src = "https://vtresmarias.github.io/media/svg/vtm_aura.svg";
-  document.getElementById("aura-hover").style.transition = "0.5s";
-}
-function aga_hover() {
-  document.getElementById("aga-hover").src = "https://vtresmarias.github.io/media/svg/vtm_aga_hover.svg";
-  document.getElementById("aga-hover").style.transition = "0.5s";
-}
-function aga_hoverOut() {
-  document.getElementById("aga-hover").src = "https://vtresmarias.github.io/media/svg/vtm_aga.svg";
-  document.getElementById("aga-hover").style.transition = "0.5s";
-}
-function hina_hover() {
-  document.getElementById("hina-hover").src = "https://vtresmarias.github.io/media/svg/vtm_hina_hover.svg";
-  document.getElementById("hina-hover").style.transition = "0.5s";
-}
-function hina_hoverOut() {
-  document.getElementById("hina-hover").src = "https://vtresmarias.github.io/media/svg/vtm_hina.svg";
-  document.getElementById("hina-hover").style.transition = "0.5s";
+function navBarClose() {
+  document.getElementById("mainPage").style.pointerEvents = "initial";
+  document.getElementById("mainPage").style.userSelect = "initial";
+  document.getElementById("navPanel").style.width = "0";
+  document.getElementById("navPanel").style.padding = "25px 0";
 }
 
-var auraDesc = `
+// tarot readings
+
+var Maria1 = `
   <h2>我慢 ～Perseverance～</h2>
   <p>
-    A period of transformation. Learning from past lives and adapting
-    to this life's experiences. Emerge and devote yourself to the
+    a period of transformation. learning from past lives and adapting
+    to this life's experiences. emerge and devote yourself to the
     change.
-  </p>
-  <p>Tarot card reader: MystearicaVT</p>
+  <p>
+  <p>tarot card reader: MystearicaVT</p>
   <br>
-  <p>click anywhere to dismiss..</p>
-`,
-agaDesc = `
+  <img class="mariaSymbol" src="media/svg/symbol/symbol_aga.svg" alt="">
+`;
+var Maria2 = `
   <h2>復活 ～Rebirth～</h2>
   <p>
-    Keep paving the path that calls to you. Keep moving forward, don't
-    turn your back. You have the support and guidance you need. Trust
+    keep paving the path that calls to you. keep moving forward, don't
+    turn your back. you have the support and guidance you need. trust
     the process!
-  </p>
-  <p>Tarot card reader: MystearicaVT</p>
+  <p>
+  <p>tarot card reader: MystearicaVT</p>
   <br>
-  <p>click anywhere to dismiss..</p>
-`,
-hinaDesc = `
+  <img class="mariaSymbol" src="media/svg/symbol/symbol_aura.svg" alt="">
+`;
+var Maria3 = `
   <h2>落ち着き ～Stability～</h2>
   <p>
-    A moment to reflect on your boundaries, whether they be with friends,
-    family, work etc. Check on where you should be saying "No" to
+    a moment to reflect on your boundaries, whether they be with friends,
+    family, work etc. check on where you should be saying "no" to
     realign with yourself and energy.
-  </p>
-  <p>Tarot card reader: MystearicaVT</p>
+  <p>
+  <p>tarot card reader: MystearicaVT</p>
   <br>
-  <p>click anywhere to dismiss..</p>
+  <img class="mariaSymbol" src="media/svg/symbol/symbol_hina.svg" alt="">
 `;
+function tarotPanelOpen(description) {
+  document.getElementById("tarotInfo").innerHTML = description;
+  document.getElementById("mainPage").style.pointerEvents = "none";
+  document.getElementById("mainPage").style.userSelect = "none";
+  document.getElementById("tarotPanel").style.whiteSpace = "normal";
+  document.getElementById("tarotPanel").style.width = "500px";
+  document.getElementById("tarotPanel").style.padding = "25px";
+  document.getElementById("tarotPanel").style.overflow = "auto";
+}
+function tarotPanelClose() {
+  document.getElementById("mainPage").style.pointerEvents = "initial";
+  document.getElementById("mainPage").style.userSelect = "initial";
+  document.getElementById("tarotPanel").style.whiteSpace = "nowrap";
+  document.getElementById("tarotPanel").style.width = "0";
+  document.getElementById("tarotPanel").style.padding = "25px 0";
+  document.getElementById("tarotPanel").style.overflow = "hidden";
+}
 
-function showSym(description) {
-  document.getElementById("manipulateStuff").style.filter = "blur(5px)";
-  document.getElementById("showModal").style.display = "block";
-  document.getElementById("textView").innerHTML = description;
+// MIT
+
+function MIT() {
+  alert(
+    "MIT License\n\n" +
+    "Copyright (c) 2022 thebelovedmoon and associates (tbmassoc)\n\n" +
+    "Permission is hereby granted, free of charge, to any person obtaining a copy " +
+    "of this software and associated documentation files (the \"Software\"), to deal " +
+    "in the Software without restriction, including without limitation the rights " +
+    "to use, copy, modify, merge, publish, distribute, sublicense, and/or sel l" +
+    "copies of the Software, and to permit persons to whom the Software is " +
+    "furnished to do so, subject to the following conditions:\n\n" +
+    "The above copyright notice and this permission notice shall be included in all " +
+    "copies or substantial portions of the Software.\n\n" +
+    "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR " +
+    "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, " +
+    "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE " +
+    "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER " +
+    "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, " +
+    "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE " +
+    "SOFTWARE."
+  );
 }
-function exitDialog() {
-  document.getElementById("manipulateStuff").style.filter = "none";
-  document.getElementById("showModal").style.display = "none";
-}
+
+var MIT = `
+  <div style="text-align: left;">
+    <p>MIT License</p>
+    <p>Copyright (c) 2022 thebelovedmoon and associates (tbmassoc)</p>
+    <p>
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+    </p>
+    <p>
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software. 
+    </p>
+    <p>
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE.
+    </p>
+  </div>
+`;

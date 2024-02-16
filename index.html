@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="VTresMarias">
     <title>「VTresMarias - V三人のマリア - 」</title>
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="media/favicon/favicon_light.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="media/favicon/favicon_dark.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
-    <style type="text/css">
-      /* insert custom css here */
-      .showc {
-        border-radius: 15px;
-      }
-    </style>
+    <link rel="icon" href="media/favicon/favicon_light.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="media/favicon/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <meta name="og:type" content="website">
     <meta name="og:title" content="「VTresMarias - V三人のマリア - 」">
     <meta name="og:image" content="https://vtresmarias.github.io/media/preview/20240128_remaster.png">
@@ -26,201 +19,271 @@
     <meta name="msapplication-TileColor" content="#3d374c">
     <meta name="msapplication-navbutton-color" content="#3d374c">
     <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> <!-- jquery -->
-    <script src="scripts.js" type="text/javascript"></script>
+    <!-- custom css -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      .illust {
+        pointer-events: none;
+        border-radius: 15px;
+        margin-bottom: 15px;
+      }
+      .elgBorder {
+        filter: drop-shadow(2px 4px 16px #3d374c80);
+      }
+      .mariaSymbol {
+        width: 100px;
+        margin: 0 auto;
+      }
+    </style>
+    <!-- custom scripts -->
+    <script src="scripts.js" type="text/javascript"></script> <!-- inbuilt -->
+    <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+        splash();
+      }
+    </script>
+    <script type="text/javascript">
+      // attach in-html custom javascript args here
+    </script>
   </head>
-  <body onload="lotusLoading()">
-    <div id="loading">
-      <div class="lotusRow" id="vtmLotus">
-        <div class="lotusCol"><img class="vtmLotusLoad lotusShadow" alt="" src="media/svg/vtm_aura.svg"></div>
-        <div class="lotusCol"><img class="vtmLotusLoad lotusShadow" alt="" src="media/svg/vtm_aga.svg"></div>
-        <div class="lotusCol"><img class="vtmLotusLoad lotusShadow" alt="" src="media/svg/vtm_hina.svg"></div>
+  <body onload="launch()">
+    <div id="removeLoadBlock" class="loading">
+      <img id="removeLoad" src="media/images/loading.png" alt="">
+    </div>
+    <div id="tarotPanel">
+      <div style="text-align: right;">
+        <img class="navOpen" src="media/svg/icons/exit.svg" onclick="tarotPanelClose()" alt="">
+      </div>
+      <div id="tarotInfo"></div>
+    </div>
+    <div id="navPanel">
+      <div style="line-height: 75%;">
+        <div style="text-align: right;">
+          <img class="navOpen" src="media/svg/icons/navbar_open.svg" onclick="navBarClose()" alt="">
+        </div>
+        <h2>explore the Marias</h2>
+      </div>
+      <br>
+      <div style="line-height: 62.5%;">
+        <p><b>home</b></p>
+        <p><a rel="noopener noreferrer" href="events">events & projects</a></p>
+        <p><a rel="noopener noreferrer" href="letter">letters from the First Maria</a></p>
+        <p><a rel="noopener noreferrer" href="#about" onclick="navBarClose()">about the Collective</a></p>
+      </div>
+      <br><br>
+      <div style="line-height: 75%;">
+        <img class="vtmLogoPanel" src="media/svg/vtm_logoPanel.svg" alt="">
+        <p style="font-size: smaller;"><i>since 2022</i></p>
       </div>
     </div>
-    <div id="showModal" style="display: none;">
-      <div id="txtModal" onclick="exitDialog()">
-        <div class="centerModal">
-          <div id="textView"></div>
-        </div>
-      </div>
-    </div>
-    <div id="manipulateStuff">
-      <div class="heroHead">
-        <div>
-          <img class="vtmTypeface" alt="" src="media/svg/vtm_typeface_normal.svg">
-          <br><br><br>
-          <button class="vtmBtn" onclick="window.open('letter')">read the First Maria's letter</button>
-        </div>
-      </div>
-      <div>
-        <div style="background: linear-gradient(to bottom, #00000000, var(--Aura) 100%);">
-          <div class="textDiv">
-            <h1>the Marias' universal hub!</h1>
+    <div id="mainPage">
+      <div style="box-shadow: 2px 4px 100px 16px #3d374c80;">
+        <header>
+          <div><img class="vtmLogo" src="media/svg/vtm_logo_header.svg" alt=""></div>
+          <div style="width: 100px; height: 100px;"></div>
+          <div><img id="navClosed" src="media/svg/icons/navbar.svg" onclick="navBarOpen()" alt=""></div>
+        </header>
+        <div style="height: 100vh"></div>
+        <div class="intro">
+          <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center;">
+            <h1>celebrating the 1st Anniversary of the Marias</h1>
             <p>
-              <b>「VTresMarias - V三人のマリア - 」</b> celebrates the continuing efforts of our VTuber Trio
-              whose the goal is to make every moments universal -- to make them feel the love that they
-              always deserve!!
+              since 27 Dec 2022, 「VTresMarias - V三人のマリア - 」 takes pride in uplifting
+              the spirits of our VTubers -- called the Marias -- as they tackle on any
+              challenge that comes their way together.
             </p>
             <p>
-              founded by the one who makes everything possible, the goal is to recognize the efforts of the
-              accomplices through the connections they made inside their pact and beyond!!
+              the Marias were chosen for their personal connections with the First Maria,
+              alongside their unwavering commitment to serving their community with the
+              best they can.
             </p>
+            <div style="height: 125px"></div>
+            <h2>the 1st Anniversary Illust</h2>
+            <p>
+              cementing the legacy of the Marias since their first inception, the First
+              Maria has released this illust in commemoration of such an event.
+            </p>
+            <p>
+              this has been in the works since 14 Jun 2023, and was finished 28 Jan 2024.
+            </p>
+            <br>
+            <div style="filter: drop-shadow(2px 4px 16px #3d374c80);">
+              <img class="illust" src="https://pbs.twimg.com/media/GGTtOwKWoAADDbj?format=jpg&name=large" alt="">
+              <button onclick="window.open('https://mobile.x.com/i/status/1757792441099231239')">Twitter / X</button>
+              <button onclick="window.open('https://www.pixiv.net/en/artworks/116082444')">pixiv</button>
+              <button onclick="window.open('https://reddit.com/r/VirtualYoutubers/s/hmNcDCjXBh')">Reddit</button>
+              <button onclick="window.open('https://vstream.com/c/@thebelovedmoon/p/e73a5236-bdbd-4e13-a5f1-d67dcff85759')">VStream Feed</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div style="background: linear-gradient(to bottom, var(--Aura), var(--Hina)); height: 75px;"></div>
-      <div class="bgSet" style="background-image: url(media/images/backgrounds/vtm_2.jpg);">
-        <div style="background: linear-gradient(to top, #00000000, var(--Hina) 100%);">
-          <div class="textDiv">
+        <div id="about" class="intro" style="background-image: url(media/images/backgrounds/vtm_1.jpg); text-align: center;">
+          <div style="line-height: 75%;">
             <h1>meet the Marias</h1>
-            <em>description as of 26 Dec 2023</em>
+            <p><i>info as of 16 Feb 2024</i></p>
+          </div>
+          <br>
+          <div class="tableLayout" style="filter: drop-shadow(2px 4px 16px #3d374c80);">
+            <div class="threeCol">
+              <div style="width: 375px; max-width: 100%; margin: 0 auto;">
+                <img src="media/pfp/vtm_aga.png" alt="">
+                <h3>Mother Agatha, the First Maria🍃</h3>
+                <h4>我慢 ～Perseverance～</h4>
+                <img class="elgBorder" src="media/images/elegantborder.png" alt="">
+                <p>
+                  Mother Agatha was once a beloved Mother before everything fell apart due to
+                  the brink of winter. she was given a mission from the Grand Lady upon her
+                  resurrection to find those who will be a part of her life forever.
+                </p>
+                <p>
+                  behind the character is thebelovedmoon -- also known as 💚🍃Aga-chuu💗🌸
+                  -- the founder of this VTuber Collective. he initially used this within the
+                  Horror Shop Games community, but this has evolved over using it as his
+                  VTuber presence in order to represent such community.
+                </p>
+                <p>
+                  he specializes in graphics and PR, as well as websites and programming. his
+                  current ventures (alongside this) include #MamaNyoSquad, ReactSquad, and
+                  AgaASMR (aka Aga's ASMR Garden).
+                </p>
+                <img class="elgBorder" style="transform: rotate(180deg);" src="media/images/elegantborder.png" alt="">
+                <br>
+                <button onclick="tarotPanelOpen(Maria1)">read the tarot</button><br>
+                <button onclick="window.open('https://thebelovedmoon.github.io')">visit the website</button>
+              </div>
+            </div>
+            <div class="threeCol">
+              <div style="width: 375px; max-width: 100%; margin: 0 auto;">
+                <img src="media/pfp/vtm_aura.png" alt="">
+                <h3>Aura Ostara, the Second Maria🪷</h3>
+                <h4>復活 ～Rebirth～</h4>
+                <img class="elgBorder" src="media/images/elegantborder.png" alt="">
+                <p>
+                  Aura Ostara represents the Celestial Nymph Guardian who aims to protect her
+                  Nimbisouls by all means necessary. she was an everyday girl before that one
+                  moment changes her life forever. 
+                </p>
+                <p>
+                  behind the character, she is a lively VTuber who dreams to connect with
+                  everyone that she meets throughout the way. she mostly streams Magicka and
+                  Mario Kart, but she also hosts zatsudan whenever she has time.
+                </p>
+                <p>
+                  as of 19 Oct 2022, she's currently on indefinite hiatus, but the future
+                  remains certain upon her return to her VTubing career.
+                </p>
+                <img class="elgBorder" style="transform: rotate(180deg);" src="media/images/elegantborder.png" alt="">
+                <br>
+                <button onclick="tarotPanelOpen(Maria2)">read the tarot</button><br>
+                <button onclick="window.open('https://thebelovedmoon.github.io/auraostara')">visit the website</button>
+              </div>
+            </div>
+            <div class="threeCol">
+              <div style="width: 375px; max-width: 100%; margin: 0 auto;">
+                <img src="media/pfp/vtm_hina.png" alt="">
+                <h3>Hina Oujo, the Third Maria🌸</h3>
+                <h4>落ち着き ～Stability～</h4>
+                <img class="elgBorder" src="media/images/elegantborder.png" alt="">
+                <p>
+                  Hina Oujo is an elegant queen from a faraway land who vows to serve her
+                  Chuu-nins well. she has everything under her disposal, but deep inside, she
+                  needs someone who will make her feel whole after what seems to be her whole
+                  heap of loneliness.
+                </p>
+                <p>
+                  behind the character, she's formerly known as Suzu Puyotori and HinaSukii --
+                  where the former has renamed to Emii Shion. she's a talented artist who has
+                  made waves over X before she debuted 20 Jun 2022. she typically enjoys art
+                  and zatsudan, and majorly plays League of Legends and Apex Legends -- among
+                  other things.
+                </p>
+                <p>
+                  as of 28 Jan 2024, she has decided to put everything behind as her socials
+                  are closed -- forever. but her soul will always stay with the Collective for
+                  the sake of the future. 💗the Third Maria will always stay with us forever.🌸
+                </p>
+                <img class="elgBorder" style="transform: rotate(180deg);" src="media/images/elegantborder.png" alt="">
+                <br>
+                <button onclick="tarotPanelOpen(Maria3)">read the tarot</button><br>
+                <button onclick="window.open('https://thebelovedmoon.github.io/hinaoujo')">visit the website</button>
+              </div>
+            </div>
+          </div>
+          <div style="height: 250px"></div>
+          <h1>our Core Values</h1>
+          <div class="tableLayout" style="filter: drop-shadow(2px 4px 16px #3d374c80);">
+            <div class="twoCol">
+              <div style="width: 500px; max-width: 100%; margin: 0 auto;">
+                <h2>「Universality without Borders」</h2>
+                <p>
+                  our primary aim is to be open to all walks of life, whether it would be
+                  behind the screen or in front of a real person.
+                </p>
+                <p>
+                  we do not permit any forms of negativity within our community and beyond.
+                  we strive to protect and support each other through trying times and not
+                  bring them down.
+                </p>
+              </div>
+            </div>
+            <div class="twoCol">
+              <div style="width: 500px; max-width: 100%; margin: 0 auto;">
+                <h2>「Acceptance without Comprehension」</h2>
+                <p>
+                  accompanying our aim for universality is our advocacy to accept everyone's
+                  flaws. our community strives on making sure everyone is widely accepted
+                  regardless of their nature.
+                </p>
+                <p>
+                  but in order to maintain that acceptance, we have put additional measures
+                  to further strengthen our bond and to stay true to our promise of uniting
+                  the communities together as one.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="about" class="intro" style="background-image: url(media/images/backgrounds/vtm_2.jpg);">
+          <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center;">
+            <h1>get involved</h1>
+            <p>
+              do you want to support the Marias in any way possible? you can reach out to the
+              First Maria through the following channels:
+            </p>
+            <div>
+              <button onclick="window.open('mailto:jelsa14015@gmail.com', '_self')">email</button>
+              <button onclick="window.open('https://mobile.x.com/thebelovedmoon')">Twitter / X</button>
+              <button onclick="window.open('https://instagram.com/themoon_follow')">Instagram</button>
+              <button onclick="window.open('https://twitch.tv/thebelovedmoon')">Twitch</button>
+              <button onclick="window.open('https://youtube.com/@thebelovedmoon')">YouTube</button>
+              <button onclick="window.open('https://vstream.com/c/@thebelovedmoon')">VStream</button>
+              <button onclick="window.open('https://reddit.com/user/thebelovedmoon')">Reddit</button>
+              <button onclick="window.open('https://web.facebook.com/thebelovedmoon')">Facebook</button>
+              <button onclick="window.open('https://soundcloud.com/thebelovedmoon')">SoundCloud</button>
+              <button onclick="window.open('https://github.com/thebelovedmoon')">GitHub</button>
+            </div>
             <br><br>
-            <div style="padding: 25px 0;">
-              <!-- <img class="mariaProfile" src="media/pfp/vtm_agaPFP.png" alt="Mother Agatha, the First Maria" style="border: 10px solid var(--Hina);"> -->
-              <img class="mariaProfile" src="media/pfp/vtm_aga.png" alt="Mother Agatha, the First Maria">
-              <h2>Mother Agatha, the First Maria</h2>
-              <h3>我慢 ～Perseverance～</h3>
-              <p>
-                thebelovedmoon -- popularized as 💚🍃Aga-chuu💗🌸 -- started streaming as a VTuber on
-                5 July 2022 under a different associated character. by August, he begin representing as
-                the Mother, one of the characters whom he loved from Horror Shop Games. to give the
-                character a fresh new look, he edited the hair and cosmetics to be colored green -- a
-                symbol of rebirth following his initial friendship with Aura Ostara.
-              </p>
-              <p>
-                he is the founder of this Collective, aiming to spread the word about the Marias' legacy
-                as well as to maintain friendships with the Marias and beyond.
-              </p>
-              <p>
-                outside of his VTubing venture, he enjoys gaming (especially DOAXVV), writing novels, PR,
-                and technology. he also creates and maintains websites (like this one), and is willing to
-                open commissions for others to begin their online presence.
-              </p>
-              <p>
-                the symbol reminds much of his dedication to try new things, as well as refining expertise
-                in his respective fields for the sake of the future.
-              </p>
-              <p>
-                his oshi mark is 🍃.
-              </p>
-              <button class="vtmBtn" onclick="window.open('https://thebelovedmoon.github.io')">visit the website</button>
-              <br><br>
-            </div>
-            <div style="padding: 25px 0;">
-              <!-- <img class="mariaProfile" src="media/pfp/vtm_auraPFP.png" alt="Aura Ostara Maria" style="border: 10px solid var(--Hina);"> -->
-              <img class="mariaProfile" src="media/pfp/vtm_aura.png" alt="Aura Ostara Maria">
-              <h2>Aura Ostara, the Second Maria</h2>
-              <h3>復活 ～Rebirth～</h3>
-              <p>
-                Aura Ostara debuted 30 June 2022 as a Celestial Nymph Guardian who plays variety games
-                like Magicka and Mario Kart. she also does Just Chatting streams as she connects with her
-                community through various ways.
-              </p>
-              <p>
-                she's currently on hiatus since 19 October due to her irl responsibilities. while it's
-                unsure whether she'll return to streaming, we wish her the best in her endeavors.
-              </p>
-              <p>
-                the symbol reminds much of her lessons from her past mistakes as she leans forward to the
-                future with the community and the friends she cherished along the way.
-              </p>
-              <p>
-                her oshi mark is 🪷.
-              </p>
-              <button class="vtmBtn" onclick="window.open('https://thebelovedmoon.github.io/auraostara')">visit the website</button>
-              <br><br>
-            </div>
-            <div style="padding: 25px 0;">
-              <!-- <img class="mariaProfile" src="media/pfp/vtm_hinaPFP.png" alt="Hina Oujo, the Third Maria" style="border: 10px solid var(--Hina);"> -->
-              <img class="mariaProfile" src="media/pfp/vtm_hina.png" alt="Hina Oujo, the Third Maria">
-              <h2>Hina Oujo, the Third Maria</h2>
-              <h3>落ち着き ～Stability～</h3>
-              <p>
-                Hina Oujo -- currently known as HinaSukii -- initially debuted 3 July 2022 as a Queen from
-                a faraway place that connects with the community through Art, Just Chatting and VALORANT.
-              </p>
-              <p>
-                she redebuted 26 November under Suzu Puyotori, one of the talents from an agency at the
-                time. she announced her graduation 18 days later, to which her previous VTuber experience
-                will take effect. Suzu Puyotori became Emii Shion, one of thebelovedmoon's other VTuber
-                slates.
-              </p>
-              <p>
-                her third redebut was on 18 March 2023, where she rebranded as HinaSukii -- a comfy neko
-                nurse. but due to her medical conditions, she announced her hiatus on 7 July.
-              </p>
-              <p>
-                the symbol reminds much of her physical and mental state in all communities involved. it
-                becomes a general reminder for her to restrain from everything as much as possible to
-                aid in her recovery during the worst of times, and know the parties to which she's closest
-                to.
-              </p>
-              <p>
-                her oshi mark is 🌸.
-              </p>
-              <button class="vtmBtn" onclick="window.open('https://thebelovedmoon.github.io/hinaoujo')">visit the website</button>
-              <br><br>
-            </div>
+            <h2>special thanks</h2>
+            <p>
+              Horror Shop Games / azumi212<br>
+              DreamingWitch (formerly Misao302)<br>
+              Kitto_jpg<br>
+              GitHub / GitHub Pages
+            </p>
+            <br>
+            <h2>website license</h2>
+            <p>
+              this website is licensed under MIT. review the following terms below for details:
+            </p>
+            <button onclick="tarotPanelOpen(MIT)">read the MIT license</button>
           </div>
         </div>
       </div>
-      <div class="bgSet" style="background-image: url(media/images/backgrounds/vtm_2.jpg); height: 75px;"></div>
-      <div class="bgSet" style="background-image: url(media/images/backgrounds/vtm_2.jpg);">
-        <div class="textDiv" style="max-width: 900px; color: #3d374c;">
-          <h1>explore the Symbols</h1>
-          <br>
-          <button class="symbolBtn" onclick="showSym(auraDesc)">
-            <img class="symbolImg" src="media/svg/symbol_aura.svg" alt="復活 ～Rebirth～">
-          </button>
-          <button class="symbolBtn" onclick="showSym(agaDesc)">
-            <img class="symbolImg" src="media/svg/symbol_aga.svg" alt="我慢 ～Perseverance～">
-          </button>
-          <button class="symbolBtn" onclick="showSym(hinaDesc)">
-            <img class="symbolImg" src="media/svg/symbol_hina.svg" alt="落ち着き ～Stability～">
-          </button>
-        </div>
-      </div>
-      <div class="bgSet" style="background-image: url(media/images/backgrounds/vtm_2.jpg); height: 25vh;"></div>
-      <div class="bgSet" style="background-image: url(media/images/backgrounds/vtm_2.jpg);">
-        <div style="background: linear-gradient(to bottom, #00000000, var(--Aga) 100%); height: 25vh;"></div>
-      </div>
-      <div style="background-color: var(--Aga);">
-        <div class="textDiv">
-          <img src="media/images/firstMaria_story.png" style="filter: brightness(0) invert(1);" alt="">
-          <br><br><br>
-          <h2>the story of the First Maria is about to be told to the world.</h2>
-          <p>
-            in celebration of the Marias' First Anniversary, let's take a look at how the First Maria
-            re-established her presence for the second time after what seemed to be her unfortunate
-            demise.
-          </p>
-          <p>
-            join 💚🍃Aga-chuu💗🌸 -- the First Maria -- as he reveals the VTuber lore in its entirety
-            this coming 27 Dec at 3:16pm CET, the First Anniversary of the Collective.
-          </p>
-          <br>
-          <img class="showc" src="media/images/20231227_debut.png" alt="">
-          <br>
-          <button class="vtmBtn" onclick="window.open('https://thebelovedmoon.github.io/debut')">check out #AgaDebut</button>
-        </div>
-      </div>
-      <footer class="vtm-footer">
-        <div style="position: relative; background: linear-gradient(to top, #00000000, #3d374ca0 100%); height: 50px;"></div>
-        <div style="padding: 0 50px 50px 50px;">
-          <div class="vtm-typeface" style="width: auto; height: 125px;">
-            <div class="vtmLogo"></div>
-          </div>
-          <div class="vtm-lotus">
-            <a class="lotusURL" rel="noopener noreferrer" href="https://twitch.tv/AuraOstara" target="_blank">
-              <img class="vtmLotus lotusShadow" id="aura-hover" src="media/svg/vtm_aura.svg" alt="mama dearest💚🍃" onmouseover="aura_hover();" onmouseout="aura_hoverOut()">
-            </a>
-            <a class="lotusURL" rel="noopener noreferrer" href="https://twitch.tv/thebelovedmoon" target="_blank">
-              <img class="vtmLotus lotusShadow" id="aga-hover" src="media/svg/vtm_aga.svg" alt="💚🍃Aga-chuu💗🌸" onmouseover="aga_hover();" onmouseout="aga_hoverOut()">
-            </a>
-            <a class="lotusURL" rel="noopener noreferrer" href="https://twitch.tv/HinaSukii" target="_blank">
-              <img class="vtmLotus lotusShadow" id="hina-hover" src="media/svg/vtm_hina.svg" alt="mama queenie💗🌸" onmouseover="hina_hover();" onmouseout="hina_hoverOut()">
-            </a>
-          </div>
+      <footer style="padding-bottom: 10px;">
+        <div style="line-height: 50%;">
+          <img class="vtmLogo" style="width: 375px; filter: drop-shadow(2px 4px 16px #3d374c80);" src="media/svg/vtm_typeface_wide.svg" alt="">
+          <p style="font-size: smaller; color: #fff;"><i>since 2022</i></p>
         </div>
       </footer>
     </div>
