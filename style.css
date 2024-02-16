@@ -34,7 +34,7 @@ html, body {
 
 html {
   background-color: var(--Aura);
-  background-image: var(--vtmFore), url(media/images/backgrounds/pastelsky_1.jpg);
+  background-image: var(--vtmFore), url(media/images/backgrounds/vtm_1.jpg);
   background-blend-mode: normal;
   background-size: cover;
   background-position: center center;
