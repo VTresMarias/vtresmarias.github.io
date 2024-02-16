@@ -18,6 +18,7 @@ html, body {
 }
 
 html {
+  background-color: #3d374c;
   background-image: url(media/images/backgrounds/vtm_3.png);
   background-size: cover;
   background-position: center center;
@@ -28,7 +29,9 @@ body {
   font-family: "Noto Serif Display", "Noto Serif JP", serif;
   letter-spacing: -1px;
   font-weight: 500;
+  color: #dcc6bb;
 }
+/*
 @media (prefers-color-scheme: light) {
   html {
     background-color: #dcc6bb;
@@ -47,6 +50,7 @@ body {
     text-shadow: 2px 4px 16px #dcc6bb80;
   }
 }
+*/
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2px;
