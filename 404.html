@@ -1,201 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    <link rel="icon" href="https://vtresmarias.github.io/media/favicon/favicon_light.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="https://vtresmarias.github.io/media/favicon/favicon_dark.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
-    <style type="text/css">
-      /* insert custom css here */
-      html {
-        min-height: 100%;
-        background-color: #793a80;
-        background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_defBG.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-      }
-      body {
-        height: 100%;
-      }
-      .slideTranst {
-        list-style: none;
-        z-index: 1;
-      }
-      .slideTranst li span {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        color: transparent;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        opacity: 0;
-        z-index: 0;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-animation: imageAnimation 24s linear infinite 0s;
-        -moz-animation: imageAnimation 24s linear infinite 0s;
-        animation: imageAnimation 24s linear infinite 0s;
-      }
-      .slideTranst li h3 {
-        position: absolute;
-        z-index: 2;
-        bottom: 150px;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        -webkit-animation: titleAnimation 24s linear 1 0s;
-        -moz-animation: titleAnimation 24s linear 1 0s;
-        animation: titleAnimation 24s linear 1 0s;
-      }
-      .slideTranst li:nth-child(1) span {
-        background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_auraBG.jpg");
-      }
-      .slideTranst li:nth-child(2) span {
-        background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_agaBG.jpg");
-        -webkit-animation-delay: 6s;
-        -moz-animation-delay: 6s;
-        animation-delay: 6s;
-      }
-      .slideTranst li:nth-child(3) span {
-        background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_hinaBG.jpg");
-        -webkit-animation-delay: 12s;
-        -moz-animation-delay: 12s;
-        animation-delay: 12s;
-      }
-      @-webkit-keyframes imageAnimation {
-        0% {
-          opacity: 0;
-          -webkit-animation-timing-function: ease-in;
-        }
-        12.5% {
-          opacity: 1;
-          -webkit-animation-timing-function: ease-out;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @-moz-keyframes imageAnimation {
-        0% {
-          opacity: 0;
-          -moz-animation-timing-function: ease-in;
-        }
-        12.5% {
-          opacity: 1;
-          -moz-animation-timing-function: ease-out;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @keyframes imageAnimation {
-        0% {
-          opacity: 0;
-          -webkit-animation-timing-function: ease-in;
-          -moz-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-        }
-        12.5% {
-          opacity: 1;
-          -webkit-animation-timing-function: ease-out;
-          -moz-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @-webkit-keyframes titleAnimation {
-        0% {
-          opacity: 0;
-        }
-        12.5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @-moz-keyframes titleAnimation {
-        0% {
-          opacity: 0;
-        }
-        12.5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @keyframes titleAnimation {
-        0% {
-          opacity: 0;
-        }
-        12.5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      .no-cssanimations .slideTranst li span {
-        opacity: 1;
-      }
-    </style>
+    <meta name="author" content="VTresMarias">
+    <title>404 not found</title>
+    <link rel="icon" href="https://vtresmarias.github.io/media/favicon/favicon_light.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="https://vtresmarias.github.io/media/favicon/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#3d374c">
     <meta name="msapplication-TileColor" content="#3d374c">
     <meta name="msapplication-navbutton-color" content="#3d374c">
     <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
+    <!-- custom css -->
+    <link href="https://vtresmarias.github.io/style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      #mainPage {
+        background-image: url(../media/images/backgrounds/vtm_3.png);
+      }
+    </style>
     <!-- custom scripts -->
+    <script src="https://vtresmarias.github.io/scripts.js" type="text/javascript"></script> <!-- inbuilt -->
+    <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+        splash();
+      }
+    </script>
+    <script type="text/javascript">
+      // attach in-html custom javascript args here
+    </script>
   </head>
-  <body onclick="window.location.href='/';">
-    <ul class="slideTranst">
-      <li><span>vtm_aura</span></li>
-      <li><span>vtm_aga</span></li>
-      <li><span>vtm_hina</span></li>
-    </ul>
+  <body onload="launch()">
+    <div id="removeLoadBlock" class="loading">
+      <img id="removeLoad" src="https://vtresmarias.github.io/media/images/loading.png" alt="">
+    </div>
+    <div id="tarotPanel">
+      <div style="text-align: right;">
+        <img class="navOpen" src="https://vtresmarias.github.io/media/svg/icons/exit.svg" onclick="tarotPanelClose()" alt="">
+      </div>
+      <div id="tarotInfo"></div>
+    </div>
+    <div id="navPanel">
+      <div style="line-height: 75%;">
+        <div style="text-align: right;">
+          <img class="navOpen" src="https://vtresmarias.github.io/media/svg/icons/navbar_open.svg" onclick="navBarClose()" alt="">
+        </div>
+        <h2>explore the Marias</h2>
+      </div>
+      <br>
+      <header>
+        <div style="line-height: 62.5%;">
+          <p><a rel="noopener noreferrer" href="https://vtresmarias.github.io">home</a></p>
+          <p><a rel="noopener noreferrer" href="https://vtresmarias.github.io/events">events & projects</a></p>
+          <p><a rel="noopener noreferrer" href="https://vtresmarias.github.io/letter">letters from the First Maria</a></p>
+        </div>
+      </header>
+      <br><br>
+      <div style="line-height: 75%;">
+        <img class="vtmLogoPanel" src="https://vtresmarias.github.io/media/svg/vtm_logoPanel.svg" alt="">
+        <p style="font-size: smaller;"><i>since 2022</i></p>
+      </div>
+    </div>
+    <div id="mainPage">
+      <div style="box-shadow: 2px 4px 100px 16px #3d374c80;">
+        <header class="vtmHead">
+          <div><img class="vtmLogo" src="https://vtresmarias.github.io/media/svg/vtm_logo_header.svg" alt=""></div>
+          <div style="width: 100px; height: 100px;"></div>
+          <div><img id="navClosed" src="https://vtresmarias.github.io/media/svg/icons/navbar.svg" onclick="navBarOpen()" alt=""></div>
+        </header>
+        <div class="intro" style="background-image: unset; padding: 375px 25px;">
+          <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center;">
+            <h1>404 not found</h1>
+          </div>
+        </div>
+      </div>
+      <footer style="padding-bottom: 10px;">
+        <div style="line-height: 50%;">
+          <img class="vtmLogo" style="width: 375px; filter: drop-shadow(2px 4px 16px #3d374c80);" src="https://vtresmarias.github.io/media/svg/vtm_typeface_wide.svg" alt="">
+          <p style="font-size: smaller; color: #fff;"><i>since 2022</i></p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
