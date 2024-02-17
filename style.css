@@ -65,19 +65,6 @@ img {
   display: block;
 }
 
-header {
-  width: 100vw;
-  padding: 25px;
-  background: linear-gradient(#dcc6bb, #00000000);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
-  display: inline-flex;
-  align-items: start;
-  justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 3;
-}
 footer {
   padding: 25px;
   background-image: url(media/images/backgrounds/vtm_defBG.jpg);
@@ -121,7 +108,7 @@ button:active {
   transition: 0.25s;
 }
 
-a:link {
+a:link, a:visited {
   color: #c4b0a6;
   text-decoration: none;
 }
@@ -133,13 +120,22 @@ a:active {
   color: #584b7a;
   text-decoration: none;
 }
-a:visited {
-  color: #322d3d;
-  text-decoration: none;
-}
 
 /* custom classes */
 
+.vtmHead {
+  width: 100vw;
+  padding: 25px;
+  background: linear-gradient(#dcc6bb, #00000000);
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+  display: inline-flex;
+  align-items: start;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 .vtmLogo {
   width: 250px;
   display: unset;
@@ -179,9 +175,11 @@ a:visited {
   transition: 2.5s;
   box-shadow: 2px 4px 100px 16px #3d374c80;
 }
+/*
 #removeLoad {
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
+*/
 
 #mainPage {
   background-image: url(media/images/20240128_remaster.png);
