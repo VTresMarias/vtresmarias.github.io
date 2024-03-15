@@ -74,7 +74,8 @@ img {
 }
 
 footer {
-  padding: 25px;
+  padding: 25px 75px;
+  padding-bottom: 7.5px !important;
   background-image: url(media/images/backgrounds/vtm_defBG.jpg);
   background-size: cover;
   background-position: center center;
@@ -82,6 +83,11 @@ footer {
   background-attachment: fixed;
   text-align: center;
   z-index: -2;
+}
+@media screen and (max-width: 400px) {
+  footer {
+    padding: 25px 50px;
+  }
 }
 
 button {
@@ -230,7 +236,7 @@ a:active {
   max-width: 100%;
   text-align: center;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
   .twoCol, .threeCol, .fourCol {
     width: 100%;
     padding-bottom: 25px;
@@ -262,6 +268,15 @@ a:active {
   width: 175px;
   display: unset;
   filter: drop-shadow(2px 4px 16px #dcc6bb80);
+}
+
+.mariaPadding {
+  padding-bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+  .mariaPadding {
+    padding-bottom: 75px;
+  }
 }
 
 
