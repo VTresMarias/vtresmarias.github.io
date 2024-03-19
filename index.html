@@ -52,40 +52,43 @@
     <div id="removeLoadBlock" class="loading">
       <img id="removeLoad" src="media/images/loading.png" alt="">
     </div>
-    <div id="tarotPanel">
-      <div style="text-align: right;">
-        <img class="navOpen" src="media/svg/icons/exit.svg" onclick="tarotPanelClose()" alt="">
+    <div id="panelBlock"></div> <!-- panel block -->
+    <div id="tarotPanel"> <!-- tarot panel -->
+      <div style="text-align: center; width: 750px; max-width: 100%; margin: 0 auto;">
+        <div id="tarotInfo"></div>
       </div>
-      <div id="tarotInfo"></div>
     </div>
-    <div id="navPanel">
-      <div style="line-height: 75%;">
-        <div style="text-align: right;">
-          <img class="navOpen" src="media/svg/icons/navbar_open.svg" onclick="navBarClose()" alt="">
-        </div>
+    <div id="MITPanel"> <!-- MIT panel -->
+      <div style="text-align: center; width: 750px; max-width: 100%; margin: 0 auto;">
+        <div id="MITInfo"></div>
+      </div>
+    </div>
+    <div id="navPanel"> <!-- navbar panel -->
+      <div style="text-align: center; width: 750px; max-width: 100%; margin: 0 auto;">
         <h2>explore the Marias</h2>
-      </div>
-      <br>
-      <header>
-        <div style="line-height: 62.5%;">
-          <p><b>home</b></p>
-          <p><a rel="noopener noreferrer" href="events">events & projects</a></p>
-          <p><a rel="noopener noreferrer" href="letter">letters from the First Maria</a></p>
-          <p><a rel="noopener noreferrer" href="#about" onclick="navBarClose()">about the Collective</a></p>
+        <header>
+          <div style="line-height: 62.5%;">
+            <p><b>home</b></p>
+            <p><a rel="noopener noreferrer" href="events">events & projects</a></p>
+            <p><a rel="noopener noreferrer" href="letter">letters from the First Maria</a></p>
+            <p><a rel="noopener noreferrer" href="#about" onclick="navBarClose()">about the Collective</a></p>
+          </div>
+        </header>
+        <br>
+        <div style="line-height: 75%;">
+          <img class="vtmLogoPanel" src="media/svg/vtm_logoPanel.svg" alt="">
+          <p style="font-size: smaller;"><i>est. 27 Dec 2022</i></p>
         </div>
-      </header>
-      <br><br>
-      <div style="line-height: 75%;">
-        <img class="vtmLogoPanel" src="media/svg/vtm_logoPanel.svg" alt="">
-        <p style="font-size: smaller;"><i>since 2022</i></p>
+        <br>
+        <img id="navClosed" src="media/svg/icons/menu_close.svg" onclick="navBarClose()" alt="menu_close">
       </div>
     </div>
-    <div id="mainPage" style="background-image: url(https://pbs.twimg.com/media/GIrF-03XcAAvuVy?format=jpg&name=large);">
+    <div id="mainPage">
       <div style="box-shadow: 2px 4px 100px 16px #3d374c80;">
         <header class="vtmHead">
           <div><img class="vtmLogo" src="media/svg/vtm_logo_header.svg" alt=""></div>
           <div style="width: 100px; height: 100px;"></div>
-          <div><img id="navClosed" src="media/svg/icons/navbar.svg" onclick="navBarOpen()" alt=""></div>
+          <div><img id="navClosed" src="media/svg/icons/menu_open.svg" onclick="navBarOpen()" alt="menu_open"></div>
         </header>
         <div style="height: 100vh"></div>
         <div class="intro">
@@ -278,14 +281,14 @@
             <p>
               this website is licensed under MIT. review the following terms below for details:
             </p>
-            <button onclick="tarotPanelOpen(MIT)">read the MIT license</button>
+            <button onclick="MITPanelOpen(MIT)">read the MIT license</button>
           </div>
         </div>
       </div>
       <footer>
         <div style="line-height: 50%; filter: drop-shadow(2px 4px 16px #3d374c80);">
            <img class="vtmLogo" style="width: 375px;" src="media/svg/vtm_typeface_wide.svg" alt="">
-          <p style="font-size: smaller; color: #fff;"><i>since 2022</i></p>
+          <p style="font-size: smaller; color: #fff;"><i>est. 27 Dec 2022</i></p>
         </div>
       </footer>
     </div>

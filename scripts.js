@@ -6,16 +6,24 @@ function splash() {
 }
 
 function navBarOpen() {
-  document.getElementById("mainPage").style.pointerEvents = "none";
-  document.getElementById("mainPage").style.userSelect = "none";
-  document.getElementById("navPanel").style.width = "500px";
+  document.getElementById("panelBlock").style.display = "block";
+  document.getElementById("panelBlock").classList.add("fInBlock");
+  setTimeout(() => {
+    document.getElementById("panelBlock").classList.remove("fInBlock");
+    document.getElementById("panelBlock").style.opacity = "1";
+  }, 750);
+  document.getElementById("navPanel").style.height = "100%";
   document.getElementById("navPanel").style.padding = "25px";
 }
 function navBarClose() {
-  document.getElementById("mainPage").style.pointerEvents = "initial";
-  document.getElementById("mainPage").style.userSelect = "initial";
-  document.getElementById("navPanel").style.width = "0";
-  document.getElementById("navPanel").style.padding = "25px 0";
+  document.getElementById("navPanel").style.padding = "0";
+  document.getElementById("navPanel").style.height = "0";
+  document.getElementById("panelBlock").classList.add("fOutBlock");
+  setTimeout(() => {
+    document.getElementById("panelBlock").classList.remove("fOutBlock");
+    document.getElementById("panelBlock").style.opacity = "0";
+    document.getElementById("panelBlock").style.display = "none";
+  }, 1250);
 }
 
 // tarot readings
@@ -29,7 +37,7 @@ var Maria1 = `
   <p>
   <p>tarot card reader: MystearicaVT</p>
   <br>
-  <img class="mariaSymbol" src="media/svg/symbol/symbol_aga.svg" alt="">
+  <img class="navOpen" src="media/svg/icons/panel_exit_down.svg" onclick="tarotPanelClose()" alt="exit_panel">
 `;
 var Maria2 = `
   <h2>復活 ～Rebirth～</h2>
@@ -40,7 +48,7 @@ var Maria2 = `
   <p>
   <p>tarot card reader: MystearicaVT</p>
   <br>
-  <img class="mariaSymbol" src="media/svg/symbol/symbol_aura.svg" alt="">
+  <img class="navOpen" src="media/svg/icons/panel_exit_down.svg" onclick="tarotPanelClose()" alt="exit_panel">
 `;
 var Maria3 = `
   <h2>落ち着き ～Stability～</h2>
@@ -51,25 +59,30 @@ var Maria3 = `
   <p>
   <p>tarot card reader: MystearicaVT</p>
   <br>
-  <img class="mariaSymbol" src="media/svg/symbol/symbol_hina.svg" alt="">
+  <img class="navOpen" src="media/svg/icons/panel_exit_down.svg" onclick="tarotPanelClose()" alt="exit_panel">
 `;
 function tarotPanelOpen(description) {
+  document.getElementById("panelBlock").style.display = "block";
+  document.getElementById("panelBlock").classList.add("fInBlock");
+  setTimeout(() => {
+    document.getElementById("panelBlock").classList.remove("fInBlock");
+    document.getElementById("panelBlock").style.opacity = "1";
+  }, 750);
   document.getElementById("tarotInfo").innerHTML = description;
-  document.getElementById("mainPage").style.pointerEvents = "none";
-  document.getElementById("mainPage").style.userSelect = "none";
-  document.getElementById("tarotPanel").style.whiteSpace = "normal";
-  document.getElementById("tarotPanel").style.width = "500px";
+  document.getElementById("tarotPanel").style.height = "75%";
   document.getElementById("tarotPanel").style.padding = "25px";
-  document.getElementById("tarotPanel").style.overflow = "auto";
 }
 function tarotPanelClose() {
-  document.getElementById("mainPage").style.pointerEvents = "initial";
-  document.getElementById("mainPage").style.userSelect = "initial";
-  document.getElementById("tarotPanel").style.whiteSpace = "nowrap";
-  document.getElementById("tarotPanel").style.width = "0";
-  document.getElementById("tarotPanel").style.padding = "25px 0";
-  document.getElementById("tarotPanel").style.overflow = "hidden";
+  document.getElementById("tarotPanel").style.padding = "0";
+  document.getElementById("tarotPanel").style.height = "0";
+  document.getElementById("panelBlock").classList.add("fOutBlock");
+  setTimeout(() => {
+    document.getElementById("panelBlock").classList.remove("fOutBlock");
+    document.getElementById("panelBlock").style.opacity = "0";
+    document.getElementById("panelBlock").style.display = "none";
+  }, 1250);
 }
+// workaround: workaround: https://stackoverflow.com/questions/45382875/fade-in-and-out-on-button-click
 
 // MIT
 
@@ -121,4 +134,30 @@ var MIT = `
       SOFTWARE.
     </p>
   </div>
+  <div>
+    <br>
+    <img class="navOpen" src="media/svg/icons/panel_exit_down.svg" onclick="MITPanelClose()" alt="exit_panel">
+  </div>
 `;
+function MITPanelOpen(cite) {
+  document.getElementById("panelBlock").style.display = "block";
+  document.getElementById("panelBlock").classList.add("fInBlock");
+  setTimeout(() => {
+    document.getElementById("panelBlock").classList.remove("fInBlock");
+    document.getElementById("panelBlock").style.opacity = "1";
+  }, 750);
+  document.getElementById("MITInfo").innerHTML = cite;
+  document.getElementById("MITPanel").style.height = "75%";
+  document.getElementById("MITPanel").style.padding = "25px";
+}
+function MITPanelClose() {
+  document.getElementById("MITPanel").style.padding = "0";
+  document.getElementById("MITPanel").style.height = "0";
+  document.getElementById("panelBlock").classList.add("fOutBlock");
+  setTimeout(() => {
+    document.getElementById("panelBlock").classList.remove("fOutBlock");
+    document.getElementById("panelBlock").style.opacity = "0";
+    document.getElementById("panelBlock").style.display = "none";
+    document.getElementById("MITPanel").scrollTop = 0;
+  }, 1250);
+}

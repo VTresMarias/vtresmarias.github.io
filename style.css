@@ -134,6 +134,12 @@ a:active {
   text-decoration: none;
 }
 
+hr {
+  border: 1.25px solid #dcc6bb;
+  filter: drop-shadow(2px 4px 16px #dcc6bb80);
+  width: 75%;
+}
+
 
 /* custom classes */
 
@@ -243,32 +249,107 @@ a:active {
   }
 }
 
-#navPanel, #tarotPanel {
-  z-index: 5;
-  width: 0;
-  max-width: 100vw;
+#panelBlock {
+  width: 100vw;
   height: 100vh;
+  background-color: #3d374ca0;
   position: absolute;
+  z-index: 4;
+  display: none;
+  opacity: 0;
+}
+
+#navPanel {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 0;
+  padding: 0;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
   background-color: #3d374c;
-  padding: 25px 0;
-  right: 0;
-  text-align: center;
+  z-index: 5;
   -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -o-transition: 1.25s;
   transition: 1.25s;
-  box-shadow: 2px 4px 100px 16px #3d374c80;
+  filter: drop-shadow(2px 4px 16px #dcc6bb80);
   text-shadow: 2px 4px 16px #dcc6bb80;
-  white-space: nowrap;
-  text-overflow: clip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  display: block;
 }
 .vtmLogoPanel {
   width: 175px;
   display: unset;
   filter: drop-shadow(2px 4px 16px #dcc6bb80);
+  padding: 0 12.5px;
 }
+
+
+#tarotPanel {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 0;
+  padding: 0;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  background-color: #3d374c;
+  z-index: 5;
+  -webkit-transition: 1.25s;
+  -moz-transition: 1.25s;
+  -o-transition: 1.25s;
+  transition: 1.25s;
+  filter: drop-shadow(2px 4px 16px #dcc6bb80);
+  text-shadow: 2px 4px 16px #dcc6bb80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#MITPanel {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 0;
+  padding: 0;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  background-color: #3d374c;
+  z-index: 5;
+  -webkit-transition: 1.25s;
+  -moz-transition: 1.25s;
+  -o-transition: 1.25s;
+  transition: 1.25s;
+  filter: drop-shadow(2px 4px 16px #dcc6bb80);
+  text-shadow: 2px 4px 16px #dcc6bb80;
+  display: block;
+  overflow: auto;
+}
+
+.fInBlock {
+  -webkit-animation: fIn 0.75s linear forwards;
+  -moz-animation: fIn 0.75s linear forwards;
+  -o-animation: fIn 0.75s linear forwards;
+  animation: fIn 0.75s linear forwards;
+}
+.fOutBlock {
+  -webkit-animation: fOut 0.75s linear forwards;
+  -moz-animation: fOut 0.75s linear forwards;
+  -o-animation: fOut 0.75s linear forwards;
+  animation: fOut 0.75s linear forwards;
+}
+@keyframes fIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+/* workaround: https://stackoverflow.com/questions/45382875/fade-in-and-out-on-button-click */
 
 .mariaPadding {
   padding-bottom: 0;
@@ -277,6 +358,18 @@ a:active {
   .mariaPadding {
     padding-bottom: 75px;
   }
+}
+
+
+/* hide scrollbar (as per https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp) */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 
