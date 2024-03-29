@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="VTresMarias">
+    <title>Chapter 9: Memories</title>
+    <link rel="icon" href="../media/favicon/favicon_light.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../media/favicon/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#3d374c">
+    <meta name="msapplication-TileColor" content="#3d374c">
+    <meta name="msapplication-navbutton-color" content="#3d374c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
+    <!-- custom css -->
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      #navPanel {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 0;
+        padding: 0;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        background-color: #3d374c;
+        z-index: 5;
+        -webkit-transition: 1.25s;
+        -moz-transition: 1.25s;
+        -o-transition: 1.25s;
+        transition: 1.25s;
+        filter: drop-shadow(2px 4px 16px #dcc6bb80);
+        text-shadow: 2px 4px 16px #dcc6bb80;
+        display: block;
+        overflow: auto;
+      }
+    </style>
+    <!-- custom scripts -->
+    <script src="../scripts.js" type="text/javascript"></script> <!-- inbuilt -->
+    <link href="storyStyle.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+        splash();
+      }
+    </script>
+    <script type="text/javascript">
+      // attach in-html custom javascript args here
+      function navBarOpen1() {
+        document.getElementById("panelBlock").style.display = "block";
+        document.getElementById("panelBlock").classList.add("fInBlock");
+        setTimeout(() => {
+          document.getElementById("panelBlock").classList.remove("fInBlock");
+          document.getElementById("panelBlock").style.opacity = "1";
+        }, 750);
+        document.getElementById("navPanel").style.height = "100%";
+        document.getElementById("navPanel").style.padding = "125px";
+      }
+      function navBarClose1() {
+        document.getElementById("navPanel").style.padding = "0";
+        document.getElementById("navPanel").style.height = "0";
+        document.getElementById("panelBlock").classList.add("fOutBlock");
+        setTimeout(() => {
+          document.getElementById("panelBlock").classList.remove("fOutBlock");
+          document.getElementById("panelBlock").style.opacity = "0";
+          document.getElementById("panelBlock").style.display = "none";
+          document.getElementById("navPanel").scrollTop = 0;
+        }, 1250);
+      }
+    </script>
+  </head>
+  <body onload="launch()">
+    <div id="removeLoadBlock" class="loading">
+      <img id="removeLoad" src="../media/images/loading.png" alt="">
+    </div>
+    <div id="panelBlock"></div> <!-- panel block -->
+    <div id="navPanel"> <!-- navbar panel -->
+      <div style="text-align: center; width: 750px; max-width: 100%; margin: 0 auto;">
+        <h2>The Story of the First Maria<br>～最初のマリアの物語～</h2>
+        <header>
+          <div style="line-height: 62.5%;">
+            <br>
+            <p><a rel="noopener noreferrer" href="chapter1">Chapter 1: Arisen</a></p>
+            <p><a rel="noopener noreferrer" href="chapter2">Chapter 2: Exit</a></p>
+            <p><a rel="noopener noreferrer" href="chapter3">Chapter 3: Fates</a></p>
+            <p><a rel="noopener noreferrer" href="chapter4">Chapter 4: Lotus</a></p>
+            <p><a rel="noopener noreferrer" href="chapter5">Chapter 5: Green</a></p>
+            <p><a rel="noopener noreferrer" href="chapter6">Chapter 6: Paths</a></p>
+            <p><a rel="noopener noreferrer" href="chapter7">Chapter 7: Luna</a></p>
+            <p><a rel="noopener noreferrer" href="chapter8">Chapter 8: Royalty</a></p>
+            <p><b>Chapter 9: Memories</b></p>
+            <p><a rel="noopener noreferrer" href="chapter10">Chapter 10: Favor</a></p>
+            <p><a rel="noopener noreferrer" href="chapter11">Chapter 11: Dress</a></p>
+            <p><a rel="noopener noreferrer" href="chapter12">Chapter 12: Coronation</a></p>
+            <p><a rel="noopener noreferrer" href="chapter13">Chapter 13: Nickname</a></p>
+            <p><a rel="noopener noreferrer" href="chapter14">Chapter 14: Overseer</a></p>
+            <p><a rel="noopener noreferrer" href="chapter15">Chapter 15: Suzu</a></p>
+            <p><a rel="noopener noreferrer" href="chapter16">Chapter 16: Nurse</a></p>
+            <p><a rel="noopener noreferrer" href="chapter17">Chapter 17: Leidram</a></p>
+            <p><a rel="noopener noreferrer" href="chapter18">Chapter 18: Crown</a></p>
+            <p><a rel="noopener noreferrer" href="chapter19">Chapter 19: Marias</a></p>
+            <p><a rel="noopener noreferrer" href="chapter20">Chapter 20: Beyond</a></p>
+          </div>
+        </header>
+        <br><br>
+        <img id="navClosed" src="../media/svg/icons/menu_close.svg" onclick="navBarClose1()" alt="menu_close">
+      </div>
+    </div>
+    <div id="mainPage" style="background-image: url(../media/images/vtm_story_blurred.png);">
+      <div style="box-shadow: 2px 4px 100px 16px #3d374c80;">
+        <header class="vtmHead">
+          <div><img class="vtmLogo" src="../media/images/firstMaria_story.png" alt=""></div>
+          <div style="width: 100px; height: 100px;"></div>
+          <div><img id="navClosed" src="../media/svg/icons/menu_open.svg" onclick="navBarOpen1()" alt="menu_open"></div>
+        </header>
+        <div class="intro" style="background-image: unset;">
+          <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center;">
+            <h2>Chapter 9: Memories</h2>
+            <br>
+            <div style="text-align: left;">
+              <p style="font-style: italic">A day later…</p>
+              <p>
+                I made my way towards the place where Hina and I were supposed to meet -- one
+                of her gardens. “Where could she be?” I thought.
+              </p>
+              <p>
+                From afar, I can see Hina panting as she runs in my direction. “Sorry I’m
+                late,” she said.
+              </p>
+              <p>
+                “There’s nothing to apologize for,” I hushed it off. “Rather, why did you take
+                me to this place?”
+              </p>
+              <p>
+                Regaining her breath, she calmly walks down towards a row full of young
+                plants. “Here,” she said, handing me a planter. “This is one of the saplings
+                of the Cherry Blossom. Someone gave a whole bag of seeds and this one to me
+                some time ago.”
+              </p>
+              <p>“That looks beautiful,” I gleam at the sapling. “Where are the others?”</p>
+              <p>
+                “They’re right over there,” she glances at the bench in response, where a
+                number of planters and their saplings of a similar kind were placed.
+              </p>
+              <p>“Wow.”</p>
+              <p>
+                Carefully placing the planter back to its original spot, Hina slowly holds my
+                hand. “You know, I wanted to ask you a little question so I decided that we
+                meet up here.”
+              </p>
+              <p>“Why? You could ask me some in your room, though.”</p>
+              <p>
+                “It’s tranquil here,” she said with a slow nod. “I like the atmosphere of this
+                place, it makes me wanna read a book without dealing with the outside noise.
+                And the planters that we saw had a significance to it.”
+              </p>
+              <p>I nod. “Okay, what was it?”</p>
+              <p>
+                “So… yesterday, I found a box on top of one of the drawers. They contain three
+                bracelets, a photo frame, and three pins of varying symbols.”
+              </p>
+              <p>“A… box?”</p>
+              <p>
+                “It’s not just an ordinary box, as far as I can tell,” she shakes her head.
+                “So I had to ask the Grand Lady about it. She told me that all will be in
+                place when the so-called ‘First Maria’ will then be able to rekindle my heart
+                once more.”
+              </p>
+              <p>“Sounds like a dream, if you ask me.”</p>
+              <p>“But the question is… who’s the First Maria?”</p>
+              <p>
+                I shrug. “I have no idea. Whatever that was, though, might give us a clue on
+                what’s going on.”
+              </p>
+              <p>“Yeah, I could bet on that part.”</p>
+              <p>
+                I think for a moment. “Hina may be right about the ‘First Maria’ thing, but…
+                how did I put myself into that picture? I’m sure only the Grand Lady knows
+                what was going on.”
+              </p>
+              <p>…</p>
+              <p style="font-style: italic">Back at the castle…</p>
+              <p>
+                I was already in her room together with the Oujo-sama -- Hina. She appears to
+                be distraught, and in some sort of confused state that I had to calm her down
+                every few minutes. “Is everything alright?”
+              </p>
+              <p>“I’m good,” she said, calming down for a bit.</p>
+              <p>Immediately, I pour a glass of water. “Here, drink this.”</p>
+              <p>“Thanks,” she said as she gulped down the water. “I’m a little okay now.”</p>
+              <p>
+                “But, you need to rest,” I declare. “You’re not in a proper state to do
+                anything, and we also need to prepare for your Coronation soon.”
+              </p>
+              <p>“Yeah, you’re right. But…”</p>
+              <p>
+                What came afterwards was a question that I didn’t expect to hear coming from
+                her. Is she okay to ask me such a huge favor?
+              </p>
+            </div>
+            <div style="width: 100%; height: 125px;"></div>
+            <div>
+              <button onclick="window.open('chapter8', '_self')">previous chapter</button>
+              <button onclick="window.open('chapter10', '_self')">next chapter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div style="line-height: 50%; filter: drop-shadow(2px 4px 16px #3d374c80);">
+           <img class="vtmLogo" style="width: 375px;" src="../media/svg/vtm_typeface_wide.svg" alt="">
+          <p style="font-size: smaller; color: #fff;"><i>est. 27 Dec 2022</i></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

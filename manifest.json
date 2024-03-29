@@ -1,0 +1,96 @@
+{
+  "_basedOn": "Twitter/X manifest.json at https://twitter.com/manifest.json",
+  "_assistedBy": "PWABuilder",
+  "background_color": "#3d374c",
+  "categories": [
+    "entertainment",
+    "lifestyle",
+    "social"
+  ],
+  "description": "home of the Marias, est. 27 Dec 2022.🍃🪷🌸",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "media/images/pwa",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "name": "「VTresMarias - V三人のマリア - 」",
+  "shortcuts": [
+    {
+      "name": "read the story🍃🪷🌸",
+      "url": "story",
+      "icons": [
+        {
+          "src": "media/images/pwa_icon/maria_0.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "description": "\"the story of the First Maria, is also the story of what it has become.\""
+        }
+      ]
+    },
+    {
+      "name": "the First Maria🍃",
+      "url": "firstMaria",
+      "icons": [
+        {
+          "src": "media/images/pwa_icon/maria_1.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "description": "visit the website of the First Maria🍃"
+        }
+      ]
+    },
+    {
+      "name": "the Second Maria🪷",
+      "url": "secondMaria",
+      "icons": [
+        {
+          "src": "media/images/pwa_icon/maria_2.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "description": "visit the website of the Second Maria🪷"
+        }
+      ]
+    },
+    {
+      "name": "the Third Maria🌸",
+      "url": "thirdMaria",
+      "icons": [
+        {
+          "src": "media/images/pwa_icon/maria_3.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "description": "visit the website of the Third Maria🌸"
+        }
+      ]
+    }
+  ],
+  "short_name": "VTresMarias",
+  "start_url": "/",
+  "theme_color": "#3d374c",
+  "scope": "/",
+  "id": "/?homescreen=1",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 475
+  },
+  "dir": "auto",
+  "orientation": "natural",
+  "lang": "en",
+  "display_override": [
+    "fullscreen",
+    "standalone",
+    "window-controls-overlay"
+  ],
+  "screenshots": [
+    {
+      "src": "media/images/20240128_remaster.png",
+      "type": "image/png",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    }
+  ]
+}

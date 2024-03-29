@@ -1,0 +1,12 @@
+.ltrBox {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.noteTxt {
+  text-align: left;
+  font-style: italic;
+}
+.noteClosing {
+  text-align: right;
+}

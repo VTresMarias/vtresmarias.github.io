@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="VTresMarias">
+    <title>Chapter 12: Coronation</title>
+    <link rel="icon" href="../media/favicon/favicon_light.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../media/favicon/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#3d374c">
+    <meta name="msapplication-TileColor" content="#3d374c">
+    <meta name="msapplication-navbutton-color" content="#3d374c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
+    <!-- custom css -->
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      #navPanel {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 0;
+        padding: 0;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        background-color: #3d374c;
+        z-index: 5;
+        -webkit-transition: 1.25s;
+        -moz-transition: 1.25s;
+        -o-transition: 1.25s;
+        transition: 1.25s;
+        filter: drop-shadow(2px 4px 16px #dcc6bb80);
+        text-shadow: 2px 4px 16px #dcc6bb80;
+        display: block;
+        overflow: auto;
+      }
+    </style>
+    <!-- custom scripts -->
+    <script src="../scripts.js" type="text/javascript"></script> <!-- inbuilt -->
+    <link href="storyStyle.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+        splash();
+      }
+    </script>
+    <script type="text/javascript">
+      // attach in-html custom javascript args here
+      function navBarOpen1() {
+        document.getElementById("panelBlock").style.display = "block";
+        document.getElementById("panelBlock").classList.add("fInBlock");
+        setTimeout(() => {
+          document.getElementById("panelBlock").classList.remove("fInBlock");
+          document.getElementById("panelBlock").style.opacity = "1";
+        }, 750);
+        document.getElementById("navPanel").style.height = "100%";
+        document.getElementById("navPanel").style.padding = "125px";
+      }
+      function navBarClose1() {
+        document.getElementById("navPanel").style.padding = "0";
+        document.getElementById("navPanel").style.height = "0";
+        document.getElementById("panelBlock").classList.add("fOutBlock");
+        setTimeout(() => {
+          document.getElementById("panelBlock").classList.remove("fOutBlock");
+          document.getElementById("panelBlock").style.opacity = "0";
+          document.getElementById("panelBlock").style.display = "none";
+          document.getElementById("navPanel").scrollTop = 0;
+        }, 1250);
+      }
+    </script>
+  </head>
+  <body onload="launch()">
+    <div id="removeLoadBlock" class="loading">
+      <img id="removeLoad" src="../media/images/loading.png" alt="">
+    </div>
+    <div id="panelBlock"></div> <!-- panel block -->
+    <div id="navPanel"> <!-- navbar panel -->
+      <div style="text-align: center; width: 750px; max-width: 100%; margin: 0 auto;">
+        <h2>The Story of the First Maria<br>～最初のマリアの物語～</h2>
+        <header>
+          <div style="line-height: 62.5%;">
+            <br>
+            <p><a rel="noopener noreferrer" href="chapter1">Chapter 1: Arisen</a></p>
+            <p><a rel="noopener noreferrer" href="chapter2">Chapter 2: Exit</a></p>
+            <p><a rel="noopener noreferrer" href="chapter3">Chapter 3: Fates</a></p>
+            <p><a rel="noopener noreferrer" href="chapter4">Chapter 4: Lotus</a></p>
+            <p><a rel="noopener noreferrer" href="chapter5">Chapter 5: Green</a></p>
+            <p><a rel="noopener noreferrer" href="chapter6">Chapter 6: Paths</a></p>
+            <p><a rel="noopener noreferrer" href="chapter7">Chapter 7: Luna</a></p>
+            <p><a rel="noopener noreferrer" href="chapter8">Chapter 8: Royalty</a></p>
+            <p><a rel="noopener noreferrer" href="chapter9">Chapter 9: Memories</a></p>
+            <p><a rel="noopener noreferrer" href="chapter10">Chapter 10: Favor</a></p>
+            <p><a rel="noopener noreferrer" href="chapter11">Chapter 11: Dress</a></p>
+            <p><b>Chapter 12: Coronation</b></p>
+            <p><a rel="noopener noreferrer" href="chapter13">Chapter 13: Nickname</a></p>
+            <p><a rel="noopener noreferrer" href="chapter14">Chapter 14: Overseer</a></p>
+            <p><a rel="noopener noreferrer" href="chapter15">Chapter 15: Suzu</a></p>
+            <p><a rel="noopener noreferrer" href="chapter16">Chapter 16: Nurse</a></p>
+            <p><a rel="noopener noreferrer" href="chapter17">Chapter 17: Leidram</a></p>
+            <p><a rel="noopener noreferrer" href="chapter18">Chapter 18: Crown</a></p>
+            <p><a rel="noopener noreferrer" href="chapter19">Chapter 19: Marias</a></p>
+            <p><a rel="noopener noreferrer" href="chapter20">Chapter 20: Beyond</a></p>
+          </div>
+        </header>
+        <br><br>
+        <img id="navClosed" src="../media/svg/icons/menu_close.svg" onclick="navBarClose1()" alt="menu_close">
+      </div>
+    </div>
+    <div id="mainPage" style="background-image: url(../media/images/vtm_story_blurred.png);">
+      <div style="box-shadow: 2px 4px 100px 16px #3d374c80;">
+        <header class="vtmHead">
+          <div><img class="vtmLogo" src="../media/images/firstMaria_story.png" alt=""></div>
+          <div style="width: 100px; height: 100px;"></div>
+          <div><img id="navClosed" src="../media/svg/icons/menu_open.svg" onclick="navBarOpen1()" alt="menu_open"></div>
+        </header>
+        <div class="intro" style="background-image: unset;">
+          <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center;">
+            <h2>Chapter 12: Coronation</h2>
+            <br>
+            <div style="text-align: left;">
+              <p>
+                The Coronation Day has arrived. Immediately, I get out of bed, only to realize
+                that the maids are waiting for me outside the room.
+              </p>
+              <p>
+                “Agatha-sama, your carriage is waiting,” they said. “Oujo-sama departed early
+                to meet with the subjects and to prepare for the ceremony.”
+              </p>
+              <p>I nod, following the maids to the carriage as they declared.</p>
+              <p>
+                As we wandered around the vicinity, I saw children placing assortments of
+                flowers along the sidewalk. Alongside that, their parents were busy cooking
+                some delicious delicacies as they prepared some clothes to be used during the
+                Coronation.
+              </p>
+              <p>
+                At some point, Hina’s carriage stopped at a nearby flower store as the owner
+                gave her some exquisite flowers in exchange for a few pins made from the Royal
+                Jewellers. I guess Hina’s really popular all over the place, even when she’s
+                not a Queen yet.
+              </p>
+              <p>
+                I then remember the first time that she told me about the “favor” to which I
+                accepted dearly. To be honest, even after I made my decision, I still don’t
+                know if I would be able to keep up with her pace considering how dynamic she
+                is in terms of her workloads.
+              </p>
+              <p>
+                “I’m sure she’s looking forward to working with you fully,” one of the maids
+                said with a smile on her face. “She can be serious at times, but she’s doing
+                her best to make us all feel at ease. Even after what had just happened to us,
+                she shrugged it off like it’s no big deal. That goes to show how easy she is
+                when you begin to realize how fun it is to work for her.”
+              </p>
+              <p>I sigh in relief. “Yeah… I hope it stays there.”</p>
+              <p>
+                As we head back to the castle, we see a number of people inside the castle
+                preparing some things. “I actually have a little question,” I blurt out.
+              </p>
+              <p>“Yes?”</p>
+              <p>I turned to the maid who responded to my query. “Where is… Ouji-sama?”</p>
+              <p>
+                “Oh,” she fiddles her fingers. “He’s at the chapel helping with stuff. If you
+                want, we can introduce you to him.”
+              </p>
+              <p>“Please do.”</p>
+              <p>
+                As we head to the chapel as per my request, we encounter the Royal Bishop, as
+                well as a few others who were cleaning up the chapel. I turn my attention to
+                the Ouji-sama, who’s in the middle of shining the crown and scepter to be used
+                at the Coronation.
+              </p>
+              <p>
+                “Ouji-sama,” I bow in front of him following the greeting. He seems pleased.
+              </p>
+              <p>
+                “So you must be the Royal Guest that Oujo-sama was talking about,” he said in
+                a calm tone. “Nice to meet you.”
+              </p>
+              <p>“So do I.”</p>
+              <p>
+                “The Coronation should begin in a few moments,” he said. “We’re almost ready
+                here at the chapel. I’m almost done with shining the scepter to be used during
+                the Coronation.”
+              </p>
+              <p>“Very well,” I nod. “Please take care of yourself after the event.”</p>
+              <p>“You too.”</p>
+              <p>
+                As we head out of the chapel, the trumpets begin to tune, signaling that the
+                Coronation is just moments away.
+              </p>
+              <p>
+                “I think we’re ready,” I said. Tending to the dress that Hina gave me, I pull
+                the pins from the pocket, and put them on the topmost-right part of the
+                bodice.
+              </p>
+              <p>…</p>
+              <p style="font-style: italic">Moments later…</p>
+              <p>
+                The maids and I are on the front row seat as the Royal Bishop enters the
+                podium. Putting the Holy Bible on top of it, he begins his Coronation speech.
+                Everyone stood to pledge their allegiance to the Queen, to which I
+                participated as well -- not noticing that the Sakura pin faintly started to
+                glow.
+              </p>
+              <p>
+                The parade started afterwards -- with everyone gazing backwards to witness the
+                coming of the Queen. The Hina that I first saw a few days ago was glittering
+                in her regal black dress. There’s a crown on her head, though I’m not sure
+                what it&#39;s for. Would it interfere with the new crown that she’s about to
+                wear?
+              </p>
+              <p>
+                She stops for a bit, looking to the right -- where the Ouji-sama was waiting
+                along the aisle. Arms linked, they continue walking to the podium.
+              </p>
+              <p>
+                The Royal Bishop then takes the crown from its place, and slowly places it
+                over her head -- signifying that a new Queen has been reigned. “All hail
+                Hina!”
+              </p>
+              <p>Everyone chanted afterwards, “All hail Hina!”</p>
+              <p>
+                Handing the pillow to her direction, he instructed her to carry the scepter.
+                Facing the audience, she proclaimed in a serious but confident tone: “I hereby
+                pledge to the Oath of the Holy Bible to protect the people to whom I
+                cherished. In accordance; I, Hina Oujo, begin my duties as the newly-crowned
+                Queen.”
+              </p>
+              <p>
+                From then, I realized that the glow began to intensify, so I tried to cover it
+                off with my hand. She notices the ordeal, but then realizes after a full
+                minute of fixating with the audience that her pin -- for some unknown reason I
+                realized was in there in the first place -- also began to glow.
+              </p>
+              <p>
+                As the cheers went on, so was the applause from inside the chapel. I’m a bit
+                nervous, though.
+              </p>
+              <p>
+                However, the party came and went without issues. I opted to head out to bed
+                early as I need to check on a few things before I start my job as her Royal
+                Accomplice.
+              </p>
+            </div>
+            <div style="width: 100%; height: 125px;"></div>
+            <div>
+              <button onclick="window.open('chapter11', '_self')">previous chapter</button>
+              <button onclick="window.open('chapter13', '_self')">next chapter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div style="line-height: 50%; filter: drop-shadow(2px 4px 16px #3d374c80);">
+           <img class="vtmLogo" style="width: 375px;" src="../media/svg/vtm_typeface_wide.svg" alt="">
+          <p style="font-size: smaller; color: #fff;"><i>est. 27 Dec 2022</i></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

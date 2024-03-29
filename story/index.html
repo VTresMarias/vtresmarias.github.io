@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="VTresMarias">
+    <title>The Story of the First Maria ～最初のマリアの物語～</title>
+    <link rel="icon" href="../media/favicon/favicon_light.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../media/favicon/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="The Story of the First Maria ～最初のマリアの物語～">
+    <meta name="og:image" content="https://vtresmarias.github.io/media/images/vtm_story.png">
+    <meta name="og:url" content="https://vtresmarias.github.io/story">
+    <meta name="og:description" content='"the story of the First Maria, is also the story of what it has become."'>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thebelovedmoon">
+    <meta name="twitter:creator" content="@thebelovedmoon">
+    <meta name="theme-color" content="#3d374c">
+    <meta name="msapplication-TileColor" content="#3d374c">
+    <meta name="msapplication-navbutton-color" content="#3d374c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
+    <!-- custom css -->
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
+    <link href="storyStyle.css" rel="stylesheet" type="text/css" media="all">
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      #navPanel {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 0;
+        padding: 0;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        background-color: #3d374c;
+        z-index: 5;
+        -webkit-transition: 1.25s;
+        -moz-transition: 1.25s;
+        -o-transition: 1.25s;
+        transition: 1.25s;
+        filter: drop-shadow(2px 4px 16px #dcc6bb80);
+        text-shadow: 2px 4px 16px #dcc6bb80;
+        display: block;
+        overflow: auto;
+      }
+    </style>
+    <!-- custom scripts -->
+    <script src="../scripts.js" type="text/javascript"></script> <!-- inbuilt -->
+    <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+        splash();
+      }
+    </script>
+    <script type="text/javascript">
+      // attach in-html custom javascript args here
+      function navBarOpen1() {
+        document.getElementById("panelBlock").style.display = "block";
+        document.getElementById("panelBlock").classList.add("fInBlock");
+        setTimeout(() => {
+          document.getElementById("panelBlock").classList.remove("fInBlock");
+          document.getElementById("panelBlock").style.opacity = "1";
+        }, 750);
+        document.getElementById("navPanel").style.height = "100%";
+        document.getElementById("navPanel").style.padding = "125px";
+      }
+      function navBarClose1() {
+        document.getElementById("navPanel").style.padding = "0";
+        document.getElementById("navPanel").style.height = "0";
+        document.getElementById("panelBlock").classList.add("fOutBlock");
+        setTimeout(() => {
+          document.getElementById("panelBlock").classList.remove("fOutBlock");
+          document.getElementById("panelBlock").style.opacity = "0";
+          document.getElementById("panelBlock").style.display = "none";
+          document.getElementById("navPanel").scrollTop = 0;
+        }, 1250);
+      }
+    </script>
+  </head>
+  <body onload="launch()">
+    <div id="removeLoadBlock" class="loading">
+      <img id="removeLoad" src="../media/images/loading.png" alt="">
+    </div>
+    <div id="panelBlock"></div> <!-- panel block -->
+    <div id="navPanel"> <!-- navbar panel -->
+      <div style="text-align: center; width: 750px; max-width: 100%; margin: 0 auto;">
+        <h2>The Story of the First Maria<br>～最初のマリアの物語～</h2>
+        <header>
+          <div style="line-height: 62.5%;">
+            <br>
+            <p><a rel="noopener noreferrer" href="chapter1">Chapter 1: Arisen</a></p>
+            <p><a rel="noopener noreferrer" href="chapter2">Chapter 2: Exit</a></p>
+            <p><a rel="noopener noreferrer" href="chapter3">Chapter 3: Fates</a></p>
+            <p><a rel="noopener noreferrer" href="chapter4">Chapter 4: Lotus</a></p>
+            <p><a rel="noopener noreferrer" href="chapter5">Chapter 5: Green</a></p>
+            <p><a rel="noopener noreferrer" href="chapter6">Chapter 6: Paths</a></p>
+            <p><a rel="noopener noreferrer" href="chapter7">Chapter 7: Luna</a></p>
+            <p><a rel="noopener noreferrer" href="chapter8">Chapter 8: Royalty</a></p>
+            <p><a rel="noopener noreferrer" href="chapter9">Chapter 9: Memories</a></p>
+            <p><a rel="noopener noreferrer" href="chapter10">Chapter 10: Favor</a></p>
+            <p><a rel="noopener noreferrer" href="chapter11">Chapter 11: Dress</a></p>
+            <p><a rel="noopener noreferrer" href="chapter12">Chapter 12: Coronation</a></p>
+            <p><a rel="noopener noreferrer" href="chapter13">Chapter 13: Nickname</a></p>
+            <p><a rel="noopener noreferrer" href="chapter14">Chapter 14: Overseer</a></p>
+            <p><a rel="noopener noreferrer" href="chapter15">Chapter 15: Suzu</a></p>
+            <p><a rel="noopener noreferrer" href="chapter16">Chapter 16: Nurse</a></p>
+            <p><a rel="noopener noreferrer" href="chapter17">Chapter 17: Leidram</a></p>
+            <p><a rel="noopener noreferrer" href="chapter18">Chapter 18: Crown</a></p>
+            <p><a rel="noopener noreferrer" href="chapter19">Chapter 19: Marias</a></p>
+            <p><a rel="noopener noreferrer" href="chapter20">Chapter 20: Beyond</a></p>
+          </div>
+        </header>
+        <br><br>
+        <img id="navClosed" src="../media/svg/icons/menu_close.svg" onclick="navBarClose1()" alt="menu_close">
+      </div>
+    </div>
+    <div id="mainPage" style="background-image: url(../media/images/vtm_story.png);">
+      <div style="box-shadow: 2px 4px 100px 16px #3d374c80;">
+        <header class="vtmHead">
+          <div><img class="vtmLogo" src="../media/images/firstMaria_story.png" alt=""></div>
+          <div style="width: 100px; height: 100px;"></div>
+          <div><img id="navClosed" src="../media/svg/icons/menu_open.svg" onclick="navBarOpen1()" alt="menu_open"></div>
+        </header>
+        <div style="height: 100vh"></div>
+        <div class="intro" style="background-image: url(../media/images/vtm_story_blurred.png);">
+          <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center;">
+            <h1>“Mother loves you, always.”</h1>
+            <p>
+              Mother Agatha was once a beloved Mother whose beauty is unmatched, until she
+              succumbed to the forces of evil due to hunger in a never-ending winter. She
+              had sacrificed three of her children for food, but her fate had been sealed by
+              which her youngest son wanted to seek the truth and give justice to his lost
+              siblings.
+            </p>
+            <p>
+              But when her story comes to a close, another one opens -- a light in her midst
+              of darkness, with a mission that can reshape her destiny anew.
+            </p>
+            <p style="font-weight: 800; font-style: italic;">
+              This is a story of how a Mother once lost everything, but has made a new life
+              with those who cared about her the most. The story of the First Maria --
+              Mother Agatha, now known as 💚🍃Aga-chuu💗🌸.
+            </p>
+            <br><br>
+            <p style="font-style: italic;">
+              to begin, tap or click the navbar on the top-right of the screen to select a
+              chapter.
+            </p>            
+          </div>
+        </div>
+        <div id="about" class="intro" style="background-image: url(../media/images/horrorshop_bg_blurred.png); text-align: center;">
+          <div style="width: 625px; max-width: 100%; margin: 0 auto;">
+            <h1>introduction</h1>
+            <div style="text-align: left;">
+              <p style="font-style: italic;">
+                This is the continuation of the story from Mother (2019) by Horror Shop Games.
+              </p>
+              <p>
+                Some years have passed since the demise of the revered Mother who had
+                sacrificed her three children for food. Her body was all torn up in pieces,
+                her clothing was worn out… but what remained untouched was her pristine hair
+                -- which reminds that no matter what happens, her beauty is left unmatched.
+              </p>
+              <p>
+                Before that, she took care of her four children in the midst of winter, where
+                food is getting scarce by the moment. Realizing that, she took her children
+                out to hunt for food, but the days ended with an empty stomach. With it, her
+                sanity has dropped, and she is forced to make a risky decision -- too risky
+                that the youngest child of them all decided to uncover the truth of the
+                commotion.
+              </p>
+              <p>
+                In turn, his intuitions came true -- the true personality of his Mother is
+                revealed, and with it, the sacrifice of his last sibling. He decided to end it
+                all -- death by a thousand cuts on rotary blades.
+              </p>
+              <p>
+                In the end, spring has come and he’s finally free -- at the expense of his
+                ‘cursed’ Mother.
+              </p>
+              <p>
+                Now, her body was still lingering at its wit’s end, trying to decay together
+                with the house that she built upon with her sweetheart many years ago. Until…
+              </p>
+              <p>…</p>
+              <p>
+                A light began to shine around the labyrinth, its rays emanating around the
+                distorted figure as it began to cleanse her inner soul. A few minutes later,
+                the light vanishes.
+              </p>
+              <p>
+                But something has happened inside the labyrinth -- the distorted figure is no
+                more. Air began to seep in through the lungs, and the eyes were wide awake --
+                the woman had finally woken up from her deathbed.
+              </p>
+              <p>“What… how could this happen? I was supposed to be dead already…”</p>
+              <p>
+                She could feel the pain tearing away, the wounds around her healing slowly
+                until there was none. Alas, her former self has returned!
+              </p>
+              <p>“What am I doing here?”</p>
+              <p>
+                At a short moment, the light shone above her again, causing her to look back.
+                “What just happened?” She asked.
+              </p>
+              <p>
+                Appeared before her is an angel whose beauty has become the hope of all that
+                follows her deeds. She has donned herself in a simple but elegant dress, a
+                lovely flower tiara, and a pair of angelic wings as she glitters in her long,
+                light-apricot hair. She softly answered, “I have decided to wake you up from
+                your horrendous memory. Memories that have been bringing you down since then.”
+              </p>
+              <p>“But… I murdered my kids… for food…”</p>
+              <p>
+                “I understand the pain that you’ve gone through,” she said. “Even though
+                they’re in heaven, they don’t regret calling you as their Mother whom they
+                loved very much.”
+              </p>
+              <p>At this point, she began to cry, tears dripping down on her face.</p>
+              <p>“Agatha…”</p>
+              <p>
+                Immediately, her eyes went up against the angel. “Your name is Agatha,
+                correct?”
+              </p>
+              <p>
+                She slowly nods after shedding the tears. “Yes… Mother Agatha. Who are you?”
+              </p>
+              <p>
+                “Please call me the Grand Lady,” she nodded. “I have given you a mission to
+                change yourself for the better. A mission that will put you in a new light as
+                you transform into someone that everyone will love in the end.”
+              </p>
+              <p>“But… how could I do that?”</p>
+              <p>
+                “You will need to find people who will truly care for you no matter what your
+                circumstances are. The ones who will back you up, and never back down in a
+                fight even if their own are in immediate dismay. The ones who will give you
+                hope -- the light at the end of the tunnel. The ones where wits and
+                personalities will give you something to ponder on for years to come.”
+              </p>
+              <p>“Could I… do that?”</p>
+              <p>
+                “I know you can, because you’re a loving Mother who can overcome just about
+                anything.”
+              </p>
+              <p>“...”</p>
+              <p>
+                Slowly but immediately, the Lady’s Spirits appear around her, giving her a
+                warm embrace. “We all believe in you,” they said. “You will hold the future to
+                which the future generations will usher forward.”
+              </p>
+              <p>
+                One by one, they slowly disappear. Then the Grand Lady uttered the final
+                words, “May the spirit of the Luna, and the essence of the Celestial Tree, be
+                with you forever.”
+              </p>
+              <p>
+                With watering eyes, she set on to make a promise to herself: To reclaim the
+                care that she once lost, to become the benefactor of the future generations,
+                and to become one with those who cared for her the most.
+              </p>
+              <p style="font-weight: 800; font-style: italic;">
+                This is a story of a Mother whose beauty is unmatched, setting for an
+                adventure unlike any other. This is the story of the First Maria -- Mother
+                Agatha, now known as 💚🍃Aga-chuu💗🌸.
+              </p>              
+            </div>
+          </div>
+          <br>
+        </div>
+        <div id="about" class="intro" style="background-image: url(../media/images/moonlightLake_blurred.png);">
+          <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center; color: #dcc6bb; text-shadow: 2px 4px 16px #dcc6bb80;">
+            <h1>acknowledgements</h1>
+            <div style="text-align: left;">
+              <p>
+                I would like to thank Horror Shop Games for releasing the game last Dec 2019!
+                Almost two years later I would get my chance to play it for the first time,
+                and finally brought myself something that deserves to be represented in an
+                array of communities!
+              </p>
+              <p>
+                I would also like to thank the first few VTubers who have been on my side
+                since gaining interest on this topic since Feb 2022:
+              </p>
+              <ul>
+                <li>MIKENEKO (formerly Uruha Rushia, Amemiya Nazuna)</li>
+                <li>Lina Scott</li>
+                <li>RenFloralGhost</li>
+                <li>RIORIO (rioriodayo)</li>
+                <li>BunnyDollBunns (formerly VivaVibeVT)</li>
+              </ul>
+              <p>
+                I would also like to thank the two accomplices that have been my pride and joy
+                since founding the VTuber Collective:
+              </p>
+              <ul>
+                <li>Aura Ostara, the Second Maria (aka mama dearest💚🍃)</li>
+                <li>Hina Oujo/HinaSukii, the Third Maria (aka mama queenie💗🌸)</li>
+              </ul>
+              <p>
+                And lastly, the following people who have been a part of my journey since the
+                life restart last Sep 2019:
+              </p>
+              <ul>
+                <li>
+                  Emmannuel Oretga, who have been with me through thick and thin through
+                  various platforms and interests
+                </li>
+                <li>
+                  jatzy/nekuvsnoise, the lead developer of Horror Shop Games, for the support
+                  and dedication towards the games that people loved over the years
+                </li>
+                <li>
+                  Katherine Belloni-Lebran, my dearest Italian sweetheart whom I loved dearly
+                  forever
+                </li>
+                <li>
+                  The Leaves🍃, Nimbisouls🪷 and Chuu-nins/Kisses🌸 who have been supporting
+                  the Marias since the debut
+                </li>
+                <li>Horror Shop Games Community for among the warmest welcomes</li>
+                <li>SaySayVT and V-Tahanan for continuing the legacy to which I admire to</li>
+              </ul>
+              <p>
+                To conclude this introduction, I want to thank you -- the readers -- for
+                reading this VTuber lore! I hope you have fun reading as much as I do writing
+                this story~
+              </p>
+              <p style="text-align: right; font-weight: 700; font-style: italic;">
+                💚🍃Aga-chuu💗🌸 (thebelovedmoon)<br>
+                Author/VTuber<br>
+                「VTresMarias - V三人のマリア - 」
+              </p>
+            </div>
+        </div>
+      </div>
+      <footer>
+        <div style="line-height: 50%; filter: drop-shadow(2px 4px 16px #3d374c80);">
+           <img class="vtmLogo" style="width: 375px;" src="../media/svg/vtm_typeface_wide.svg" alt="">
+          <p style="font-size: smaller; color: #fff;"><i>est. 27 Dec 2022</i></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
