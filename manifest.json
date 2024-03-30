@@ -11,15 +11,27 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "media/images/pwa_icon/pwaIcon.png",
+      "src": "media/images/pwa_icon/pwaIcon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "media/images/pwa_icon/pwaIcon_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "media/images/vtm_square.jpg",
-      "sizes": "1080x1080",
-      "type": "image/jpeg",
+      "src": "media/images/pwa_icon/pwaMaskable_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "media/images/pwa_icon/pwaMaskable_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "maskable"
     }
   ],
