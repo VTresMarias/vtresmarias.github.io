@@ -7,11 +7,11 @@
     "lifestyle",
     "social"
   ],
-  "description": "home of the Marias, est. 27 Dec 2022.🍃🪷🌸",
+  "description": "home of the Marias, est. 27 Dec 2022🍃🪷🌸",
   "display": "standalone",
   "icons": [
     {
-      "src": "media/images/pwa",
+      "src": "media/images/pwa_icon/pwaIcon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
