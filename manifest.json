@@ -14,7 +14,13 @@
       "src": "media/images/pwa_icon/pwaIcon.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "maskable any"
+    },
+    {
+      "src": "media/images/vtm_square.jpg",
+      "sizes": "1080x1080",
+      "type": "image/jpeg",
+      "purpose": "maskable"
     }
   ],
   "name": "「VTresMarias - V三人のマリア - 」",
