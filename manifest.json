@@ -11,23 +11,23 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "media/images/pwa_icon/pwaIcon_192.png",
+      "src": "/pwa/img/pwaIcon_192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "media/images/pwa_icon/pwaIcon_512.png",
+      "src": "/pwa/img/pwaIcon_512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "media/images/pwa_icon/pwaMaskable_192.png",
+      "src": "/pwa/img/pwaMaskable_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "media/images/pwa_icon/pwaMaskable_512.png",
+      "src": "/pwa/img/pwaMaskable_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -40,7 +40,7 @@
       "url": "story",
       "icons": [
         {
-          "src": "media/images/pwa_icon/maria_0.png",
+          "src": "/pwa/img/maria_0.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "\"the story of the First Maria, is also the story of what it has become.\""
@@ -52,7 +52,7 @@
       "url": "firstMaria",
       "icons": [
         {
-          "src": "media/images/pwa_icon/maria_1.png",
+          "src": "/pwa/img/maria_1.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "visit the website of the First Maria🍃"
@@ -64,7 +64,7 @@
       "url": "secondMaria",
       "icons": [
         {
-          "src": "media/images/pwa_icon/maria_2.png",
+          "src": "/pwa/img/maria_2.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "visit the website of the Second Maria🪷"
@@ -76,7 +76,7 @@
       "url": "thirdMaria",
       "icons": [
         {
-          "src": "media/images/pwa_icon/maria_3.png",
+          "src": "/pwa/img/maria_3.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "visit the website of the Third Maria🌸"
@@ -84,11 +84,11 @@
       ]
     }
   ],
-  "short_name": "VTresMarias",
+  "short_name": "V三人のマリア",
   "start_url": "/",
   "theme_color": "#3d374c",
   "scope": "/",
-  "id": "/?homescreen=1",
+  "id": "?webapp",
   "prefer_related_applications": false,
   "edge_side_panel": {
     "preferred_width": 475
