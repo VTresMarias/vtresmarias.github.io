@@ -85,7 +85,7 @@
     }
   ],
   "short_name": "V三人のマリア",
-  "start_url": "./?isWebApp=1",
+  "start_url": "./index.html?isWebApp=1",
   "theme_color": "#3d374c",
   "scope": "./",
   "id": "?isWebApp=1",
