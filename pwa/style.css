@@ -44,15 +44,24 @@ body {
   width: calc(1920px / 3);
   max-width: 100%;
   margin: 0 auto;
-  padding: 250px 15px;
+  padding: 15px;
   text-align: center;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none;
 }
 
+header, footer {
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* colormode-wide */
 @media (prefers-color-scheme: light) {
   html {
     background-color: #dcc6bb;
@@ -74,6 +83,18 @@ img {
   }
   button:hover {
     background-color: #332e3f;
+  }
+  a:link, a:visited {
+    color: #3d374c;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #332e3f;
+    text-decoration: none;
+  }
+  a:active {
+    color: #4f4863;
+    text-decoration: none;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -97,5 +118,17 @@ img {
   }
   button:hover {
     background-color: #c0ada4;
+  }
+  a:link, a:visited {
+    color: #dcc6bb;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #c0ada4;
+    text-decoration: none;
+  }
+  a:active {
+    color: #f0d8cc;
+    text-decoration: none;
   }
 }
