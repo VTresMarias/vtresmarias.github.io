@@ -90,7 +90,7 @@
   "start_url": "/pwa?isWebApp=1",
   "theme_color": "#3d374c",
   "scope": "/pwa",
-  "id": "?version=4",
+  "id": "/pwa?isWebApp=1",
   "prefer_related_applications": false,
   "edge_side_panel": {
     "preferred_width": 475
