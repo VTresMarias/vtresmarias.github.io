@@ -11,23 +11,23 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "./img/pwaIcon_192.png",
+      "src": "/pwa/img/pwaIcon_192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./img/pwaIcon_512.png",
+      "src": "/pwa/img/pwaIcon_512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "./img/pwaMaskable_192.png",
+      "src": "/pwa/img/pwaMaskable_192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "./img/pwaMaskable_512.png",
+      "src": "/pwa/img/pwaMaskable_512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -37,10 +37,10 @@
   "shortcuts": [
     {
       "name": "read the story🍃🪷🌸",
-      "url": "./story?isWebApp=1",
+      "url": "/pwa/story?isWebApp=1",
       "icons": [
         {
-          "src": "./img/maria_0.png",
+          "src": "/pwa/img/maria_0.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "\"the story of the First Maria, is also the story of what it has become.\""
@@ -49,10 +49,10 @@
     },
     {
       "name": "the First Maria🍃",
-      "url": "./?isWebApp=1&mariaDef=1",
+      "url": "/pwa?isWebApp=1&mariaDef=1",
       "icons": [
         {
-          "src": "./img/maria_1.png",
+          "src": "/pwa/img/maria_1.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "visit the website of the First Maria🍃"
@@ -61,10 +61,10 @@
     },
     {
       "name": "the Second Maria🪷",
-      "url": "./?isWebApp=1&mariaDef=2",
+      "url": "/pwa?isWebApp=1&mariaDef=2",
       "icons": [
         {
-          "src": "./img/maria_2.png",
+          "src": "/pwa/img/maria_2.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "visit the website of the Second Maria🪷"
@@ -73,10 +73,10 @@
     },
     {
       "name": "the Third Maria🌸",
-      "url": "./?isWebApp=1&mariaDef=3",
+      "url": "/pwa?isWebApp=1&mariaDef=3",
       "icons": [
         {
-          "src": "./img/maria_3.png",
+          "src": "/pwa/img/maria_3.png",
           "type": "image/png",
           "sizes": "192x192",
           "description": "visit the website of the Third Maria🌸"
@@ -85,10 +85,10 @@
     }
   ],
   "short_name": "V三人のマリア",
-  "start_url": "./index.html?isWebApp=1",
+  "start_url": "/pwa?isWebApp=1",
   "theme_color": "#3d374c",
-  "scope": "./",
-  "id": "./?isWebApp=1",
+  "scope": "/pwa",
+  "id": "/pwa?isWebApp=1",
   "prefer_related_applications": false,
   "edge_side_panel": {
     "preferred_width": 475
@@ -103,7 +103,7 @@
   ],
   "screenshots": [
     {
-      "src": "../media/images/20240128_remaster.png",
+      "src": "/media/images/20240128_remaster.png",
       "type": "image/png",
       "sizes": "1920x1080",
       "form_factor": "wide"
