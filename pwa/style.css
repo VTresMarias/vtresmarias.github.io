@@ -1,0 +1,101 @@
+@media screen and (min-width: 768px) {
+  body {
+    font-size: normal;
+  }
+}
+@media screen and (min-width: 1080px) {
+  body {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 2160px) {
+  body {
+    font-size: x-large;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.centerFeed {
+  width: calc(1920px / 3);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 250px 15px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #dcc6bb;
+  }
+  body {
+    color: #3d374c;
+  }
+  button {
+    background-color: #3d374c;
+    color: #dcc6bb;
+    border: none;
+    border-radius: 7.5px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    padding: 7.5px 20px;
+    box-shadow: #3d374c 0px 3px 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #332e3f;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #3d374c;
+  }
+  body {
+    color: #dcc6bb;
+  }
+  button {
+    background-color: #dcc6bb;
+    color: #3d374c;
+    border: none;
+    border-radius: 7.5px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    padding: 7.5px 20px;
+    box-shadow: #dcc6bb 0px 3px 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #c0ada4;
+  }
+}

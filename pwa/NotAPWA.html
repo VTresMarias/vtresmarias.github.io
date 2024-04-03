@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="VTresMarias">
+    <title>Not a PWA</title>
+    <link rel="icon" href="../media/favicon/favicon_light.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="../media/favicon/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="../media/favicon/favicon_light.png" type="image/x-icon">
+    <link rel="manifest" href="pwa.json"> <!-- PWA -->
+    <meta name="theme-color" content="#3d374c">
+    <meta name="msapplication-TileColor" content="#3d374c">
+    <meta name="msapplication-navbutton-color" content="#3d374c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
+    <!-- custom css -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      .pwaLogo {
+        width: 480px;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <!-- custom scripts -->
+    <!-- <script src="scripts.js" type="text/javascript"></script> inbuilt -->
+    <script src="installpwa.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+      }
+    </script>
+    <script type="text/javascript">
+      // attach in-html custom javascript args here
+    </script>
+  </head>
+  <body onload="launch()">
+    <div class="centerFeed">
+      <div style="padding: 0 25px;">
+        <picture class="pwaLogo">
+          <source srcset="img/logo_dark.svg" media="(prefers-color-scheme: dark)">
+          <img src="img/logo_light.svg" alt="">
+        </picture>
+      </div>
+      <br><br>
+      <h1>you are not in a PWA.</h1>
+      <p>
+        if you see this page, that means you either have no PWA installed, or you
+        have accidentally accessed pages specifically for a PWA. but don't worry
+        -- while we recommend installing our provided PWA for an optimized
+        experience, you can also access the page via the "continue anyway" button.
+      </p>
+      <p>
+        do note, however, that the elements displayed in this PWA appear different
+        from the original site.
+      </p>
+      <br>
+      <button onclick="window.open('./?isWebApp=1', '_self')">continue anyway</button>
+      <div id="instPWA" hidden>
+        <br><br>
+        <button>install PWA</button>
+        <br><br>
+        <p>
+          once you install the PWA, you can open the app directly from the Apps menu
+          or home screen, or you can wait until it launches automatically.
+        </p>
+      </div>
+      <br><br><br><br>
+      <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps')">learn more about Progressive Web Apps</button>
+    </div>
+  </body>
+</html>

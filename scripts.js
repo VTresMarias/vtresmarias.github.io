@@ -1,9 +1,14 @@
+// splash screen
+
 function splash() {
   setTimeout(function() {
     document.getElementById("removeLoad").remove();
     document.getElementById("removeLoadBlock").style.height = "0";
   }, 1000);
 }
+
+
+// navbar
 
 function navBarOpen() {
   document.getElementById("panelBlock").style.display = "block";
@@ -25,6 +30,7 @@ function navBarClose() {
     document.getElementById("panelBlock").style.display = "none";
   }, 1250);
 }
+
 
 // tarot readings
 
@@ -82,7 +88,8 @@ function tarotPanelClose() {
     document.getElementById("panelBlock").style.display = "none";
   }, 1250);
 }
-// workaround: workaround: https://stackoverflow.com/questions/45382875/fade-in-and-out-on-button-click
+// workaround: https://stackoverflow.com/questions/45382875/fade-in-and-out-on-button-click 
+
 
 // MIT
 
