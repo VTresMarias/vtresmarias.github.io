@@ -105,10 +105,40 @@
   ],
   "screenshots": [
     {
-      "src": "/media/images/20240128_remaster.png",
+      "src": "/pwa/img/screenshot_landscape_1.png",
       "type": "image/png",
       "sizes": "1920x1080",
       "form_factor": "wide"
+    },
+    {
+      "src": "/pwa/img/screenshot_landscape_2.png",
+      "type": "image/png",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/pwa/img/screenshot_landscape_3.png",
+      "type": "image/png",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/pwa/img/screenshot_portrait_1.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/pwa/img/screenshot_portrait_2.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/pwa/img/screenshot_portrait_3.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
     }
   ],
   "handle-links": "preferred"
