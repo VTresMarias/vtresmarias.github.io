@@ -61,6 +61,24 @@ header, footer {
   text-align: center;
 }
 
+.mariaBtn {
+  cursor: pointer;
+  display: inline-block;
+}
+
+#AreYouSure {
+  filter: blur(0) !important;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
 /* colormode-wide */
 @media (prefers-color-scheme: light) {
   html {
@@ -96,6 +114,12 @@ header, footer {
     color: #4f4863;
     text-decoration: none;
   }
+  .mariaBtn {
+    filter: drop-shadow(0px 3px 6px #3d374c);
+  }
+  #AreYouSure {
+    background-color: #dcc6bbd0;
+  }
 }
 @media (prefers-color-scheme: dark) {
   html {
@@ -130,5 +154,11 @@ header, footer {
   a:active {
     color: #f0d8cc;
     text-decoration: none;
+  }
+  .mariaBtn {
+    filter: drop-shadow(0px 3px 6px #dcc6bb);
+  }
+  #AreYouSure {
+    background-color: #3d374cd0;
   }
 }

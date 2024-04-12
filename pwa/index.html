@@ -31,15 +31,50 @@
       .roundedPic {
         border-radius: 10px;
       }
+      .centerPrompt {
+        width: 750px;
+        max-width: 100%;
+        padding: 15px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
     </style>
     <!-- custom scripts -->
     <script src="scripts.js" type="text/javascript"></script> <!-- inbuilt -->
     <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+        isWebApp();
+        defineMaria();
+      }
+    </script>
+    <script type="text/javascript">
       // attach in-html custom javascript args here
     </script>
   </head>
-  <body>
-    <div class="centerFeed">
+  <body onload="launch()">
+    <div id="AreYouSure">
+      <div class="centerPrompt">
+        <h1>are you sure?</h1>
+        <p>
+          you're about to access the <span id="mariaDeleg">undefined</span>'s website,
+          which will be opened in a new window/tab.
+        </p>
+        <p>
+          don't worry -- this page won't be going anywhere and you can dismiss it
+          after you're done.
+        </p>
+        <br>
+        <button id="mariaCont">continue anyway</button>
+        <br><br>
+        <button onclick="backToPage()">back to page</button>
+      </div>
+    </div>
+    <div id="blurStuff" class="centerFeed">
       <header style="text-transform: uppercase;">
         <b>home</b>&ensp;
         <a href="story?isWebApp=1">story</a>&ensp;
@@ -60,10 +95,17 @@
         <br><br>
         <p>text</p>
         <br><br>
+        <p>visit the Marias' websites by clicking their pictures below:</p>
         <div>
-          <img style="width: 62.5px; display: inline-block;" src="media/maria_1_icon.png" alt="">
-          <img style="width: 62.5px; display: inline-block;" src="media/maria_2_icon.png" alt="">
-          <img style="width: 62.5px; display: inline-block;" src="media/maria_3_icon.png" alt="">
+          <a class="mariaBtn" onclick="window.open('./?isWebApp=1&mariaDef=1', '_self')">
+            <img style="width: 62.5px;" src="media/maria_1_icon.png" alt="">
+          </a>
+          <a class="mariaBtn" onclick="window.open('./?isWebApp=1&mariaDef=2', '_self')">
+            <img style="width: 62.5px;" src="media/maria_2_icon.png" alt="">
+          </a>
+          <a class="mariaBtn" onclick="window.open('./?isWebApp=1&mariaDef=3', '_self')">
+            <img style="width: 62.5px;" src="media/maria_3_icon.png" alt="">
+          </a>
         </div>
       </div>
       <footer>

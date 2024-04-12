@@ -24,10 +24,16 @@
     <!-- custom scripts -->
     <script src="scripts.js" type="text/javascript"></script> <!-- inbuilt -->
     <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+        isWebApp();
+      }
+    </script>
+    <script type="text/javascript">
       // attach in-html custom javascript args here
     </script>
   </head>
-  <body>
+  <body onload="launch()">
     <div class="centerFeed">
       <header style="text-transform: uppercase;">
         <a href="./?isWebApp=1">home</a>&ensp;
