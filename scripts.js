@@ -17,7 +17,7 @@ function navBarOpen() {
     document.getElementById("panelBlock").classList.remove("fInBlock");
     document.getElementById("panelBlock").style.opacity = "1";
   }, 750);
-  document.getElementById("navPanel").style.height = "100%";
+  document.getElementById("navPanel").style.height = "100vh";
   document.getElementById("navPanel").style.padding = "25px";
 }
 function navBarClose() {
@@ -75,7 +75,7 @@ function tarotPanelOpen(description) {
     document.getElementById("panelBlock").style.opacity = "1";
   }, 750);
   document.getElementById("tarotInfo").innerHTML = description;
-  document.getElementById("tarotPanel").style.height = "75%";
+  document.getElementById("tarotPanel").style.height = "75vh";
   document.getElementById("tarotPanel").style.padding = "25px";
 }
 function tarotPanelClose() {

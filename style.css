@@ -288,7 +288,6 @@ hr {
   padding: 0 12.5px;
 }
 
-
 #tarotPanel {
   position: absolute;
   bottom: 0;
@@ -359,6 +358,10 @@ hr {
   .mariaPadding {
     padding-bottom: 75px;
   }
+}
+
+#navClosed, .navOpen {
+  pointer-events: all !important;
 }
 
 
