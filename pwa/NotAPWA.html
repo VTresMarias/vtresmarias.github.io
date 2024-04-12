@@ -24,6 +24,9 @@
         width: 480px;
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 25px 0;
       }
     </style>
     <!-- custom scripts -->
@@ -39,13 +42,13 @@
   </head>
   <body onload="launch()">
     <div class="centerFeed">
-      <div style="padding: 0 25px;">
-        <picture class="pwaLogo">
+      <div class="pwaLogo">
+        <picture>
           <source srcset="media/logo_dark.svg" media="(prefers-color-scheme: dark)">
           <img src="media/logo_light.svg" alt="">
         </picture>
       </div>
-      <br><br>
+      <br>
       <h1>you are not in a PWA.</h1>
       <p>
         if you see this page, that means you either have no PWA installed, or you
