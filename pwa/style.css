@@ -80,6 +80,16 @@ header, footer {
   display: none;
 }
 
+.ltrBox {
+  text-align: center;
+}
+.noteTxt {
+  text-align: left;
+}
+.noteClosing {
+  text-align: right;
+}
+
 /* colormode-wide */
 @media (prefers-color-scheme: light) {
   html {
