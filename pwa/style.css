@@ -62,6 +62,17 @@ header, footer {
   text-align: center;
 }
 
+button {
+  border: none;
+  border-radius: 7.5px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  margin: 5px;
+  padding: 7.5px 20px;
+  cursor: pointer;
+}
+
 .mariaBtn {
   cursor: pointer;
   display: inline-block;
@@ -90,6 +101,15 @@ header, footer {
   text-align: right;
 }
 
+.pwaLogo {
+  width: 480px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
 /* colormode-wide */
 @media (prefers-color-scheme: light) {
   html {
@@ -101,14 +121,7 @@ header, footer {
   button {
     background-color: #3d374c;
     color: #dcc6bb;
-    border: none;
-    border-radius: 7.5px;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: 600;
-    padding: 7.5px 20px;
     box-shadow: #3d374c 0px 3px 6px;
-    cursor: pointer;
   }
   button:hover {
     background-color: #332e3f;
@@ -142,14 +155,7 @@ header, footer {
   button {
     background-color: #dcc6bb;
     color: #3d374c;
-    border: none;
-    border-radius: 7.5px;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: 600;
-    padding: 7.5px 20px;
     box-shadow: #dcc6bb 0px 3px 6px;
-    cursor: pointer;
   }
   button:hover {
     background-color: #c0ada4;
