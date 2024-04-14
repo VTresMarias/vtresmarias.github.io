@@ -18,6 +18,10 @@
       #mainPage {
         background-image: url(../media/images/backgrounds/vtm_3.png);
       }
+      .goHome {
+        pointer-events: all;
+        cursor: pointer;
+      }
     </style>
     <!-- custom scripts -->
     <script src="https://vtresmarias.github.io/scripts.js" type="text/javascript"></script> <!-- inbuilt -->
@@ -40,7 +44,7 @@
         <header class="vtmHead">
           <div><img class="vtmLogo" src="https://vtresmarias.github.io/media/svg/vtm_logo_header.svg" alt=""></div>
           <div style="width: 100px; height: 100px;"></div>
-          <div><img src="https://vtresmarias.github.io/media/svg/icons/404_home.svg" onclick="window.open('/')" alt="goto_home"></div>
+          <div><img class="goHome" src="https://vtresmarias.github.io/media/svg/icons/404_home.svg" onclick="window.open('https://vtresmarias.github.io', '_self')" alt="goto_home"></div>
         </header>
         <div class="intro" style="background-image: unset; padding: 375px 25px;">
           <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center;">
