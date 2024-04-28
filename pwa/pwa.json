@@ -93,7 +93,7 @@
   "id": "/pwa?isWebApp=1",
   "prefer_related_applications": false,
   "edge_side_panel": {
-    "preferred_width": 625
+    "preferred_width": 475
   },
   "dir": "auto",
   "orientation": "natural",
