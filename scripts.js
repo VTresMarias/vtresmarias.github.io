@@ -96,7 +96,7 @@ function tarotPanelClose() {
 function MIT() {
   alert(
     "MIT License\n\n" +
-    "Copyright (c) 2022 thebelovedmoon and associates (tbmassoc)\n\n" +
+    "Copyright (c) 2022 「VTresMarias - V三人のマリア - 」\n\n" +
     "Permission is hereby granted, free of charge, to any person obtaining a copy " +
     "of this software and associated documentation files (the \"Software\"), to deal " +
     "in the Software without restriction, including without limitation the rights " +
@@ -118,7 +118,7 @@ function MIT() {
 var MIT = `
   <div style="text-align: left;">
     <p>MIT License</p>
-    <p>Copyright (c) 2022 thebelovedmoon and associates (tbmassoc)</p>
+    <p>Copyright (c) 2022 「VTresMarias - V三人のマリア - 」</p>
     <p>
       Permission is hereby granted, free of charge, to any person obtaining a copy
       of this software and associated documentation files (the "Software"), to deal
