@@ -62,9 +62,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2px;
+  text-shadow: 2px 4px 16px #3d374c80;
 }
 h1 {
   font-style: italic;
+  text-align: center;
 }
 
 img, video {
@@ -209,7 +211,6 @@ hr {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #3d374c;
-  text-shadow: 2px 4px 16px #3d374c80;
 }
 .intro {
   padding: 250px 25px;
