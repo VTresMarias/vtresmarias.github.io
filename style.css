@@ -5,7 +5,7 @@
 
 /* extra font implementations */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 
 
@@ -34,7 +34,7 @@ html {
   background-attachment: fixed;
 }
 body {
-  font-family: "Noto Serif Display", "Noto Serif JP", "Segoe UI Emoji", "Noto Color Emoji", serif;
+  font-family: "Noto Serif Display", "Kaisei Opti", "Segoe UI Emoji", "Noto Color Emoji", serif;
   letter-spacing: -1px;
   font-weight: 500;
   color: #dcc6bb;
