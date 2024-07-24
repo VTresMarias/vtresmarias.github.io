@@ -1,12 +1,12 @@
 /* official vtm gfont implementation */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap");
 
 
 /* extra font implementations */
 
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
 
 
 /* main elements */
@@ -27,7 +27,7 @@ html, body {
 
 html {
   background-color: #3d374c;
-  background-image: url(media/images/backgrounds/vtm_3.png);
+  background-image: url("media/images/backgrounds/vtm_3.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@ img, video {
 footer {
   padding: 25px 75px;
   padding-bottom: 7.5px !important;
-  background-image: url(media/images/backgrounds/vtm_defBG.jpg);
+  background-image: url("media/images/backgrounds/vtm_defBG.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@ hr {
   height: 100vh;
   position: absolute;
   background-color: #3d374c;
-  background-image: url(media/images/backgrounds/vtm_1.jpg);
+  background-image: url("media/images/backgrounds/vtm_1.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -205,7 +205,8 @@ hr {
 */
 
 #mainPage {
-  background-image: url(media/images/20240128_remaster.png);
+  /* background-image: url("media/images/20240128_remaster.png"); */
+  background-image: url("https://scontent.fmnl33-2.fna.fbcdn.net/v/t39.30808-6/452110583_497833499280866_5017072026191854266_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH6_pIq3KhtjXzonRJnWDvaIpmlWC4ZDjkimaVYLhkOObNoEIvE1virw46xzsnEEFz4nuO_gtvWL2JumW9SsBGf&_nc_ohc=vF9X--Agw2IQ7kNvgHfh6jH&_nc_zt=23&_nc_ht=scontent.fmnl33-2.fna&oh=00_AYBGE9czKR-dwycWAQmZwa-yTmyLHyVCGYIfebvQwCoYmQ&oe=66A6826D");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -214,7 +215,7 @@ hr {
 }
 .intro {
   padding: 250px 25px;
-  background-image: url(media/images/20240128_remaster_blurred.png);
+  background-image: url("media/images/20240128_remaster_blurred.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
