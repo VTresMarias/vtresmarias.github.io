@@ -27,7 +27,7 @@
 
 .titleHead {
   width: 100vw;
-  padding: 250px 15px;
+  padding: calc(250px + 30px) 15px 250px 15px;
   background-image: url("/assets/images/backgrounds/vtm_3.png");
   background-size: cover;
   background-position: center center;
