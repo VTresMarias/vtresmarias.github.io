@@ -3,482 +3,357 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="VTresMarias">
+    <meta name="author" content="「VTresMarias - V三人のマリア - 」">
     <title>Chapter 5: Green</title>
-    <link rel="icon" href="../media/favicon/favicon_light.png" type="image/x-icon">
-    <link rel="icon" href="../media/favicon/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/assets/web/favicon_light.png" type="image/x-icon">
+    <link rel="icon" href="/assets/web/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="/assets/web/apple-touch-icon.png" type="image/x-icon">
     <meta name="theme-color" content="#3d374c">
     <meta name="msapplication-TileColor" content="#3d374c">
     <meta name="msapplication-navbutton-color" content="#3d374c">
     <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
-    <!-- custom css -->
-    <link href="../style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
-    <style type="text/css">
-      /* attach in-html custom css args here */
-      #navPanel {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 0;
-        padding: 0;
-        padding-left: 25px !important;
-        padding-right: 25px !important;
-        background-color: #3d374c;
-        z-index: 5;
-        -webkit-transition: 1.25s;
-        -moz-transition: 1.25s;
-        -o-transition: 1.25s;
-        transition: 1.25s;
-        filter: drop-shadow(2px 4px 16px #dcc6bb80);
-        text-shadow: 2px 4px 16px #dcc6bb80;
-        display: block;
-        overflow: auto;
-      }
-    </style>
-    <!-- custom scripts -->
-    <script src="../scripts.js" type="text/javascript"></script> <!-- inbuilt -->
-    <link href="storyStyle.css" rel="stylesheet" type="text/css" media="all">
-    <script type="text/javascript">
-      function launch() {
-        // launch javascript args here
-        splash();
-      }
-    </script>
-    <script type="text/javascript">
-      // attach in-html custom javascript args here
-      function navBarOpen1() {
-        document.getElementById("panelBlock").style.display = "block";
-        document.getElementById("panelBlock").classList.add("fInBlock");
-        setTimeout(() => {
-          document.getElementById("panelBlock").classList.remove("fInBlock");
-          document.getElementById("panelBlock").style.opacity = "1";
-        }, 750);
-        document.getElementById("navPanel").style.height = "100%";
-        document.getElementById("navPanel").style.padding = "125px";
-      }
-      function navBarClose1() {
-        document.getElementById("navPanel").style.padding = "0";
-        document.getElementById("navPanel").style.height = "0";
-        document.getElementById("panelBlock").classList.add("fOutBlock");
-        setTimeout(() => {
-          document.getElementById("panelBlock").classList.remove("fOutBlock");
-          document.getElementById("panelBlock").style.opacity = "0";
-          document.getElementById("panelBlock").style.display = "none";
-          document.getElementById("navPanel").scrollTop = 0;
-        }, 1250);
-      }
-    </script>
   </head>
-  <body onload="launch()">
-    <div id="removeLoadBlock" class="loading">
-      <img id="removeLoad" src="../media/images/loading.png" alt="">
-    </div>
-    <div id="panelBlock"></div> <!-- panel block -->
-    <div id="navPanel"> <!-- navbar panel -->
-      <div style="text-align: center; width: 750px; max-width: 100%; margin: 0 auto;">
-        <h2>The Story of the First Maria<br>～最初のマリアの物語～</h2>
-        <header>
-          <div style="line-height: 62.5%;">
-            <br>
-            <p><a rel="noopener noreferrer" href="chapter1">Chapter 1: Arisen</a></p>
-            <p><a rel="noopener noreferrer" href="chapter2">Chapter 2: Exit</a></p>
-            <p><a rel="noopener noreferrer" href="chapter3">Chapter 3: Fates</a></p>
-            <p><a rel="noopener noreferrer" href="chapter4">Chapter 4: Lotus</a></p>
-            <p><b>Chapter 5: Green</b></p>
-            <p><a rel="noopener noreferrer" href="chapter6">Chapter 6: Paths</a></p>
-            <p><a rel="noopener noreferrer" href="chapter7">Chapter 7: Luna</a></p>
-            <p><a rel="noopener noreferrer" href="chapter8">Chapter 8: Royalty</a></p>
-            <p><a rel="noopener noreferrer" href="chapter9">Chapter 9: Memories</a></p>
-            <p><a rel="noopener noreferrer" href="chapter10">Chapter 10: Favor</a></p>
-            <p><a rel="noopener noreferrer" href="chapter11">Chapter 11: Dress</a></p>
-            <p><a rel="noopener noreferrer" href="chapter12">Chapter 12: Coronation</a></p>
-            <p><a rel="noopener noreferrer" href="chapter13">Chapter 13: Nickname</a></p>
-            <p><a rel="noopener noreferrer" href="chapter14">Chapter 14: Overseer</a></p>
-            <p><a rel="noopener noreferrer" href="chapter15">Chapter 15: Suzu</a></p>
-            <p><a rel="noopener noreferrer" href="chapter16">Chapter 16: Nurse</a></p>
-            <p><a rel="noopener noreferrer" href="chapter17">Chapter 17: Leidram</a></p>
-            <p><a rel="noopener noreferrer" href="chapter18">Chapter 18: Crown</a></p>
-            <p><a rel="noopener noreferrer" href="chapter19">Chapter 19: Marias</a></p>
-            <p><a rel="noopener noreferrer" href="chapter20">Chapter 20: Beyond</a></p>
-          </div>
-        </header>
-        <br><br>
-        <img id="navClosed" src="../media/svg/icons/menu_close.svg" onclick="navBarClose1()" alt="menu_close">
-      </div>
-    </div>
-    <div id="mainPage" style="background-image: url(../media/images/vtm_story_blurred.png);">
-      <div style="box-shadow: 2px 4px 100px 16px #3d374c80;">
-        <div class="redesignNotice">
-          <p>
-            the website will undergo renovation in order to adhere to the updated design
-            language!! you can expect the changes to reflect on this website on the Second
-            Anniversary of the Marias -- 27 Dec 2024.
-          </p>
-        </div>
-        <header class="vtmHead">
-          <div><img class="vtmLogo" src="../media/images/firstMaria_story.png" alt=""></div>
-          <div style="width: 100px; height: 100px;"></div>
-          <div><img id="navClosed" src="../media/svg/icons/menu_open.svg" onclick="navBarOpen1()" alt="menu_open"></div>
-        </header>
-        <div class="intro" style="background-image: unset;">
-          <div style="width: 625px; max-width: 100%; margin: 0 auto; text-align: center;">
-            <h2>Chapter 5: Green</h2>
-            <br>
-            <div style="text-align: left;">
-              <p>
-                “Have you decided on what color to choose, Agatha?” She asked. What she saw in
-                my hand is a color that has a distinction similar to hers.
-              </p>
-              <p>
-                “It’s this one that brought me back to you again,” I smile. “So, I wanted this
-                as a new beginning.”
-              </p>
-              <p>
-                Aura nods in agreement. “The case has been settled, then. Do you need anything
-                else, like, changing of clothes or whatever?”
-              </p>
-              <p>
-                I begin to think about it. I like the dress that she gave to me, but I’m still
-                quite fond of the dress I usually wore, so…
-              </p>
-              <p>“Cosmetics will also apply, but the clothing doesn&#39;t.”</p>
-              <p>
-                “You mean, you’re still going to wear the dresses that you have in the
-                wardrobe?”
-              </p>
-              <p>
-                “I mean, there has to be a specialty in these dresses that I usually wear,
-                so…”
-              </p>
-              <p>She nods. “Okay, if that’s how it will be done.”</p>
-              <p>
-                Taking the box away from my hand, she instructs, “Please head over to the room
-                just over there. I’ll be with you in a bit.”
-              </p>
-              <p>
-                I nod, heading to the room as instructed; feeling a little uncertainty about
-                what will happen afterwards.
-              </p>
-              <p>…</p>
-              <p>
-                “I’m coming in,” she said, some materials in her hand. “Are the preparations
-                ready on your end?”
-              </p>
-              <p>I nod.</p>
-              <p>
-                “Then… without further ado, let’s begin. Close your eyes, and feel the energy
-                from within.”
-              </p>
-              <p>
-                I then closed my eyes as I was instructed to, letting her feel my hair. The
-                pristine, purple hair that I always had for many years will be given a new
-                color to celebrate a new milestone in life. The uncertainties that were
-                supposed to hinder my thoughts were beginning to weaken as I was being
-                enveloped by her presence.
-              </p>
-              <p>
-                All the moment, I can hear her chanting a verse. “I feel like I heard it
-                before,” I thought.
-              </p>
-              <p>
-                In a few minutes, Aura begins brushing my hair with her own hands. I wonder
-                what she’s planning to do…
-              </p>
-              <p>
-                “The rebirth is just beginning, Agatha. A new path will open, giving you
-                another chapter to write your own history to.”
-              </p>
-              <p>…</p>
-              <p>“Now, turn around,” she instructed, cosmetics in her hand.</p>
-              <p>
-                I glance in awe as she leans forward, the eyeliners doing their jobs in
-                coloring my eyebrows and eyelashes. She then puts on an extra piece of
-                eyelashes to distinguish my new look. But I noticed that she dips them in some
-                sort of a liquid solution.
-              </p>
-              <p>
-                “I would recommend that you don’t take a bath for at least a week to allow
-                them to permanently attach to your skin and grow naturally,” she advises. “If
-                you need a bath, just tell me.”
-              </p>
-              <p>
-                “Um what?” I ask in a confused state. “So you mean, that liquid you dipped the
-                eyelashes…”
-              </p>
-              <p>
-                “Oh, this?” She shows the container to my direction. “It’s a special formula
-                that allows these eyelashes to ‘naturally’ bond with the human skin, but they
-                need to be left untouched for at least a week once put on the skin for maximum
-                effects.”
-              </p>
-              <p>“That’s… pretty interesting.”</p>
-              <p>
-                After she’s done with the eyelashes, she picks up lipstick from her tray.
-                “Stay put, this’ll take a while.”
-              </p>
-              <p>…</p>
-              <p style="font-style: italic">A few moments later…</p>
-              <p>
-                “And it’s done,” Aura declares, fixing my hair. “Let’s get you to a mirror so
-                that you can grace upon your new beauty.”
-              </p>
-              <p>
-                I got off from my chair and faced the mirror. There, I can see the new version
-                of myself in complete awe. Not only did she manage to color my hair nicely,
-                she also modified the colors of my eyes, too?
-              </p>
-              <p>
-                “There’s still some changes that need to be implemented, but we can do that in
-                your room.”
-              </p>
-              <p>I couldn’t speak, my emotions were in complete awe. “Wow…”</p>
-              <p>“I hope you like the new look! It’s just as you requested~”</p>
-              <p>“I… I love this! I don’t know why, but this made me feel very happy.”</p>
-              <p>
-                “I’m glad that you did! I don’t know if it signifies that you and I were
-                alike, but this is a step in the right direction for you.”
-              </p>
-              <p>
-                I nod. “I have decided on this look because… I need to feel connected to you
-                again, being my first ‘true’ friend.”
-              </p>
-              <p>
-                Aura shies away, her cheeks reddening. I can tell she’s embarrassed, so I
-                smiled softly.
-              </p>
-              <p>…</p>
-              <p>
-                From afar, the Grand Lady saw both of us complimenting each other, and sighs
-                in relief. “My precious Bearer, you have chosen a path unlike any other that
-                I’ve seen in your dreams. A path that will put you forward as someone who one
-                has loved so much. May the new path that has opened bear fruit of your
-                continuous labor of love and sympathy.”
-              </p>
-              <p>
-                As she walks away, a portal has appeared before her, and on the other side is
-                a woman who’s not aware of the events that have happened over there. “Um… Miss
-                Grand Lady, what’s going on over there?”
-              </p>
-              <p>
-                The Grand Lady pats her head, saying: “It’s the beginning of a fostered
-                relationship that will prove that every compassion and love knows no
-                boundaries or walks of life. Keep an eye out for it.”
-              </p>
-              <p>
-                The woman was adorned in a black regal dress; with long, black hair that
-                extends far over her waist. She wears a gold, unusual crown that might have
-                resembled something else at one point.
-              </p>
-              <p>
-                The Grand Lady walks forward to the castle, where the guards are monitoring
-                the two. “Gentlemen, someone from the land afar will be visiting us in due
-                course. Let the Oujo-sama know about it.”
-              </p>
-              <p>“At ease.”</p>
-              <p>
-                As the Grand Lady walks inside the castle, she immediately disappears; causing
-                everyone around the vicinity to hearsay about her.
-              </p>
-              <p>
-                “Enough with the rumors,” the woman from earlier -- an Ojou-sama -- steps in.
-                She appears to be back from outside the castle. “I understand that most of you
-                don’t know her, but she meant no harm to this kingdom. Let’s keep doing what
-                we can and not worry about the rest.”
-              </p>
-              <p>“Understood, Oujo-sama,” the servants said in harmony.</p>
-              <p>
-                Few moments went by, and the Ojou-sama was in her room, contemplating certain
-                things. “I wonder if what the Grand Lady’s Oracle is true,” she thought.
-              </p>
-              <p>At the same time, she felt a cold breeze from her windows.</p>
-              <p>“I think I should get some sleep.”</p>
-              <p>…</p>
-              <p style="font-style: italic">Some time later…</p>
-              <p>
-                The Ojou-sama got up from the bed, but it’s not her bed that she slept on.
-                Looking around, this is not supposed to be her own room. From afar, she can
-                see the Grand Lady humming something.
-              </p>
-              <p>
-                “Um, Grand Lady?” She asked as she got out of bed, approaching her direction.
-              </p>
-              <p>The Grand Lady smiles. “Ojou-sama, are you feeling well?”</p>
-              <p>“I am.”</p>
-              <p>
-                “Good,” she nods, picking up a Sakura (Cherry Blossom flower) from the pond.
-                “The trees sure have changed, haven’t they?”
-              </p>
-              <p>She looks up to see the tree. “I think so.”</p>
-              <p>“I mean,” mutters the Grand Lady. “Lotus flowers were blooming before.”</p>
-              <p>“Eh?”</p>
-              <p>
-                The Grand Lady hands her a photo frame, where inside lies a dried Lotus.
-                “Someone came here before you, and with it, a new symbol to be attained.”
-              </p>
-              <p>“Wait, what does that even mean… ?”</p>
-              <p>
-                The Grand Lady then hands over the Sakura flower to her direction. “You are
-                the new person to arrive here, so I’ll give you a flower as a token of
-                appreciation… and as a symbol of your presence.”
-              </p>
-              <p>
-                Despite being confused, she hesitantly takes the flower. It began to
-                illuminate, engulfing her in an innocuous presence.
-              </p>
-              <p>“Wow.”</p>
-              <p>The Grand Lady smiles, looking at her with pure bliss. “How was it?”</p>
-              <p>
-                “I feel… odd, for whatever reason. But other than that, I feel rejuvenated.”
-              </p>
-              <p>
-                “That’s great to hear,” the Grand Lady replies. “Um, if you don’t mind… may I
-                ask for your name?”
-              </p>
-              <p>“Okay,” she shies away for a bit. “Um, my name is Hina. Hina Oujo.”</p>
-              <p>“So that’s where the nickname ‘Oujo-sama’ comes from.”</p>
-              <p>Hina giggles. “Yeah. Took me a while to get used to it, though.”</p>
-              <p>
-                “Not many people can recognize a royal-like nickname like that, I presume.”
-              </p>
-              <p>
-                Hina and the Grand Lady laugh softly, as their relationships slowly begin to
-                deepen. After a while, the Grand Lady gave her some food.
-              </p>
-              <p>“Here’s some that I’ve prepared. I hope you like them.”</p>
-              <p>“Yeah.”</p>
-              <p>…</p>
-              <p>
-                At the end of the corridor, the portal began to open, leading Hina back to her
-                homeland. “I need to go -- I have to return to my royal duties.”
-              </p>
-              <p>
-                “No worries. Call me anytime,” the Grand Lady nods. “And, I assume you already
-                got the memo?”
-              </p>
-              <p>“Yeah. I wonder who that was, though.”</p>
-              <p>“You’ll learn soon enough.”</p>
-              <p>Hina nods, waving goodbye as she steps to the other side of the portal.</p>
-              <p>
-                The Grand Lady sighs deeply, contemplating what has happened. “My dearest
-                Bearer, the Third Maria is waiting for your call.”
-              </p>
-              <p>…</p>
-              <p style="font-style: italic">A week later…</p>
-              <p>
-                Back at the Fun House, Aura was having some final touches that will reflect my
-                new appearance. “Is this good?” She asked.
-              </p>
-              <p>
-                “More than enough,” I reply, looking at her. She seems to be comfortable
-                enough to stick with me at all times, it seems.
-              </p>
-              <p>
-                “Somehow I still need to get used to this new look,” I add, implying the new
-                look I was bestowed with a week ago.
-              </p>
-              <p>Aura reassures. “It’s gonna be fine.”</p>
-              <p>“I hope so.”</p>
-              <p>
-                And with a full week ended, I’m now back to my usual movements. But my mind
-                has been filled with lots of questions why this had happened in the first
-                place. Why did the so-called ‘Grand Lady’ offer me missions like this, just to
-                aim for my achievement of being close to someone? Why was I put in places like
-                this? And what good would it give me in the long run…
-              </p>
-              <p>
-                … when all I truly want is to leave it all behind and start fresh as a new
-                being. Being able to be revived by a goddess was an experience of a lifetime,
-                but…
-              </p>
-              <p>
-                “... is there a problem?” Aura asks, a worried look on her face. “Is it
-                something to do with the Grand Lady?”
-              </p>
-              <p>
-                Wait -- how can she read what I’m thinking? That thought made me back off for
-                a bit.
-              </p>
-              <p>
-                “Um… I’m sorry, it’s just that you’ve been thinking a lot about what happened
-                before we met for the first time, is all.”
-              </p>
-              <p>
-                “It’s not your fault,” I smile. “Although I’m a bit confused as to why I was
-                let to deal with circumstances just to be with you.”
-              </p>
-              <p>“I can understand that.”</p>
-              <p>
-                “But,” I smile. “The most important thing right now is that I get to be close
-                to you more than ever! Isn’t that great?”
-              </p>
-              <p>“It is!”</p>
-              <p>
-                Aura and I giggle for a few moments, which in turn lead to telling stories
-                about various things, and even sleeping close to each other on a single bed.
-              </p>
-              <p>…</p>
-              <p style="font-style: italic">The following morning…</p>
-              <p>
-                “I hope to be more powerful enough to follow you out of here, but
-                responsibilities are calling me unfortunately,” Aura said, saddened by my
-                sudden decision to leave.
-              </p>
-              <p>
-                “I know it’ll be hard, but don’t worry about me,” I pat her on the head.
-                “Because I’ll always have you.”
-              </p>
-              <p>Aura blushes, shying away in embarrassment.</p>
-              <p>“So, what will you do now? Are you meeting the Grand Lady?”</p>
-              <p>
-                “Yeah,” I nod. “She wants me to meet with someone from a faraway place, it
-                seems.”
-              </p>
-              <p>
-                Immediately, Aura firmly holds my hand. “Hey, I don’t know if you’ve realized
-                this, but I dreamed about something different last night.”
-              </p>
-              <p>“What is it?”</p>
-              <p>
-                Aura sighs. “It’s that… we’re in a garden; filled with Leaves, Lotuses, and
-                Sakuras… and the other woman was there waiting for us to come by.”
-              </p>
-              <p>“That… woman?”</p>
-              <p>“She was dressed regally, waiting for us under the trees.”</p>
-              <p>“She must be very nice, I presume.”</p>
-              <p>
-                “And that’s not all -- we all heard a voice from the heavens, calling us…
-                Marias?”
-              </p>
-              <p>“Huh?”</p>
-              <p>We both get confused. Marias?</p>
-              <p>
-                “What I mean is, I’m now asking you to prove if what the voice said in my
-                dream is true. Maybe the Grand Lady can give you the answers that we need. And
-                find out who that woman was from under the tree.”
-              </p>
-              <p>“Okay, if you say so.”</p>
-              <p>
-                As I bid goodbye to Aura for one last time, a stream of Lotus flowers were
-                flowing across the pond, colors in vibrant green and purple.
-              </p>
-              <p>
-                Aura sighs as she watches me leave. “Until we meet again, Agatha dearest.”
-              </p>
-            </div>
-            <div style="width: 100%; height: 125px;"></div>
-            <div>
-              <button onclick="window.open('chapter4', '_self')">previous chapter</button>
-              <button onclick="window.open('chapter6', '_self')">next chapter</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div style="line-height: 50%; filter: drop-shadow(2px 4px 16px #3d374c80);">
-           <img class="vtmLogo" style="width: 375px;" src="../media/svg/vtm_typeface_wide.svg" alt="">
-          <p style="font-size: smaller; color: #fff;"><i>est. 27 Dec 2022</i></p>
-        </div>
-      </footer>
-    </div>
+  <body>
+    <h2>Chapter 5: Green</h2>
+    <br>
+    <p>
+      “Have you decided on what color to choose, Agatha?” She asked. What she saw in
+      my hand is a color that has a distinction similar to hers.
+    </p>
+    <p>
+      “It’s this one that brought me back to you again,” I smile. “So, I wanted this
+      as a new beginning.”
+    </p>
+    <p>
+      Aura nods in agreement. “The case has been settled, then. Do you need anything
+      else, like, changing of clothes or whatever?”
+    </p>
+    <p>
+      I begin to think about it. I like the dress that she gave to me, but I’m still
+      quite fond of the dress I usually wore, so…
+    </p>
+    <p>“Cosmetics will also apply, but the clothing doesn&#39;t.”</p>
+    <p>
+      “You mean, you’re still going to wear the dresses that you have in the
+      wardrobe?”
+    </p>
+    <p>
+      “I mean, there has to be a specialty in these dresses that I usually wear,
+      so…”
+    </p>
+    <p>She nods. “Okay, if that’s how it will be done.”</p>
+    <p>
+      Taking the box away from my hand, she instructs, “Please head over to the room
+      just over there. I’ll be with you in a bit.”
+    </p>
+    <p>
+      I nod, heading to the room as instructed; feeling a little uncertainty about
+      what will happen afterwards.
+    </p>
+    <p>…</p>
+    <p>
+      “I’m coming in,” she said, some materials in her hand. “Are the preparations
+      ready on your end?”
+    </p>
+    <p>I nod.</p>
+    <p>
+      “Then… without further ado, let’s begin. Close your eyes, and feel the energy
+      from within.”
+    </p>
+    <p>
+      I then closed my eyes as I was instructed to, letting her feel my hair. The
+      pristine, purple hair that I always had for many years will be given a new
+      color to celebrate a new milestone in life. The uncertainties that were
+      supposed to hinder my thoughts were beginning to weaken as I was being
+      enveloped by her presence.
+    </p>
+    <p>
+      All the moment, I can hear her chanting a verse. “I feel like I heard it
+      before,” I thought.
+    </p>
+    <p>
+      In a few minutes, Aura begins brushing my hair with her own hands. I wonder
+      what she’s planning to do…
+    </p>
+    <p>
+      “The rebirth is just beginning, Agatha. A new path will open, giving you
+      another chapter to write your own history to.”
+    </p>
+    <p>…</p>
+    <p>“Now, turn around,” she instructed, cosmetics in her hand.</p>
+    <p>
+      I glance in awe as she leans forward, the eyeliners doing their jobs in
+      coloring my eyebrows and eyelashes. She then puts on an extra piece of
+      eyelashes to distinguish my new look. But I noticed that she dips them in some
+      sort of a liquid solution.
+    </p>
+    <p>
+      “I would recommend that you don’t take a bath for at least a week to allow
+      them to permanently attach to your skin and grow naturally,” she advises. “If
+      you need a bath, just tell me.”
+    </p>
+    <p>
+      “Um what?” I ask in a confused state. “So you mean, that liquid you dipped the
+      eyelashes…”
+    </p>
+    <p>
+      “Oh, this?” She shows the container to my direction. “It’s a special formula
+      that allows these eyelashes to ‘naturally’ bond with the human skin, but they
+      need to be left untouched for at least a week once put on the skin for maximum
+      effects.”
+    </p>
+    <p>“That’s… pretty interesting.”</p>
+    <p>
+      After she’s done with the eyelashes, she picks up lipstick from her tray.
+      “Stay put, this’ll take a while.”
+    </p>
+    <p>…</p>
+    <p inter>A few moments later…</p>
+    <p>
+      “And it’s done,” Aura declares, fixing my hair. “Let’s get you to a mirror so
+      that you can grace upon your new beauty.”
+    </p>
+    <p>
+      I got off from my chair and faced the mirror. There, I can see the new version
+      of myself in complete awe. Not only did she manage to color my hair nicely,
+      she also modified the colors of my eyes, too?
+    </p>
+    <p>
+      “There’s still some changes that need to be implemented, but we can do that in
+      your room.”
+    </p>
+    <p>I couldn’t speak, my emotions were in complete awe. “Wow…”</p>
+    <p>“I hope you like the new look! It’s just as you requested~”</p>
+    <p>“I… I love this! I don’t know why, but this made me feel very happy.”</p>
+    <p>
+      “I’m glad that you did! I don’t know if it signifies that you and I were
+      alike, but this is a step in the right direction for you.”
+    </p>
+    <p>
+      I nod. “I have decided on this look because… I need to feel connected to you
+      again, being my first ‘true’ friend.”
+    </p>
+    <p>
+      Aura shies away, her cheeks reddening. I can tell she’s embarrassed, so I
+      smiled softly.
+    </p>
+    <p>…</p>
+    <p>
+      From afar, the Grand Lady saw both of us complimenting each other, and sighs
+      in relief. “My precious Bearer, you have chosen a path unlike any other that
+      I’ve seen in your dreams. A path that will put you forward as someone who one
+      has loved so much. May the new path that has opened bear fruit of your
+      continuous labor of love and sympathy.”
+    </p>
+    <p>
+      As she walks away, a portal has appeared before her, and on the other side is
+      a woman who’s not aware of the events that have happened over there. “Um… Miss
+      Grand Lady, what’s going on over there?”
+    </p>
+    <p>
+      The Grand Lady pats her head, saying: “It’s the beginning of a fostered
+      relationship that will prove that every compassion and love knows no
+      boundaries or walks of life. Keep an eye out for it.”
+    </p>
+    <p>
+      The woman was adorned in a black regal dress; with long, black hair that
+      extends far over her waist. She wears a gold, unusual crown that might have
+      resembled something else at one point.
+    </p>
+    <p>
+      The Grand Lady walks forward to the castle, where the guards are monitoring
+      the two. “Gentlemen, someone from the land afar will be visiting us in due
+      course. Let the Oujo-sama know about it.”
+    </p>
+    <p>“At ease.”</p>
+    <p>
+      As the Grand Lady walks inside the castle, she immediately disappears; causing
+      everyone around the vicinity to hearsay about her.
+    </p>
+    <p>
+      “Enough with the rumors,” the woman from earlier -- an Ojou-sama -- steps in.
+      She appears to be back from outside the castle. “I understand that most of you
+      don’t know her, but she meant no harm to this kingdom. Let’s keep doing what
+      we can and not worry about the rest.”
+    </p>
+    <p>“Understood, Oujo-sama,” the servants said in harmony.</p>
+    <p>
+      Few moments went by, and the Ojou-sama was in her room, contemplating certain
+      things. “I wonder if what the Grand Lady’s Oracle is true,” she thought.
+    </p>
+    <p>At the same time, she felt a cold breeze from her windows.</p>
+    <p>“I think I should get some sleep.”</p>
+    <p>…</p>
+    <p inter>Some time later…</p>
+    <p>
+      The Ojou-sama got up from the bed, but it’s not her bed that she slept on.
+      Looking around, this is not supposed to be her own room. From afar, she can
+      see the Grand Lady humming something.
+    </p>
+    <p>
+      “Um, Grand Lady?” She asked as she got out of bed, approaching her direction.
+    </p>
+    <p>The Grand Lady smiles. “Ojou-sama, are you feeling well?”</p>
+    <p>“I am.”</p>
+    <p>
+      “Good,” she nods, picking up a Sakura (Cherry Blossom flower) from the pond.
+      “The trees sure have changed, haven’t they?”
+    </p>
+    <p>She looks up to see the tree. “I think so.”</p>
+    <p>“I mean,” mutters the Grand Lady. “Lotus flowers were blooming before.”</p>
+    <p>“Eh?”</p>
+    <p>
+      The Grand Lady hands her a photo frame, where inside lies a dried Lotus.
+      “Someone came here before you, and with it, a new symbol to be attained.”
+    </p>
+    <p>“Wait, what does that even mean… ?”</p>
+    <p>
+      The Grand Lady then hands over the Sakura flower to her direction. “You are
+      the new person to arrive here, so I’ll give you a flower as a token of
+      appreciation… and as a symbol of your presence.”
+    </p>
+    <p>
+      Despite being confused, she hesitantly takes the flower. It began to
+      illuminate, engulfing her in an innocuous presence.
+    </p>
+    <p>“Wow.”</p>
+    <p>The Grand Lady smiles, looking at her with pure bliss. “How was it?”</p>
+    <p>
+      “I feel… odd, for whatever reason. But other than that, I feel rejuvenated.”
+    </p>
+    <p>
+      “That’s great to hear,” the Grand Lady replies. “Um, if you don’t mind… may I
+      ask for your name?”
+    </p>
+    <p>“Okay,” she shies away for a bit. “Um, my name is Hina. Hina Oujo.”</p>
+    <p>“So that’s where the nickname ‘Oujo-sama’ comes from.”</p>
+    <p>Hina giggles. “Yeah. Took me a while to get used to it, though.”</p>
+    <p>
+      “Not many people can recognize a royal-like nickname like that, I presume.”
+    </p>
+    <p>
+      Hina and the Grand Lady laugh softly, as their relationships slowly begin to
+      deepen. After a while, the Grand Lady gave her some food.
+    </p>
+    <p>“Here’s some that I’ve prepared. I hope you like them.”</p>
+    <p>“Yeah.”</p>
+    <p>…</p>
+    <p>
+      At the end of the corridor, the portal began to open, leading Hina back to her
+      homeland. “I need to go -- I have to return to my royal duties.”
+    </p>
+    <p>
+      “No worries. Call me anytime,” the Grand Lady nods. “And, I assume you already
+      got the memo?”
+    </p>
+    <p>“Yeah. I wonder who that was, though.”</p>
+    <p>“You’ll learn soon enough.”</p>
+    <p>Hina nods, waving goodbye as she steps to the other side of the portal.</p>
+    <p>
+      The Grand Lady sighs deeply, contemplating what has happened. “My dearest
+      Bearer, the Third Maria is waiting for your call.”
+    </p>
+    <p>…</p>
+    <p inter>A week later…</p>
+    <p>
+      Back at the Fun House, Aura was having some final touches that will reflect my
+      new appearance. “Is this good?” She asked.
+    </p>
+    <p>
+      “More than enough,” I reply, looking at her. She seems to be comfortable
+      enough to stick with me at all times, it seems.
+    </p>
+    <p>
+      “Somehow I still need to get used to this new look,” I add, implying the new
+      look I was bestowed with a week ago.
+    </p>
+    <p>Aura reassures. “It’s gonna be fine.”</p>
+    <p>“I hope so.”</p>
+    <p>
+      And with a full week ended, I’m now back to my usual movements. But my mind
+      has been filled with lots of questions why this had happened in the first
+      place. Why did the so-called ‘Grand Lady’ offer me missions like this, just to
+      aim for my achievement of being close to someone? Why was I put in places like
+      this? And what good would it give me in the long run…
+    </p>
+    <p>
+      … when all I truly want is to leave it all behind and start fresh as a new
+      being. Being able to be revived by a goddess was an experience of a lifetime,
+      but…
+    </p>
+    <p>
+      “… is there a problem?” Aura asks, a worried look on her face. “Is it
+      something to do with the Grand Lady?”
+    </p>
+    <p>
+      Wait -- how can she read what I’m thinking? That thought made me back off for
+      a bit.
+    </p>
+    <p>
+      “Um… I’m sorry, it’s just that you’ve been thinking a lot about what happened
+      before we met for the first time, is all.”
+    </p>
+    <p>
+      “It’s not your fault,” I smile. “Although I’m a bit confused as to why I was
+      let to deal with circumstances just to be with you.”
+    </p>
+    <p>“I can understand that.”</p>
+    <p>
+      “But,” I smile. “The most important thing right now is that I get to be close
+      to you more than ever! Isn’t that great?”
+    </p>
+    <p>“It is!”</p>
+    <p>
+      Aura and I giggle for a few moments, which in turn lead to telling stories
+      about various things, and even sleeping close to each other on a single bed.
+    </p>
+    <p>…</p>
+    <p inter>The following morning…</p>
+    <p>
+      “I hope to be more powerful enough to follow you out of here, but
+      responsibilities are calling me unfortunately,” Aura said, saddened by my
+      sudden decision to leave.
+    </p>
+    <p>
+      “I know it’ll be hard, but don’t worry about me,” I pat her on the head.
+      “Because I’ll always have you.”
+    </p>
+    <p>Aura blushes, shying away in embarrassment.</p>
+    <p>“So, what will you do now? Are you meeting the Grand Lady?”</p>
+    <p>
+      “Yeah,” I nod. “She wants me to meet with someone from a faraway place, it
+      seems.”
+    </p>
+    <p>
+      Immediately, Aura firmly holds my hand. “Hey, I don’t know if you’ve realized
+      this, but I dreamed about something different last night.”
+    </p>
+    <p>“What is it?”</p>
+    <p>
+      Aura sighs. “It’s that… we’re in a garden; filled with Leaves, Lotuses, and
+      Sakuras… and the other woman was there waiting for us to come by.”
+    </p>
+    <p>“That… woman?”</p>
+    <p>“She was dressed regally, waiting for us under the trees.”</p>
+    <p>“She must be very nice, I presume.”</p>
+    <p>
+      “And that’s not all -- we all heard a voice from the heavens, calling us…
+      Marias?”
+    </p>
+    <p>“Huh?”</p>
+    <p>We both get confused. Marias?</p>
+    <p>
+      “What I mean is, I’m now asking you to prove if what the voice said in my
+      dream is true. Maybe the Grand Lady can give you the answers that we need. And
+      find out who that woman was from under the tree.”
+    </p>
+    <p>“Okay, if you say so.”</p>
+    <p>
+      As I bid goodbye to Aura for one last time, a stream of Lotus flowers were
+      flowing across the pond, colors in vibrant green and purple.
+    </p>
+    <p>
+      Aura sighs as she watches me leave. “Until we meet again, Agatha dearest.”
+    </p>
   </body>
 </html>

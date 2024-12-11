@@ -1,0 +1,28 @@
+#cookieConsent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #dcc6bb;
+  width: 37.5rem;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
+  z-index: calc(2022 + 3);
+}
+#cookieConsent > * {
+  margin: 0.5rem 0 0 0;
+}
+#cookieConsent > div {
+  text-align: right;
+}
+#cookieConsent > div > * {
+  margin: 0.5rem 0 0 0;
+}
+#cookieConsent > div > .navBtnInv {
+  margin-left: 0.25rem;
+}
