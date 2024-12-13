@@ -1,0 +1,31 @@
+.titleHead > div > #vtmInput {
+  display: block;
+  margin: 0 auto !important;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  border-color: #3d374c;
+  border-style: none none solid none;
+  border-width: 2.5px;
+  border-radius: 0;
+  background-color: unset;
+}
+.titleHead > div > button {
+  display: block;
+  margin: 0 auto !important;
+}
+
+.frontText > div > * {
+  margin: 0 !important;
+  text-align: center;
+}
+
+#vtmQR {
+  display: block !important;
+  margin: 0 auto !important;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+}

@@ -1,6 +1,6 @@
 function navQuery() {
 
-  vtm = new URLSearchParams(window.location.search).get("vtm");
+  var vtm = new URLSearchParams(window.location.search).get("vtm");
 
   // related answer: https://stackoverflow.com/a/56825511 
   const importCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
