@@ -23,6 +23,7 @@
   margin: 0 auto;
 }
 
+
 /* applies to all pages to avoid cluttering */
 
 .titleHead {
@@ -33,9 +34,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 .titleHead > div {
   width: 750px;
