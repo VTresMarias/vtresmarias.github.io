@@ -1,0 +1,12 @@
+<img src="/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
+<h2>落ち着き ～Stability～</h2>
+<br>
+<p>
+  a moment to reflect on your boundaries, whether they be with friends, family,
+  work etc. check on where you should be saying "no" to realign with yourself
+  and energy.
+</p>
+<br>
+<span>tarot card reader: MystearicaVT</span>
+<br>
+<span class="material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>

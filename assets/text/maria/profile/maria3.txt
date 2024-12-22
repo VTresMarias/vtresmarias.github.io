@@ -1,0 +1,27 @@
+<img src="/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
+<br>
+<h2>Hina Oujo</h2>
+<span>the Third Maria🌸</span>
+<br>
+<p>
+  Hina Oujo is an elegant queen from a faraway land who vows to serve her
+  Chuu-nins well. she has everything under her disposal, but deep inside, she
+  needs someone who will make her feel whole after what seems to be her whole
+  heap of loneliness.
+</p>
+<br>
+<p>
+  behind the character, she's formerly known as Suzu Puyotori and HinaSukii --
+  where the former has renamed to Emii Shion. she's a talented artist who has
+  made waves over X before she debuted 3 Jul 2022. she typically enjoys art and
+  zatsudan, and majorly plays League of Legends and Apex Legends -- among other
+  things.
+</p>
+<br>
+<p>
+  as of 28 Jan 2024, she has decided to put everything behind as her socials are
+  closed -- forever. but her soul will always stay with the Collective for the
+  sake of the future. 💗the Third Maria will always stay with us forever.🌸
+</p>
+<br>
+<span class="material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>

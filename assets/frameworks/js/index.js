@@ -122,3 +122,27 @@ function navBtnHide(lbl) {
     document.getElementById("btn-" + lbl + "-" + format[v]).style.display = "none";
   }
 }
+
+function mariaDesignate(c, m) { // where c = category, m = Maria
+  let d = document.getElementById("dialogBlock");
+  if (c == "profile") {
+    d.style.height = "720px";
+  } else {
+    d.style.height = "revert";
+  }
+  dialogView(c, m);
+  d.showModal();
+}
+function dialogView(f, t) { // where f = folder, t = textfile
+  const ajaxLoad = new XMLHttpRequest();
+  ajaxLoad.onload = function() {
+    document.getElementById("dialogTxt").innerHTML = this.responseText;
+  }
+  ajaxLoad.open("GET", "/assets/text/maria/" + f + "/" + t + ".txt");
+  ajaxLoad.send();
+  return;
+}
+function closeDiag() {
+  document.getElementById("dialogBlock").close();
+  document.getElementById("dialogTxt").innerHTML = null;
+}

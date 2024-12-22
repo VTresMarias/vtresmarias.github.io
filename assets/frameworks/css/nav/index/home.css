@@ -23,6 +23,49 @@
   margin: 0 auto;
 }
 
+.mariaList {
+  width: 1080px;
+  max-width: 100%;
+  padding: 15rem 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+[mariaTable]::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+[mariaTable] > div {
+  float: left;
+  width: 33.33%;
+  max-width: 100%;
+  padding: 1rem;
+}
+[mariaTable] > div > * {
+  display: block;
+  margin: 0;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+[mariaTable] > div > span {
+  font-style: italic;
+}
+[mariaTable] > div > span.material-symbols-rounded {
+  display: inline-block;
+  font-style: initial;
+}
+[mariaTable] > div > img {
+  margin: 0 auto !important;
+  border-radius: 50%;
+  width: 20rem;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 720px) {
+  [mariaTable] > div {
+    width: 100%;
+  }
+}
+
 
 /* applies to all pages to avoid cluttering */
 
@@ -43,4 +86,23 @@
 .titleHead > div > * {
   margin: 0 !important;
   text-align: center;
+}
+
+.feedSelector > div {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 90px 15px;
+}
+.feedSelector > div > div {
+  margin: 1.75rem 0;
+}
+.feedSelector > div > div > * {
+  display: block;
+  margin: 0 0 1.125rem 0;
+  text-align: left;
+}
+.feedSelector > div > div > span {
+  margin: 0;
+  font-style: italic;
 }

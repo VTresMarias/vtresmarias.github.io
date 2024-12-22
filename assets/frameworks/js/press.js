@@ -21,6 +21,9 @@ function loadAjax(r) {
     case "20241227":
       document.title = "VTresMarias debuts its improved look to celebrate its 2nd Anniversary — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
       break;
+    case "20241218":
+      document.title = "our stance with involved persons/organizations moving forward — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
+      break;
     case "20241210":
       document.title = "VTresMarias announces first-ever Fortification of Blessing for Organization \"Samahan ng Puso\" — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
       break;
@@ -38,6 +41,6 @@ function loadAjax(r) {
     document.getElementById("articlTxt").innerHTML = this.responseText;
   }
   ajaxLoad.open("GET", "/assets/text/press/" + r + ".txt");
-  ajaxLoad.send(); 
+  ajaxLoad.send();
 
 }

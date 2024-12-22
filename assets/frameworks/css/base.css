@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   top: 0;
-  z-index: calc(2022 + 5);
+  z-index: calc(2022 + 27);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,8 +103,68 @@ footer {
   width: 100vw;
   padding: 0.75rem;
   font-family: "Inter", "Noto Sans JP", sans-serif;
-  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: right;
   background-color: #3d374c;
   color: #dcc6bb;
   letter-spacing: normal !important;
+}
+footer > * {
+  margin: 0;
+}
+footer > span {
+  display: block;
+}
+footer > span > a:link, footer > span > a:visited {
+  color: #dcc6bb;
+}
+footer > span > a:hover {
+  color: #b4a39a;
+}
+footer > span > a:active {
+  color: #eed6ca;
+}
+span[socialURLs] {
+  margin-right: 0.5rem;
+}
+
+dialog {
+  position: relative;
+  width: 1080px;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #dcc6bb;
+  color: #3d374c;
+  backdrop-filter: blur(15px);
+  box-shadow: 2px 4px 100px 16px #3d374c80;
+}
+dialog:focus {
+  outline: 0;
+}
+dialog::backdrop {
+  backdrop-filter: blur(15px);
+}
+dialog > div > * {
+  display: block;
+  margin: 0;
+  text-align: center;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+dialog > div > span {
+  font-style: italic;
+}
+dialog > div > img {
+  width: 20rem;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto !important;
+  border-radius: 50%;
+}
+dialog > div > span.material-symbols-rounded {
+  display: block;
+  font-style: initial;
 }

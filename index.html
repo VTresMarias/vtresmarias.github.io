@@ -47,11 +47,16 @@
     <div id="loadBlock"> <!-- splash screen -->
       <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
     </div>
+    <!-- DIALOG BLOCK -->
+    <dialog id="dialogBlock">
+      <div id="dialogTxt"></div>
+    </dialog>
+    <!-- DIALOG BLOCK -->
     <div isMobile id="mobileNav"> <!-- mobile header -->
       <span id="btn-home-mobile" class="material-symbols-rounded" title="home" onclick="window.location.replace('/')">home</span>
       <!-- <span id="btn-anniversary-mobile" class="material-symbols-rounded" title="anniversaries of the Marias" onclick="window.location.replace('/?vtm=anniversary')">cake</span> -->
       <span id="btn-story-mobile" class="material-symbols-rounded" title="the story of the First Maria ～最初のマリアの物語～" onclick="window.location.replace('/?vtm=story')">book</span>
-      <span id="btn-event-mobile" class="material-symbols-rounded" title="events" onclick="window.location.replace('/?vtm=event')">event</span>
+      <!-- <span id="btn-event-mobile" class="material-symbols-rounded" title="events" onclick="window.location.replace('/?vtm=event')">event</span> -->
       <span id="btn-letter-mobile" class="material-symbols-rounded" title="letters from the First Maria" onclick="window.location.replace('/?vtm=letter')">mail</span>
       <span id="btn-press-mobile" class="material-symbols-rounded" title="press releases" onclick="window.location.replace('/?vtm=press')">newspaper</span>
       <span id="btn-press-mobile" class="material-symbols-rounded" title="certificate validator" onclick="window.open('/cert')">license</span>
@@ -63,7 +68,7 @@
         <span id="btn-home-desktop" class="material-symbols-rounded" title="home" onclick="window.location.replace('/')">home</span>
         <!-- <span id="btn-anniversary-desktop" class="material-symbols-rounded" title="anniversaries of the Marias" onclick="window.location.replace('/?vtm=anniversary')">cake</span> -->
         <span id="btn-story-desktop" class="material-symbols-rounded" title="the story of the First Maria ～最初のマリアの物語～" onclick="window.location.replace('/?vtm=story')">book</span>
-        <span id="btn-event-desktop" class="material-symbols-rounded" title="events" onclick="window.location.replace('/?vtm=event')">event</span>
+        <!-- <span id="btn-event-desktop" class="material-symbols-rounded" title="events" onclick="window.location.replace('/?vtm=event')">event</span> -->
         <span id="btn-letter-desktop" class="material-symbols-rounded" title="letters from the First Maria" onclick="window.location.replace('/?vtm=letter')">mail</span>
         <span id="btn-press-desktop" class="material-symbols-rounded" title="press releases" onclick="window.location.replace('/?vtm=press')">newspaper</span>
         <span id="btn-press-desktop" class="material-symbols-rounded" title="certificate validator" onclick="window.open('/cert')">license</span>
@@ -105,6 +110,50 @@
             they can.
           </p>
           <button onclick="window.open('https://bit.ly/vTubieVTM')">read more on vTubie</button>
+        </div>
+      </div>
+      <div class="mariaList">
+        <h1>meet the Marias</h1>
+        <div mariaTable>
+          <div>
+            <img src="/assets/images/profile/maria_pfp_1.png" alt="Mother Agatha, the First Maria🍃">
+            <br>
+            <h2>Mother Agatha</h2>
+            <span>the First Maria🍃</span>
+            <br>
+            <h4>我慢 ～Perseverance～</h4>
+            <span>debuted 27 Dec 2023</span>
+            <br>
+            <span class="material-symbols-rounded" title="view profile" onclick="mariaDesignate('profile', 'maria1')">account_circle</span>
+            <span class="material-symbols-rounded" title="read the tarot" onclick="mariaDesignate('tarot', 'maria1')">history_edu</span>
+            <span class="material-symbols-rounded" title="visit website" onclick="window.open('https://thebelovedmoon.github.io')">open_in_new</span>
+          </div>
+          <div>
+            <img src="/assets/images/profile/maria_pfp_2.png" alt="Aura Ostara, the Second Maria🪷">
+            <br>
+            <h2>Aura Ostara</h2>
+            <span>the Second Maria🪷</span>
+            <br>
+            <h4>復活 ～Rebirth～</h4>
+            <span>debuted 30 Jun 2022</span>
+            <br>
+            <span class="material-symbols-rounded" title="view profile" onclick="mariaDesignate('profile', 'maria2')">account_circle</span>
+            <span class="material-symbols-rounded" title="read the tarot" onclick="mariaDesignate('tarot', 'maria2')">history_edu</span>
+            <span class="material-symbols-rounded" title="visit website" onclick="window.open('https://thebelovedmoon.github.io/auraostara')">open_in_new</span>
+          </div>
+          <div>
+            <img src="/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
+            <br>
+            <h2>Hina Oujo</h2>
+            <span>the Third Maria🌸</span>
+            <br>
+            <h4>落ち着き ～Stability～</h4>
+            <span>debuted 3 Jul 2022</span>
+            <br>
+            <span class="material-symbols-rounded" title="view profile" onclick="mariaDesignate('profile', 'maria3')">account_circle</span>
+            <span class="material-symbols-rounded" title="read the tarot" onclick="mariaDesignate('tarot', 'maria3')">history_edu</span>
+            <span class="material-symbols-rounded" title="visit website" onclick="window.open('https://thebelovedmoon.github.io/hinaoujo')">open_in_new</span>
+          </div>
         </div>
       </div>
     </div>
@@ -179,6 +228,23 @@
           <p>her address to her fellow Marias and others</p>
         </div>
       </div>
+      <div class="feedSelector">
+        <div>
+          <h2>2024</h2>
+          <div>
+            <span>28 Jan 2024</span>
+            <h3>💗the Third Maria will always stay with us forever.🌸</h3>
+            <button onclick="window.open('/letter?ref=20240128')">view</button>
+          </div>
+          <br>
+          <h2>2023</h2>
+          <div>
+            <span>31 Dec 2023</span>
+            <h3>Happy 1st Anniversary!!🍃🪷🌸</h3>
+            <button onclick="window.open('/letter?ref=20231231')">view</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="press"> <!-- /vtm=press -->
       <div class="titleHead">
@@ -195,6 +261,11 @@
             <span>27 Dec 2024</span>
             <h3>VTresMarias debuts its improved look to celebrate its 2nd Anniversary</h3>
             <button onclick="window.open('/press?ref=20241227')">view</button>
+          </div>
+          <div>
+            <span>18 Dec 2024</span>
+            <h3>our stance with involved persons/organizations moving forward</h3>
+            <button onclick="window.open('/press?ref=20241218')">view</button>
           </div>
           <div>
             <span>10 Dec 2024</span>
@@ -216,6 +287,10 @@
     </div>
     <footer>
       <span>©2022 「VTresMarias - V三人のマリア - 」</span>
+      <span socialURLs>
+        <a rel="noopener noreferrer" href="mailto:vtresmarias@outlook.jp" target="_blank">email</a>&ensp;&bullet;&ensp;
+        <a rel="noopener noreferrer" href="javascript:alert('coming soon!')" target="_self">X</a>
+      </span>
     </footer>
   </body>
 </html>

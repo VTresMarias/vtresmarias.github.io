@@ -1,0 +1,11 @@
+<img src="/assets/images/profile/maria_pfp_1.png" alt="Mother Agatha, the First Maria🍃">
+<h2>我慢 ～Perseverance～</h2>
+<br>
+<p>
+  a period of transformation. learning from past lives and adapting to this
+  life's experiences. emerge and devote yourself to the change.
+</p>
+<br>
+<span>tarot card reader: MystearicaVT</span>
+<br>
+<span class="material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
