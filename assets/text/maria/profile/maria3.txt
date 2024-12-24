@@ -1,3 +1,5 @@
+<button onclick="closeDiag()"><span class="material-symbols-rounded">close</span></button>
+<br>
 <img src="/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
 <br>
 <h2>Hina Oujo</h2>
@@ -23,5 +25,3 @@
   closed -- forever. but her soul will always stay with the Collective for the
   sake of the future. 💗the Third Maria will always stay with us forever.🌸
 </p>
-<br>
-<span class="material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>

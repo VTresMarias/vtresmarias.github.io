@@ -1,3 +1,4 @@
+<button onclick="closeDiag()"><span class="material-symbols-rounded">close</span></button>
 <img src="/assets/images/profile/maria_pfp_1.png" alt="Mother Agatha, the First Maria🍃">
 <br>
 <h2>Mother Agatha</h2>
@@ -21,5 +22,3 @@
   current ventures (alongside this) include #MamaNyoSquad, ReactSquad, and
   AgaASMR (aka Aga's ASMR Garden).
 </p>
-<br>
-<span class="material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>

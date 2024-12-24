@@ -23,18 +23,19 @@
   margin: 0 auto;
 }
 
-.mariaList {
+.mariaList, .mariaValues[fore], .mariaAffils[fore] {
   width: 1080px;
   max-width: 100%;
   padding: 15rem 1rem;
   text-align: center;
   margin: 0 auto;
 }
-[mariaTable]::after {
+[mariaTable]::after, [mCVTable]::after {
   content: "";
   display: block;
   clear: both;
 }
+
 [mariaTable] > div {
   float: left;
   width: 33.33%;
@@ -64,6 +65,70 @@
   [mariaTable] > div {
     width: 100%;
   }
+}
+
+.mariaValues[back] {
+  background-color: #dcc6bb;
+}
+[mCVTable] > div {
+  float: left;
+  width: 50%;
+  max-width: 100%;
+  padding: 1rem;
+}
+[mCVTable] > div > * {
+  display: block;
+  margin: 0;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+@media screen and (max-width: 720px) {
+  [mCVTable] > div {
+    width: 100%;
+  }
+}
+
+.mariaAffils[back] {
+  background-color: #3d374c;
+  color: #fff;
+}
+.mariaAffils[fore] > * {
+  filter: drop-shadow(2px 4px 16px #dcc6bb80);
+}
+.mariaAffils[fore] > [affilName] {
+  display: inline-block;
+  text-align: center;
+  width: 20rem;
+  max-width: 100%;
+  padding: 0.5rem;
+}
+.mariaAffils[fore] > [affilName] > * {
+  margin: 0;
+}
+.mariaAffils[fore] > [affilName] > img {
+  aspect-ratio: 18 / 9;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.mariaAffils[fore] > [affilName] > span {
+  display: block;
+  font-style: italic;
+}
+.mariaAffils[fore] > [affilName] > span.material-symbols-rounded {
+  display: inline-block;
+  font-style: initial;
+}
+
+
+/* privacy screen */
+
+[privacyPolicy] {
+  width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15rem 1rem;
+}
+[privacyPolicy] > p > a {
+  text-decoration: underline;
 }
 
 
