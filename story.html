@@ -39,6 +39,7 @@
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
+        initRead();
         pickUpDetect();
       }
     </script>
@@ -50,21 +51,12 @@
     <div id="loadBlock"> <!-- splash screen -->
       <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
     </div>
-    <div isMobile id="mobileNav"> <!-- mobile header -->
-      <span id="playMob" class="material-symbols-rounded" title="play the music" onclick="mus('play')">play_arrow</span>
-      <span id="pausMob" class="material-symbols-rounded" title="pause the music" onclick="mus('pause')">pause</span>
-      <span class="material-symbols-rounded" title="close the page" onclick="closeApp()">exit_to_app</span>
-      <span class="material-symbols-rounded" title="close panel" onclick="panelClose()">close</span>
-    </div>
     <header> <!-- desktop header -->
       <img id="vtmLogoHead" src="/assets/web/maria_story_logo.png" alt="the story of the First Maria ～最初のマリアの物語～">
       <div isDesktop class="urlRefs">
         <span id="playDes" class="material-symbols-rounded" title="play the music" onclick="mus('play')">play_arrow</span>
         <span id="pausDes" class="material-symbols-rounded" title="pause the music" onclick="mus('pause')">pause</span>
         <span class="material-symbols-rounded" title="close the page" onclick="closeApp()">exit_to_app</span>
-      </div>
-      <div isMobile class="urlRefs">
-        <span class="material-symbols-rounded" title="Open Panel" onclick="panelOpen()">menu</span>
       </div>
     </header>
     <div id="cookieConsent">
@@ -87,13 +79,13 @@
     <div id="home"> <!-- / -->
       <audio id="storyBGM" src="/assets/audio/Burcu_Gonul_-_Fairy_Song.mp3" loop></audio>
       <div class="storyLayout">
-        <iframe id="storyNav" src="chapter0.html" title="story viewer" onload="storyLoadCSS()"></iframe>
+        <iframe id="storyNav" title="story viewer" onload="storyLoadCSS()"></iframe>
       </div>
       <div class="storyNavBtnUI">
-        <span class="storyNavBtn material-symbols-rounded" title="previous chapter" onclick="nav(-1)">arrow_back</span>
+        <span class="storyNavBtn material-symbols-rounded" title="previous chapter" onclick="navStory('prev')">arrow_back</span>
         <span id="navList" class="storyNavBtn material-symbols-rounded" title="enter a chapter" onclick="navToChapter()">book</span>
         <span id="resumeRead" class="storyNavBtn material-symbols-rounded" title="pick up where you left off" onclick="pickUpWhereYouLeftOff()">history</span>
-        <span class="storyNavBtn material-symbols-rounded" title="next chapter" onclick="nav(1)">arrow_forward</span>
+        <span class="storyNavBtn material-symbols-rounded" title="next chapter" onclick="navStory('next')">arrow_forward</span>
       </div>
     </div>
     <footer>

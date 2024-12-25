@@ -1,5 +1,5 @@
 // global variables
-let num = 0,
+var num = 0,
   closeTries = 0;
 
 // workaround: https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe 
@@ -12,21 +12,22 @@ function storyLoadCSS() {
   window.frames[0].document.head.appendChild(loadStyle);
 }
 
-function nav(n) {
-  num += n;
-  if (num < 0) {
+function navigateToStory(n) {
+  if (n < 0) {
     alert("you're at the beginning of the story!!");
     num = 0;
-  } else if (num > 20) {
+  } else if (n > 20) {
     alert("you're at the end of the story!!");
     num = 20;
   } else {
-    saveLeftOff(num);
+    saveLeftOff(n);
+    document.getElementById("navList").style.display = "inline-block";
+    document.getElementById("resumeRead").style.display = "none";
     document.getElementById("storyNav").style.pointerEvents = "none";
     document.getElementById("storyNav").style.cursor = "wait";
     document.getElementById("storyNav").style.opacity = "0";
     setTimeout(() => {
-      document.getElementById("storyNav").src = "/story/chapter" + num + ".html";
+      loadAjax(n);
       setTimeout(() => {
         document.getElementById("storyNav").style.opacity = "1";
         document.getElementById("storyNav").style.cursor = "initial";
@@ -35,35 +36,29 @@ function nav(n) {
     }, 750);
   }
 }
-
 function navToChapter() {
-  let navi = parseInt(prompt("enter a chapter that you wish to read [0-20]:", "")),
-    prevVal = num;
-  num = navi;
+  num = parseInt(prompt("enter a chapter that you wish to read [0-20]:", ""));
   if (num < 0 || num > 20) { navToChapter() } else {
     if (isNaN(num)) {
-      num = prevVal;
+      navToChapter();
     }
-    saveLeftOff(num);
-    document.getElementById("storyNav").style.pointerEvents = "none";
-    document.getElementById("storyNav").style.cursor = "wait";
-    document.getElementById("storyNav").style.opacity = "0";
-    setTimeout(() => {
-      document.getElementById("storyNav").src = "/story/chapter" + num + ".html";
-      setTimeout(() => {
-        document.getElementById("storyNav").style.opacity = "1";
-        document.getElementById("storyNav").style.cursor = "initial";
-        document.getElementById("storyNav").style.pointerEvents = "initial";
-      }, 750);
-    }, 750);
+    navigateToStory(num);
   }
 }
-
-function panelOpen() {
-  document.getElementById("mobileNav").style.transform = "initial";
-}
-function panelClose() {
-  document.getElementById("mobileNav").style.transform = "translateY(-15rem)";
+function navStory(s) {
+  switch(s) {
+    case "prev":
+      num -= 1;
+      navigateToStory(num);
+      break;
+    case "next":
+      num += 1;
+      navigateToStory(num);
+      break;
+    default:
+      // do nothing
+      break;
+  }
 }
 
 function mus(arg) {
@@ -82,6 +77,10 @@ function mus(arg) {
   }
 }
 
+function initRead() {
+  loadAjax(0);
+}
+
 function closeApp() {
   window.close();
   closeTries++;
@@ -89,4 +88,19 @@ function closeApp() {
     alert("it appears that you can't close it this way. try CTRL-W or closing the tab manually on your browser.");
     closeTries = 5;
   }
+}
+
+// migration from html to txt for a cleaner navigation
+function loadAjax(r) {
+
+  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
+  const ajaxLoad = new XMLHttpRequest();
+  ajaxLoad.onload = function() {
+    window.frames[0].document.body.innerHTML = this.responseText;
+  }
+  ajaxLoad.open("GET", "/assets/text/story/chapter" + r + ".txt");
+  ajaxLoad.send();
+
+  return;
+
 }
