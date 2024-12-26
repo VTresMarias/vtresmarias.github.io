@@ -28,7 +28,7 @@
       @import url("/assets/frameworks/css/base.css");
       @import url("/assets/frameworks/css/cookie.css"); /* cookie consent */
       @import url("/assets/frameworks/css/nav/story/home.css"); /* required for other css to work */
-      #pausMob, #pausDes, #navList {
+      #pausBtn, #navList {
         display: none;
       }
     </style>
@@ -53,9 +53,9 @@
     </div>
     <header> <!-- desktop header -->
       <img id="vtmLogoHead" src="/assets/web/maria_story_logo.png" alt="the story of the First Maria ～最初のマリアの物語～">
-      <div isDesktop class="urlRefs">
-        <span id="playDes" class="material-symbols-rounded" title="play the music" onclick="mus('play')">play_arrow</span>
-        <span id="pausDes" class="material-symbols-rounded" title="pause the music" onclick="mus('pause')">pause</span>
+      <div class="urlRefs">
+        <span id="playBtn" class="material-symbols-rounded" title="play the music" onclick="mus('play')">play_arrow</span>
+        <span id="pausBtn" class="material-symbols-rounded" title="pause the music" onclick="mus('pause')">pause</span>
         <span class="material-symbols-rounded" title="close the page" onclick="closeApp()">exit_to_app</span>
       </div>
     </header>

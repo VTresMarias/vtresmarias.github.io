@@ -146,3 +146,13 @@ function closeDiag() {
   document.getElementById("dialogBlock").close();
   document.getElementById("dialogTxt").innerHTML = null;
 }
+
+function genericAjax(dir) { // generic ajax function, only for individual files
+  const ajaxLoad = new XMLHttpRequest();
+  ajaxLoad.onload = function() {
+    document.getElementById("dialogTxt").innerHTML = this.responseText;
+  }
+  ajaxLoad.open("GET", dir);
+  ajaxLoad.send();
+  document.getElementById("dialogBlock").showModal();
+}

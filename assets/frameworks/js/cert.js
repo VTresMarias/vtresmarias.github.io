@@ -33,7 +33,7 @@ function certInit() {
   if (ref == null) {
     // return nothing
   } else {
-    c6 = ref.substring(0, 6);
+    var c6 = ref.substring(0, 6);
     if (c6 == "VTMCSM") {
       type = c6;
       num = ref.substring(6, 15);
@@ -111,11 +111,9 @@ function certInit() {
       }
       break;
     default:
-      //return nothing
+      // return nothing
       break;
   }
-
-  
 
 }
 
@@ -136,13 +134,13 @@ function showDetails() {
       <p>certificate type</p>
       <h2>` + vCK + `</h2>
       <br>
-      <p>name of grantee</p>
+      <p>name of Grantee</p>
       <h2>` + vGte + `</h2>
       <br>
       <p>date of grant</p>
       <h3>` + vDt + `</h3>
       <br>
-      <p>name of grantor</p>
+      <p>name of Grantor</p>
       <h3>` + vGto + `</h3>
       <br><br>
       <p>QR code</p>

@@ -42,10 +42,10 @@ function pickUpDetect() {
   }
 }
 function pickUpWhereYouLeftOff() {
-  num = leftOff;
   document.getElementById("navList").style.display = "inline-block";
   document.getElementById("resumeRead").style.display = "none";
-  navigateToStory(num);
+  navigateToStory(leftOff);
+  storyChap = leftOff;
 }
 function saveLeftOff(s) {
   document.cookie = "storyLeftOff=" + s + "; path=/; max-age=604800";

@@ -1,5 +1,5 @@
 // global variables
-var num = 0,
+var storyChap = 0,
   closeTries = 0;
 
 // workaround: https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe 
@@ -15,10 +15,10 @@ function storyLoadCSS() {
 function navigateToStory(n) {
   if (n < 0) {
     alert("you're at the beginning of the story!!");
-    num = 0;
+    storyChap = 0;
   } else if (n > 20) {
     alert("you're at the end of the story!!");
-    num = 20;
+    storyChap = 20;
   } else {
     saveLeftOff(n);
     document.getElementById("navList").style.display = "inline-block";
@@ -37,42 +37,32 @@ function navigateToStory(n) {
   }
 }
 function navToChapter() {
-  num = parseInt(prompt("enter a chapter that you wish to read [0-20]:", ""));
-  if (num < 0 || num > 20) { navToChapter() } else {
-    if (isNaN(num)) {
+  storyChap = parseInt(prompt("enter a chapter that you wish to read [0-20]:", ""));
+  if (storyChap < 0 || storyChap > 20) { navToChapter() } else {
+    if (isNaN(storyChap)) {
       navToChapter();
     }
-    navigateToStory(num);
+    navigateToStory(storyChap);
   }
 }
 function navStory(s) {
-  switch(s) {
-    case "prev":
-      num -= 1;
-      navigateToStory(num);
-      break;
-    case "next":
-      num += 1;
-      navigateToStory(num);
-      break;
-    default:
-      // do nothing
-      break;
+  if (s == "prev") {
+    storyChap--;
+    navigateToStory(storyChap);
+  } else if (s == "next") {
+    storyChap++;
+    navigateToStory(storyChap);
   }
 }
 
 function mus(arg) {
   if (arg == "play") {
-    document.getElementById("playMob").style.display = "none";
-    document.getElementById("pausMob").style.display = "inline-block";
-    document.getElementById("playDes").style.display = "none";
-    document.getElementById("pausDes").style.display = "inline-block";
+    document.getElementById("playBtn").style.display = "none";
+    document.getElementById("pausBtn").style.display = "inline-block";
     document.getElementById("storyBGM").play();
   } else if (arg == "pause") {
-    document.getElementById("playMob").style.display = "inline-block";
-    document.getElementById("pausMob").style.display = "none";
-    document.getElementById("playDes").style.display = "inline-block";
-    document.getElementById("pausDes").style.display = "none";
+    document.getElementById("playBtn").style.display = "inline-block";
+    document.getElementById("pausBtn").style.display = "none";
     document.getElementById("storyBGM").pause();
   }
 }
