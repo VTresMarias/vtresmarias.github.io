@@ -1,5 +1,6 @@
 <button onclick="closeDiag()"><span class="material-symbols-rounded">close</span></button>
 <img src="/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
+<br>
 <h2>落ち着き ～Stability～</h2>
 <br>
 <p>

@@ -1,5 +1,6 @@
 <button onclick="closeDiag()"><span class="material-symbols-rounded">close</span></button>
 <img src="/assets/images/profile/maria_pfp_1.png" alt="Mother Agatha, the First Maria🍃">
+<br>
 <h2>我慢 ～Perseverance～</h2>
 <br>
 <p>
