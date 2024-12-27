@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="「VTresMarias - V三人のマリア - 」">
-    <title>404 not found</title>
+    <title>letters from the First Maria🍃</title>
     <link rel="icon" href="/assets/web/favicon_light.png" type="image/x-icon">
     <link rel="icon" href="/assets/web/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
     <link rel="apple-touch-icon" href="/assets/web/apple-touch-icon.png" type="image/x-icon">
-    <!-- <link rel="manifest" href="pwa/pwa.json"> -->
+    <!-- <link rel="manifest" href="/pwa/pwa.json"> -->
     <meta name="theme-color" content="#3d374c">
     <meta name="msapplication-TileColor" content="#3d374c">
     <meta name="msapplication-navbutton-color" content="#3d374c">
@@ -18,13 +18,18 @@
     <style type="text/css">
       /* in-page css */
       @import url("/assets/frameworks/css/base.css");
-      @import url("/assets/frameworks/css/nav/404/404.css");
+      @import url("/assets/frameworks/css/cookie.css"); /* cookie consent */
+      @import url("/assets/frameworks/css/nav/index/home.css"); /* required for other css to work */
+      @import url("/assets/frameworks/css/articleView.css");
     </style>
     <!-- custom js -->
     <script src="/assets/frameworks/js/_main.js" type="text/javascript"></script> <!-- base -->
+    <script src="/assets/frameworks/js/cookie.js" type="text/javascript"></script> <!-- cookie -->
+    <script src="/assets/frameworks/js/letter.js" type="text/javascript"></script>
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
+        ltrInit();
       }
     </script>
     <script type="text/javascript">
@@ -41,8 +46,30 @@
         <span class="material-symbols-rounded" title="home" onclick="window.location.replace('/')">home</span>
       </div>
     </header>
-    <div class="notFoundText">
-      <h1>404 not found</h1>
+    <div id="cookieConsent">
+      <p><b>this website uses cookies to enhance your experience.</b></p>
+      <p>
+        by agreeing, you consent to the use of these cookies. don't worry -- we'll be
+        using as minimal as possible to protect your privacy.
+      </p>
+      <p>
+        also note that there are cookies placed by our partners (through embeds),
+        regardless of their promise of no-cookie policy. you can check out our Privacy
+        Policy on how they use them.
+      </p>
+      <div>
+        <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="cookieAccept()">check</span>
+        <span class="navBtnInv navBtn material-symbols-rounded" title="accept cookies" onclick="cookieDecline()">close</span>
+        <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="window.open('/privacy')">policy</span>
+      </div>
+    </div>
+    <div id="cert">
+      <div class="titleHead"><div></div></div>
+    </div>
+    <div class="articleText">
+      <div id="articlTxt">
+        <!-- TODO: this will be interacted with the ajax -->
+      </div>
     </div>
     <footer>
       <span>©2022 「VTresMarias - V三人のマリア - 」</span>

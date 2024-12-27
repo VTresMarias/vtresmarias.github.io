@@ -1,0 +1,10 @@
+<button onclick="closeDiag()"><span class="material-symbols-rounded">close</span></button>
+<img src="/assets/images/profile/maria_pfp_2.png"  alt="Aura Ostara, the Second Maria🪷">
+<h2>復活 ～Rebirth～</h2>
+<br>
+<p>
+  keep paving the path that calls to you. keep moving forward, don't turn your
+  back. you have the support and guidance you need. trust the process!
+</p>
+<br>
+<span>tarot card reader: MystearicaVT</span>

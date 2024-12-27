@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="「VTresMarias - V三人のマリア - 」">
+    <title>the story of the First Maria ～最初のマリアの物語～</title>
+    <link rel="icon" href="/assets/web/favicon_light.png" type="image/x-icon">
+    <link rel="icon" href="/assets/web/favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="/assets/web/apple-touch-icon.png" type="image/x-icon">
+    <!-- <link rel="manifest" href="/pwa/pwa.json"> -->
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="the story of the First Maria ～最初のマリアの物語～">
+    <meta name="og:image" content="https://vtresmarias.github.io/assets/images/maria_story.png">
+    <meta name="og:url" content="https://vtresmarias.github.io/story">
+    <meta name="og:description" content='"the story of the First Maria, is also the story of what it has become."'>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thebelovedmoon">
+    <meta name="twitter:creator" content="@thebelovedmoon">
+    <meta name="theme-color" content="#3d374c">
+    <meta name="msapplication-TileColor" content="#3d374c">
+    <meta name="msapplication-navbutton-color" content="#3d374c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/frameworks/css/_main.css" type="text/css" media="all"> <!-- base -->
+    <style type="text/css">
+      /* in-page css */
+      @import url("/assets/frameworks/css/base.css");
+      @import url("/assets/frameworks/css/cookie.css"); /* cookie consent */
+      @import url("/assets/frameworks/css/nav/story/home.css"); /* required for other css to work */
+      #pausBtn, #navList {
+        display: none;
+      }
+    </style>
+    <!-- custom js -->
+    <script src="/assets/frameworks/js/_main.js" type="text/javascript"></script> <!-- base -->
+    <script src="/assets/frameworks/js/cookie.js" type="text/javascript"></script> <!-- cookie -->
+    <script src="/assets/frameworks/js/story.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function pageInit() {
+        // pageInit() args here
+        initRead();
+        pickUpDetect();
+      }
+    </script>
+    <script type="text/javascript">
+      // in-page javascript
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="loadBlock"> <!-- splash screen -->
+      <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
+    </div>
+    <header> <!-- desktop header -->
+      <img id="vtmLogoHead" src="/assets/web/maria_story_logo.png" alt="the story of the First Maria ～最初のマリアの物語～">
+      <div class="urlRefs">
+        <span id="playBtn" class="material-symbols-rounded" title="play the music" onclick="mus('play')">play_arrow</span>
+        <span id="pausBtn" class="material-symbols-rounded" title="pause the music" onclick="mus('pause')">pause</span>
+        <span class="material-symbols-rounded" title="close the page" onclick="closeApp()">exit_to_app</span>
+      </div>
+    </header>
+    <div id="cookieConsent">
+      <p><b>this website uses cookies to enhance your experience.</b></p>
+      <p>
+        by agreeing, you consent to the use of these cookies. don't worry -- we'll be
+        using as minimal as possible to protect your privacy.
+      </p>
+      <p>
+        also note that there are cookies placed by our partners (through embeds),
+        regardless of their promise of no-cookie policy. you can check out our Privacy
+        Policy on how they use them.
+      </p>
+      <div>
+        <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="cookieAccept()">check</span>
+        <span class="navBtnInv navBtn material-symbols-rounded" title="accept cookies" onclick="cookieDecline()">close</span>
+        <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="window.open('/privacy')">policy</span>
+      </div>
+    </div>
+    <div id="home"> <!-- / -->
+      <audio id="storyBGM" src="/assets/audio/Burcu_Gonul_-_Fairy_Song.mp3" loop></audio>
+      <div class="storyLayout">
+        <iframe id="storyNav" title="story viewer" onload="storyLoadCSS()"></iframe>
+      </div>
+      <div class="storyNavBtnUI">
+        <span class="storyNavBtn material-symbols-rounded" title="previous chapter" onclick="navStory('prev')">arrow_back</span>
+        <span id="navList" class="storyNavBtn material-symbols-rounded" title="enter a chapter" onclick="navToChapter()">book</span>
+        <span id="resumeRead" class="storyNavBtn material-symbols-rounded" title="pick up where you left off" onclick="pickUpWhereYouLeftOff()">history</span>
+        <span class="storyNavBtn material-symbols-rounded" title="next chapter" onclick="navStory('next')">arrow_forward</span>
+      </div>
+    </div>
+    <footer>
+      <span>©2022 「VTresMarias - V三人のマリア - 」</span>
+      <span socialURLs>
+        <a rel="noopener noreferrer" href="mailto:vtresmarias@outlook.jp" target="_self">email</a>&ensp;&bullet;&ensp;
+        <a rel="noopener noreferrer" href="javascript:alert('coming soon!')" target="_self">X</a>
+      </span>
+    </footer>
+  </body>
+</html>

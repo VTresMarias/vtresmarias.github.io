@@ -1,0 +1,188 @@
+/* applies to only the specific page */
+
+#anniversary, #story, #event, #letter, #press {
+  display: none;
+}
+
+.frontImg, .frontText {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.frontImg {
+  width: 100vw;
+  height: 100vh;
+}
+.frontText {
+  padding: 15rem 1rem;
+}
+.frontText > div {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.mariaList, .mariaValues[fore], .mariaAffils[fore] {
+  width: 1080px;
+  max-width: 100%;
+  padding: 15rem 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+[mariaTable]::after, [mCVTable]::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+[mariaTable] > div {
+  float: left;
+  width: 33.33%;
+  max-width: 100%;
+  padding: 1rem;
+}
+[mariaTable] > div > * {
+  display: block;
+  margin: 0;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+[mariaTable] > div > span {
+  font-style: italic;
+}
+[mariaTable] > div > span.material-symbols-rounded {
+  display: inline-block;
+  font-style: initial;
+}
+[mariaTable] > div > img {
+  margin: 0 auto !important;
+  border-radius: 50%;
+  width: 20rem;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 720px) {
+  [mariaTable] > div {
+    width: 100%;
+  }
+}
+
+[mariaTable] > div > img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img[alt="Mother Agatha, the First Maria🍃"] {
+  border: 0.5rem solid #793a80;
+}
+img[alt="Aura Ostara, the Second Maria🪷"] {
+  border: 0.5rem solid #66a898;
+}
+img[alt="Hina Oujo, the Third Maria🌸"] {
+  border: 0.5rem solid #f0a9a9;
+}
+
+.mariaValues[back] {
+  background-color: #dcc6bb;
+}
+[mCVTable] > div {
+  float: left;
+  width: 50%;
+  max-width: 100%;
+  padding: 1rem;
+}
+[mCVTable] > div > * {
+  display: block;
+  margin: 0;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+@media screen and (max-width: 720px) {
+  [mCVTable] > div {
+    width: 100%;
+  }
+}
+
+.mariaAffils[back] {
+  background-color: #3d374c;
+  color: #fff;
+}
+.mariaAffils[fore] > * {
+  filter: drop-shadow(2px 4px 16px #dcc6bb80);
+}
+.mariaAffils[fore] > [affilName] {
+  display: inline-block;
+  text-align: center;
+  width: 20rem;
+  max-width: 100%;
+  padding: 0.5rem;
+}
+.mariaAffils[fore] > [affilName] > * {
+  margin: 0;
+}
+.mariaAffils[fore] > [affilName] > img {
+  aspect-ratio: 18 / 9;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.mariaAffils[fore] > [affilName] > span {
+  display: block;
+  font-style: italic;
+}
+.mariaAffils[fore] > [affilName] > span.material-symbols-rounded {
+  display: inline-block;
+  font-style: initial;
+}
+
+
+/* privacy screen */
+
+[privacyPolicy] {
+  width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15rem 1rem;
+}
+[privacyPolicy] > p > a {
+  text-decoration: underline;
+}
+
+
+/* applies to all pages to avoid cluttering */
+
+.titleHead {
+  width: 100vw;
+  padding: calc(250px + 30px) 15px 250px 15px;
+  background-image: url("/assets/images/backgrounds/vtm_3.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.titleHead > div {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.titleHead > div > * {
+  margin: 0 !important;
+  text-align: center;
+}
+
+.feedSelector > div {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 90px 15px;
+}
+.feedSelector > div > div {
+  margin: 1.75rem 0;
+}
+.feedSelector > div > div > * {
+  display: block;
+  margin: 0 0 1.125rem 0;
+  text-align: left;
+}
+.feedSelector > div > div > span {
+  margin: 0;
+  font-style: italic;
+}

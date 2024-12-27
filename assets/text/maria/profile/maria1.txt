@@ -1,0 +1,24 @@
+<button onclick="closeDiag()"><span class="material-symbols-rounded">close</span></button>
+<img src="/assets/images/profile/maria_pfp_1.png" alt="Mother Agatha, the First Maria🍃">
+<br>
+<h2>Mother Agatha</h2>
+<span>the First Maria🍃</span>
+<br>
+<p>
+  Mother Agatha was once a beloved Mother before everything fell apart due to
+  the brink of winter. she was given a mission from the Grand Lady upon her
+  resurrection to find those who will be a part of her life forever.
+</p>
+<br>
+<p>
+  behind the character is thebelovedmoon -- also known as 💚🍃Aga-chuu💗🌸 --
+  the founder of this VTuber Collective. she initially used this within the
+  Horror Shop Games community, but this has evolved over using it as her VTuber
+  presence in order to represent such community.
+</p>
+<br>
+<p>
+  she specializes in graphics and PR, as well as websites and programming. her
+  current ventures (alongside this) include #MamaNyoSquad, ReactSquad, and
+  AgaASMR (aka Aga's ASMR Garden).
+</p>
