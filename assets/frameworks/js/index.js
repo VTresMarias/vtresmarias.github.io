@@ -128,7 +128,7 @@ function mariaDesignate(c, m) { // where c = category, m = Maria
   if (c == "profile") {
     d.style.height = "720px";
   } else {
-    d.style.height = "revert";
+    d.style.height = "calc(720px / 1.25)";
   }
   dialogView(c, m);
   d.showModal();
@@ -148,6 +148,7 @@ function closeDiag() {
 }
 
 function genericAjax(dir) { // generic ajax function, only for individual files
+  document.getElementById("dialogBlock").style.height = "720px";
   const ajaxLoad = new XMLHttpRequest();
   ajaxLoad.onload = function() {
     document.getElementById("dialogTxt").innerHTML = this.responseText;

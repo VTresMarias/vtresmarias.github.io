@@ -1,4 +1,4 @@
-<button onclick="closeDiag()"><span class="material-symbols-rounded">close</span></button>
+<span class="diagCloseBtn material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
 <h1>コスプレのマリア: Synopsis</h1>
 <br>
 <p>
