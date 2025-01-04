@@ -23,6 +23,7 @@ function navigateToStory(n) {
     saveLeftOff(n);
     document.getElementById("navList").style.display = "inline-block";
     document.getElementById("resumeRead").style.display = "none";
+    window.frames[0].document.body.scrollTop = 0;
     document.getElementById("storyNav").style.pointerEvents = "none";
     document.getElementById("storyNav").style.cursor = "wait";
     document.getElementById("storyNav").style.opacity = "0";
