@@ -11,6 +11,4 @@
   margin: 0 0 1.125rem 0;
   text-align: left;
 }
-#articlTxt > span {
-  font-style: italic;
-}
+#articlTxt > span { font-style: italic; }

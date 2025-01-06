@@ -1,8 +1,6 @@
 /* applies to only the specific page */
 
-#anniversary, #story, #event, #letter, #press {
-  display: none;
-}
+#anniversary, #story, #event, #letter, #press { display: none; }
 
 .frontImg, .frontText {
   background-size: cover;
@@ -14,9 +12,7 @@
   width: 100vw;
   height: 100vh;
 }
-.frontText {
-  padding: 15rem 1rem;
-}
+.frontText { padding: 15rem 1rem; }
 .frontText > div {
   width: 750px;
   max-width: 100%;
@@ -47,9 +43,7 @@
   margin: 0;
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
-[mariaTable] > div > span {
-  font-style: italic;
-}
+[mariaTable] > div > span { font-style: italic; }
 [mariaTable] > div > span.material-symbols-rounded {
   display: inline-block;
   font-style: initial;
@@ -60,31 +54,18 @@
   width: 20rem;
   max-width: 100%;
   height: auto;
-}
-@media screen and (max-width: 720px) {
-  [mariaTable] > div {
-    width: 100%;
-  }
-}
-
-[mariaTable] > div > img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-img[alt="Mother Agatha, the First Maria🍃"] {
-  border: 0.5rem solid #793a80;
-}
-img[alt="Aura Ostara, the Second Maria🪷"] {
-  border: 0.5rem solid #66a898;
-}
-img[alt="Hina Oujo, the Third Maria🌸"] {
-  border: 0.5rem solid #f0a9a9;
+img[alt="Mother Agatha, the First Maria🍃"] { border: 0.5rem solid #793a80; }
+img[alt="Aura Ostara, the Second Maria🪷"] { border: 0.5rem solid #66a898; }
+img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
+@media screen and (max-width: 720px) {
+  [mariaTable] > div { width: 100%; }
 }
 
-.mariaValues[back] {
-  background-color: #dcc6bb;
-}
+.mariaValues[back] { background-color: #dcc6bb; }
 [mCVTable] > div {
   float: left;
   width: 50%;
@@ -97,18 +78,14 @@ img[alt="Hina Oujo, the Third Maria🌸"] {
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
 @media screen and (max-width: 720px) {
-  [mCVTable] > div {
-    width: 100%;
-  }
+  [mCVTable] > div { width: 100%; }
 }
 
 .mariaAffils[back] {
   background-color: #3d374c;
   color: #fff;
 }
-.mariaAffils[fore] > * {
-  filter: drop-shadow(2px 4px 16px #dcc6bb80);
-}
+.mariaAffils[fore] > * { filter: drop-shadow(2px 4px 16px #dcc6bb80); }
 .mariaAffils[fore] > [affilName] {
   display: inline-block;
   text-align: center;
@@ -116,9 +93,7 @@ img[alt="Hina Oujo, the Third Maria🌸"] {
   max-width: 100%;
   padding: 0.5rem;
 }
-.mariaAffils[fore] > [affilName] > * {
-  margin: 0;
-}
+.mariaAffils[fore] > [affilName] > * { margin: 0; }
 .mariaAffils[fore] > [affilName] > img {
   aspect-ratio: 18 / 9;
   -o-object-fit: contain;
@@ -142,9 +117,7 @@ img[alt="Hina Oujo, the Third Maria🌸"] {
   margin: 0 auto;
   padding: 15rem 1rem;
 }
-[privacyPolicy] > p > a {
-  text-decoration: underline;
-}
+[privacyPolicy] > p > a { text-decoration: underline; }
 
 
 /* applies to all pages to avoid cluttering */
@@ -174,9 +147,7 @@ img[alt="Hina Oujo, the Third Maria🌸"] {
   margin: 0 auto;
   padding: 90px 15px;
 }
-.feedSelector > div > div {
-  margin: 1.75rem 0;
-}
+.feedSelector > div > div { margin: 1.75rem 0; }
 .feedSelector > div > div > * {
   display: block;
   margin: 0 0 1.125rem 0;

@@ -14,15 +14,7 @@
   transition: 0.75s;
   z-index: calc(2022 + 3);
 }
-#cookieConsent > * {
-  margin: 0.5rem 0 0 0;
-}
-#cookieConsent > div {
-  text-align: right;
-}
-#cookieConsent > div > * {
-  margin: 0.5rem 0 0 0;
-}
-#cookieConsent > div > .navBtnInv {
-  margin-left: 0.25rem;
-}
+#cookieConsent > * { margin: 0.5rem 0 0 0; }
+#cookieConsent > div { text-align: right; }
+#cookieConsent > div > * { margin: 0.5rem 0 0 0; }
+#cookieConsent > div > .navBtnInv { margin-left: 0.25rem; }

@@ -10,9 +10,7 @@ html, body {
   word-wrap: break-word;
   scroll-behavior: smooth;
 }
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html {
   background-color: #3d374c;
@@ -30,9 +28,7 @@ body {
   font-weight: 500;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: 2px 4px 16px #3d374c80;
-}
+h1, h2, h3, h4, h5, h6 { text-shadow: 2px 4px 16px #3d374c80; }
 h1 {
   font-style: italic;
   text-align: center;
@@ -102,9 +98,7 @@ a:active {
 }
 
 /* hide scrollbar */
-::-webkit-scrollbar {
-  display: none;
-}
+::-webkit-scrollbar { display: none; }
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;

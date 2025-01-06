@@ -17,7 +17,6 @@ function navQuery() {
     document.getElementById("press").style.display = "none";
 
     importCSS("@import url('/assets/frameworks/css/nav/index/anniversary.css');");
-
     navBtnHide(vtm);
 
   } else if (vtm == "story") {
@@ -31,17 +30,14 @@ function navQuery() {
     document.getElementById("letter").style.display = "none";
     document.getElementById("press").style.display = "none";
 
-    importCSS("@import url('/assets/frameworks/css/nav/index/story.css');");
-    
     document.getElementById("vtmLogoHead").src = "/assets/web/maria_story_logo.png";
-
+    importCSS("@import url('/assets/frameworks/css/nav/index/story.css');");
     navBtnHide(vtm);
 
   } else if (vtm == "event") {
 
     document.title = "events";
     document.getElementById("home").style.display = "none";
-
     document.getElementById("anniversary").style.display = "none";
     document.getElementById("story").style.display = "none";
     document.getElementById("event").style.display = "block";
@@ -49,7 +45,6 @@ function navQuery() {
     document.getElementById("press").style.display = "none";
 
     importCSS("@import url('/assets/frameworks/css/nav/index/event.css');");
-
     navBtnHide(vtm);
 
   } else if (vtm == "letter") {
@@ -64,7 +59,6 @@ function navQuery() {
     document.getElementById("press").style.display = "none";
 
     importCSS("@import url('/assets/frameworks/css/nav/index/letter.css');");
-
     navBtnHide(vtm);
 
   } else if (vtm == "press") {
@@ -79,7 +73,6 @@ function navQuery() {
     document.getElementById("press").style.display = "block";
 
     importCSS("@import url('/assets/frameworks/css/nav/index/press.css');");
-
     navBtnHide(vtm);
 
   } else {
@@ -92,12 +85,8 @@ function navQuery() {
 
 }
 
-function panelOpen() {
-  document.getElementById("mobileNav").style.transform = "initial";
-}
-function panelClose() {
-  document.getElementById("mobileNav").style.transform = "translateY(-15rem)";
-}
+function panelOpen() { document.getElementById("mobileNav").style.transform = "initial"; }
+function panelClose() { document.getElementById("mobileNav").style.transform = "translateY(-15rem)"; }
 
 function mus(arg) {
   if (arg == "play") {
@@ -118,26 +107,18 @@ function launchStory() {
 
 function navBtnHide(lbl) {
   let format = ["desktop", "mobile"];
-  for (let v = 0; v < format.length; v++) {
-    document.getElementById("btn-" + lbl + "-" + format[v]).style.display = "none";
-  }
+  for (let v = 0; v < format.length; v++) { document.getElementById("btn-" + lbl + "-" + format[v]).style.display = "none"; }
 }
 
 function mariaDesignate(c, m) { // where c = category, m = Maria
   let d = document.getElementById("dialogBlock");
-  if (c == "profile") {
-    d.style.height = "720px";
-  } else {
-    d.style.height = "calc(720px / 1.25)";
-  }
+  if (c == "profile") { d.style.height = "720px"; } else { d.style.height = "calc(720px / 1.25)"; }
   dialogView(c, m);
   d.showModal();
 }
 function dialogView(f, t) { // where f = folder, t = textfile
   const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() {
-    document.getElementById("dialogTxt").innerHTML = this.responseText;
-  }
+  ajaxLoad.onload = function() { document.getElementById("dialogTxt").innerHTML = this.responseText; }
   ajaxLoad.open("GET", "/assets/text/maria/" + f + "/" + t + ".txt");
   ajaxLoad.send();
   return;
@@ -150,9 +131,7 @@ function closeDiag() {
 function genericAjax(dir) { // generic ajax function, only for individual files
   document.getElementById("dialogBlock").style.height = "720px";
   const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() {
-    document.getElementById("dialogTxt").innerHTML = this.responseText;
-  }
+  ajaxLoad.onload = function() { document.getElementById("dialogTxt").innerHTML = this.responseText; }
   ajaxLoad.open("GET", dir);
   ajaxLoad.send();
   document.getElementById("dialogBlock").showModal();

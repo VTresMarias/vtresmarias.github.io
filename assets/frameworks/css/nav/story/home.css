@@ -1,6 +1,4 @@
-body {
-  background-image: url("/assets/images/maria_story_blurred.png");
-}
+body { background-image: url("/assets/images/maria_story_blurred.png"); }
 
 #home {
   position: relative;

@@ -40,9 +40,7 @@ function navigateToStory(n) {
 function navToChapter() {
   storyChap = parseInt(prompt("enter a chapter that you wish to read [0-20]:", ""));
   if (storyChap < 0 || storyChap > 20) { navToChapter() } else {
-    if (isNaN(storyChap)) {
-      navToChapter();
-    }
+    if (isNaN(storyChap)) { navToChapter(); }
     navigateToStory(storyChap);
   }
 }
@@ -68,9 +66,7 @@ function mus(arg) {
   }
 }
 
-function initRead() {
-  loadAjax(0);
-}
+function initRead() { loadAjax(0); }
 
 function closeApp() {
   window.close();
@@ -86,9 +82,7 @@ function loadAjax(r) {
 
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
   const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() {
-    window.frames[0].document.body.innerHTML = this.responseText;
-  }
+  ajaxLoad.onload = function() { window.frames[0].document.body.innerHTML = this.responseText; }
   ajaxLoad.open("GET", "/assets/text/story/chapter" + r + ".txt");
   ajaxLoad.send();
 

@@ -1,13 +1,6 @@
 function pressInit() {
-
   var ref = new URLSearchParams(window.location.search).get("ref");
-
-  if (ref !== null) {
-    loadAjax(ref);
-  } else {
-    window.location.replace("/?vtm=press");
-  }
-
+  if (ref !== null) { loadAjax(ref); } else { window.location.replace("/?vtm=press"); }
 }
 
 function loadAjax(r) {
@@ -37,9 +30,7 @@ function loadAjax(r) {
 
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
   const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() {
-    document.getElementById("articlTxt").innerHTML = this.responseText;
-  }
+  ajaxLoad.onload = function() { document.getElementById("articlTxt").innerHTML = this.responseText; }
   ajaxLoad.open("GET", "/assets/text/press/" + r + ".txt");
   ajaxLoad.send();
 

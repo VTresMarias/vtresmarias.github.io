@@ -10,9 +10,7 @@ html, body {
   word-wrap: break-word;
   scroll-behavior: smooth;
 }
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html {
   background-color: #dcc6bb;
@@ -38,17 +36,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* hide scrollbar */
-::-webkit-scrollbar {
-  display: none;
-}
+::-webkit-scrollbar { display: none; }
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-[inter] {
-  font-style: italic;
-}
+[inter] { font-style: italic; }
 
 blockquote {
   width: 500px;
@@ -57,6 +51,4 @@ blockquote {
   margin: 0 auto;
   font-style: italic;
 }
-blockquote > [closing] {
-  text-align: right;
-}
+blockquote > [closing] { text-align: right; }

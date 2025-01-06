@@ -27,9 +27,7 @@
   aspect-ratio: 16 / 9;
 }
 
-#storyBGM {
-  display: none;
-}
+#storyBGM { display: none; }
 
 .burcuGonul {
   margin: 0 auto;
@@ -41,9 +39,5 @@
   text-align: center;
   font-style: italic;
 }
-.bgmMetadata > * {
-  margin: 0 !important;
-}
-#bgmPause {
-  display: none;
-}
+.bgmMetadata > * { margin: 0 !important; }
+#bgmPause { display: none; }
