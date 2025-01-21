@@ -157,3 +157,10 @@ img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
   margin: 0;
   font-style: italic;
 }
+
+.csm-img {
+  width: 100%;
+  height: auto;
+  border-radius: unset !important;
+  filter: unset !important;
+}

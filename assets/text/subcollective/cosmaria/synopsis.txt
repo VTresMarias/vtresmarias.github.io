@@ -1,4 +1,6 @@
 <span class="diagCloseBtn material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
+<img class="csm-img" src="/assets/images/subcollective/cosmaria/20241230_roster.png" alt="CosMarias">
+<br>
 <h1>コスプレのマリア: Synopsis</h1>
 <br>
 <p>
