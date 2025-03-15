@@ -1,0 +1,115 @@
+body {
+  background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png");
+  color: #fff;
+}
+#loadBlock { background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png"); }
+#loaderFade { filter: brightness(1000%); }
+
+header { color: #3d374c; }
+
+h1, h2[csmName] {
+  font-family: "Imperial Script", cursive;
+  font-style: normal;
+  font-size: 5rem;
+  letter-spacing: normal;
+}
+h2[csmName] {
+  font-size: 4rem;
+  font-weight: normal;
+}
+@media screen and (max-width: 720px) {
+  h1 { font-size: 3.75rem; }
+  h2[csmName] { font-size: 2.75rem; }
+}
+
+.titleHead {
+  width: 100vw;
+  padding: calc(250px + 30px) 15px 250px 15px;
+  background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.titleHead > div {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+.titleHead > div > * {
+  margin: 0 !important;
+  text-align: center;
+}
+.titleHead > div > img {
+  -webkit-filter: brightness(1000%);
+  filter: brightness(1000%);
+}
+
+.frontText {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.frontText > div {
+  padding: 15rem 1rem;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+.frontText > div > div {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto !important;
+}
+.frontText > div > div > * { margin: 0; }
+
+[csmMeet] {
+  width: 1080px;
+  max-width: 100%;
+  padding: 15rem 1rem 0 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+[csmMeet] > * { margin: 0; }
+
+[csmTable]::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+[csmTable] > div {
+  float: left;
+  max-width: 100%;
+  padding: 1rem;
+}
+[csmTable="inc"] > div { width: 33.33%; }
+[csmTable="indB1"] > div { width: 25%; }
+[csmTable="apprB1"] > div { width: 33.33%; }
+[csmTable] > div > * {
+  display: block;
+  margin: 0;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+[csmTable] > div > span { font-style: italic; }
+[csmTable] > div > span.material-symbols-rounded {
+  display: inline-block;
+  font-style: initial;
+}
+[csmTable] > div > img {
+  margin: 0 auto !important;
+  border-radius: 50%;
+  width: 20rem;
+  max-width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1080px) {
+  [csmTable="indB1"] > div { width: 50%; }
+}
+@media screen and (max-width: 720px) {
+  [csmTable] > div { width: 100%; }
+}

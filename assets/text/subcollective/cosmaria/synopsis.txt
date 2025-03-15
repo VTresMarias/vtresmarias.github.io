@@ -1,5 +1,5 @@
 <span class="diagCloseBtn material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
-<img class="csm-img" src="/assets/images/subcollective/cosmaria/csm2025_pre.png" alt="CosMarias">
+<img class="csm-img" src="/assets/images/subcollective/cosmaria/csm2025.png" alt="CosMarias">
 <br>
 <h1>コスプレのマリア: Synopsis</h1>
 <br>
@@ -37,6 +37,6 @@
 </p>
 <br>
 <p>
-  serving her duty as the incumbent First CosMaria, her job has just begun to
+  serving her duty as the Incumbent First CosMaria🍃💐, her job has just begun to
   bear fruit..
 </p>

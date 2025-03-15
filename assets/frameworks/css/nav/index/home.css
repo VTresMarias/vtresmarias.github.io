@@ -12,12 +12,18 @@
   width: 100vw;
   height: 100vh;
 }
-.frontText { padding: 15rem 1rem; }
 .frontText > div {
+  padding: 15rem 1rem;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+ }
+.frontText > div > div {
   width: 750px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
+.frontText > div > div > * { margin: 0; }
+.frontText > div > div > img { margin: 0 auto; }
 
 .mariaList, .mariaValues[fore], .mariaAffils[fore] {
   width: 1080px;
@@ -98,6 +104,10 @@ img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
   aspect-ratio: 18 / 9;
   -o-object-fit: contain;
   object-fit: contain;
+}
+.mariaAffils[fore] > [affilName] > img[csm2025] {
+  -webkit-filter: brightness(1000%);
+  filter: brightness(1000%);
 }
 .mariaAffils[fore] > [affilName] > span {
   display: block;
