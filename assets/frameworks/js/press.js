@@ -11,6 +11,9 @@ function loadAjax(r) {
     mD = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   switch(r) {
+    case "20250312":
+      document.title = "statement on the First Maria🍃's condition regarding an unfortunate event — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
+      break;
     case "20241227":
       document.title = "VTresMarias debuts its improved look to celebrate its 2nd Anniversary — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
       break;
