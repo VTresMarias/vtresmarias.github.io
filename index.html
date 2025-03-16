@@ -55,10 +55,11 @@
       <span id="btn-home-mobile" class="material-symbols-rounded" title="home" onclick="window.location.replace('/')">home</span>
       <!-- <span id="btn-anniversary-mobile" class="material-symbols-rounded" title="anniversaries of the Marias" onclick="window.location.replace('/?vtm=anniversary')">cake</span> -->
       <span id="btn-story-mobile" class="material-symbols-rounded" title="the story of the First Maria ～最初のマリアの物語～" onclick="window.location.replace('/?vtm=story')">book</span>
+      <!-- <span id="btn-album-mobile" class="material-symbols-rounded" title="V三人のマリア: the music of the Marias🍃🪷🌸" onclick="window.location.replace('/?vtm=album')">album</span> -->
       <!-- <span id="btn-event-mobile" class="material-symbols-rounded" title="events" onclick="window.location.replace('/?vtm=event')">event</span> -->
       <span id="btn-letter-mobile" class="material-symbols-rounded" title="letters from the First Maria" onclick="window.location.replace('/?vtm=letter')">mail</span>
       <span id="btn-press-mobile" class="material-symbols-rounded" title="press releases" onclick="window.location.replace('/?vtm=press')">newspaper</span>
-      <span id="btn-press-mobile" class="material-symbols-rounded" title="certificate validator" onclick="window.open('/cert')">license</span>
+      <span class="material-symbols-rounded" title="certificate validator" onclick="window.open('/cert')">license</span>
       <span class="material-symbols-rounded" title="close panel" onclick="panelClose()">close</span>
     </div>
     <header> <!-- desktop header -->
@@ -67,10 +68,11 @@
         <span id="btn-home-desktop" class="material-symbols-rounded" title="home" onclick="window.location.replace('/')">home</span>
         <!-- <span id="btn-anniversary-desktop" class="material-symbols-rounded" title="anniversaries of the Marias" onclick="window.location.replace('/?vtm=anniversary')">cake</span> -->
         <span id="btn-story-desktop" class="material-symbols-rounded" title="the story of the First Maria ～最初のマリアの物語～" onclick="window.location.replace('/?vtm=story')">book</span>
+        <!-- <span id="btn-album-desktop" class="material-symbols-rounded" title="V三人のマリア: the music of the Marias🍃🪷🌸" onclick="window.location.replace('/?vtm=album')">album</span> -->
         <!-- <span id="btn-event-desktop" class="material-symbols-rounded" title="events" onclick="window.location.replace('/?vtm=event')">event</span> -->
         <span id="btn-letter-desktop" class="material-symbols-rounded" title="letters from the First Maria" onclick="window.location.replace('/?vtm=letter')">mail</span>
         <span id="btn-press-desktop" class="material-symbols-rounded" title="press releases" onclick="window.location.replace('/?vtm=press')">newspaper</span>
-        <span id="btn-press-desktop" class="material-symbols-rounded" title="certificate validator" onclick="window.open('/cert')">license</span>
+        <span class="material-symbols-rounded" title="certificate validator" onclick="window.open('/cert')">license</span>
       </div>
       <div isMobile class="urlRefs">
         <span class="material-symbols-rounded" title="Open Panel" onclick="panelOpen()">menu</span>
@@ -209,7 +211,7 @@
     <div id="anniversary"> <!-- /vtm=anniversary -->
     </div>
     <div id="story"> <!-- /vtm=story -->
-      <audio id="storyBGM" src="/assets/audio/fairyDance.mp3" loop></audio>
+      <audio id="storyBGM" src="/assets/audio/vtm_music/01_fairyDance.mp3" loop></audio>
       <div class="frontImg" style="background-image: url('/assets/images/maria_story.png');"></div>
       <div class="frontText" style="background-image: url('/assets/images/maria_story.png');">
         <div style="background-color: #dcc6bb40;">
@@ -254,21 +256,31 @@
               allowfullscreen>
             </iframe>
             <br><br><br>
-            <h1>check out the associated album</h1>
+            <h1>check out the main theme</h1>
             <br>
-            <img class="burcuGonul" src="https://lh3.googleusercontent.com/F7S4ai45onDkjGJ4NIMirx4PpsLw1p90jkTZY96bO3m8evFqui_Y9Do2kGHhE82gnDzYPQaEondmAvO7" alt="" width="512px">
+            <img class="burcuGonul" src="/assets/images/album/vtm_music.png" alt="" width="512px">
             <br>
             <div class="bgmMetadata">
-              <h3>Siren, Mermaid and Fairy Humming, Vol. I</h3>
-              <p>by Burcu Gönül</p>
+              <h3>Fairy Dance (from Siren, Mermaid and Fairy Humming, Vol. I)</h3>
+              <p><b>by Burcu Gönül</b></p>
+              <p>tr.1, V三人のマリア: the music of the Marias🍃🪷🌸</p>
             </div>
             <div style="text-align: center;">
-              <span id="bgmPlay" class="navBtn material-symbols-rounded" title="play &quot;Fairy Dance&quot;, tr.4" onclick="mus('play')">play_arrow</span>
-              <span id="bgmPause" class="navBtn material-symbols-rounded" title="pause the music" onclick="mus('pause')">pause</span>
-              <span class="navBtn material-symbols-rounded" title="check out the album on YouTube Music" onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_kLLeEVeDNlOX7_tVcs5X4auT_4yNxUb4E')">album</span>
-              <span class="navBtn material-symbols-rounded" title="check out Burcu Gönül on YouTube Music" onclick="window.open('https://music.youtube.com/channel/UCd75xEm-TC2Sc-aaQ0G2Vaw')">artist</span>
+              <span id="bgmPlay" class="navBtn material-symbols-rounded" title="play" onclick="mus('play')">play_arrow</span>
+              <span id="bgmPause" class="navBtn material-symbols-rounded" title="pause" onclick="mus('pause')">pause</span>
+              <!-- <span class="navBtn material-symbols-rounded" title="check out the album" onclick="window.open('/?vtm=album')">album</span> -->
+              <span class="navBtn material-symbols-rounded" title="check out the album" onclick="window.open('https://music.youtube.com/playlist?list=PLQZt5lx5sFp8DmbijnrDujmi9wxh70vEL')">album</span>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div id="album"> <!-- /vtm=album -->
+      <div class="titleHead">
+        <div>
+          <h1>album</h1>
+          <br>
+          <p>this is an album block.</p>
         </div>
       </div>
     </div>

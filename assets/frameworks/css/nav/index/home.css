@@ -174,3 +174,8 @@ img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
   border-radius: unset !important;
   filter: unset !important;
 }
+
+
+/* section blocks per page */
+
+#home, #anniversary, #story, #album, #event, #letter, #press { display: none; }

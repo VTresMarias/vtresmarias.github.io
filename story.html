@@ -48,52 +48,54 @@
     </script>
   </head>
   <body onload="init()">
-    <div id="loadBlock"> <!-- splash screen -->
-      <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
+    <div storyOvl>
+      <div id="loadBlock"> <!-- splash screen -->
+        <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
+      </div>
+      <header> <!-- desktop header -->
+        <img id="vtmLogoHead" src="/assets/web/maria_story_logo.png" alt="the story of the First Maria ～最初のマリアの物語～">
+        <div class="urlRefs">
+          <span id="playBtn" class="material-symbols-rounded" title="play the music" onclick="mus('play')">play_arrow</span>
+          <span id="pausBtn" class="material-symbols-rounded" title="pause the music" onclick="mus('pause')">pause</span>
+          <span class="material-symbols-rounded" title="close the page" onclick="closeApp()">exit_to_app</span>
+        </div>
+      </header>
+      <div id="cookieConsent">
+        <p><b>this website uses cookies to enhance your experience.</b></p>
+        <p>
+          by agreeing, you consent to the use of these cookies. don't worry -- we'll be
+          using as minimal as possible to protect your privacy.
+        </p>
+        <p>
+          also note that there are cookies placed by our partners (through embeds),
+          regardless of their promise of no-cookie policy. you can check out our Privacy
+          Policy on how they use them.
+        </p>
+        <div>
+          <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="cookieAccept()">check</span>
+          <span class="navBtnInv navBtn material-symbols-rounded" title="accept cookies" onclick="cookieDecline()">close</span>
+          <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="window.open('/privacy')">policy</span>
+        </div>
+      </div>
+      <div id="home"> <!-- / -->
+        <audio id="storyBGM" src="/assets/audio/vtm_music/01_fairyDance.mp3" loop></audio>
+        <div class="storyLayout">
+          <iframe id="storyNav" title="story viewer" onload="storyLoadCSS()"></iframe>
+        </div>
+        <div class="storyNavBtnUI">
+          <span class="storyNavBtn material-symbols-rounded" title="previous chapter" onclick="navStory('prev')">arrow_back</span>
+          <span id="navList" class="storyNavBtn material-symbols-rounded" title="enter a chapter" onclick="navToChapter()">book</span>
+          <span id="resumeRead" class="storyNavBtn material-symbols-rounded" title="pick up where you left off" onclick="pickUpWhereYouLeftOff()">history</span>
+          <span class="storyNavBtn material-symbols-rounded" title="next chapter" onclick="navStory('next')">arrow_forward</span>
+        </div>
+      </div>
+      <footer>
+        <span>©2022 「VTresMarias - V三人のマリア - 」</span>
+        <span socialURLs>
+          <a rel="noopener noreferrer" href="mailto:vtresmarias@outlook.jp" target="_self">email</a>&ensp;&bullet;&ensp;
+          <a rel="noopener noreferrer" href="https://x.com/VTresMarias" target="_blank">X</a>
+        </span>
+      </footer>
     </div>
-    <header> <!-- desktop header -->
-      <img id="vtmLogoHead" src="/assets/web/maria_story_logo.png" alt="the story of the First Maria ～最初のマリアの物語～">
-      <div class="urlRefs">
-        <span id="playBtn" class="material-symbols-rounded" title="play the music" onclick="mus('play')">play_arrow</span>
-        <span id="pausBtn" class="material-symbols-rounded" title="pause the music" onclick="mus('pause')">pause</span>
-        <span class="material-symbols-rounded" title="close the page" onclick="closeApp()">exit_to_app</span>
-      </div>
-    </header>
-    <div id="cookieConsent">
-      <p><b>this website uses cookies to enhance your experience.</b></p>
-      <p>
-        by agreeing, you consent to the use of these cookies. don't worry -- we'll be
-        using as minimal as possible to protect your privacy.
-      </p>
-      <p>
-        also note that there are cookies placed by our partners (through embeds),
-        regardless of their promise of no-cookie policy. you can check out our Privacy
-        Policy on how they use them.
-      </p>
-      <div>
-        <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="cookieAccept()">check</span>
-        <span class="navBtnInv navBtn material-symbols-rounded" title="accept cookies" onclick="cookieDecline()">close</span>
-        <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="window.open('/privacy')">policy</span>
-      </div>
-    </div>
-    <div id="home"> <!-- / -->
-      <audio id="storyBGM" src="/assets/audio/fairyDance.mp3" loop></audio>
-      <div class="storyLayout">
-        <iframe id="storyNav" title="story viewer" onload="storyLoadCSS()"></iframe>
-      </div>
-      <div class="storyNavBtnUI">
-        <span class="storyNavBtn material-symbols-rounded" title="previous chapter" onclick="navStory('prev')">arrow_back</span>
-        <span id="navList" class="storyNavBtn material-symbols-rounded" title="enter a chapter" onclick="navToChapter()">book</span>
-        <span id="resumeRead" class="storyNavBtn material-symbols-rounded" title="pick up where you left off" onclick="pickUpWhereYouLeftOff()">history</span>
-        <span class="storyNavBtn material-symbols-rounded" title="next chapter" onclick="navStory('next')">arrow_forward</span>
-      </div>
-    </div>
-    <footer>
-      <span>©2022 「VTresMarias - V三人のマリア - 」</span>
-      <span socialURLs>
-        <a rel="noopener noreferrer" href="mailto:vtresmarias@outlook.jp" target="_self">email</a>&ensp;&bullet;&ensp;
-        <a rel="noopener noreferrer" href="https://x.com/VTresMarias" target="_blank">X</a>
-      </span>
-    </footer>
   </body>
 </html>

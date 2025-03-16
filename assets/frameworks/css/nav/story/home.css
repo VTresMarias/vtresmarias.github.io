@@ -1,4 +1,10 @@
-body { background-image: url("/assets/images/maria_story_blurred.png"); }
+body { background-image: url("/assets/images/maria_story.png"); }
+
+[storyOvl] {
+  background-color: #dcc6bb40;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
 
 #home {
   position: relative;
@@ -6,9 +12,7 @@ body { background-image: url("/assets/images/maria_story_blurred.png"); }
   height: 100vh;
 }
 
-#storyBGM {
-  display: none;
-}
+#storyBGM { display: none; }
 
 .storyLayout {
   position: absolute;

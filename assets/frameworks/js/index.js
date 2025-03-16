@@ -9,76 +9,62 @@ function navQuery() {
 
     document.title = "anniversaries of the Marias";
 
-    document.getElementById("home").style.display = "none";
-    document.getElementById("anniversary").style.display = "block";
-    document.getElementById("story").style.display = "none";
-    document.getElementById("event").style.display = "none";
-    document.getElementById("letter").style.display = "none";
-    document.getElementById("press").style.display = "none";
-
-    importCSS("@import url('/assets/frameworks/css/nav/index/anniversary.css');");
+    document.getElementById(vtm).style.display = "block";
     navBtnHide(vtm);
+
+    importCSS("@import url('/assets/frameworks/css/nav/index/" + vtm + ".css');");
 
   } else if (vtm == "story") {
 
     document.title = "the story of the First Maria ～最初のマリアの物語～";
 
-    document.getElementById("home").style.display = "none";
-    document.getElementById("anniversary").style.display = "none";
-    document.getElementById("story").style.display = "block";
-    document.getElementById("event").style.display = "none";
-    document.getElementById("letter").style.display = "none";
-    document.getElementById("press").style.display = "none";
-
-    document.getElementById("vtmLogoHead").src = "/assets/web/maria_story_logo.png";
-    importCSS("@import url('/assets/frameworks/css/nav/index/story.css');");
+    document.getElementById(vtm).style.display = "block";
     navBtnHide(vtm);
+    
+    document.getElementById("vtmLogoHead").src = "/assets/web/maria_story_logo.png";
+    importCSS("@import url('/assets/frameworks/css/nav/index/" + vtm + ".css');");
+
+  } else if (vtm == "album") {
+
+    document.title = "V三人のマリア: the music of the Marias🍃🪷🌸"
+
+    document.getElementById(vtm).style.display = "block";
+    navBtnHide(vtm);
+
+    importCSS("@import url('/assets/frameworks/css/nav/index/" + vtm + ".css');");
 
   } else if (vtm == "event") {
 
-    document.title = "events";
-    document.getElementById("home").style.display = "none";
-    document.getElementById("anniversary").style.display = "none";
-    document.getElementById("story").style.display = "none";
-    document.getElementById("event").style.display = "block";
-    document.getElementById("letter").style.display = "none";
-    document.getElementById("press").style.display = "none";
+    document.title = "events"
 
-    importCSS("@import url('/assets/frameworks/css/nav/index/event.css');");
+    document.getElementById(vtm).style.display = "block";
     navBtnHide(vtm);
+
+    importCSS("@import url('/assets/frameworks/css/nav/index/" + vtm + ".css');");
 
   } else if (vtm == "letter") {
 
     document.title = "letters from the First Maria🍃";
 
-    document.getElementById("home").style.display = "none";
-    document.getElementById("anniversary").style.display = "none";
-    document.getElementById("story").style.display = "none";
-    document.getElementById("event").style.display = "none";
-    document.getElementById("letter").style.display = "block";
-    document.getElementById("press").style.display = "none";
-
-    importCSS("@import url('/assets/frameworks/css/nav/index/letter.css');");
+    document.getElementById(vtm).style.display = "block";
     navBtnHide(vtm);
+
+    importCSS("@import url('/assets/frameworks/css/nav/index/" + vtm + ".css');");
 
   } else if (vtm == "press") {
 
     document.title = "press releases";
 
-    document.getElementById("home").style.display = "none";
-    document.getElementById("anniversary").style.display = "none";
-    document.getElementById("story").style.display = "none";
-    document.getElementById("event").style.display = "none";
-    document.getElementById("letter").style.display = "none";
-    document.getElementById("press").style.display = "block";
-
-    importCSS("@import url('/assets/frameworks/css/nav/index/press.css');");
+    document.getElementById(vtm).style.display = "block";
     navBtnHide(vtm);
+
+    importCSS("@import url('/assets/frameworks/css/nav/index/" + vtm + ".css');");
 
   } else {
 
     document.title = "「VTresMarias - V三人のマリア - 」";
 
+    document.getElementById("home").style.display = "block";
     navBtnHide("home");
 
   }
