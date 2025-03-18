@@ -16,9 +16,11 @@ function navigateToStory(n) {
   if (n < 0) {
     alert("you're at the beginning of the story!!");
     storyChap = 0;
+    throw new Error("you're at the beginning of the story!!");
   } else if (n > 20) {
     alert("you're at the end of the story!!");
     storyChap = 20;
+    throw new Error("you're at the end of the story!!");
   } else {
     saveLeftOff(n);
     document.getElementById("navList").style.display = "inline-block";
@@ -39,8 +41,11 @@ function navigateToStory(n) {
 }
 function navToChapter() {
   storyChap = parseInt(prompt("enter a chapter that you wish to read [0-20]:", ""));
-  if (storyChap < 0 || storyChap > 20) { navToChapter() } else {
-    if (isNaN(storyChap)) { navToChapter(); }
+  if (storyChap < 0 || storyChap > 20) {
+    alert("chapter selection must be from 0 to 20.");
+    throw new Error("chapter selection must be from 0 to 20.");
+  } else {
+    if (isNaN(storyChap)) { throw new Error("operation canceled."); }
     navigateToStory(storyChap);
   }
 }
@@ -72,8 +77,9 @@ function closeApp() {
   window.close();
   closeTries++;
   if (closeTries > 5) {
-    alert("it appears that you can't close it this way. try CTRL-W or closing the tab manually on your browser.");
+    alert("it appears that you can't close it this way. try CTRL+W (or CMD+W) or closing the tab manually on your browser.");
     closeTries = 5;
+    throw new Error("it appears that you can't close it this way. try CTRL+W (or CMD+W) or closing the tab manually on your browser.");
   }
 }
 
