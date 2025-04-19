@@ -1,7 +1,5 @@
 /* applies to only the specific page */
 
-#anniversary, #story, #event, #letter, #press { display: none; }
-
 .frontImg, .frontText {
   background-size: cover;
   background-position: center center;
@@ -178,4 +176,4 @@ img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
 
 /* section blocks per page */
 
-#home, #anniversary, #story, #album, #event, #letter, #press { display: none; }
+#home, #anniversary, #story, #music, #event, #letter, #press { display: none; }

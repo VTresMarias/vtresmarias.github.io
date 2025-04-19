@@ -24,7 +24,7 @@ function navQuery() {
     document.getElementById("vtmLogoHead").src = "/assets/web/maria_story_logo.png";
     importCSS("@import url('/assets/frameworks/css/nav/index/" + vtm + ".css');");
 
-  } else if (vtm == "album") {
+  } else if (vtm == "music") {
 
     document.title = "V三人のマリア: the music of the Marias🍃🪷🌸"
 
