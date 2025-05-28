@@ -5,6 +5,12 @@ function pressInit() {
 
 function loadAjax(r) {
 
+  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
+  const ajaxLoad = new XMLHttpRequest();
+  ajaxLoad.onload = function() { document.getElementById("articlTxt").innerHTML = this.responseText; }
+  ajaxLoad.open("GET", `/assets/text/press/${r}.txt`);
+  ajaxLoad.send();
+
   let y = r.substring(0, 4),
     m = r.substring(4, 6),
     d = r.substring(6, 8),
@@ -12,29 +18,23 @@ function loadAjax(r) {
 
   switch(r) {
     case "20250312":
-      document.title = "statement on the First Maria🍃's condition regarding an unfortunate event — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
-      break;
+      document.title = `statement on the First Maria🍃's condition regarding an unfortunate event — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      return;
     case "20241227":
-      document.title = "VTresMarias debuts its improved look to celebrate its 2nd Anniversary — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
-      break;
+      document.title = `VTresMarias debuts its improved look to celebrate its 2nd Anniversary — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      return;
     case "20241218":
-      document.title = "our stance with involved persons/organizations moving forward — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
-      break;
+      document.title = `our stance with involved persons/organizations moving forward — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      return;
     case "20241210":
-      document.title = "VTresMarias announces first-ever Fortification of Blessing for Organization \"Samahan ng Puso\" — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
-      break;
+      document.title = `VTresMarias announces first-ever Fortification of Blessing for Organization "Samahan ng Puso" — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      return;
     case "20231231":
       window.location.replace("https://mamanyosquad.github.io/blog/20231231");
-      break;
+      return;
     default:
       window.location.replace("/?vtm=press");
-      break;
+      return;
   }
-
-  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
-  const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() { document.getElementById("articlTxt").innerHTML = this.responseText; }
-  ajaxLoad.open("GET", "/assets/text/press/" + r + ".txt");
-  ajaxLoad.send();
 
 }

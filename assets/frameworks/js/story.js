@@ -23,18 +23,18 @@ function navigateToStory(n) {
     throw new Error("you're at the end of the story!!");
   } else {
     saveLeftOff(n);
-    document.getElementById("navList").style.display = "inline-block";
-    document.getElementById("resumeRead").style.display = "none";
+    document.getElementById("navList").setAttribute("style", "display: inline-block;");
+    document.getElementById("resumeRead").setAttribute("style", "display: none;");
     window.frames[0].document.body.scrollTop = 0;
-    document.getElementById("storyNav").style.pointerEvents = "none";
-    document.getElementById("storyNav").style.cursor = "wait";
-    document.getElementById("storyNav").style.opacity = "0";
+    document.getElementById("storyNav").setAttribute("style", "pointerEvents: none;");
+    document.getElementById("storyNav").setAttribute("style", "cursor: wait;");
+    document.getElementById("storyNav").setAttribute("style", "opacity: 0;");
     setTimeout(() => {
       loadAjax(n);
       setTimeout(() => {
-        document.getElementById("storyNav").style.opacity = "1";
-        document.getElementById("storyNav").style.cursor = "initial";
-        document.getElementById("storyNav").style.pointerEvents = "initial";
+        document.getElementById("storyNav").setAttribute("style", "opacity: 1;");
+        document.getElementById("storyNav").setAttribute("style", "cursor: initial;");
+        document.getElementById("storyNav").setAttribute("style", "pointerEvents: initial;");
       }, 750);
     }, 750);
   }
@@ -61,12 +61,12 @@ function navStory(s) {
 
 function mus(arg) {
   if (arg == "play") {
-    document.getElementById("playBtn").style.display = "none";
-    document.getElementById("pausBtn").style.display = "inline-block";
+    document.getElementById("playBtn").setAttribute("style", "display: none;");
+    document.getElementById("pausBtn").setAttribute("style", "display: inline-block;");
     document.getElementById("storyBGM").play();
   } else if (arg == "pause") {
-    document.getElementById("playBtn").style.display = "inline-block";
-    document.getElementById("pausBtn").style.display = "none";
+    document.getElementById("playBtn").setAttribute("style", "display: inline-block;");
+    document.getElementById("pausBtn").setAttribute("style", "display: none;");
     document.getElementById("storyBGM").pause();
   }
 }
@@ -89,7 +89,7 @@ function loadAjax(r) {
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
   const ajaxLoad = new XMLHttpRequest();
   ajaxLoad.onload = function() { window.frames[0].document.body.innerHTML = this.responseText; }
-  ajaxLoad.open("GET", "/assets/text/story/chapter" + r + ".txt");
+  ajaxLoad.open("GET", `/assets/text/story/chapter${r}.txt`);
   ajaxLoad.send();
 
   return;

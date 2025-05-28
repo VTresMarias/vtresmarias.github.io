@@ -22,7 +22,9 @@ let vtmCertKind = [
   ],
   vtmcsmGrantees = [
     "Shunni / Samahan ng Puso",
-    "VOLs Production"
+    "VOLs Production",
+    "Connxt: Anime Popculture Event × Arterion Philippines",
+    "Bataan Anime Convention (BACon)"
   ],
   vtmGrantors = [
     "Mother Agatha, the First Maria🍃",
@@ -32,7 +34,8 @@ let vtmCertKind = [
   vtmCertDate = [
     "22 Dec 2024",
     "30 Dec 2024",
-    "15 Mar 2025"
+    "15 Mar 2025",
+    "8 Jun 2025"
   ]
 
 function certInit() {
@@ -64,54 +67,53 @@ function certInit() {
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000002":
           vCK = vtmCertKind[1];
           vGte = vtmGrantees[1];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000003":
           vCK = vtmCertKind[1];
           vGte = vtmGrantees[2];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000004":
           vCK = vtmCertKind[1];
           vGte = vtmGrantees[3];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000005":
           vCK = vtmCertKind[1];
           vGte = vtmGrantees[4];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000006":
           vCK = vtmCertKind[1];
           vGte = vtmGrantees[5];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000007":
           vCK = vtmCertKind[1];
           vGte = vtmGrantees[6];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[2];
           showDetails();
-          break;
+          return;
         default:
           // return nothing
-          break;
+          return;
       }
-      break;
     case "VTMCSM":
       switch(num) {
         case "000000001":
@@ -120,64 +122,77 @@ function certInit() {
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[0];
           showDetails();
-          break;
+          return;
         case "000000002":
           vCK = vtmCertKind[2];
           vGte = vtmGrantees[7];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000003":
           vCK = vtmCertKind[2];
           vGte = vtmGrantees[8];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000004":
           vCK = vtmCertKind[2];
           vGte = vtmGrantees[9];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[1];
           showDetails();
-          break;
+          return;
         case "000000005":
           vCK = vtmCertKind[2];
           vGte = vtmGrantees[10];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[2];
           showDetails();
-          break;
+          return;
         case "000000006":
           vCK = vtmCertKind[2];
           vGte = vtmGrantees[11];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[2];
           showDetails();
-          break;
+          return;
         case "000000007":
           vCK = vtmCertKind[0];
           vGte = vtmcsmGrantees[1];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[2];
           showDetails();
-          break;
+          return;
+        case "000000008":
+          vCK = vtmCertKind[0];
+          vGte = vtmcsmGrantees[2];
+          vGto = vtmGrantors[0];
+          vDt = vtmCertDate[3];
+          showDetails();
+          return;
+        case "000000009":
+          vCK = vtmCertKind[0];
+          vGte = vtmcsmGrantees[3];
+          vGto = vtmGrantors[0];
+          vDt = vtmCertDate[3];
+          showDetails();
+          return;
         default:
           // return nothing
-          break;
+          return;
       }
-      break;
     default:
       // return nothing
-      break;
+      return;
   }
 
 }
 
 function passCertNum() {
   var v = document.getElementById("certInput").value;
-  window.location.replace("/cert?ref=" + v);
+  window.location.replace(`/cert?ref=${v}`);
 }
 
 function showDetails() {
@@ -188,19 +203,19 @@ function showDetails() {
     <div>
       <div>
         <p>certificate reference number</p>
-        <h3>` + ref + `</h3>
+        <h3>${ref}</h3>
         <br><br>
         <p>certificate type</p>
-        <h2>` + vCK + `</h2>
+        <h2>${vCK}</h2>
         <br>
         <p>name of Grantee</p>
-        <h2>` + vGte + `</h2>
+        <h2>${vGte}</h2>
         <br>
         <p>date of grant</p>
-        <h3>` + vDt + `</h3>
+        <h3>${vDt}</h3>
         <br>
         <p>name of Grantor</p>
-        <h3>` + vGto + `</h3>
+        <h3>${vGto}</h3>
         <br><br>
         <p>QR code</p>
         <div id="vtmQR"></div>
@@ -214,7 +229,7 @@ function showDetails() {
   </div>
   `;
 
-  new QRCode("vtmQR", "https://vtresmarias.github.io/cert?ref=" + ref)
+  new QRCode("vtmQR", `https://vtresmarias.github.io/cert?ref="${ref}`)
 
   return;
 

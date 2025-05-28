@@ -5,6 +5,12 @@ function ltrInit() {
 
 function loadAjax(r) {
 
+  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
+  const ajaxLoad = new XMLHttpRequest();
+  ajaxLoad.onload = function() { document.getElementById("articlTxt").innerHTML = this.responseText; }
+  ajaxLoad.open("GET", `/assets/text/letter/${r}.txt`);
+  ajaxLoad.send();
+
   let y = r.substring(0, 4),
     m = r.substring(4, 6),
     d = r.substring(6, 8),
@@ -12,23 +18,17 @@ function loadAjax(r) {
 
   switch(r) {
     case "20241227":
-      document.title = "celebrating our 2nd Anniversary as Marias🍃🪷🌸 — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
-      break;
+      document.title = `celebrating our 2nd Anniversary as Marias🍃🪷🌸 — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      return;
     case "20240128":
-      document.title = "💗the Third Maria will always stay with us forever.🌸 — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
-      break;
+      document.title = `💗the Third Maria will always stay with us forever.🌸 — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      return;
     case "20231231":
-      document.title = "Happy 1st Anniversary!!🍃🪷🌸 — " + d.replace(/^0+/, "") + " " +  mD[m - 1] + " " + y;
-      break;
+      document.title = `Happy 1st Anniversary!!🍃🪷🌸 — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      return;
     default:
       window.location.replace("/?vtm=letter");
-      break;
-  }
-
-  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
-  const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() { document.getElementById("articlTxt").innerHTML = this.responseText; }
-  ajaxLoad.open("GET", "/assets/text/letter/" + r + ".txt");
-  ajaxLoad.send(); 
+      return;
+  } 
 
 }
