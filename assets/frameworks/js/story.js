@@ -26,15 +26,11 @@ function navigateToStory(n) {
     document.getElementById("navList").setAttribute("style", "display: inline-block;");
     document.getElementById("resumeRead").setAttribute("style", "display: none;");
     window.frames[0].document.body.scrollTop = 0;
-    document.getElementById("storyNav").setAttribute("style", "pointerEvents: none;");
-    document.getElementById("storyNav").setAttribute("style", "cursor: wait;");
-    document.getElementById("storyNav").setAttribute("style", "opacity: 0;");
+    document.getElementById("storyNav").setAttribute("style", "pointerEvents: none; cursor: wait; opacity: 0;");
     setTimeout(() => {
       loadAjax(n);
       setTimeout(() => {
-        document.getElementById("storyNav").setAttribute("style", "opacity: 1;");
-        document.getElementById("storyNav").setAttribute("style", "cursor: initial;");
-        document.getElementById("storyNav").setAttribute("style", "pointerEvents: initial;");
+        document.getElementById("storyNav").setAttribute("style", "opacity: 1; cursor: initial; pointerEvents: initial;");
       }, 750);
     }, 750);
   }

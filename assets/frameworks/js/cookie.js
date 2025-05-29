@@ -15,8 +15,7 @@ function cookieDetect() {
 function cookieAccept() {
   consent = true;
   document.cookie = `acceptCookie=${consent}; path=/; max-age=604800`;
-  document.getElementById("cookieConsent").setAttribute("style", "opacity: 0;");
-  document.getElementById("cookieConsent").setAttribute("style", "transform: translateY(7.5rem);");
+  document.getElementById("cookieConsent").setAttribute("style", "opacity: 0; transform: translateY(7.5rem);");
   setTimeout(() => {
     document.getElementById("cookieConsent").setAttribute("style", "display: none;");
   }, 750);
@@ -26,8 +25,7 @@ function cookieAccept() {
 function cookieDecline() {
   // consent = false;
   // document.cookie = "acceptCookie=" + consent + "; path=/";
-  document.getElementById("cookieConsent").setAttribute("style", "opacity: 0;");
-  document.getElementById("cookieConsent").setAttribute("style", "transform: translateY(7.5rem);");
+  document.getElementById("cookieConsent").setAttribute("style", "opacity: 0; transform: translateY(7.5rem);");
   setTimeout(() => {
     document.getElementById("cookieConsent").setAttribute("style", "display: none;");
   }, 750);
