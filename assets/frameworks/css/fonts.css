@@ -10,3 +10,10 @@
 
 /* googleicons */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+/* custom imports (add fonts to /assets/fonts) */
+@font-face {
+  /* Windows 11 Emoji */
+  font-family: "Windows 11 Emoji";
+  src: url("/assets/fonts/seguiemj.ttf") format("truetype");
+}
