@@ -18,13 +18,15 @@ let vtmCertKind = [
     "Gravity B., Apprentice to the CosMarias",
     "Shichide, Apprentice to the CosMarias",
     "Seushi, Apprentice to the CosMarias",
-    "Sonica, Apprentice to the CosMarias"
+    "Sonica, Apprentice to the CosMarias",
+    "Tris, the Eighth CosMaria💐"
   ],
   vtmcsmGrantees = [
     "Shunni / Samahan ng Puso",
     "VOLs Production",
     "Connxt: Anime Popculture Event × Arterion Philippines",
-    "Bataan Anime Convention (BACon)"
+    "Bataan Anime Convention (BACon)",
+    "Concentrix CVG Philippines"
   ],
   vtmGrantors = [
     "Mother Agatha, the First Maria🍃",
@@ -35,7 +37,8 @@ let vtmCertKind = [
     "22 Dec 2024",
     "30 Dec 2024",
     "15 Mar 2025",
-    "8 Jun 2025"
+    "8 Jun 2025",
+    "23 Jun 2025"
   ]
 
 function certInit() {
@@ -177,6 +180,13 @@ function certInit() {
           vGte = vtmcsmGrantees[3];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[3];
+          showDetails();
+          return;
+        case "000000010":
+          vCK = vtmCertKind[0];
+          vGte = vtmcsmGrantees[4];
+          vGto = vtmGrantors[0];
+          vDt = vtmCertDate[4];
           showDetails();
           return;
         default:

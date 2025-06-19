@@ -70,9 +70,9 @@
           <h1>certificate validator</h1>
           <br>
           <p>enter certificate reference number here (all caps, case-sensitive):</p>
-          <input id="certInput" type="text" placeholder="format: VTMxxxxxxxxx">
-          <br>
-          <button onclick="passCertNum()">submit</button>
+          <input id="certInput" type="text" placeholder="format: VTMxxxxxxxxx" onkeydown="if (event.key === 'Enter') { passCertNum(); }" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          <!-- <br>
+          <button onclick="passCertNum()">submit</button> -->
         </div>
       </div>
     </div>

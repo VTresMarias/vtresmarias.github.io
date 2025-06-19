@@ -50,9 +50,10 @@ _please note that this document will serve as the Marias' part of transparency p
 
 ## Blessed Orgs (Certificate of Blessing)
 
-| name                          | effectivity date    | certificate reference                                                                           |
-|:-----------------------------:|:-------------------:|:-----------------------------------------------------------------------------------------------:|
-| **Samahan ng Puso**           | 22 Dec 2024         | :white_check_mark: [VTMCSM000000001](https://vtresmarias.github.io/cert?ref=VTMCSM000000001)    |
-| **VOLs Production**           | 15 Mar 2025         | :x: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)                   |
-| **Connxt / Arterion**         | 8 Jun 2025          | :x: [VTMCSM000000008](https://vtresmarias.github.io/cert?ref=VTMCSM000000008)                   |
-| **Bataan Anime Convention**   | 8 Jun 2025          | :x: [VTMCSM000000009](https://vtresmarias.github.io/cert?ref=VTMCSM000000009)                   |
+| name                                  | effectivity date    | certificate reference                                                                           |
+|:-------------------------------------:|:-------------------:|:-----------------------------------------------------------------------------------------------:|
+| **Samahan ng Puso**                   | 22 Dec 2024         | :white_check_mark: [VTMCSM000000001](https://vtresmarias.github.io/cert?ref=VTMCSM000000001)    |
+| **VOLs Production**                   | 15 Mar 2025         | :x: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)                   |
+| **Connxt / Arterion**                 | 8 Jun 2025          | :x: [VTMCSM000000008](https://vtresmarias.github.io/cert?ref=VTMCSM000000008)                   |
+| **Bataan Anime Convention**           | 8 Jun 2025          | :white_check_mark: [VTMCSM000000009](https://vtresmarias.github.io/cert?ref=VTMCSM000000009)                   |
+| **Concentrix CVG Philippines**        | 23 Jun 2025         | :x: [VTMCSM000000010](https://vtresmarias.github.io/cert?ref=VTMCSM000000010)                   |
