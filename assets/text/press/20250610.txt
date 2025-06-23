@@ -1,12 +1,12 @@
 <h1>
   AN URGENT CALL: hold the Trump Administration accountable on ALL GROUNDS
 </h1>
-<em style="font-weight: 700;">
+<em style="font-weight: 700">
   a joint open-letter statement by VTresMarias, #MamaNyoSquad, tbmassoc, and The
   Ortega Project
 </em>
 <span>published 10 Jun 2025</span>
-<br />
+<br>
 <p>
   it has now come to our attention, based on the reports that we have gathered,
   that recent actions brought upon by Donald J. Trump, his administration, and
@@ -24,8 +24,8 @@
     href="https://www.9news.com.au/world/los-angeles-ice-arrest-protest-riots-australian-9news-reporter-lauren-tomasi-struck-by-rubber-bullet/ca0185c4-260e-4a90-a214-aa7c5532a7c6"
     target="_blank"
     >Channel Nine's Lauren Tomasi that was shot with a rubber bullet by an LAPD
-    officer while reporting live on the field in Los Angeles, California</a
-  >
+    officer while reporting live on the field in Los Angeles, California
+  </a>
   just recently.
 </p>
 <p>
@@ -53,7 +53,7 @@
   and as of this day, the term "Divided States of America" holds true to this
   purpose, all thanks to the incompetent President; that is Donald J. Trump.
 </p>
-<br />
+<br>
 <h2>a call to action over this insensitive fact; from #MamaNyoSquad</h2>
 <p>
   We at #MamaNyoSquad recognizes the importance of unification and simplicity --
@@ -86,7 +86,7 @@
   #MamaNyoSquad joins VTresMarias in this momentous battle from the sidelines up
   to the front -- fighting for peace and solidarity, in the name of democracy.
 </p>
-<br />
+<br>
 <h2>
   a wilting peace, brought upon in the name of Donald J. Trump's own interests;
   from tbmassoc
@@ -114,7 +114,7 @@
   costs you your life. the peace of the nation depends on us now. let's get this
   done.
 </p>
-<br />
+<br>
 <h2>in a vicious cycle; from The Ortega Project</h2>
 <p>Emmannuel Ortega for The Ortega Project.</p>
 <p>
@@ -156,7 +156,7 @@
   and hope throughout the nation.
 </p>
 <p>This is the Final Straw.</p>
-<br />
+<br>
 <h2>the parting note</h2>
 <p>
   VTresMarias and other parties included in this joint statement pledge to

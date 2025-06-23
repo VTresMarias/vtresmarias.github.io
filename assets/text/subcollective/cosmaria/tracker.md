@@ -13,7 +13,7 @@ _please note that this document will serve as the Marias' part of transparency p
 
 ### Incumbents
 
-| name          |   designation                                         | effectivity date    | tiara color                           | bowtie color              | certificate reference                                                                     | Letter claimed?     | coscards claimed?   |
+| name          | designation                                           | effectivity date    | tiara color                           | bowtie color              | certificate reference                                                                     | Letter claimed?     | coscards claimed?   |
 |:-------------:|:-----------------------------------------------------:|:-------------------:|:-------------------------------------:|:-------------------------:|:-----------------------------------------------------------------------------------------:|:-------------------:|:-------------------:|
 | **Aga**       | the Incumbent First CosMaria&#x1F343;&#x1F490;        | 30 Dec 2024         | :white_check_mark: mint green (teal)  | :white_check_mark: red    | :white_check_mark: [VTM000000001](https://vtresmarias.github.io/cert?ref=VTM000000001)    | :white_check_mark:  | :white_check_mark:  |
 | **Dani**      | the Incumbent Second CosMaria&#x1FAB7;&#x1F490;       | 30 Dec 2024         | :x: sky blue                          | :x: red                   | :x: [VTM000000002](https://vtresmarias.github.io/cert?ref=VTM000000002)                   | :x:                 | :x:                 |
@@ -50,10 +50,10 @@ _please note that this document will serve as the Marias' part of transparency p
 
 ## Blessed Orgs (Certificate of Blessing)
 
-| name                                  | effectivity date    | certificate reference                                                                           |
-|:-------------------------------------:|:-------------------:|:-----------------------------------------------------------------------------------------------:|
-| **Samahan ng Puso**                   | 22 Dec 2024         | :white_check_mark: [VTMCSM000000001](https://vtresmarias.github.io/cert?ref=VTMCSM000000001)    |
-| **VOLs Production**                   | 15 Mar 2025         | :x: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)                   |
-| **Connxt / Arterion**                 | 8 Jun 2025          | :x: [VTMCSM000000008](https://vtresmarias.github.io/cert?ref=VTMCSM000000008)                   |
-| **Bataan Anime Convention**           | 8 Jun 2025          | :white_check_mark: [VTMCSM000000009](https://vtresmarias.github.io/cert?ref=VTMCSM000000009)                   |
-| **Concentrix CVG Philippines**        | 23 Jun 2025         | :x: [VTMCSM000000010](https://vtresmarias.github.io/cert?ref=VTMCSM000000010)                   |
+| name                                        | effectivity date    | certificate reference                                                                           |
+|:-------------------------------------------:|:-------------------:|:-----------------------------------------------------------------------------------------------:|
+| **Samahan ng Puso**                         | 22 Dec 2024         | :white_check_mark: [VTMCSM000000001](https://vtresmarias.github.io/cert?ref=VTMCSM000000001)    |
+| **VOLs Production**                         | 15 Mar 2025         | :x: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)                   |
+| **Connxt / Arterion**                       | 8 Jun 2025          | :x: [VTMCSM000000008](https://vtresmarias.github.io/cert?ref=VTMCSM000000008)                   |
+| **Bataan Anime Convention**                 | 8 Jun 2025          | :white_check_mark: [VTMCSM000000009](https://vtresmarias.github.io/cert?ref=VTMCSM000000009)    |
+| **Concentrix CVG Philippines, Inc.**        | 23 Jun 2025         | :x: [VTMCSM000000010](https://vtresmarias.github.io/cert?ref=VTMCSM000000010)                   |

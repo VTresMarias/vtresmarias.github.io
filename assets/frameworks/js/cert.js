@@ -26,7 +26,7 @@ let vtmCertKind = [
     "VOLs Production",
     "Connxt: Anime Popculture Event × Arterion Philippines",
     "Bataan Anime Convention (BACon)",
-    "Concentrix CVG Philippines"
+    "Concentrix CVG Philippines, Inc."
   ],
   vtmGrantors = [
     "Mother Agatha, the First Maria🍃",
@@ -239,7 +239,7 @@ function showDetails() {
   </div>
   `;
 
-  new QRCode("vtmQR", `https://vtresmarias.github.io/cert?ref="${ref}`)
+  new QRCode("vtmQR", `https://vtresmarias.github.io/cert?ref=${ref}`)
 
   return;
 

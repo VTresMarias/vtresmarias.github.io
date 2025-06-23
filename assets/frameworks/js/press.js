@@ -17,6 +17,9 @@ function loadAjax(r) {
     mD = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   switch(r) {
+    case "20250623":
+      document.title = `inclusivity with Pride: a BPO's recognitional tale — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      return;
     case "20250610":
       document.title = `AN URGENT CALL: hold the Trump Administration accountable on ALL GROUNDS — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       return;
