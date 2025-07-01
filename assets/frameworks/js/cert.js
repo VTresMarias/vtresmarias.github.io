@@ -38,7 +38,8 @@ let vtmCertKind = [
     "30 Dec 2024",
     "15 Mar 2025",
     "8 Jun 2025",
-    "23 Jun 2025"
+    "23 Jun 2025",
+    "30 Jun 2025"
   ]
 
 function certInit() {
@@ -111,6 +112,13 @@ function certInit() {
           vGte = vtmGrantees[6];
           vGto = vtmGrantors[0];
           vDt = vtmCertDate[2];
+          showDetails();
+          return;
+        case "000000008":
+          vCK = vtmCertKind[1];
+          vGte = vtmGrantees[12];
+          vGto = vtmGrantors[0];
+          vDt = vtmCertDate[5];
           showDetails();
           return;
         default:

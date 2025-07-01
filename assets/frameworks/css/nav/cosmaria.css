@@ -85,8 +85,8 @@ h2[csmName] {
   padding: 1rem;
 }
 [csmTable="inc"] > div { width: 33.33%; }
-[csmTable="indB1"] > div { width: 25%; }
-[csmTable="apprB1"] > div { width: 33.33%; }
+[csmTable^="indB"] > div { width: 25%; }
+[csmTable^="apprB"] > div { width: 33.33%; }
 [csmTable] > div > * {
   display: block;
   margin: 0;
@@ -108,7 +108,7 @@ h2[csmName] {
   box-sizing: border-box;
 }
 @media screen and (max-width: 1080px) {
-  [csmTable="indB1"] > div { width: 50%; }
+  [csmTable^="indB"] > div { width: 50%; }
 }
 @media screen and (max-width: 720px) {
   [csmTable] > div { width: 100%; }

@@ -32,7 +32,7 @@ _please note that this document will serve as the Marias' part of transparency p
 
 | name          | designation                                           | effectivity date    | tiara color                           | bowtie color              | certificate reference                                                                     | Letter claimed?     | coscards claimed?   |
 |:-------------:|:-----------------------------------------------------:|:-------------------:|:-------------------------------------:|:-------------------------:|:-----------------------------------------------------------------------------------------:|:-------------------:|:-------------------:|
-| **Tris**      | the Eighth CosMaria&#x1F490;                          | TBD                 | :x: TBD                               | :x: TBD                   | :x: [VTM000000008](https://vtresmarias.github.io/cert?ref=VTM000000008)                   | :x:                 | :x:                 |
+| **Tris**      | the Eighth CosMaria&#x1F490;                          | 30 Jun 2025         | :x: TBD                               | :x: TBD                   | :white_check_mark: [VTM000000008](https://vtresmarias.github.io/cert?ref=VTM000000008)    | :x:                 | :x:                 |
 
 
 ## Apprentices to the CosMarias
