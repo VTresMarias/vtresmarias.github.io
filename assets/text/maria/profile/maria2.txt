@@ -1,9 +1,3 @@
-<span class="diagCloseBtn material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
-<img src="/assets/images/profile/maria_pfp_2.png"  alt="Aura Ostara, the Second Maria🪷">
-<br>
-<h2>Aura Ostara</h2>
-<span>the Second Maria🪷</span>
-<br>
 <p>
   Aura Ostara represents the Celestial Nymph Guardian who aims to protect her
   Nimbisouls by all means necessary. she was an everyday girl before that one

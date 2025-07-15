@@ -1,9 +1,3 @@
-<span class="diagCloseBtn material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
-<img src="/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
-<br>
-<h2>Hina Oujo</h2>
-<span>the Third Maria🌸</span>
-<br>
 <p>
   Hina Oujo is an elegant queen from a faraway land who vows to serve her
   Chuu-nins well. she has everything under her disposal, but deep inside, she

@@ -1,6 +1,3 @@
-<span class="diagCloseBtn material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
-<img src="/assets/images/profile/maria_pfp_2.png"  alt="Aura Ostara, the Second Maria🪷">
-<br>
 <h2>復活 ～Rebirth～</h2>
 <br>
 <p>

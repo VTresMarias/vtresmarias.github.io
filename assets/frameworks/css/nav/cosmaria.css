@@ -35,6 +35,7 @@ h2[csmName] {
   width: 750px;
   max-width: 100%;
   margin: 0 auto;
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
 .titleHead > div > * {
@@ -90,6 +91,7 @@ h2[csmName] {
 [csmTable] > div > * {
   display: block;
   margin: 0;
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
 [csmTable] > div > span { font-style: italic; }

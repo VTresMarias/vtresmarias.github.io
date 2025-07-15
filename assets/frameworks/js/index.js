@@ -1,50 +1,58 @@
 function navQuery() {
 
-  var vtm = new URLSearchParams(window.location.search).get("vtm");
+  let vtm = new URLSearchParams(window.location.search).get("vtm"),
+    nv;
 
   // related answer: https://stackoverflow.com/a/56825511 
   const importCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
-
-  importCSS(`@import url('/assets/frameworks/css/nav/index/${vtm}.css');`);
 
   switch (vtm) {
     case "anniversary":
       document.title = "anniversaries of the Marias";
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      return;
+      nv = vtm;
+      break;
     case "story":
       document.title = "the story of the First Maria ～最初のマリアの物語～";
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
+      nv = vtm;
       document.getElementById("vtmLogoHead").src = "/assets/web/maria_story_logo.png";
-      return;
+      break;
     case "music":
       document.title = "V三人のマリア: the music of the Marias🍃🪷🌸"
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      return;
+      nv = vtm;
+      break;
     case "event":
       document.title = "events"
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      return;
+      nv = vtm;
+      break;
     case "letter":
       document.title = "letters from the First Maria🍃";
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      return;
+      nv = vtm;
+      break;
     case "press":
       document.title = "press releases";
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      return;
+      nv = vtm;
+      break;
     default:
       document.title = "「VTresMarias - V三人のマリア - 」";
       document.getElementById("home").setAttribute("style", "display: block;");
       navBtnHide("home");
-      return;
+      nv = "home";
+      break;
   }
+
+  importCSS(`@import url('/assets/frameworks/css/nav/index/${nv}.css');`);
 
 }
 
@@ -73,29 +81,80 @@ function navBtnHide(lbl) {
   for (let v = 0; v < format.length; v++) { document.getElementById(`btn-${lbl}-${format[v]}`).setAttribute("style", "display: none;"); }
 }
 
-function mariaDesignate(c, m) { // where c = category, m = Maria
-  let d = document.getElementById("dialogBlock");
-  if (c == "profile") { d.setAttribute("style", "height: 720px;"); } else { d.setAttribute("style", "height: calc(720px / 1.25);"); }
-  dialogView(c, m);
-  d.showModal();
+function mariaDialogOpen(maria, type) {
+  document.body.insertAdjacentHTML("afterbegin", `
+    <div id="mariaDiag" onclick="mariaDialogClose()">
+      <div style="width: 30rem; height: 50rem;">
+        <img style="width: 20rem; border: 0.5rem solid ${isMariaClr(maria)};" src="/assets/images/profile/maria_pfp_${isMariaNum(maria)}.png" alt="${isMariaName(maria)}, ${isMariaDesignation(maria)}">
+        <br>
+        <h2>${isMariaName(maria)}</h2>
+        <span>${isMariaDesignation(maria)}</span>
+        <br>
+        <div id="mariaDesc">${isMariaDescription(isMariaNum(maria))}</div>
+      </div>
+    </div>
+  `);
+  function isMariaClr(clr) {
+    switch (clr) {
+      case "firstMaria": return "#793a80";
+      case "secondMaria": return "#66a898";
+      case "thirdMaria": return "#f0a9a9";
+      default: return null;
+    }
+  }
+  function isMariaNum(num) {
+    switch (num) {
+      case "firstMaria": return 1;
+      case "secondMaria": return 2;
+      case "thirdMaria": return 3;
+      default: return null;
+    }
+  }
+  function isMariaName(nmm) {
+    switch (nmm) {
+      case "firstMaria": return "Mother Agatha";
+      case "secondMaria": return "Aura Ostara";
+      case "thirdMaria": return "Hina Oujo";
+      default: return null;
+    }
+  }
+  function isMariaDesignation(dsg) {
+    switch (dsg) {
+      case "firstMaria": return " the First Maria🍃";
+      case "secondMaria": return " the Second Maria🪷";
+      case "thirdMaria": return " the Third Maria🌸";
+      default: return null;
+    }
+  }
+  function isMariaDescription(nmb) {
+    let ajx = new XMLHttpRequest();
+    ajx.onload = function() { document.getElementById("mariaDesc").innerHTML = this.responseText; }
+    ajx.open("GET", `/assets/text/maria/${type}/maria${nmb}.txt`);
+    ajx.send();
+  }
+  // document.getElementById("mariaDiag").setAttribute("style", "opacity: 1;");
 }
-function dialogView(f, t) { // where f = folder, t = textfile
-  const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() { document.getElementById("dialogTxt").innerHTML = this.responseText; }
-  ajaxLoad.open("GET", `/assets/text/maria/${f}/${t}.txt`);
-  ajaxLoad.send();
-  return;
-}
-function closeDiag() {
-  document.getElementById("dialogBlock").close();
-  document.getElementById("dialogTxt").innerHTML = null;
+function mariaDialogClose() {
+  document.getElementById("mariaDiag").remove();
 }
 
-function genericAjax(dir) { // generic ajax function, only for individual files
-  document.getElementById("dialogBlock").setAttribute("style", "height: 720px;");
-  const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() { document.getElementById("dialogTxt").innerHTML = this.responseText; }
-  ajaxLoad.open("GET", dir);
-  ajaxLoad.send();
-  document.getElementById("dialogBlock").showModal();
+function subCollOpen(name) {
+  document.body.insertAdjacentHTML("afterbegin", `
+    <div id="mariaDiag" onclick="mariaDialogClose()">
+      <div id="subCollTxt" style="width: 30rem; height: 50rem;">${whatSubColl(name)}</div>
+    </div>
+  `);
+  function whatSubColl(sbcl) {
+    let path;
+    switch (sbcl) {
+      case "cosmaria":
+        path = "/assets/text/subcollective/cosmaria/synopsis.txt";
+        break;
+      default: return null;
+    }
+    let ajx = new XMLHttpRequest();
+    ajx.onload = function() { document.getElementById("subCollTxt").innerHTML = this.responseText; }
+    ajx.open("GET", `${path}`);
+    ajx.send();
+  }
 }

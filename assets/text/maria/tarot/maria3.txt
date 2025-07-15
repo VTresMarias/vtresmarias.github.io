@@ -1,6 +1,3 @@
-<span class="diagCloseBtn material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
-<img src="/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
-<br>
 <h2>落ち着き ～Stability～</h2>
 <br>
 <p>

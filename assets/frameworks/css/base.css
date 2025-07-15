@@ -41,7 +41,10 @@ header {
   background: linear-gradient(#dcc6bba0, #00000000);
   justify-content: space-between;
 }
-header > *, #mobileNav > * { filter: drop-shadow(2px 4px 16px #3d374c80); }
+header > *, #mobileNav > * {
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
 #mobileNav {
   background-color: #dcc6bb;
   color: #3d374c;
@@ -118,15 +121,20 @@ dialog {
   border-radius: 15px;
   background-color: #dcc6bb;
   color: #3d374c;
+  -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   box-shadow: 2px 4px 100px 16px #3d374c80;
 }
 dialog:focus { outline: 0; }
-dialog::backdrop { backdrop-filter: blur(15px); }
+dialog::backdrop {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
 dialog > div > * {
   display: block;
   margin: 0;
   text-align: center;
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
 dialog > div > img {

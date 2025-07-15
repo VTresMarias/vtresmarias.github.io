@@ -10,6 +10,7 @@
   -moz-transition: 0.75s;
   -o-transition: 0.75s;
   transition: 0.75s;
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
 .storyNavBtn:hover {

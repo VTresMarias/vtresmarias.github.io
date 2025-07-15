@@ -1,9 +1,3 @@
-<span class="diagCloseBtn material-symbols-rounded" title="close dialog" onclick="closeDiag()">close</span>
-<img src="/assets/images/profile/maria_pfp_1.png" alt="Mother Agatha, the First Maria🍃">
-<br>
-<h2>Mother Agatha</h2>
-<span>the First Maria🍃</span>
-<br>
 <p>
   Mother Agatha was once a beloved Mother before everything fell apart due to
   the brink of winter. she was given a mission from the Grand Lady upon her
