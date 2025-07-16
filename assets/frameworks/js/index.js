@@ -84,7 +84,7 @@ function navBtnHide(lbl) {
 function mariaDialogOpen(maria, type) {
   document.body.insertAdjacentHTML("afterbegin", `
     <div id="mariaDiag" onclick="mariaDialogClose()">
-      <div style="width: 30rem; height: 50rem;">
+      <div style="width: 30rem; height: 50rem;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
         <img style="width: 20rem; border: 0.5rem solid ${isMariaClr(maria)};" src="/assets/images/profile/maria_pfp_${isMariaNum(maria)}.png" alt="${isMariaName(maria)}, ${isMariaDesignation(maria)}">
         <br>
         <h2>${isMariaName(maria)}</h2>
@@ -141,7 +141,9 @@ function mariaDialogClose() {
 function subCollOpen(name) {
   document.body.insertAdjacentHTML("afterbegin", `
     <div id="mariaDiag" onclick="mariaDialogClose()">
-      <div id="subCollTxt" style="width: 30rem; height: 50rem;">${whatSubColl(name)}</div>
+      <div id="subCollTxt" style="width: 30rem; height: 50rem;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+        ${whatSubColl(name)}
+      </div>
     </div>
   `);
   function whatSubColl(sbcl) {
