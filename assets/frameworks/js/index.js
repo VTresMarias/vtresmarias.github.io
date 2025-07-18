@@ -94,6 +94,7 @@ function mariaDialogOpen(maria, type) {
       </div>
     </div>
   `);
+  noUndefined();
   function isMariaClr(clr) {
     switch (clr) {
       case "firstMaria": return "#793a80";
@@ -141,11 +142,12 @@ function mariaDialogClose() {
 function subCollOpen(name) {
   document.body.insertAdjacentHTML("afterbegin", `
     <div id="mariaDiag" onclick="mariaDialogClose()">
-      <div isUndefined id="subCollTxt" style="width: 30rem; height: 50rem;" onclick="{ event.stopPropagation(); noUndefined(); }">
+      <div isUndefined id="subCollTxt" style="width: 30rem; height: 50rem;" onclick="{ event.stopPropagation(); }">
         ${whatSubColl(name)}
       </div>
     </div>
   `);
+  noUndefined();
   function whatSubColl(sbcl) {
     let path;
     switch (sbcl) {
@@ -162,8 +164,8 @@ function subCollOpen(name) {
 }
 
 function noUndefined() {
-  let el = document.querySelectorAll("[isUndefined]");
+  let el = document.querySelectorAll("div[isUndefined]");
   for (let i = 0; i < el.length; i++) {
-    if (el[i].innerHTML.includes("undefined")) { el[i].innerHTML = ""; }
+    if (el[i].innerHTML.includes("undefined")) { el[i].innerHTML = `<p><i>loading data..</i></p>`; }
   }
 }
