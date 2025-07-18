@@ -164,6 +164,6 @@ function subCollOpen(name) {
 function noUndefined() {
   let el = document.querySelectorAll("[isUndefined]");
   for (let i = 0; i < el.length; i++) {
-    if (el[i].innerHTML.includes("Undefined")) { el[i].innerHTML = ""; }
+    if (el[i].innerHTML.includes("undefined")) { el[i].innerHTML = ""; }
   }
 }
