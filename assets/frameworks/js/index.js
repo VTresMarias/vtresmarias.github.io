@@ -84,13 +84,13 @@ function navBtnHide(lbl) {
 function mariaDialogOpen(maria, type) {
   document.body.insertAdjacentHTML("afterbegin", `
     <div id="mariaDiag" onclick="mariaDialogClose()">
-      <div style="width: 30rem; height: 50rem;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+      <div style="width: 30rem; height: 50rem;" onclick="{ event.stopPropagation(); noUndefined(); }">
         <img style="width: 20rem; border: 0.5rem solid ${isMariaClr(maria)};" src="/assets/images/profile/maria_pfp_${isMariaNum(maria)}.png" alt="${isMariaName(maria)}, ${isMariaDesignation(maria)}">
         <br>
         <h2>${isMariaName(maria)}</h2>
         <span>${isMariaDesignation(maria)}</span>
         <br>
-        <div id="mariaDesc">${isMariaDescription(isMariaNum(maria))}</div>
+        <div isUndefined id="mariaDesc">${isMariaDescription(isMariaNum(maria))}</div>
       </div>
     </div>
   `);
@@ -141,7 +141,7 @@ function mariaDialogClose() {
 function subCollOpen(name) {
   document.body.insertAdjacentHTML("afterbegin", `
     <div id="mariaDiag" onclick="mariaDialogClose()">
-      <div id="subCollTxt" style="width: 30rem; height: 50rem;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+      <div isUndefined id="subCollTxt" style="width: 30rem; height: 50rem;" onclick="{ event.stopPropagation(); noUndefined(); }">
         ${whatSubColl(name)}
       </div>
     </div>
@@ -158,5 +158,12 @@ function subCollOpen(name) {
     ajx.onload = function() { document.getElementById("subCollTxt").innerHTML = this.responseText; }
     ajx.open("GET", `${path}`);
     ajx.send();
+  }
+}
+
+function noUndefined() {
+  let el = document.querySelectorAll("[isUndefined]");
+  for (let i = 0; i < el.length; i++) {
+    if (el[i].innerHTML.includes("Undefined")) { el[i].innerHTML = ""; }
   }
 }
