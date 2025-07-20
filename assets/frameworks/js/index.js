@@ -169,3 +169,20 @@ function noUndefined() {
     if (el[i].innerHTML.includes("undefined")) { el[i].innerHTML = `<p><i>loading data..</i></p>`; }
   }
 }
+
+function ytPlayer(nm) {
+  let wdth, aspr, ytId;
+  switch (nm) {
+    case "csm2025":
+      wdth = "75rem";
+      aspr = "16 / 9";
+      ytId = "LLSOjWAf3vA";
+      break;
+    default: return null;
+  }
+  document.body.insertAdjacentHTML("afterbegin", `
+    <div id="mariaDiag" onclick="mariaDialogClose()">
+      <iframe style="width: ${wdth}; aspect-ratio: ${aspr};" src="https://www.youtube-nocookie.com/embed/${ytId}?controls=1&rel=0&showinfo=0&modestbranding=1&playsinline=1" title="YT Player" frameborder="0" allowfullscreen onclick="{ event.stopPropagation(); }"></iframe>
+    </div>
+  `);
+}
