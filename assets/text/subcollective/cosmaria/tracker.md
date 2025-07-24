@@ -50,10 +50,10 @@ _please note that this document will serve as the Marias' part of transparency p
 
 ## Blessed Orgs (Certificate of Blessing)
 
-| name                                        | effectivity date    | certificate reference                                                                           |
-|:-------------------------------------------:|:-------------------:|:-----------------------------------------------------------------------------------------------:|
-| **Samahan ng Puso**                         | 22 Dec 2024         | :white_check_mark: [VTMCSM000000001](https://vtresmarias.github.io/cert?ref=VTMCSM000000001)    |
-| **VOLs Production**                         | 15 Mar 2025         | :x: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)                   |
-| **Connxt / Arterion**                       | 8 Jun 2025          | :x: [VTMCSM000000008](https://vtresmarias.github.io/cert?ref=VTMCSM000000008)                   |
-| **Bataan Anime Convention**                 | 8 Jun 2025          | :white_check_mark: [VTMCSM000000009](https://vtresmarias.github.io/cert?ref=VTMCSM000000009)    |
-| **Concentrix CVG Philippines, Inc.**        | 23 Jun 2025         | :x: [VTMCSM000000010](https://vtresmarias.github.io/cert?ref=VTMCSM000000010)                   |
+| name                                        | effectivity date    | certificate reference                                                                           | has been revoked?                   |
+|:-------------------------------------------:|:-------------------:|:-----------------------------------------------------------------------------------------------:|:-----------------------------------:|
+| **Samahan ng Puso**                         | 22 Dec 2024         | :white_check_mark: [VTMCSM000000001](https://vtresmarias.github.io/cert?ref=VTMCSM000000001)    | :x:                                 |
+| **VOLs Production**                         | 15 Mar 2025         | :x: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)                   | :x:                                 |
+| **Connxt / Arterion**                       | 8 Jun 2025          | :x: [VTMCSM000000008](https://vtresmarias.github.io/cert?ref=VTMCSM000000008)                   | :x:                                 |
+| **Bataan Anime Convention**                 | 8 Jun 2025          | :white_check_mark: [VTMCSM000000009](https://vtresmarias.github.io/cert?ref=VTMCSM000000009)    | :x:                                 |
+| ~~**Concentrix CVG Philippines, Inc.**~~    | ~~23 Jun 2025~~     | &#x1F5D1; ~~[VTMCSM000000010](https://vtresmarias.github.io/cert?ref=VTMCSM000000010)~~         | :white_check_mark: (25 Jul 2025)    |
