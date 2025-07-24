@@ -1,10 +1,10 @@
 // global variables
-var storyChap = 0,
+let storyChap = 0,
   closeTries = 0;
 
 // workaround: https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe 
 function storyLoadCSS() {
-  var loadStyle = document.createElement("link");
+  let loadStyle = document.createElement("link");
   loadStyle.rel = "stylesheet";
   loadStyle.href = "/assets/frameworks/css/nav/story/chapter.css";
   loadStyle.type = "text/css";
@@ -28,7 +28,7 @@ function navigateToStory(n) {
     window.frames[0].document.body.scrollTop = 0;
     document.getElementById("storyNav").setAttribute("style", "pointerEvents: none; cursor: wait; opacity: 0;");
     setTimeout(() => {
-      loadAjax(n);
+      ajxLdr(n);
       setTimeout(() => {
         document.getElementById("storyNav").setAttribute("style", "opacity: 1; cursor: initial; pointerEvents: initial;");
       }, 750);
@@ -67,7 +67,7 @@ function mus(arg) {
   }
 }
 
-function initRead() { loadAjax(0); }
+function initRead() { ajxLdr(0); }
 
 function closeApp() {
   window.close();
@@ -80,13 +80,13 @@ function closeApp() {
 }
 
 // migration from html to txt for a cleaner navigation
-function loadAjax(r) {
+function ajxLdr(r) {
 
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
-  const ajaxLoad = new XMLHttpRequest();
-  ajaxLoad.onload = function() { window.frames[0].document.body.innerHTML = this.responseText; }
-  ajaxLoad.open("GET", `/assets/text/story/chapter${r}.txt`);
-  ajaxLoad.send();
+  let ajx = new XMLHttpRequest();
+  ajx.onload = function() { window.frames[0].document.body.innerHTML = this.responseText; }
+  ajx.open("GET", `/assets/text/story/chapter${r}.txt`);
+  ajx.send();
 
   return;
 
