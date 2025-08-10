@@ -1,58 +1,53 @@
 function navQuery() {
 
   let vtm = new URLSearchParams(window.location.search).get("vtm"),
-    nv;
-
-  // related answer: https://stackoverflow.com/a/56825511 
-  const importCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css;
+    importCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css; // related answer: https://stackoverflow.com/a/56825511 
 
   switch (vtm) {
     case "anniversary":
       document.title = "anniversaries of the Marias";
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      nv = vtm;
-      break;
+      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
+      return;
     case "story":
       document.title = "the story of the First Maria ～最初のマリアの物語～";
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      nv = vtm;
+      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
       document.getElementById("vtmLogoHead").src = "/assets/web/maria_story_logo.png";
-      break;
+      return;
     case "music":
       document.title = "V三人のマリア: the music of the Marias🍃🪷🌸"
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      nv = vtm;
-      break;
+      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
+      return;
     case "event":
       document.title = "events"
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      nv = vtm;
-      break;
+      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
+      return;
     case "letter":
       document.title = "letters from the First Maria🍃";
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      nv = vtm;
-      break;
+      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
+      return;
     case "press":
       document.title = "press releases";
       document.getElementById(vtm).setAttribute("style", "display: block;");
       navBtnHide(vtm);
-      nv = vtm;
-      break;
+      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
+      return;
     default:
       document.title = "「VTresMarias - V三人のマリア - 」";
       document.getElementById("home").setAttribute("style", "display: block;");
       navBtnHide("home");
-      nv = "home";
-      break;
+      importCSS(`@import url("/assets/frameworks/css/nav/index/home.css");`);
+      return;
   }
-
-  importCSS(`@import url('/assets/frameworks/css/nav/index/${nv}.css');`);
 
 }
 
