@@ -125,7 +125,7 @@ function mariaDialogOpen(maria, type) {
   function isMariaDescription(nmb) {
     let ajx = new XMLHttpRequest();
     ajx.onload = function() { document.getElementById("mariaDesc").innerHTML = this.responseText; }
-    ajx.open("GET", `/assets/text/maria/${type}/maria${nmb}.txt`);
+    ajx.open("GET", `/assets/ajx/maria/${type}/maria${nmb}.txt`);
     ajx.send();
   }
   // document.getElementById("mariaDiag").setAttribute("style", "opacity: 1;");
@@ -147,7 +147,7 @@ function subCollOpen(name) {
     let path;
     switch (sbcl) {
       case "cosmaria":
-        path = "/assets/text/subcollective/cosmaria/synopsis.txt";
+        path = "/assets/ajx/subcollective/cosmaria/synopsis.txt";
         break;
       default: return null;
     }
@@ -180,4 +180,9 @@ function ytPlayer(nm) {
       <iframe style="width: ${wdth}; aspect-ratio: ${aspr};" src="https://www.youtube-nocookie.com/embed/${ytId}?controls=1&rel=0&showinfo=0&modestbranding=1&playsinline=1" title="YT Player" frameborder="0" allowfullscreen onclick="{ event.stopPropagation(); }"></iframe>
     </div>
   `);
+}
+
+function mediaPlay(file) {
+  document.querySelector("audio[mediaExec]").src = `https://media.githubusercontent.com/media/VTresMarias/vtresmarias.github.io/refs/heads/vtm-music/${file}.mp3`;
+  document.querySelector("audio[mediaExec]").play();
 }

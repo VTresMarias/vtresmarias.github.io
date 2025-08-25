@@ -29,9 +29,7 @@ function navigateToStory(n) {
     document.getElementById("storyNav").setAttribute("style", "pointerEvents: none; cursor: wait; opacity: 0;");
     setTimeout(() => {
       ajxLdr(n);
-      setTimeout(() => {
-        document.getElementById("storyNav").setAttribute("style", "opacity: 1; cursor: initial; pointerEvents: initial;");
-      }, 750);
+      setTimeout(() => { document.getElementById("storyNav").setAttribute("style", "opacity: 1; cursor: initial; pointerEvents: initial;"); }, 750);
     }, 750);
   }
 }
@@ -85,7 +83,7 @@ function ajxLdr(r) {
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
   let ajx = new XMLHttpRequest();
   ajx.onload = function() { window.frames[0].document.body.innerHTML = this.responseText; }
-  ajx.open("GET", `/assets/text/story/chapter${r}.txt`);
+  ajx.open("GET", `/assets/ajx/story/chapter${r}.txt`);
   ajx.send();
 
   return;

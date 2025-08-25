@@ -8,7 +8,7 @@ function ajxLdr(r) {
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
   let ajx = new XMLHttpRequest();
   ajx.onload = function() { document.getElementById("articlTxt").innerHTML = this.responseText; }
-  ajx.open("GET", `/assets/text/press/${r}.txt`);
+  ajx.open("GET", `/assets/ajx/press/${r}.txt`);
   ajx.send();
 
   let y = r.substring(0, 4),
