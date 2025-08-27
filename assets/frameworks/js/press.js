@@ -17,13 +17,12 @@ function ajxLdr(r) {
     mD = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   switch (r) {
-    case "20250623": return document.title = `inclusivity with Pride: a BPO's recognitional tale — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
-    case "20250610": return document.title = `AN URGENT CALL: hold the Trump Administration accountable on ALL GROUNDS — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
-    case "20250605": return document.title = `uplifting the Marias' Core Values through cosplay — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
-    case "20250312": return document.title = `statement on the First Maria🍃's condition regarding an unfortunate event — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
-    case "20241227": return document.title = `VTresMarias debuts its improved look to celebrate its 2nd Anniversary — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
-    case "20241218": return document.title = `our stance with involved persons/organizations moving forward — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
-    // case "20241210": return document.title = `VTresMarias announces first-ever Fortification of Blessing for Organization "Samahan ng Puso" — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20250610": return document.title = `AN URGENT CALL: hold the Trump Administration accountable on ALL GROUNDS \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20250605": return document.title = `uplifting the Marias' Core Values through cosplay \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20250312": return document.title = `statement on the First Maria🍃's condition regarding an unfortunate event \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20241227": return document.title = `VTresMarias debuts its improved look to celebrate its 2nd Anniversary \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20241218": return document.title = `our stance with involved persons/organizations moving forward \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20241210": return document.title = `VTresMarias announces first-ever Fortification of Blessing for Organization "Samahan ng Puso" \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
     case "20231231": return window.location.replace("https://mamanyosquad.github.io/blog/20231231");
     default: return window.location.replace("/?vtm=press");
   }

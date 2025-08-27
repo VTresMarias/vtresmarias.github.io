@@ -1,52 +1,62 @@
 <h1>uplifting the Marias' Core Values through cosplay</h1>
 <span>published 5 Jun 2025</span>
-<br>
+<br><br>
 <p>
   VTresMarias prides itself as a sole VTuber Collective that strives for the
   greater good through its Core Values. however, in order to enact on it, the
   Collective has to be involved in areas of interest that share the same value
   -- and fortify them in an equal and accessible manner.
 </p>
+<br>
 <p>
   with the debut of its first Sub-Collective -- CosMarias -- the Collective
   understands that belief. in addition, this move aids to recognize the
   importance that comes with dedication and inspiration blooming from within.
 </p>
+<br>
 <p>
   furthermore, the First Maria🍃's involvement in such field provided a catalyst
   for universality across cosplayers and cosplay in general.
 </p>
+<br>
 <p>
   hence, the Marias have seen fit to officially provide its blessing to two
   organizations that made each moment count.
 </p>
-<br>
+<br><br>
 <h2>a word from the First Maria🍃</h2>
+<br>
 <p>
   since officially debuting CosMarias last 30 Dec 2024, I have been consistently
   getting involved in cosplay conventions, hoping that the message of
   "Universality" and "Acceptance" may spread across the community and beyond --
   no matter the circumstances.
 </p>
+<br>
 <p>
   and in those times, I have found my solace in such conventions -- often
   through presences with other cosplayers who believed in the same value and
   virtue as I do.
 </p>
+<br>
 <p>
   but most of all, I have met the organizers who strive to provide the same kind
   of value, undermining the circumstances brought upon by their efforts behind
   the scenes.
 </p>
+<br>
 <p>
   as the First Maria🍃, it has seen fit to officially induct two of those
   organizers who believe and share the same passion as I do -- among other
   organizations that share the same values as the Marias.
 </p>
-<p>you may learn more about them through the following below:</p>
 <br>
+<p>you may learn more about them through the following below:</p>
+<br><br>
 <h2>meet the Inductees</h2>
+<br>
 <h3>Connxt: Anime Popculture Event × Arterion Philippines</h3>
+<br>
 <p>
   you may have heard of Connxt some several months back -- they were the ones
   who have successfully hosted the Gakuen-Sai last 15-16 Sep 2024 (previously
@@ -54,37 +64,45 @@
   experiences through the world of cosplay has made them one of the prominent
   organizers in Central Luzon.
 </p>
+<br>
 <p>
   since their merge with Arterion Philippines (which was officiated during Yoru
   Matsuri last 24 May 2025), they have promised to strive even more to provide
   the cosplayers and the audience with an experience they will never forget.
 </p>
+<br>
 <p>
   the First Maria🍃 has appeared in those events in form of a participation,
   which is also a part of her evaluation to see if they have performed well. all
   considerations at hand, they have proven to have more than what they have
   offered to the masses.
 </p>
+<br>
 <button onclick="window.open('/cert?ref=VTMCSM000000008')">view certificate</button>
+<br>
 <h3>Bataan Anime Convention (BACon)</h3>
+<br>
 <p>
   one of the most prominent cosplay organizers in Bataan, BACon has made their
   experience stand out amongst others through their impact with the community at
   large. in addition, their morale together with fellow cosplayers made them a
   key element in bringing out the best in the hobby.
 </p>
+<br>
 <p>
   the First Maria🍃's observations are conclusive despite her first-ever
   appearance in their convention -- while more can be done to improve the impact
   to the community, she has seen fit for the organizer to have its own mark in
   the field.
 </p>
+<br>
 <p>
   adding to the presence of the Fourth CosMaria💐 -- primarily known as
   Baconette -- her experience made it more exhilarating and fun.
 </p>
-<button onclick="window.open('/cert?ref=VTMCSM000000009')">view certificate</button>
 <br>
+<button onclick="window.open('/cert?ref=VTMCSM000000009')">view certificate</button>
+<br><br>
 <p>
   the new inductees will join Samahan ng Puso and VOLs Production in recognizing
   the impact to the community regardless of the field they align in. the two

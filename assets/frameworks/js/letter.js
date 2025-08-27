@@ -17,9 +17,10 @@ function ajxLdr(r) {
     mD = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   switch (r) {
-    case "20241227": return document.title = `celebrating our 2nd Anniversary as Marias🍃🪷🌸 — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
-    case "20240128": return document.title = `💗the Third Maria will always stay with us forever.🌸 — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
-    case "20231231": return document.title = `Happy 1st Anniversary!!🍃🪷🌸 — ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20250827": return document.title = `I don't wanna hear your excuses. \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20241227": return document.title = `celebrating our 2nd Anniversary as Marias🍃🪷🌸 \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20240128": return document.title = `💗the Third Maria will always stay with us forever.🌸 \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+    case "20231231": return document.title = `Happy 1st Anniversary!!🍃🪷🌸 \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
     default: return window.location.replace("/?vtm=letter");
   } 
 
