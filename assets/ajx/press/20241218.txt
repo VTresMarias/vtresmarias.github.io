@@ -3,15 +3,15 @@
 <br><br>
 <p>
   it has come to our attention that there have been reports about some persons
-  or organizations that wanted to leverage the kindness that the our Members of
-  the Collective has shown that we felt was deeply questionable.
+  or organizations that wanted to leverage the kindness that our Members of the
+  Collective have shown that we felt was deeply questionable.
 </p>
 <br>
 <p>
   although we are not naming such persons/organizations as this will only be
-  serving as a general reminder, however,
-  <i
-    >we are taking these reports seriously, as it not only impacts the general
+  served as a general reminder, however,
+  <i>
+    we are taking these reports seriously, as it not only impacts the general
     status of the Collective, but also within the Members themselves.
   </i>
 </p>
@@ -38,8 +38,13 @@
   <h3>effective immediately.</h3>
 </div>
 <br><br>
-<p>
+<p style="text-decoration: line-through">
   we will be opening our dedicated email address in order to cater to the
   inquiries brought upon by this move. it should be expected to debut during the
   2nd Anniversary of the Marias -- 27 Dec 2024.
+</p>
+<br>
+<p>
+  you may send us an email directly and the First Maria🍃 will be ready to
+  address your concerns: <b>vtresmarias@outlook.jp</b>
 </p>

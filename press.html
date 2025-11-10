@@ -45,14 +45,14 @@
       // in-page javascript
     </script>
   </head>
-  <body onload="init()">
+  <body onload="{ init(); }">
     <div id="loadBlock"> <!-- splash screen -->
       <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
     </div>
     <header> <!-- desktop header -->
       <img id="vtmLogoHead" src="/assets/web/vtm_logoWide.svg" alt="「VTresMarias - V三人のマリア - 」">
       <div class="urlRefs">
-        <span class="material-symbols-rounded" title="home" onclick="window.location.replace('/')">home</span>
+        <span class="material-symbols-rounded" title="home" onclick="{ window.location.replace('/'); }">home</span>
       </div>
     </header>
     <div id="cookieConsent">
@@ -67,9 +67,9 @@
         Policy on how they use them.
       </p>
       <div>
-        <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="cookieAccept()">check</span>
-        <span class="navBtnInv navBtn material-symbols-rounded" title="accept cookies" onclick="cookieDecline()">close</span>
-        <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="window.open('/privacy')">policy</span>
+        <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="{ cookieAccept(); }">check</span>
+        <span class="navBtnInv navBtn material-symbols-rounded" title="decline cookies" onclick="{ cookieDecline(); }">close</span>
+        <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="{ window.open('/privacy'); }">policy</span>
       </div>
     </div>
     <div id="cert">
@@ -82,9 +82,11 @@
     </div>
     <footer>
       <span>©2022 「VTresMarias - V三人のマリア - 」</span>
-      <span socialURLs>
-        <a rel="noopener noreferrer" href="mailto:vtresmarias@outlook.jp" target="_self">email</a>&ensp;&bullet;&ensp;
-        <a rel="noopener noreferrer" href="https://x.com/VTresMarias" target="_blank">X</a>
+      <span class="socialsV2">
+        <i class="bi bi-envelope-at-fill" title="email" onclick="{ window.open('mailto:vtresmarias@outlook.jp', '_self'); }"></i>
+        <i class="bi bi-twitter-x" title="X" onclick="{ window.open('https://x.com/VTresMarias'); }"></i>
+        <!-- <i class="bi bi-bluesky" title="bluesky" onclick={ window.open('https://vtresmarias.bsky.social'); }></i> -->
+        <!-- <i class="bi bi-youtube" title="youtube" onclick={ window.open('https://youtube.com/@VTresMarias'); }></i> -->
       </span>
     </footer>
   </body>

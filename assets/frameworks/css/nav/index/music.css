@@ -35,16 +35,21 @@
   justify-content: left;
   align-items: center;
 }
-.songSelect .material-symbols-rounded {
+.songSelect span[class^="material-symbols"] {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   padding: 0.5rem;
   border-radius: 50%;
   background-color: #3d374c;
   color: #dcc6bb;
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
   font-size: 0.875em;
   -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
-.songSelect .material-symbols-rounded:hover {
+.songSelect span[class^="material-symbols"]:hover {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   background-color: #dcc6bb;
   color: #3d374c;

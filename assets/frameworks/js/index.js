@@ -6,44 +6,44 @@ function navQuery() {
   switch (vtm) {
     case "anniversary":
       document.title = "anniversaries of the Marias";
-      document.getElementById(vtm).setAttribute("style", "display: block;");
+      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
       navBtnHide(vtm);
       importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
       return;
     case "story":
       document.title = "the story of the First Maria ～最初のマリアの物語～";
-      document.getElementById(vtm).setAttribute("style", "display: block;");
+      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
       navBtnHide(vtm);
       importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
-      document.getElementById("vtmLogoHead").src = "/assets/web/maria_story_logo.png";
+      document.querySelector("#vtmLogoHead").src = "/assets/web/maria_story_logo.png";
       return;
     case "music":
       document.title = "V三人のマリア: the music of the Marias🍃🪷🌸"
-      document.getElementById(vtm).setAttribute("style", "display: block;");
+      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
       navBtnHide(vtm);
       importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
       return;
     case "event":
       document.title = "events"
-      document.getElementById(vtm).setAttribute("style", "display: block;");
+      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
       navBtnHide(vtm);
       importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
       return;
     case "letter":
       document.title = "letters from the First Maria🍃";
-      document.getElementById(vtm).setAttribute("style", "display: block;");
+      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
       navBtnHide(vtm);
       importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
       return;
     case "press":
       document.title = "press releases";
-      document.getElementById(vtm).setAttribute("style", "display: block;");
+      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
       navBtnHide(vtm);
       importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
       return;
     default:
       document.title = "「VTresMarias - V三人のマリア - 」";
-      document.getElementById("home").setAttribute("style", "display: block;");
+      document.querySelector("#home").setAttribute("style", "display: block;");
       navBtnHide("home");
       importCSS(`@import url("/assets/frameworks/css/nav/index/home.css");`);
       return;
@@ -51,18 +51,18 @@ function navQuery() {
 
 }
 
-function panelOpen() { document.getElementById("mobileNav").setAttribute("style", "transform: initial;"); }
-function panelClose() { document.getElementById("mobileNav").setAttribute("style", "transform: translateY(-15rem);"); }
+function panelOpen() { document.querySelector("#mobileNav").setAttribute("style", "transform: initial;"); }
+function panelClose() { document.querySelector("#mobileNav").setAttribute("style", "transform: translateY(-15rem);"); }
 
 function mus(arg) {
   if (arg == "play") {
-    document.getElementById("bgmPlay").setAttribute("style", "display: none;");
-    document.getElementById("bgmPause").setAttribute("style", "display: inline-block;");
-    document.getElementById("storyBGM").play();
+    document.querySelector("#bgmPlayPause").onclick = () => { mus("pause"); };
+    document.querySelector("#bgmPlayPause").innerText = "pause";
+    document.querySelector("#storyBGM").play();
   } else if (arg == "pause") {
-    document.getElementById("bgmPlay").setAttribute("style", "display: inline-block;");
-    document.getElementById("bgmPause").setAttribute("style", "display: none;");
-    document.getElementById("storyBGM").pause();
+    document.querySelector("#bgmPlayPause").onclick = () => { mus("play"); };
+    document.querySelector("#bgmPlayPause").innerText = "play_arrow";
+    document.querySelector("#storyBGM").pause();
   }
 }
 

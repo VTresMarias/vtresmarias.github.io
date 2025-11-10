@@ -1,20 +1,18 @@
-.titleHead > div > input[type="text"] {
-  display: block;
-  width: 25rem;
-  max-width: 100%;
-  margin: 0 auto !important;
-  font-family: inherit;
-  color: inherit;
-  font-size: inherit;
-  border-color: #3d374c;
-  border-style: none none solid none;
-  border-width: 2.5px;
-  border-radius: 0;
-  background-color: unset;
-}
-.titleHead > div > button {
-  display: block;
-  margin: 0 auto !important;
+.titleHead > div {
+  & input[type="text"] {
+    display: block;
+    width: 25rem;
+    max-width: 100%;
+    margin: 0 auto !important;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+    border-color: #3d374c;
+    border-style: none none solid none;
+    border-width: 2.5px;
+    border-radius: 0;
+    background-color: unset;
+  }
 }
 
 .frontText > div > * {
@@ -22,17 +20,26 @@
   text-align: center;
 }
 
-#vtmQR {
-  display: block !important;
+.vtmCertQR {
+  display: none !important;
   margin: 0 auto !important;
   width: 250px !important;
   max-width: 100% !important;
   height: auto !important;
   padding: 0.5rem;
   background-color: #fff;
+  & * {
+    max-width: 100%;
+    max-height: auto;
+    aspect-ratio: 1 / 1;
+  }
 }
-#vtmQR > * {
+
+canvas {
+  width: 3900px;
   max-width: 100%;
-  max-height: auto;
-  aspect-ratio: 1 / 1;
+  height: auto;
+  aspect-ratio: 1.53 / 1;
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
+  filter: drop-shadow(2px 4px 16px #3d374c80);
 }

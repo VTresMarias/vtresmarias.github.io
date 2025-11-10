@@ -26,7 +26,7 @@ let ref = new URLSearchParams(window.location.search).get("ref"),
     "VOLs Production",
     "Connxt: Anime Popculture Event × Arterion Philippines",
     "Bataan Anime Convention (BACon)",
-    "Concentrix CVG Philippines, Inc."
+    "RECORDS REVOKED"
   ],
   vtmGrantors = [
     "Mother Agatha, the First Maria🍃",
@@ -38,7 +38,7 @@ let ref = new URLSearchParams(window.location.search).get("ref"),
     "30 Dec 2024",
     "15 Mar 2025",
     "8 Jun 2025",
-    "23 Jun 2025",
+    "RECORDS REVOKED",
     "30 Jun 2025"
   ]
 
@@ -96,42 +96,131 @@ function certInit() {
 
 }
 
-function showDetails(certRef, certKind, certGrantee, certDate, certGrantor) {
-  
-  document.getElementById("certHTML").innerHTML = `
+function showDetails(certRef, certKind, certGrantee, certGrantor, certDate) {
+
+  document.querySelector("#certHTML").innerHTML = `
     <div class="frontText">
       <div>
         <div>
           <h1>certificate details</h1>
           <br>
-          <p>reference number</p>
-          <h3>${certRef}</h3>
+          <div class="vtmCertQR"></div>
+          <canvas></canvas>
           <br><br>
-          <p>type</p>
-          <h2>${certKind}</h2>
-          <br>
-          <p>name of Grantee</p>
-          <h2>${certGrantee}</h2>
-          <br>
-          <p>date of grant</p>
-          <h3>${certDate}</h3>
-          <br>
-          <p>name of Grantor</p>
-          <h3>${certGrantor}</h3>
-          <br><br>
-          <p style="margin-bottom: 0.5rem !important;">QR code</p>
-          <div id="vtmQR"></div>
-          <br>
-          <p><i>
-            QR codes may vary as we depend on different providers, but they output the
-            same.
-          </i></p>
+          <p>
+            you may save the image for future reference. a physical copy will be sent when
+            certain requirements are met.
+          </p>
         </div>
       </div>
     </div>
   `;
 
-  new QRCode("vtmQR", `https://vtresmarias.github.io/cert?ref=${ref}`);
+  function loadFont(fontName, fontUrl) {
+  // only works for fonts assigned in /assets/fonts -- everything else
+  // must be assigned as <link> in cert.html
+  const font = new FontFace(fontName, `url(${fontUrl})`);
+  return font.load()
+    .then((loadedFont) => {
+      document.fonts.add(loadedFont);
+      return loadedFont;
+    })
+    .catch((error) => {
+      console.error(`failed to load font "${fontName}" from "${fontUrl}":`, error);
+    });
+  }
+
+  function VTMorCSM_img(type) {
+    switch (type) {
+      case "Certificate of Blessing":
+        return "VTM";
+      case "Certificate of Inauguration":
+      case "Certificate of Introduction":
+        return "CSM";
+      default: event.stopPropagation();
+    }
+  }
+
+  function VTMorCSM_grantor(type) {
+    switch (type) {
+      case "Certificate of Blessing":
+        return canvas.width / 1.85;
+      case "Certificate of Inauguration":
+      case "Certificate of Introduction":
+        return canvas.width / 1.575;
+      default: return event.stopPropagation();
+    }
+  }
+
+  function VTMorCSM_disp(type) {
+    switch (type) {
+      case "Certificate of Blessing":
+        return `for uplifting the nation through your efforts whilst upholding\nthe Marias' Core Values that reaches beyond borders.\n\nthis certificate was granted on ${certDate}.`;
+      case "Certificate of Inauguration":
+        return `for her contributions that impact the community as a whole\nand upholding her integrity as a newly-inducted Cosplay Maria.\n\nthis certificate was granted on ${certDate}.`;
+      case "Certificate of Introduction":
+        return `for showcasing their spirit that upholds the Marias' Core Values\nthrough cosplay and other fields -- indicting as the Apprentice of CSM.\n\nthis certificate was granted on ${certDate}.`;
+      default: return event.stopPropagation();
+    }
+  }
+
+  new QRCode(document.querySelector(".vtmCertQR"), {
+    text: `https://vtresmarias.github.io/cert?ref=${certRef}`,
+    colorDark: "#3d374c",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+
+  const qrDiv = document.querySelector(".vtmCertQR"),
+    qrImage = qrDiv.querySelector("img"),
+    canvas = document.querySelector(".frontText > div > div > canvas"),
+    ctx = canvas.getContext("2d"),
+    imge = new Image();
+    
+    imge.setAttribute("src", `/assets/images/cert/cert_${VTMorCSM_img(certKind)}.png`);
+    
+  imge.onload = () => {
+
+    canvas.width = imge.width;
+    canvas.height = imge.height;
+
+    ctx.drawImage(imge, 0, 0, canvas.width, canvas.height);
+
+    Promise.all([
+      loadFont("Imperial Script", "/assets/fonts/ImperialScript-Regular.ttf"),
+      loadFont("Windows 11 Emoji", "/assets/fonts/seguiemj.ttf")
+    ]).then(() => {
+
+      ctx.fillStyle = "#3d374c";
+
+      ctx.font = `234pt "Imperial Script"`;
+      ctx.textAlign = "center";
+      ctx.fillText(certKind, canvas.width / 2, canvas.height / 3.1);
+
+      ctx.font = `156pt "Imperial Script", "Windows 11 Emoji"`;
+      ctx.fillText(certGrantee, canvas.width / 2, canvas.height / 1.935);
+
+      ctx.font = `italic 58.5pt "Noto Serif Display", "Windows 11 Emoji"`;
+      const text = `${VTMorCSM_disp(certKind)}`,
+        lines = text.split("\n"),
+        lineHeight = 87.75;
+      let y = canvas.height / 1.67;
+      lines.forEach((line) => {
+        ctx.fillText(line, canvas.width / 2, y);
+        y += lineHeight;
+      });
+
+      ctx.font = `600 italic 58.5pt "Noto Serif Display", "Windows 11 Emoji"`;
+      ctx.fillText(certGrantor, `${VTMorCSM_grantor(certKind)}`, canvas.height / 1.195);
+
+      ctx.strokeStyle = "white";
+      ctx.lineWidth = 15;
+      ctx.strokeRect(canvas.width / 1.18625 - 7.5, canvas.height / 1.314 - 7.5, 300 + 15, 300 + 15);
+      ctx.drawImage(qrImage, canvas.width / 1.18625, canvas.height / 1.314, 300, 300);
+
+    });
+
+  };
 
   return;
 
@@ -139,7 +228,7 @@ function showDetails(certRef, certKind, certGrantee, certDate, certGrantor) {
 
 function certInvalid(CRN) {
   
-  return document.getElementById("certHTML").innerHTML = `
+  return document.querySelector("#certHTML").innerHTML = `
     <div class="frontText">
       <div>
         <div>
@@ -160,7 +249,7 @@ function certInvalid(CRN) {
 
 function certRevoked(CRN) {
   
-  return document.getElementById("certHTML").innerHTML = `
+  return document.querySelector("#certHTML").innerHTML = `
     <div class="frontText">
       <div>
         <div>

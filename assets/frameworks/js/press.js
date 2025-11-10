@@ -7,7 +7,7 @@ function ajxLdr(r) {
 
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
   let ajx = new XMLHttpRequest();
-  ajx.onload = function() { document.getElementById("articlTxt").innerHTML = this.responseText; }
+  ajx.onload = function() { document.querySelector("#articlTxt").innerHTML = this.responseText; }
   ajx.open("GET", `/assets/ajx/press/${r}.txt`);
   ajx.send();
 
@@ -59,7 +59,7 @@ function ajxLdr(r) {
       document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
       document.querySelector("meta[name='og:description']").setAttribute("content", `Shunni's "Samahan ng Puso" becomes the first organization to receive the Certificate of Blessing from the Marias.`);
       return r;
-    case "20231231": return window.location.replace("https://mamanyosquad.github.io/blog/20231231");
+    case "20231231": return window.location.replace("https://mamanyosquad.github.io/blog?article=20231231");
     default: return window.location.replace("/?vtm=press");
   }
 

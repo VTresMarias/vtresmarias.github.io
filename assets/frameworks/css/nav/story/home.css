@@ -55,6 +55,7 @@ body { background-image: url("/assets/images/maria_story.png"); }
   transform: translate(-50%, -50%);
 }
 .storyNavBtn {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   background-color: #3d374c;
   border-radius: 50%;
   color: #dcc6bb;
@@ -62,6 +63,10 @@ body { background-image: url("/assets/images/maria_story.png"); }
   margin: 0.25rem;
   padding: 0.75rem;
   aspect-ratio: 1 / 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
   -webkit-transition: 0.75s;
   -moz-transition: 0.75s;
   -o-transition: 0.75s;

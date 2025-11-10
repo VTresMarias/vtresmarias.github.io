@@ -23,13 +23,13 @@ function navigateToStory(n) {
     throw new Error("you're at the end of the story!!");
   } else {
     saveLeftOff(n);
-    document.getElementById("navList").setAttribute("style", "display: inline-block;");
-    document.getElementById("resumeRead").setAttribute("style", "display: none;");
+    document.querySelector("#navList").setAttribute("style", "display: inline-block;");
+    document.querySelector("#resumeRead").setAttribute("style", "display: none;");
     window.frames[0].document.body.scrollTop = 0;
-    document.getElementById("storyNav").setAttribute("style", "pointerEvents: none; cursor: wait; opacity: 0;");
+    document.querySelector("#storyNav").setAttribute("style", "pointerEvents: none; cursor: wait; opacity: 0;");
     setTimeout(() => {
       ajxLdr(n);
-      setTimeout(() => { document.getElementById("storyNav").setAttribute("style", "opacity: 1; cursor: initial; pointerEvents: initial;"); }, 750);
+      setTimeout(() => { document.querySelector("#storyNav").setAttribute("style", "opacity: 1; cursor: initial; pointerEvents: initial;"); }, 750);
     }, 750);
   }
 }
@@ -55,13 +55,13 @@ function navStory(s) {
 
 function mus(arg) {
   if (arg == "play") {
-    document.getElementById("playBtn").setAttribute("style", "display: none;");
-    document.getElementById("pausBtn").setAttribute("style", "display: inline-block;");
-    document.getElementById("storyBGM").play();
+    document.querySelector("#btnPlayPause").onclick = () => { mus("pause"); };
+    document.querySelector("#btnPlayPause").innerText = "pause";
+    document.querySelector("#storyBGM").play();
   } else if (arg == "pause") {
-    document.getElementById("playBtn").setAttribute("style", "display: inline-block;");
-    document.getElementById("pausBtn").setAttribute("style", "display: none;");
-    document.getElementById("storyBGM").pause();
+    document.querySelector("#btnPlayPause").onclick = () => { mus("play"); };
+    document.querySelector("#btnPlayPause").innerText = "play_arrow";
+    document.querySelector("#storyBGM").pause();
   }
 }
 
