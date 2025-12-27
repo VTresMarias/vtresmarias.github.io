@@ -92,8 +92,11 @@
       </div>
     </div>
     <div id="home"> <!-- / -->
+      <div class="mariaDiagV3" onclick="{ vtmCloseView(); }">
+        <div onclick="{ event.stopPropagation(); }"></div>
+      </div>
       <div class="frontImg" style="background-image: url('/assets/images/20240128_remaster.png');"></div>
-      <div class="frontText" style="background-image: url('/assets/images/20240128_remaster.png');">
+      <!-- <div class="frontText" style="background-image: url('/assets/images/20240128_remaster.png');">
         <div style="background-color: #dcc6bb80;">
           <div>
             <h1>home of the VTuber Collective</h1>
@@ -113,48 +116,82 @@
             <button onclick="{ window.open('https://bit.ly/vTubieVTM'); }">read more on vTubie</button>
           </div>
         </div>
+      </div> -->
+      <div class="frontText" style="background-image: url('/assets/images/20240128_remaster.png');">
+        <div style="background-color: #dcc6bb80;">
+          <div>
+            <h1>celebrating 3 years of becoming one with the Marias</h1>
+            <br>
+            <p>
+              VTresMarias has come a long way since its inception on 27 Dec 2022, pursuing
+              the Core Values for the betterment of the VTuber Community and beyond. and
+              along the way, it became more than just a VTuber Collective -- it's a
+              culmination of ideas bringing together to form a community that has uplifted
+              the spirits of not just the people around them, but also themselves.
+            </p>
+            <br>
+            <p>
+              as the Marias continue ushering on to further horizons -- with the First
+              Maria🍃 at the helm of it all -- they continue to press on with their mission
+              to bring joy and comfort to those who need it the most, no matter the
+              circumstances it may bring.
+            </p>
+            <br>
+            <button onclick="{ window.open('https://bit.ly/vTubieVTM'); }">the VTuber Collective on VTubie</button>
+          </div>
+        </div>
       </div>
-      <div class="mariaList">
-        <h1>meet the Marias</h1>
-        <div mariaTable>
-          <div>
-            <img src="/assets/images/profile/maria_pfp_1.png" alt="Mother Agatha, the First Maria🍃">
-            <br>
-            <h2>Mother Agatha</h2>
-            <span>the First Maria🍃</span>
-            <br>
-            <h4>我慢 ～Perseverance～</h4>
-            <span>debuted 27 Dec 2023</span>
-            <br>
-            <span class="material-symbols-rounded" title="view profile" onclick="mariaDialogOpen('firstMaria', 'profile')">account_circle</span>
-            <span class="material-symbols-rounded" title="read the tarot" onclick="mariaDialogOpen('firstMaria', 'tarot')">history_edu</span>
-            <span class="material-symbols-rounded" title="visit website" onclick="window.open('https://thebelovedmoon.github.io')">public</span>
+      <div class="mariaListV2">
+        <h1 style="
+          width: max-content;
+          display: block;
+          margin: 0 auto;
+          font-style: italic;
+        ">
+          <span style="
+            background-image: -webkit-linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
+            background-image: -moz-linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
+            background-image: -o-linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
+            background-image: linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          ">meet the Marias</span>
+          <br>
+          🍃🪷🌸
+        </h1>
+        <br>
+        <div>
+          <div class="vtmProfiler" onclick="{ mariaProfile(1); }">
+            <img src="/assets/images/profile/maria_pfp_1.png" style="border: 0.5rem solid #793a80;" alt="">
+            <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
+            <div>
+              <h2>Mother Agatha</h2>
+              <p><i>the First Maria🍃</i></p>
+              <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
+              <p><i>debuted 27 Dec 2023</i></p>
+            </div>
           </div>
-          <div>
-            <img src="/assets/images/profile/maria_pfp_2.png" alt="Aura Ostara, the Second Maria🪷">
-            <br>
-            <h2>Aura Ostara</h2>
-            <span>the Second Maria🪷</span>
-            <br>
-            <h4>復活 ～Rebirth～</h4>
-            <span>debuted 30 Jun 2022</span>
-            <br>
-            <span class="material-symbols-rounded" title="view profile" onclick="mariaDialogOpen('secondMaria', 'profile')">account_circle</span>
-            <span class="material-symbols-rounded" title="read the tarot" onclick="mariaDialogOpen('secondMaria', 'tarot')">history_edu</span>
-            <span class="material-symbols-rounded" title="visit website" onclick="window.open('https://thebelovedmoon.github.io/auraostara')">public</span>
+          <div class="vtmProfiler" onclick="{ mariaProfile(2); }">
+            <img src="/assets/images/profile/maria_pfp_2.png" style="border: 0.5rem solid #66a898;" alt="">
+            <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
+            <div>
+              <h2>Aura Ostara</h2>
+              <p><i>the Second Maria🪷</i></p>
+              <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
+              <p><i>debuted 30 Jun 2022</i></p>
+            </div>
           </div>
-          <div>
-            <img src="/assets/images/profile/maria_pfp_3.png" alt="Hina Oujo, the Third Maria🌸">
-            <br>
-            <h2>Hina Oujo</h2>
-            <span>the Third Maria🌸</span>
-            <br>
-            <h4>落ち着き ～Stability～</h4>
-            <span>debuted 3 Jul 2022</span>
-            <br>
-            <span class="material-symbols-rounded" title="view profile" onclick="mariaDialogOpen('thirdMaria', 'profile')">account_circle</span>
-            <span class="material-symbols-rounded" title="read the tarot" onclick="mariaDialogOpen('thirdMaria', 'tarot')">history_edu</span>
-            <span class="material-symbols-rounded" title="visit website" onclick="window.open('https://thebelovedmoon.github.io/hinaoujo')">public</span>
+          <div class="vtmProfiler" onclick="{ mariaProfile(3); }">
+            <img src="/assets/images/profile/maria_pfp_3.png" style="border: 0.5rem solid #f0a9a9;" alt="">
+            <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
+            <div>
+              <h2>Hina Oujo</h2>
+              <p><i>the Third Maria🌸</i></p>
+              <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
+              <p><i>debuted 3 Jul 2022</i></p>
+            </div>
           </div>
         </div>
       </div>
@@ -189,17 +226,22 @@
           </p>
         </div>
       </div>
-      <div back class="mariaAffils">
-        <div fore class="mariaAffils">
-          <h1>the Sub-Collectives</h1>
-          <div affilName>
-            <img csm2025 src="/assets/images/subcollective/cosmaria/cosmaria_logo.png" alt="コスプレのマリア💐 (Cosplay Marias)">
-            <br>
-            <span>コスプレのマリア (Cosplay Marias)</span>
-            <br>
-            <span class="material-symbols-rounded" title="visit the website" onclick="{ window.open('/cosmaria') }">public</span>
-            <!-- <span class="material-symbols-rounded" title="read the synopsis" onclick="{ subCollOpen('cosmaria') }">book</span> -->
-            <span class="material-symbols-rounded" title="watch the introduction" onclick="{ ytPlayer('csm2025') }">play_circle</span>
+      <div class="vtmSubCollV2">
+        <h1>the Marias' Sub-Collectives</h1>
+        <br>
+        <div>
+          <div class="subCollProfiler" onclick="{ subCollProfile(1); }">
+            <img src="/assets/images/subcollective/cosmaria/cosmaria_logo.png" style="
+              -webkit-filter: brightness(1000%) drop-shadow(2px 4px 16px #dcc6bb80);
+              filter: brightness(1000%) drop-shadow(2px 4px 16px #dcc6bb80);
+            " alt="">
+            <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
+            <div>
+              <h2>コスプレのマリア💐</h2>
+              <p><i>Cosplay Marias / CSM</i></p>
+              <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
+              <p><i>est. 30 Dec 2024</i></p>
+            </div>
           </div>
         </div>
       </div>
@@ -455,8 +497,10 @@
       <span class="socialsV2">
         <i class="bi bi-envelope-at-fill" title="email" onclick="{ window.open('mailto:vtresmarias@outlook.jp', '_self'); }"></i>
         <i class="bi bi-twitter-x" title="X" onclick="{ window.open('https://x.com/VTresMarias'); }"></i>
-        <!-- <i class="bi bi-bluesky" title="bluesky" onclick={ window.open('https://vtresmarias.bsky.social'); }></i> -->
-        <!-- <i class="bi bi-youtube" title="youtube" onclick={ window.open('https://youtube.com/@VTresMarias'); }></i> -->
+        <i class="bi bi-bluesky" title="bluesky" onclick="{ window.open('https://vtresmarias.bsky.social'); }"></i>
+        <i class="bi bi-facebook" title="facebook" onclick="{ window.open('https://facebook.com/VTresMarias2022'); }"></i>
+        <i class="bi bi-youtube" title="youtube" onclick="{ window.open('https://youtube.com/@V三人のマリア'); }"></i>
+        <i class="bi bi-github" title="github" onclick="{ window.open('https://github.com/VTresMarias'); }"></i>
       </span>
     </footer>
   </body>

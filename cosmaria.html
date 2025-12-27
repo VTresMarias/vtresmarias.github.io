@@ -63,9 +63,12 @@
     <script src="/assets/frameworks/js/_main.js" type="text/javascript"></script> <!-- base -->
     <script src="/assets/frameworks/js/cookie.js" type="text/javascript"></script> <!-- cookie -->
     <script src="/assets/frameworks/js/cosmaria.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode_js/qrcode.min.js" type="text/javascript"></script> <!-- qrcode generator -->
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
+        collapsibleEnable();
+        csmImgLoader();
       }
     </script>
     <script type="text/javascript">
@@ -75,6 +78,11 @@
   <body onload="{ init(); }">
     <div id="loadBlock"> <!-- splash screen -->
       <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
+    </div>
+    <div class="csmProfileFscr" onclick="{ csmCloseView(); }">
+      <div class="csmPrfDiag" onclick="{ event.stopPropagation(); }">
+        <div class="csmPrfGridView"></div>
+      </div>
     </div>
     <header> <!-- desktop header -->
       <img id="vtmLogoHead" src="/assets/images/subcollective/cosmaria/cosmaria_logo.png" alt="コスプレのマリア💐 (Cosplay Marias)">
@@ -104,7 +112,11 @@
       <div>
         <img src="/assets/images/subcollective/cosmaria/cosmaria_logo.png" alt="コスプレのマリア💐 (Cosplay Marias)">
         <br>
-        <p><i>the Sisterhood beyond Cosplay, since 2024</i></p>
+        <p><i>
+          the Sisterhood beyond Cosplay
+          <br>
+          est. 30 Dec 2024
+        </i></p>
       </div>
     </div>
     <div class="cosMatsuriTease">
@@ -139,212 +151,432 @@
     <div class="frontText" style="background-image: url('/assets/images/subcollective/cosmaria/cosplay/20250921_195813.jpg');">
       <div style="background-color: #3d374c80;">
         <div>
-          <h1>the Marias' First Sub-Collective</h1>
-          <br><br>
-          <p>
-            three days after VTresMarias was officially unveiled to the world, the First
-            Maria🍃 sets on her first mission: to determine which area of interest suits
-            the Collective's Core Values and aim to maintain their presence through
-            various of ways.
-          </p>
+          <div class="frontTextIntro">
+            <h1>
+              &OpenCurlyDoubleQuote;the integrity of the Sisterhood is vital to the
+              integrity of all.&CloseCurlyDoubleQuote;
+            </h1>
+            <div style="width: 100%; height: calc(15rem / 2)"></div>
+            <p>
+              as VTresMarias' first Sub-Collective, the Cosplay Marias (also known as
+              CosMarias or CSM) aim to expand the Marias' Core Values to the cosplay
+              community and many areas of interest.
+            </p>
+            <br>
+            <p>
+              handpicked and supported by the First Maria🍃 (also known as the Incumbent
+              First CosMaria🍃💐), the Sub-Collective's members embrace the Marias'
+              duties by showcasing their best efforts to their audience.
+            </p>
+            <div style="width: 100%; height: calc(15rem / 2)"></div>
+            <h2>explore the stories of CSM</h2>
+            <div style="width: 100%; height: calc(15rem / 8)"></div>
+          </div>
+          <div class="clspBtn">
+            <p>chapter 0: the Sisterhood</p>
+            <span>unveiled 15 Mar 2025</span>
+          </div>
+          <div class="clspCont">
+            <br>
+            <p>
+              three days after VTresMarias was officially unveiled to the world, the First
+              Maria🍃 sets on her first mission: to determine which area of interest suits
+              the Collective's Core Values and aim to maintain their presence through
+              various of ways.
+            </p>
+            <br>
+            <p>
+              it just so happened that her primary interest beyond this is through a world
+              of cosplay, to which she was introduced to a few months prior.
+            </p>
+            <br>
+            <p>
+              with her unwitting determination to do something extra-special, she sets on a
+              journey and try to delve as much as she can -- which turned out to be more
+              fruitful than what needs to be. in fact, she has made friends throughout her
+              first attempt, that it had inspired her to do it over again.
+            </p>
+            <br>
+            <p>
+              many months have passed, and her desire to continue doing this venture is
+              constantly increasing; that it had earned her place in some cosplay
+              communities to which she belonged to. and all the while, she has met a number
+              of new friends along the way -- with some of them resonating the same value as
+              the Marias.
+            </p>
+            <br>
+            <p>
+              through this disposition, she has been bestowed a new mission: form a
+              Collective which aims to strengthen the Core Values, and make their hobbies
+              known to more areas.
+            </p>
+            <br>
+            <p>
+              serving her duty as the Incumbent First CosMaria🍃💐, her job has just begun
+              to bear fruit..
+            </p>
+            <br>
+          </div>
           <br>
-          <p>
-            it just so happened that her primary interest beyond this is through a world
-            of cosplay, to which she was introduced to a few months prior.
-          </p>
-          <br>
-          <p>
-            with her unwitting determination to do something extra-special, she sets on a
-            journey and try to delve as much as she can -- which turned out to be more
-            fruitful than what needs to be. in fact, she has made friends throughout her
-            first attempt, that it had inspired her to do it over again.
-          </p>
-          <br>
-          <p>
-            many months have passed, and her desire to continue doing this venture is
-            constantly increasing; that it had earned her place in some cosplay
-            communities to which she belonged to. and all the while, she has met a number
-            of new friends along the way -- with some of them resonating the same value as
-            the Marias.
-          </p>
-          <br>
-          <p>
-            through this disposition, she has been bestowed a new mission: form a
-            Collective which aims to strengthen the Core Values, and make their hobbies
-            known to more areas.
-          </p>
-          <br>
-          <p>
-            serving her duty as the Incumbent First CosMaria🍃💐, her job has just begun to
-            bear fruit..
-          </p>
+          <div class="clspBtn">
+            <p>chapter 1: the Forthcoming</p>
+            <span>unveiled 27 Dec 2025</span>
+          </div>
+          <div class="clspCont">
+            <br>
+            <p>
+              many days came and went, and the First Maria🍃 -- fulfilling her duties as the
+              Incumbent First CosMaria🍃💐 -- has been constantly connecting with everyone
+              across the cosplay community; whether it would be around her area and beyond.
+            </p>
+            <br>
+            <p>
+              through her efforts (and those around her), many people begin to understand
+              the importance of cosplay as a way to express oneself -- and how it can be a
+              way to spread positivity to others.
+            </p>
+            <br>
+            <p>
+              together with a new blessing from the Grand Lady🌙, she's more than ready to
+              accept the fact that her 'motherly' figure is now being put to the test -- as
+              she is to welcome new members that she will be taking care of for many years
+              to come..
+            </p>
+            <br>
+          </div>
         </div>
       </div>
     </div>
-    <div csmMeet>
-      <h1>meet the CosMarias</h1>
-      <br><br>
-      <h2><i>Incumbents</i></h2>
-      <div csmTable="inc">
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/cosMaria_1.png" alt="Aga, the Incumbent First CosMaria🍃💐">
+    <div class="csmMeetV2">
+      <div>
+        <h1>meet the CosMarias💐</h1>
+        <br>
+        <p>
+          they are selected based on their personal connections and their desire to
+          contribute to their areas of interest in any way they can.
+        </p>
+        <br><br>
+        <div csmIncumbents class="csmLineup">
+          <h2 style="
+            width: max-content;
+            display: block;
+            margin: 0 auto;
+            font-style: italic;
+          ">
+            <span style="
+              background-image: -webkit-linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
+              background-image: -moz-linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
+              background-image: -o-linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
+              background-image: linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
+              -webkit-background-clip: text;
+              -moz-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            ">
+              the Incumbents
+            </span>
+            <br>
+            🍃🪷🌸
+          </h2>
           <br>
-          <h2 csmName>Aga</h2>
-          <span><b>the Incumbent First CosMaria🍃💐</b></span>
-          <br>
-          <span>inaugurated 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view profile" onclick="window.open('https://www.facebook.com/share/1BAccYVEqu')">account_circle</span>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTM000000001')">license</span>
+          <div style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 1, 'Aga'); }">
+              <img class="csmImg_Aga" src="" style="border: 0.5rem solid #793a80;" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Aga</h2>
+                <p><b><i>the Incumbent First CosMaria🍃💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>inaugurated 30 Dec 2024</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 2, 'Dani'); }">
+              <img class="csmImg_Dani" src="" style="border: 0.5rem solid #66a898;" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Dani</h2>
+                <p><b><i>the Incumbent Second CosMaria🪷💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>inaugurated 30 Dec 2024</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 3, 'Eri'); }">
+              <img class="csmImg_Eri" src="" style="border: 0.5rem solid #f0a9a9;" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Eri</h2>
+                <p><b><i>the Incumbent Third CosMaria🌸💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>inaugurated 30 Dec 2024</i></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/cosMaria_2.png" alt="Dani, the Incumbent Second CosMaria🪷💐">
+        <br><br>
+        <div csmBatch1 class="csmLineup">
+          <h2>Batch 1 Inductees</h2>
           <br>
-          <h2 csmName>Dani</h2>
-          <span><b>the Incumbent Second CosMaria🪷💐</b></span>
-          <br>
-          <span>inaugurated 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view profile" onclick="window.open('https://www.facebook.com/share/15DqEjuu3Q')">account_circle</span>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTM000000002')">license</span>
+          <div style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 4, 'Shunni'); }">
+              <img class="csmImg_Shunni" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Shunni</h2>
+                <p><b><i>the Fourth CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>inaugurated 30 Dec 2024</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 5, 'Patring'); }">
+              <img class="csmImg_Patring" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Patring</h2>
+                <p><b><i>the Fifth CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>inaugurated 30 Dec 2024</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 6, 'Shira'); }">
+              <img class="csmImg_Shira" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Shira</h2>
+                <p><b><i>the Sixth CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>inaugurated 30 Dec 2024</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 7, 'Elle'); }">
+              <img class="csmImg_Elle" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Elle</h2>
+                <p><b><i>the Seventh CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>inaugurated 15 Mar 2025</i></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/cosMaria_3.png" alt="Eri, the Incumbent Third CosMaria🌸💐">
+        <br><br>
+        <div csmBatch2 class="csmLineup">
+          <h2>Batch 2 Inductees</h2>
           <br>
-          <h2 csmName>Eri</h2>
-          <span><b>the Incumbent Third CosMaria🌸💐</b></span>
-          <br>
-          <span>inaugurated 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view profile" onclick="window.open('https://www.facebook.com/share/1ADy96wa9t')">account_circle</span>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTM000000003')">license</span>
+          <div style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 8, 'Tris'); }">
+              <img class="csmImg_Tris" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Tris</h2>
+                <p><b><i>the Eighth CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>inaugurated 30 Jun 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 9, 'Seushi'); }">
+              <img class="csmImg_Seushi" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Seushi</h2>
+                <p><b><i>the Ninth CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to inaugurate 15 Mar 2026</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 10, 'Issaki'); }">
+              <img class="csmImg_Issaki" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Issa</h2>
+                <p><b><i>the Tenth CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to inaugurate 15 Mar 2026</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 11, 'Divi'); }">
+              <img class="csmImg_Divi" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Divi</h2>
+                <p><b><i>the Eleventh CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to inaugurate 15 Mar 2026</i></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <br>
-      <h2><i>Batch 1 Inductees</i></h2>
-      <div csmTable="indB1">
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/cosMaria_4.png" alt="Shunni, the Fourth CosMaria💐">
-          <br>
-          <h2 csmName>Shunni</h2>
-          <span><b>the Fourth CosMaria💐</b></span>
-          <br>
-          <span>inaugurated 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view profile" onclick="window.open('https://www.facebook.com/share/19uk723XL7')">account_circle</span>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTM000000004')">license</span>
+        <div style="width: 100%; height: calc(15rem - calc(15rem / 3));"></div> <!-- spacer -->
+        <h1>Mistresses of the CosMarias👙</h1>
+        <br>
+        <p>
+          this new sub-unit encompasses the same essence as the rest of the CosMarias,
+          with a major focus on their "dark and adult" side.
+        </p>
+        <br><br>
+        <div csmMistresses class="csmLineup">
+          <div style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <div class="csmProfiler" onclick="{ csmPrfl('MistressesOfCSM', 1, 'LiaB'); }">
+              <img class="csmImg_LiaB" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Lia B.</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('MistressesOfCSM', 2, 'Sonica'); }">
+              <img class="csmImg_Sonica" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Sonica</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/cosMaria_5.png" alt="Patring, the Fifth CosMaria💐">
-          <br>
-          <h2 csmName>Patring</h2>
-          <span><b>the Fifth CosMaria💐</b></span>
-          <br>
-          <span>inaugurated 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view profile" onclick="window.open('https://www.facebook.com/share/19ubbuKRrd')">account_circle</span>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTM000000005')">license</span>
+        <div style="width: 100%; height: calc(15rem - calc(15rem / 3));"></div> <!-- spacer -->
+        <h1>Baconettes of CSM🧡</h1>
+        <br>
+        <p>
+          this new sub-unit features our existing CosMarias who showed their mark of
+          excellence, which was seen by Bataan Anime Convention (BACon) as the direct
+          representation of their own Core Values -- leading to their presence as the
+          "Baconette" in every event.
+        </p>
+        <br>
+        <button onclick="{ window.open('/cert?ref=VTMCSM000000009'); }">view related certificate</button>
+        <br><br>
+        <div csmMistresses class="csmLineup">
+          <div style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 4, 'Shunni'); }">
+              <img class="csmImg_Shunni" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Shunni</h2>
+                <p><b><i>the Fourth CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>unveiled 4 May 2024</i></p>
+                <p><i>to introduce 4 Jan 2026</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 6, 'Shira'); }">
+              <img class="csmImg_Shira" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Shira</h2>
+                <p><b><i>the Sixth CosMaria💐</i></b></p>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>unveiled 3 Dec 2025</i></p>
+                <p><i>to introduce 4 Jan 2026</i></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/cosMaria_6.png" alt="Shira, the Sixth CosMaria💐">
+        <div style="width: 100%; height: calc(15rem - calc(15rem / 3));"></div> <!-- spacer -->
+        <h1>Apprentices to the CosMarias</h1>
+        <br>
+        <p>
+          handpicked by the Incumbent First CosMaria🍃💐, they are among what considered
+          as the most promising cosplayers or individuals who exert in their skills in
+          cosplay and other fields.
+        </p>
+        <br>
+        <p>
+          the Apprentices may be promoted to become part of the Sub-Collective or one of
+          its sub-units.
+        </p>
+        <br><br>
+        <div csmApprBatch1 class="csmLineup">
+          <h2>Batch 1</h2>
           <br>
-          <h2 csmName>Shira</h2>
-          <span><b>the Sixth CosMaria💐</b></span>
-          <br>
-          <span>inaugurated 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view profile" onclick="window.open('https://www.facebook.com/share/1BTShq1oeW')">account_circle</span>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTM000000006')">license</span>
+          <div style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 2, 'GravityB'); }">
+              <img class="csmImg_GravityB" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Gravity B.</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>introduced 30 Dec 2024</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 3, 'Shichide'); }">
+              <img class="csmImg_Shichide" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Shichide</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>introduced 30 Dec 2024</i></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/cosMaria_7.png" alt="Elle, the Seventh CosMaria💐">
+        <br><br>
+        <div csmApprBatch2 class="csmLineup">
+          <h2>Batch 2</h2>
           <br>
-          <h2 csmName>Elle</h2>
-          <span><b>the Seventh CosMaria💐</b></span>
-          <br>
-          <span>inaugurated 15 Mar 2025</span>
-          <br>
-          <span class="material-symbols-rounded" title="view profile" onclick="window.open('https://www.facebook.com/share/p/1Afo2gsHeR')">account_circle</span>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTM000000007')">license</span>
-        </div>
-      </div>
-      <br>
-      <h2><i>Batch 2 Inductees</i></h2>
-      <div csmTable="indB2">
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/cosMaria_8.png" alt="Tris, the Eighth CosMaria💐">
-          <br>
-          <h2 csmName>Tris</h2>
-          <span><b>the Eighth CosMaria💐</b></span>
-          <br>
-          <span>inaugurated 30 Jun 2025</span>
-          <br>
-          <!-- <span class="material-symbols-rounded" title="view profile" onclick="window.open('https://www.facebook.com/share/19uk723XL7')">account_circle</span> -->
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTM000000008')">license</span>
+          <div style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 6, 'Jaja'); }">
+              <img class="csmImg_Jaja" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Jaja</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 7, 'Cess'); }">
+              <img class="csmImg_Cess" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Cess</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 8, 'KitzC'); }">
+              <img class="csmImg_KitzC" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Kitz</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 9, 'Zume'); }">
+              <img class="csmImg_Zume" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Zume</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 10, 'Menako'); }">
+              <img class="csmImg_Menako" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Menako</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 11, 'HanakoK'); }">
+              <img class="csmImg_HanakoK" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Hanako</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 12, 'YoruS'); }">
+              <img class="csmImg_YoruS" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Yoru S.</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+            <div class="csmProfiler" onclick="{ csmPrfl('Apprentices', 13, 'Lusherina'); }">
+              <img class="csmImg_Lusherina" src="" alt="">
+              <div style="padding: 0 1.5rem;">
+                <h2 csmName>Lusherina</h2>
+                <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
+                <p><i>to introduce 30 Dec 2025</i></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div csmMeet>
-      <h1>meet the Apprentices to the CosMarias</h1>
-      <br><br>
-      <h2><i>Batch 1</i></h2>
-      <div csmTable="apprB1">
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/apprentice/csmAppr_1.png" alt="Issa">
-          <br>
-          <h2 csmName>Issa</h2>
-          <span>introduced 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTMCSM000000002')">license</span>
-        </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/apprentice/csmAppr_2.png" alt="Gravity B.">
-          <br>
-          <h2 csmName>Gravity B.</h2>
-          <span>introduced 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTMCSM000000003')">license</span>
-        </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/apprentice/csmAppr_3.png" alt="">
-          <br>
-          <h2 csmName>Shichide</h2>
-          <span>introduced 30 Dec 2024</span>
-          <br>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTMCSM000000004')">license</span>
-        </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/apprentice/csmAppr_4.png" alt="">
-          <br>
-          <h2 csmName>Seushi</h2>
-          <span>introduced 15 Mar 2025</span>
-          <br>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTMCSM000000005')">license</span>
-        </div>
-        <div>
-          <img src="/assets/images/subcollective/cosmaria/profile/apprentice/csmAppr_5.png" alt="">
-          <br>
-          <h2 csmName>Sonica</h2>
-          <span>introduced 15 Mar 2025</span>
-          <br>
-          <span class="material-symbols-rounded" title="view certificate" onclick="window.open('/cert?ref=VTMCSM000000006')">license</span>
-        </div>
-      </div>
-    </div>
-    <div csmMeet>
-      <h1>
-        &OpenCurlyDoubleQuote;the integrity of the Sisterhood is vital to the
-        integrity of all.&CloseCurlyDoubleQuote;
-      </h1>
-    </div>
-    <div csmMeet></div>
     <footer>
       <span>©2022 「VTresMarias - V三人のマリア - 」</span>
       <span class="socialsV2">
         <i class="bi bi-envelope-at-fill" title="email" onclick="{ window.open('mailto:vtresmarias@outlook.jp', '_self'); }"></i>
         <i class="bi bi-twitter-x" title="X" onclick="{ window.open('https://x.com/VTresMarias'); }"></i>
-        <!-- <i class="bi bi-bluesky" title="bluesky" onclick={ window.open('https://vtresmarias.bsky.social'); }></i> -->
-        <!-- <i class="bi bi-youtube" title="youtube" onclick={ window.open('https://youtube.com/@VTresMarias'); }></i> -->
+        <i class="bi bi-bluesky" title="bluesky" onclick="{ window.open('https://vtresmarias.bsky.social'); }"></i>
+        <i class="bi bi-facebook" title="facebook" onclick="{ window.open('https://facebook.com/VTresMarias2022'); }"></i>
+        <i class="bi bi-youtube" title="youtube" onclick="{ window.open('https://youtube.com/@V三人のマリア'); }"></i>
+        <i class="bi bi-github" title="github" onclick="{ window.open('https://github.com/VTresMarias'); }"></i>
       </span>
     </footer>
   </body>

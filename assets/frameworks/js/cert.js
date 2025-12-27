@@ -1,63 +1,17 @@
 // global variables
-let ref = new URLSearchParams(window.location.search).get("ref"),
-  type,
-  vtmCertKind = [
-    "Certificate of Blessing",
-    "Certificate of Inauguration",
-    "Certificate of Introduction"
-  ],
-  vtmGrantees = [
-    "Aga, the Incumbent First CosMaria🍃💐",
-    "Dani, the Incumbent Second CosMaria🪷💐",
-    "Eri, the Incumbent Third CosMaria🌸💐",
-    "Shunni, the Fourth CosMaria💐",
-    "Patring, the Fifth CosMaria💐",
-    "Shira, the Sixth CosMaria💐",
-    "Elle, the Seventh CosMaria💐",
-    "Issa, Apprentice to the CosMarias",
-    "Gravity B., Apprentice to the CosMarias",
-    "Shichide, Apprentice to the CosMarias",
-    "Seushi, Apprentice to the CosMarias",
-    "Sonica, Apprentice to the CosMarias",
-    "Tris, the Eighth CosMaria💐"
-  ],
-  vtmcsmGrantees = [
-    "Shunni / Samahan ng Puso",
-    "VOLs Production",
-    "Connxt: Anime Popculture Event × Arterion Philippines",
-    "Bataan Anime Convention (BACon)",
-    "RECORDS REVOKED"
-  ],
-  vtmGrantors = [
-    "Mother Agatha, the First Maria🍃",
-    "Aura Ostara, the Second Maria🪷",
-    "Hina Oujo, the Third Maria🌸"
-  ],
-  vtmCertDate = [
-    "22 Dec 2024",
-    "30 Dec 2024",
-    "15 Mar 2025",
-    "8 Jun 2025",
-    "RECORDS REVOKED",
-    "30 Jun 2025"
-  ]
+let ref = new URLSearchParams(window.location.search).get("ref");
 
 function certInit() {
 
-  let revokedCerts = [
-    "VTMCSM000000010"
-  ];
-
   if (!ref) { return; }
-  else if (revokedCerts.includes(ref)) { return certRevoked(ref); }
   else {
     let c6 = ref.substring(0, 6);
-    if (c6 == "VTMCSM") {
+    if (c6.includes("VTMCSM") || c6.includes("CSMBCN")) {
       type = c6;
       num = ref.substring(6, 15);
     } else {
       let c3 = ref.substring(0, 3);
-      if (c3 == "VTM") {
+      if (c3.includes("VTM")) {
         type = c3;
         num = ref.substring(3, 12);
       }
@@ -67,31 +21,228 @@ function certInit() {
   switch (type) {
     case "VTM":
       switch (num) {
-        case "000000001": return showDetails(ref, vtmCertKind[1], vtmGrantees[0], vtmGrantors[0], vtmCertDate[1]);
-        case "000000002": return showDetails(ref, vtmCertKind[1], vtmGrantees[1], vtmGrantors[0], vtmCertDate[1]);
-        case "000000003": return showDetails(ref, vtmCertKind[1], vtmGrantees[2], vtmGrantors[0], vtmCertDate[1]);
-        case "000000004": return showDetails(ref, vtmCertKind[1], vtmGrantees[3], vtmGrantors[0], vtmCertDate[1]);
-        case "000000005": return showDetails(ref, vtmCertKind[1], vtmGrantees[4], vtmGrantors[0], vtmCertDate[1]);
-        case "000000006": return showDetails(ref, vtmCertKind[1], vtmGrantees[5], vtmGrantors[0], vtmCertDate[1]);
-        case "000000007": return showDetails(ref, vtmCertKind[1], vtmGrantees[6], vtmGrantors[0], vtmCertDate[2]);
-        case "000000008": return showDetails(ref, vtmCertKind[1], vtmGrantees[12], vtmGrantors[0], vtmCertDate[5]);
+        case "000000001": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Aga, the Incumbent First CosMaria🍃💐",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2024"
+        );
+        case "000000002": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Dani, the Incumbent Second CosMaria🪷💐",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2024"
+        );
+        case "000000003": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Eri, the Incumbent Third CosMaria🌸💐",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2024"
+        );
+        case "000000004": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Shunni, the Fourth CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2024"
+        );
+        case "000000005": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Patring, the Fifth CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2024"
+        );
+        case "000000006": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Shira, the Sixth CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2024"
+        );
+        case "000000007": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Elle, the Seventh CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "15 Mar 2025"
+        );
+        case "000000008": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Tris, the Eighth CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "30 Jun 2025"
+        );
+        case "000000009": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Seushi, the Ninth CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "15 Mar 2026"
+        );
+        case "000000010": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Issa, the Tenth CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "15 Mar 2026"
+        );
+        case "000000011": return showDetails(
+          ref,
+          "Certificate of Inauguration",
+          "Divi, the Eleventh CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "15 Mar 2026"
+        );
         default: return certInvalid(ref);
       }
     case "VTMCSM":
       switch (num) {
-        case "000000001": return showDetails(ref, vtmCertKind[0], vtmcsmGrantees[0], vtmGrantors[0], vtmCertDate[0]);
-        case "000000002": return showDetails(ref, vtmCertKind[2], vtmGrantees[7], vtmGrantors[0], vtmCertDate[1]);
-        case "000000003": return showDetails(ref, vtmCertKind[2], vtmGrantees[8], vtmGrantors[0], vtmCertDate[1]);
-        case "000000004": return showDetails(ref, vtmCertKind[2], vtmGrantees[9], vtmGrantors[0], vtmCertDate[1]);
-        case "000000005": return showDetails(ref, vtmCertKind[2], vtmGrantees[10], vtmGrantors[0], vtmCertDate[2]);
-        case "000000006": return showDetails(ref, vtmCertKind[2], vtmGrantees[11], vtmGrantors[0], vtmCertDate[2]);
-        case "000000007": return showDetails(ref, vtmCertKind[0], vtmcsmGrantees[1], vtmGrantors[0], vtmCertDate[2]);
-        case "000000008": return showDetails(ref, vtmCertKind[0], vtmcsmGrantees[2], vtmGrantors[0], vtmCertDate[3]);
-        case "000000009": return showDetails(ref, vtmCertKind[0], vtmcsmGrantees[3], vtmGrantors[0], vtmCertDate[3]);
-        // case "000000010": return showDetails(ref, vtmCertKind[0], vtmcsmGrantees[4], vtmGrantors[0], vtmCertDate[4]);
+        case "000000001": return showDetails(
+          ref,
+          "Certificate of Blessing",
+          "Shunni / Samahan ng Puso",
+          "Mother Agatha, the First Maria🍃",
+          "22 Dec 2024"
+        );
+        case "000000002": return window.location.replace("/cert?ref=VTM000000010");
+        case "000000003": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Gravity B., Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2024"
+        );
+        case "000000004": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Shichide, Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2024"
+        );
+        case "000000005": return window.location.replace("/cert?ref=VTM000000009");
+        case "000000006": return window.location.replace("/cert?ref=VTMCSM000000012");
+        case "000000007": return showDetails(
+          ref,
+          "Certificate of Blessing",
+          "VOLs Production",
+          "Mother Agatha, the First Maria🍃",
+          "15 Mar 2025"
+        );
+        case "000000008": return showDetails(
+          ref,
+          "Certificate of Blessing",
+          "Connxt: Anime Popculture Event × Arterion Philippines",
+          "Mother Agatha, the First Maria🍃",
+          "8 Jun 2025"
+        );
+        case "000000009": return showDetails(
+          ref,
+          "Certificate of Blessing",
+          "Bataan Anime Convention (BACon)",
+          "Mother Agatha, the First Maria🍃",
+          "8 Jun 2025"
+        );
+        case "000000010": return certRevoked(ref);
+        case "000000011": return showDetails(
+          ref,
+          "Certificate of Ascension",
+          "Lia B., Mistress of CosMarias👙",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000012": return showDetails(
+          ref,
+          "Certificate of Ascension",
+          "Sonica, Mistress of CosMarias👙",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000013": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Jaja, Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000014": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Cess, Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000015": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Kitz, Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000016": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Zume, Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000017": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Menako, Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000018": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Hanako, Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000019": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Yoru S., Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
+        case "000000020": return showDetails(
+          ref,
+          "Certificate of Introduction",
+          "Lusherina, Apprentice to the CosMarias",
+          "Mother Agatha, the First Maria🍃",
+          "30 Dec 2025"
+        );
         default: return certInvalid(ref);
       }
-    default: return certInvalid(ref);
+    case "CSMBCN":
+      switch (num) {
+        case "000000001": return showDetails(
+          ref,
+          "Certificate of Baconette's Blessing",
+          "Shunni, the Fourth CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "4 Jan 2026"
+        );
+        case "000000002": return showDetails(
+          ref,
+          "Certificate of Baconette's Blessing",
+          "Shira, the Sixth CosMaria💐",
+          "Mother Agatha, the First Maria🍃",
+          "4 Jan 2026"
+        );
+        default: return certInvalid(ref);
+      }
+    default:
+      switch (ref) {
+        // only for non-VTM/CSM certificates
+        default: return certInvalid(ref);
+      }
   }
 
 }
@@ -136,7 +287,10 @@ function showDetails(certRef, certKind, certGrantee, certGrantor, certDate) {
         return "VTM";
       case "Certificate of Inauguration":
       case "Certificate of Introduction":
+      case "Certificate of Ascension":
         return "CSM";
+      case "Certificate of Baconette's Blessing":
+        return "CSMBCN";
       default: event.stopPropagation();
     }
   }
@@ -147,6 +301,8 @@ function showDetails(certRef, certKind, certGrantee, certGrantor, certDate) {
         return canvas.width / 1.85;
       case "Certificate of Inauguration":
       case "Certificate of Introduction":
+      case "Certificate of Ascension":
+      case "Certificate of Baconette's Blessing":
         return canvas.width / 1.575;
       default: return event.stopPropagation();
     }
@@ -159,7 +315,11 @@ function showDetails(certRef, certKind, certGrantee, certGrantor, certDate) {
       case "Certificate of Inauguration":
         return `for her contributions that impact the community as a whole\nand upholding her integrity as a newly-inducted Cosplay Maria.\n\nthis certificate was granted on ${certDate}.`;
       case "Certificate of Introduction":
-        return `for showcasing their spirit that upholds the Marias' Core Values\nthrough cosplay and other fields -- indicting as the Apprentice of CSM.\n\nthis certificate was granted on ${certDate}.`;
+        return `for showcasing their spirit that upholds the Marias' Core Values\nthrough cosplay and other fields -- inducting as the Apprentice of CSM.\n\nthis certificate was granted on ${certDate}.`;
+      case "Certificate of Ascension":
+        return `for displaying their utmost dedication and love for cosplay that\nhas led to their ascension as part of one of the sub-units of CSM.\n\nthis certificate was granted on ${certDate}.`;
+      case "Certificate of Baconette's Blessing":
+        return `for exerting their ways of cosplay that outlines with BACon's Core\nValues -- leading to their representation as "Baconette".\n\nthis certificate was granted on ${certDate}.`;
       default: return event.stopPropagation();
     }
   }
@@ -191,7 +351,9 @@ function showDetails(certRef, certKind, certGrantee, certGrantor, certDate) {
       loadFont("Windows 11 Emoji", "/assets/fonts/seguiemj.ttf")
     ]).then(() => {
 
-      ctx.fillStyle = "#3d374c";
+      if (certKind == "Certificate of Baconette's Blessing") {
+        ctx.fillStyle = "#ffffff";
+      } else { ctx.fillStyle = "#3d374c"; }
 
       ctx.font = `234pt "Imperial Script"`;
       ctx.textAlign = "center";
@@ -213,7 +375,7 @@ function showDetails(certRef, certKind, certGrantee, certGrantor, certDate) {
       ctx.font = `600 italic 58.5pt "Noto Serif Display", "Windows 11 Emoji"`;
       ctx.fillText(certGrantor, `${VTMorCSM_grantor(certKind)}`, canvas.height / 1.195);
 
-      ctx.strokeStyle = "white";
+      ctx.strokeStyle = "#ffffff";
       ctx.lineWidth = 15;
       ctx.strokeRect(canvas.width / 1.18625 - 7.5, canvas.height / 1.314 - 7.5, 300 + 15, 300 + 15);
       ctx.drawImage(qrImage, canvas.width / 1.18625, canvas.height / 1.314, 300, 300);
