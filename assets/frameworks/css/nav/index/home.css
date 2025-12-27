@@ -201,7 +201,7 @@ div[class^="vtmGrid"] {
 [AuraOstara] > .bi:hover { color: #66a898; }
 [HinaOujo] > .bi:hover { color: #f0a9a9; }
 @media screen and (max-width: 1080px) {
-  .mariaDiagV3 { padding: 7.5rem 0; }
+  .mariaDiagV3 { padding: 4.5rem 0; }
   .mariaDiagV3 > div {
     gap: 2.5rem;
     grid-template-columns: 100% !important;

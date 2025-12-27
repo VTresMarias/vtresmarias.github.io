@@ -228,12 +228,12 @@ div[class^="csmPrfQR"] {
 [AuraOstara] > .bi:hover { color: #66a898; }
 [HinaOujo] > .bi:hover { color: #f0a9a9; }
 @media screen and (max-width: 1080px) {
+  .csmProfileFscr { padding: 4.5rem 0; }
   .csmPrfGridView {
     gap: 5rem;
     grid-template-columns: 100% !important;
     overflow-y: auto;
   }
-  .csmPrfDiag { padding: 7.5rem 0; }
   .csmPrfGrd2 {
     padding: 0;
     overflow-y: initial;
