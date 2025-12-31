@@ -687,7 +687,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Lia B.</h1>
                 <p><b><i>Mistress of the CosMarias👙</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -740,7 +740,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Sonica</h1>
                 <p><b><i>Mistress of the CosMarias👙</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -916,7 +916,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Jaja</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -969,7 +969,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Cess</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -1022,7 +1022,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Kitz</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -1075,7 +1075,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Zume</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -1128,7 +1128,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Menako</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -1181,7 +1181,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Hanako</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -1234,7 +1234,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Cleo M.</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
@@ -1287,7 +1287,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <h1>Lusherina</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
-                <p><i>to introduce 30 Dec 2025</i></p>
+                <p><i>introduced 30 Dec 2025</i></p>
                 <br>
                 <div class="csmSocials" style="display: none;">
                   <i class="bi bi-flower1" title="V三人のマリア" onclick="{ window.open('/'); }"></i>
