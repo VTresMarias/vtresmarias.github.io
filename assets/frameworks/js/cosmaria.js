@@ -1231,7 +1231,7 @@ function csmPrfl(unit, pos, csmNm) {
               <div>
                 <img class="csmImg" src="" alt="">
                 <div style="width: 100%; height: calc(15rem * 0.03125);"></div>
-                <h1>Yoru S.</h1>
+                <h1>Cleo M.</h1>
                 <p><b><i>Apprentice to the CosMarias</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
                 <p><i>to introduce 30 Dec 2025</i></p>

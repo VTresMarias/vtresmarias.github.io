@@ -207,7 +207,7 @@ function certInit() {
         case "000000019": return showDetails(
           ref,
           "Certificate of Introduction",
-          "Yoru S., Apprentice to the CosMarias",
+          "Cleo M., Apprentice to the CosMarias",
           "Mother Agatha, the First Maria🍃",
           "30 Dec 2025"
         );

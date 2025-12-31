@@ -85,7 +85,7 @@ _please note that this document will serve as the Marias' part of transparency p
 | **Zume**            | 30 Dec 2025          | :x: [VTMCSM000000016](https://vtresmarias.github.io/cert?ref=VTMCSM000000016)       | :x:                   | :x:                         |
 | **Menako**          | 30 Dec 2025          | :x: [VTMCSM000000017](https://vtresmarias.github.io/cert?ref=VTMCSM000000017)       | :x:                   | :x:                         |
 | **Hanako**          | 30 Dec 2025          | :x: [VTMCSM000000018](https://vtresmarias.github.io/cert?ref=VTMCSM000000018)       | :x:                   | :x:                         |
-| **Yoru S.**         | 30 Dec 2025          | :x: [VTMCSM000000019](https://vtresmarias.github.io/cert?ref=VTMCSM000000019)       | :x:                   | :x:                         |
+| **Cleo M.**         | 30 Dec 2025          | :x: [VTMCSM000000019](https://vtresmarias.github.io/cert?ref=VTMCSM000000019)       | :x:                   | :x:                         |
 | **Lusherina**       | 30 Dec 2025          | :x: [VTMCSM000000020](https://vtresmarias.github.io/cert?ref=VTMCSM000000020)       | :x:                   | :x:                         |
 
 
@@ -102,9 +102,10 @@ _please note that this document will serve as the Marias' part of transparency p
 
 <!--
 
-  # IMPORTANT REMINDERS (will not be shown in normal view)
+  # cert adjustments
 
-  - VTMCSM000000010 has been revoked following further considerations from VTM due to the company culture that conflicts the Marias' values. please note that this will affect organizations that are of the same scope.
-  - CSM is set to debut its Batch 2 Inductees due to a personal consideration from the Incumbent First🍃💐; but after an assertion with one of the supposed Inductee's "manager", their disposition has been voided and replaced. VTM will issue a press release regarding the issue and the underlying clarifications on the inclusion at a later date.
+  - [25 Jul 2025] VTMCSM000000010 has been revoked following further considerations from VTM due to the company culture that conflicts the Marias' values. please note that this will affect organizations that are of the same scope -- most specifically the call center industry.
+  - [21 Sep 2025] CSM is set to debut its Batch 2 Inductees due to a personal consideration from the Incumbent First🍃💐; but after an assertion with one of the supposed Inductee's "manager", their disposition has been voided and replaced. VTM will issue a press release regarding the issue and the underlying clarifications on the inclusion at a later date.
+  - [30 Dec 2025] due to an internal dispute involving the Incumbent First🍃💐 (in which she takes full responsibility over what happend) during the first anniversary of the Sub-Collective, the supposed apprentice involved in VTMCSM000000019 has been replaced. a press release will be issued when appropriate, and considerations to be ratified when the conflicts are properly resolved.
 
  -->
