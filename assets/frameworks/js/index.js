@@ -18,7 +18,7 @@ function navQuery() {
       document.querySelector("#vtmLogoHead").src = "/assets/web/maria_story_logo.png";
       return;
     case "music":
-      document.title = "V三人のマリア: the music of the Marias🍃🪷🌸"
+      document.title = "V三人のマリア: the Music of the Marias🍃🪷🌸"
       document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
       navBtnHide(vtm);
       importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
