@@ -1387,3 +1387,20 @@ function csmImgLoader() {
     csmImg.setAttribute("src", "/assets/images/subcollective/cosmaria/cosmaria_bg.png");
   });
 }
+
+function csmInducteesDialog() {
+  switch (new URLSearchParams(window.location.search).get("csm")) {
+    case "Aga": return csmPrfl("CosMarias", 1, "Aga");
+    case "Dani": return csmPrfl("CosMarias", 2, "Dani");
+    case "Eri": return csmPrfl("CosMarias", 3, "Eri");
+    case "Shunni": return csmPrfl("CosMarias", 4, "Shunni");
+    case "Patring": return csmPrfl("CosMarias", 5, "Patring");
+    case "Shira": return csmPrfl("CosMarias", 6, "Shira");
+    case "Elle": return csmPrfl("CosMarias", 7, "Elle");
+    case "Tris": return csmPrfl("CosMarias", 8, "Tris");
+    case "Seushi": return csmPrfl("CosMarias", 9, "Seushi");
+    case "Issa": return csmPrfl("CosMarias", 10, "Issaki");
+    case "Divi": return csmPrfl("CosMarias", 11, "Divi");
+    default: return event.stopPropagation();
+  }
+}
