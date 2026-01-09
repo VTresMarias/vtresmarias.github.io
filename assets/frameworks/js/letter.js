@@ -17,6 +17,13 @@ function ajxLdr(r) {
     mD = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   switch (r) {
+    case "20260109":
+      document.title = `in solidarity with Bataan Anime Convention.🧡💐 \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      document.querySelector("meta[name='og:title']").setAttribute("content", `in solidarity with Bataan Anime Convention. \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+      document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/letter?ref=${r}`);
+      document.querySelector("meta[name='og:description']").setAttribute("content", "the First Maria🍃 -- on behalf of VTM and CSM -- stands in solidarity with Bataan Anime Convention (BACon) following their executive decision amid the major mishaps that occurred within the community.🧡💐");
+      return r;
     case "20250827":
       document.title = `I don't wanna hear your excuses. \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `I don't wanna hear your excuses. \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
