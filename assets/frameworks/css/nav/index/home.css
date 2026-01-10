@@ -270,6 +270,7 @@ div[class^="vtmGrid"] {
     padding-bottom: 5rem;
     & img[src="/assets/images/subcollective/cosmaria/cosmaria_logo.png"] { padding-top: 7.5rem; }
   }
+  .spacerLargeInDiag { display: block !important; }
 }
 .subCollProfiler {
   /* background-color: #3d374c80; */

@@ -338,6 +338,7 @@ function subCollProfile(num) {
           </p>
           <br>
           <button onclick="{ window.open('/cosmaria'); }">explore the Sub-Collective</button>
+          <div class="spacerLargeInDiag" style="height: 6.5rem; display: none;"></div>
         </div>
       `;
       return vtmOpenView();

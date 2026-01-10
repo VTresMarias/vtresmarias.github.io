@@ -1,3 +1,6 @@
+function panelOpen() { document.querySelector("#mobileNav").setAttribute("style", "transform: initial;"); }
+function panelClose() { document.querySelector("#mobileNav").setAttribute("style", "transform: translateY(-15rem);"); }
+
 function csmOpenView() {
   document.querySelector(".csmProfileFscr").setAttribute("style", "display: flex;");
   setTimeout(() => {
