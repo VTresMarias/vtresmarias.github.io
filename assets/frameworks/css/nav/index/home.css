@@ -295,7 +295,6 @@ div[class^="vtmGrid"] {
   margin: 0 auto;
   padding: 15rem 1rem;
 }
-[privacyPolicy] > p > a { text-decoration: underline; }
 
 
 /* applies to all pages to avoid cluttering */

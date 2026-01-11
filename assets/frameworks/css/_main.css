@@ -67,18 +67,10 @@ button:hover {
   color: #3d374c;
 }
 
-a:link, a:visited {
-  color: #3d374c;
-  text-decoration: none;
-}
-a:hover {
-  color: #786d97;
-  text-decoration: none;
-}
-a:active {
-  color: #dcc6bb;
-  text-decoration: none;
-}
+a { text-decoration: underline; }
+a:link, a:visited { color: #3d374c; }
+a:hover { color: #786d97; }
+a:active { color: #dcc6bb; }
 
 /* googlefonts icons */
 span[class^="material-symbols"] {

@@ -10,6 +10,7 @@ header { color: #3d374c; }
   background-color: #008080;
   color: #ffffff;
 }
+.BACon-important { color: #ec4f12 !important; }
 
 h1, h2[csmName] {
   font-family: "Imperial Script", "Windows 11 Emoji", cursive;
@@ -29,7 +30,8 @@ h2[csmName] {
 .titleHead {
   width: 100vw;
   padding: calc(250px + 30px) 15px 250px 15px;
-  background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png");
+  /* background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png"); */
+  background-image: url("/assets/images/subcollective/cosmaria/backgrounds/copilot_abstractgra_orange.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -45,10 +47,6 @@ h2[csmName] {
 .titleHead > div > * {
   margin: 0 !important;
   text-align: center;
-}
-.titleHead > div > img {
-  -webkit-filter: brightness(1000%);
-  filter: brightness(1000%);
 }
 
 .frontText {
