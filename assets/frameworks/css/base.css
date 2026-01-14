@@ -63,7 +63,7 @@ header > *, #mobileNav > * {
   -o-transform: translateY(-15rem);
   transform: translateY(-15rem);
 }
-#mobileNav > span[onclick="panelClose()"] { margin-left: 1rem; }
+#mobileNav > span[onclick="{ panelClose(); }"] { margin-left: 1rem; }
 .urlRefs > span { margin: 0 0.375rem; }
 
 .navBtn {
