@@ -11,7 +11,8 @@
 .vtmMediaPlayer > div > .vtmAlbum {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
+  margin-top: 7.5rem;
 }
 .vtmMediaPlayer > div > .vtmAlbum img {
   width: 360px;
@@ -25,6 +26,7 @@
 .vtmMediaPlayer > div > .vtmSongSelector * { margin: 0; }
 @media screen and (max-width: 720px) {
   .vtmMediaPlayer > div { grid-template-columns: 100%; }
+  .vtmMediaPlayer > div > .vtmAlbum { margin-top: 0 !important; }
   .vtmMediaPlayer > div > .vtmSongSelector { padding: 3rem 0 0 0; }
 }
 
