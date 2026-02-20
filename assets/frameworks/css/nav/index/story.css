@@ -47,3 +47,12 @@
 }
 .bgmMetadata > * { margin: 0 !important; }
 #bgmPause { display: none; }
+
+.preludeOVL { color: #ffffff; }
+.preludeIMG {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
