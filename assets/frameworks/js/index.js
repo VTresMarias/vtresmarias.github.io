@@ -249,9 +249,9 @@ function mariaProfile(num) {
               <br>
               <div class="vtmSocials" HinaOujo>
                 <i class="bi bi-globe" title="website" onclick="{ window.open('https://thebelovedmoon.github.io/hinaoujo'); }"></i>
-                <i class="bi bi-twitter-x" title="X" onclick="{ window.open('https://x.com/HinaSukii'); }"></i>
+                <!-- <i class="bi bi-twitter-x" title="X" onclick="{ window.open('https://x.com/HinaSukii'); }"></i> -->
                 <i class="bi bi-youtube" title="youtube" onclick="{ window.open('https://youtube.com/@HinaSukii'); }"></i>
-                <i class="bi bi-twitch" title="twitch" onclick="{ window.open('https://twitch.tv/HinaSukii'); }"></i>
+                <!-- <i class="bi bi-twitch" title="twitch" onclick="{ window.open('https://twitch.tv/HinaSukii'); }"></i> -->
                 <i class="bi bi-reddit" title="reddit" onclick="{ window.open('https://reddit.com/user/HinaOujo'); }"></i>
                 <i class="bi bi-envelope-at-fill" title="email" onclick="{ window.open('mailto:hinaxsukii@gmail.com'); }"></i>
               </div>
