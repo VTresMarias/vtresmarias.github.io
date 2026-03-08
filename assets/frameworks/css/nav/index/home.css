@@ -187,6 +187,7 @@ div[class^="vtmGrid"] {
 }
 .vtmSocials {
   width: calc(15rem * 1.5);
+  max-width: 100%;
   margin: 0 auto;
   & .bi {
     display: inline-block;
@@ -207,6 +208,7 @@ div[class^="vtmGrid"] {
     grid-template-columns: 100% !important;
     overflow-y: auto;
   }
+  .vtmGrid1 { display: block; }
   .vtmGrid2 {
     padding: 0;
     overflow-y: initial;

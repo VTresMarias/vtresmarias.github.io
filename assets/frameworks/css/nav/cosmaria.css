@@ -215,6 +215,7 @@ div[class^="csmPrfQR"] {
 }
 .csmSocials {
   width: calc(15rem * 1.5);
+  max-width: 100%;
   margin: 0 auto;
   & .bi {
     display: inline-block;
@@ -236,6 +237,7 @@ div[class^="csmPrfQR"] {
     grid-template-columns: 100% !important;
     overflow-y: auto;
   }
+  .csmPrfGrd1 { display: block; }
   .csmPrfGrd2 {
     padding: 0;
     overflow-y: initial;
