@@ -1,12 +1,21 @@
 function panelOpen() { document.querySelector("#mobileNav").setAttribute("style", "transform: initial;"); }
 function panelClose() { document.querySelector("#mobileNav").setAttribute("style", "transform: translateY(-15rem);"); }
 
-function csmOpenView() {
+function csmOpenView(hasBCN) {
   document.querySelector(".csmProfileFscr").setAttribute("style", "display: flex;");
   setTimeout(() => {
     document.querySelector(".csmProfileFscr").setAttribute("style", "display: flex; opacity: 1;");
     document.querySelector(".csmPrfDiag").setAttribute("style", "opacity: 1; transform: initial;");
   }, 0);
+  if (hasBCN === true) {
+    document.querySelector(".csmBCN > div").setAttribute("style", "transform: rotateY(360deg); transition: transform 0.75s;");
+    setTimeout(() => {
+      document.querySelector(".csmBCN > div").setAttribute("style", "transform: none; transition: none;");
+      setTimeout(() => {
+        document.querySelector(".csmBCN > div").setAttribute("style", "transition: transform 0.75s;");
+      }, 0);
+    }, 750);
+  }
   return;
 }
 
@@ -199,7 +208,24 @@ function csmPrfl(unit, pos, csmNm) {
           document.querySelector(".csmPrfGridView").innerHTML = `
             <div class="csmPrfGrd1">
               <div>
-                <img class="csmImg" src="" alt="">
+                <div class="csmBCN"
+                  onmouseover="{
+                    document.querySelector('.csmBCN > div').setAttribute('style', 'transform: rotateY(-180deg);');
+                    document.querySelector('.csmPrfDiag').style.backgroundColor = '#ec4f12';
+                  }"
+                  onmouseout="{
+                    document.querySelector('.csmBCN > div').setAttribute('style', 'transform: none;');
+                    document.querySelector('.csmPrfDiag').style.backgroundColor = '#3d374c';
+                  }">
+                  <div>
+                    <div class="csmBCNFront">
+                      <img class="csmImg" src="" alt="">
+                    </div>
+                    <div class="csmBCNBack">
+                      <img class="csmImgBCN" src="" alt="">
+                    </div>
+                  </div>
+                </div>
                 <div style="width: 100%; height: calc(15rem * 0.03125);"></div>
                 <h1>Shunni</h1>
                 <p><b><i>
@@ -262,8 +288,8 @@ function csmPrfl(unit, pos, csmNm) {
             colorLight: "#ffffff",
             correctLevel: QRCode.CorrectLevel.H
           });
-          csmDiagImgLdr();
-          return csmOpenView();
+          csmDiagImgLdr(true);
+          return csmOpenView(true);
         case 5:
           document.querySelector(".csmPrfGridView").innerHTML = `
             <div class="csmPrfGrd1">
@@ -324,7 +350,24 @@ function csmPrfl(unit, pos, csmNm) {
           document.querySelector(".csmPrfGridView").innerHTML = `
             <div class="csmPrfGrd1">
               <div>
-                <img class="csmImg" src="" alt="">
+                <div class="csmBCN"
+                  onmouseover="{
+                    document.querySelector('.csmBCN > div').setAttribute('style', 'transform: rotateY(-180deg);');
+                    document.querySelector('.csmPrfDiag').style.backgroundColor = '#ec4f12';
+                  }"
+                  onmouseout="{
+                    document.querySelector('.csmBCN > div').setAttribute('style', 'transform: none;');
+                    document.querySelector('.csmPrfDiag').style.backgroundColor = '#3d374c';
+                  }">
+                  <div>
+                    <div class="csmBCNFront">
+                      <img class="csmImg" src="" alt="">
+                    </div>
+                    <div class="csmBCNBack">
+                      <img class="csmImgBCN" src="" alt="">
+                    </div>
+                  </div>
+                </div>
                 <div style="width: 100%; height: calc(15rem * 0.03125);"></div>
                 <h1>Shira</h1>
                 <p><b><i>
@@ -388,8 +431,8 @@ function csmPrfl(unit, pos, csmNm) {
             colorLight: "#ffffff",
             correctLevel: QRCode.CorrectLevel.H
           });
-          csmDiagImgLdr();
-          return csmOpenView();
+          csmDiagImgLdr(true);
+          return csmOpenView(true);
         case 7:
           document.querySelector(".csmPrfGridView").innerHTML = `
             <div class="csmPrfGrd1">
@@ -1339,7 +1382,7 @@ function csmPrfl(unit, pos, csmNm) {
     default: return event.stopPropagation();
   }
 
-  function csmDiagImgLdr() {
+  function csmDiagImgLdr(hasBCN) {
     let fnames = [
         "png",
         "jpg",
@@ -1348,11 +1391,24 @@ function csmPrfl(unit, pos, csmNm) {
         "webp",
       ];
     for (let ext of fnames) {
-      let filePath = `/assets/images/subcollective/cosmaria/profile/csm_${csmNm}.${ext}`,
-        xhr = new XMLHttpRequest();
-      xhr.open("HEAD", filePath, false);
-      xhr.send();
-      if (xhr.status === 200) { return document.querySelector("img.csmImg").setAttribute("src", filePath); }
+      if (hasBCN === true) {
+        let csmProf = `/assets/images/subcollective/cosmaria/profile/csm_${csmNm}.${ext}`,
+          csmProfBCN = `/assets/images/subcollective/cosmaria/profile/csm_${csmNm}_BCN.${ext}`
+          xhr = new XMLHttpRequest();
+        xhr.open("HEAD", csmProf, false);
+        xhr.send();
+        if (xhr.status === 200) {
+          document.querySelector("img.csmImg").setAttribute("src", csmProf);
+          document.querySelector("img.csmImgBCN").setAttribute("src", csmProfBCN);
+          return;
+        }
+      } else {
+        let csmProf = `/assets/images/subcollective/cosmaria/profile/csm_${csmNm}.${ext}`,
+          xhr = new XMLHttpRequest();
+        xhr.open("HEAD", csmProf, false);
+        xhr.send();
+        if (xhr.status === 200) { return document.querySelector("img.csmImg").setAttribute("src", csmProf); }
+      }
     }
     document.querySelector("img.csmImg").setAttribute("src", "/assets/images/subcollective/cosmaria/cosmaria_bg.png");
   }

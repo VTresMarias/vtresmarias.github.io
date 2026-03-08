@@ -276,3 +276,31 @@ div[class^="csmPrfQR"] {
   transition: 0.75s;
   & * { margin: 0; }
 }
+
+.csmBCN {
+  perspective: 1000px;
+  width: calc(15rem * 1.5);
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  & * { border-radius: 50%; }
+}
+.csmBCN > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.75s;
+  transform-style: preserve-3d;
+}
+.csmBCNFront, .csmBCNBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.csmBCNBack {
+  transform: rotateY(180deg);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
