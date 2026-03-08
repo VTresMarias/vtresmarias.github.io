@@ -731,7 +731,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <img class="csmImg" src="" alt="">
                 <div style="width: 100%; height: calc(15rem * 0.03125);"></div>
                 <h1>Lia B.</h1>
-                <p><b><i>Mistress of the CosMarias👙</i></b></p>
+                <p><b><i>Mistress of CSM👙</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
                 <p><i>introduced 30 Dec 2025</i></p>
                 <br>
@@ -784,7 +784,7 @@ function csmPrfl(unit, pos, csmNm) {
                 <img class="csmImg" src="" alt="">
                 <div style="width: 100%; height: calc(15rem * 0.03125);"></div>
                 <h1>Sonica</h1>
-                <p><b><i>Mistress of the CosMarias👙</i></b></p>
+                <p><b><i>Mistress of CSM👙</i></b></p>
                 <div style="width: 100%; height: calc(15rem * 0.0625);"></div>
                 <p><i>introduced 30 Dec 2025</i></p>
                 <br>
