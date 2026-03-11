@@ -24,12 +24,12 @@ _please note that this document will serve as the Marias' part of transparency p
 
 ### Batch 1 Inductees
 
-| name              | designation                         | birthday       | inclusive date       | tiara color                      | bowtie color                  | certificate reference                                                                        | Letter claimed?          | coscards claimed?                                        | NEW!! NFC cards distributed?       |
-|:-----------------:|:-----------------------------------:|:--------------:|:--------------------:|:--------------------------------:|:-----------------------------:|:--------------------------------------------------------------------------------------------:|:------------------------:|:--------------------------------------------------------:|:----------------------------------:|
-| **Shunni**        | the Fourth CosMaria&#x1F490;        | 20 Oct         | 15 Mar 2025          | :white_check_mark: orange        | :white_check_mark: pink       | :white_check_mark: [VTM000000004](https://vtresmarias.github.io/cert?ref=VTM000000004)       | :white_check_mark:       | :heavy_minus_sign: (A5 prints not distributed yet)       | :x:                                |
-| **Patring**       | the Fifth CosMaria&#x1F490;         | TBD            | 15 Mar 2025          | :white_check_mark: purple        | :white_check_mark: pink       | :white_check_mark: [VTM000000005](https://vtresmarias.github.io/cert?ref=VTM000000005)       | :white_check_mark:       | :heavy_minus_sign: (A5 prints not distributed yet)       | :x:                                |
-| **Shira**         | the Sixth CosMaria&#x1F490;         | 19 Dec         | 15 Mar 2025          | :white_check_mark: magenta       | :white_check_mark: pink       | :white_check_mark: [VTM000000006](https://vtresmarias.github.io/cert?ref=VTM000000006)       | :white_check_mark:       | :heavy_minus_sign: (A5 prints not distributed yet)       | :x:                                |
-| **Elle**          | the Seventh CosMaria&#x1F490;       | 27 Aug         | 15 Mar 2025          | :white_check_mark: white         | :white_check_mark: pink       | :white_check_mark: [VTM000000007](https://vtresmarias.github.io/cert?ref=VTM000000007)       | :white_check_mark:       | :white_check_mark:                                       | :x:                                |
+| name              | designation                         | birthday       | inclusive date       | tiara color                      | bowtie color                  | certificate reference                                                                        | Letter claimed?          | coscards claimed?        | NEW!! NFC cards distributed?       |
+|:-----------------:|:-----------------------------------:|:--------------:|:--------------------:|:--------------------------------:|:-----------------------------:|:--------------------------------------------------------------------------------------------:|:------------------------:|:------------------------:|:----------------------------------:|
+| **Shunni**        | the Fourth CosMaria&#x1F490;        | 20 Oct         | 15 Mar 2025          | :white_check_mark: orange        | :white_check_mark: pink       | :white_check_mark: [VTM000000004](https://vtresmarias.github.io/cert?ref=VTM000000004)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
+| **Patring**       | the Fifth CosMaria&#x1F490;         | TBD            | 15 Mar 2025          | :white_check_mark: purple        | :white_check_mark: pink       | :white_check_mark: [VTM000000005](https://vtresmarias.github.io/cert?ref=VTM000000005)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
+| **Shira**         | the Sixth CosMaria&#x1F490;         | 19 Dec         | 15 Mar 2025          | :white_check_mark: magenta       | :white_check_mark: pink       | :white_check_mark: [VTM000000006](https://vtresmarias.github.io/cert?ref=VTM000000006)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
+| **Elle**          | the Seventh CosMaria&#x1F490;       | 27 Aug         | 15 Mar 2025          | :white_check_mark: white         | :white_check_mark: pink       | :white_check_mark: [VTM000000007](https://vtresmarias.github.io/cert?ref=VTM000000007)       | :white_check_mark:       | :white_check_mark:       | :x:                                |
 
 ### Batch 2 Inductees
 
@@ -37,11 +37,11 @@ _please note that this document will serve as the Marias' part of transparency p
 |:------------------:|:------------------------------------:|:--------------:|:--------------------:|:-----------------:|:------------------:|:--------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|:----------------------------------:|
 | **Tris**           | the Eighth CosMaria&#x1F490;         | TBD            | 30 Jun 2025          | :x: TBD           | :x: TBD            | :white_check_mark: [VTM000000008](https://vtresmarias.github.io/cert?ref=VTM000000008)       | :x:                   | :x:                     | :x:                                |
 | **Seushi**         | the Ninth CosMaria&#x1F490;          | TBD            | 15 Mar 2026          | :x: TBD           | :x: TBD            | :x: [VTM000000009](https://vtresmarias.github.io/cert?ref=VTM000000009)                      | :x:                   | :x:                     | :x:                                |
-| **Issa**           | the Tenth CosMaria&#x1F490;          | TBD            | 15 Mar 2026          | :x: TBD           | :x: TBD            | :x: [VTM000000010](https://vtresmarias.github.io/cert?ref=VTM000000010)                      | :x:                   | :x:                     | :x:                                |
+| **Issa**           | the Tenth CosMaria&#x1F490;          | TBD            | 15 Mar 2026          | :x: TBD           | :x: TBD            | :x: [VTM000000010](https://vtresmarias.github.io/cert?ref=VTM000000010)                      | :x:                   | :white_check_mark:      | :x:                                |
 | **Divi**           | the Eleventh CosMaria&#x1F490;       | TBD            | 15 Mar 2026          | :x: TBD           | :x: TBD            | :x: [VTM000000011](https://vtresmarias.github.io/cert?ref=VTM000000011)                      | :x:                   | :x:                     | :x:                                |
 
 
-## Mistresses of the CosMarias
+## Mistresses of CSM
 
 **description:** they are regarded as those that exert a certain "adult" side to them, making them virtually unique from the others.
 
@@ -67,13 +67,13 @@ _please note that this document will serve as the Marias' part of transparency p
 
 ### Batch 1
 
-| name                 | inclusive date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?                                |
-|:--------------------:|:--------------------:|:-----------------------------------------------------------------------------------:|:---------------------:|:----------------------------------------------------:|
-| **Issa**             | 30 Dec 2024          | :x: [VTMCSM000000002](https://vtresmarias.github.io/cert?ref=VTMCSM000000002)       | :x:                   | :white_check_mark: Batch 2 Inductees                 |
-| **Gravity B.**       | 30 Dec 2024          | :x: [VTMCSM000000003](https://vtresmarias.github.io/cert?ref=VTMCSM000000003)       | :x:                   | :x:                                                  |
-| **Shichide**         | 30 Dec 2024          | :x: [VTMCSM000000004](https://vtresmarias.github.io/cert?ref=VTMCSM000000004)       | :x:                   | :x:                                                  |
-| **Seushi**           | 15 Mar 2025          | :x: [VTMCSM000000005](https://vtresmarias.github.io/cert?ref=VTMCSM000000005)       | :x:                   | :white_check_mark: Batch 2 Inductees                 |
-| **Sonica**           | 15 Mar 2025          | :x: [VTMCSM000000006](https://vtresmarias.github.io/cert?ref=VTMCSM000000006)       | :x:                   | :white_check_mark: Mistresses of the CosMarias       |
+| name                 | inclusive date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?                      |
+|:--------------------:|:--------------------:|:-----------------------------------------------------------------------------------:|:---------------------:|:------------------------------------------:|
+| **Issa**             | 30 Dec 2024          | :x: [VTMCSM000000002](https://vtresmarias.github.io/cert?ref=VTMCSM000000002)       | :x:                   | :white_check_mark: Batch 2 Inductees       |
+| **Gravity B.**       | 30 Dec 2024          | :x: [VTMCSM000000003](https://vtresmarias.github.io/cert?ref=VTMCSM000000003)       | :x:                   | :x:                                        |
+| **Shichide**         | 30 Dec 2024          | :x: [VTMCSM000000004](https://vtresmarias.github.io/cert?ref=VTMCSM000000004)       | :x:                   | :x:                                        |
+| **Seushi**           | 15 Mar 2025          | :x: [VTMCSM000000005](https://vtresmarias.github.io/cert?ref=VTMCSM000000005)       | :x:                   | :white_check_mark: Batch 2 Inductees       |
+| **Sonica**           | 15 Mar 2025          | :x: [VTMCSM000000006](https://vtresmarias.github.io/cert?ref=VTMCSM000000006)       | :x:                   | :white_check_mark: Mistresses of CSM       |
 
 ### Batch 2
 
