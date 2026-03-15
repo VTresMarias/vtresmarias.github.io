@@ -1,21 +1,52 @@
-#cookieConsent {
+.acceptCookiesOVL {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #dcc6bb;
-  width: 37.5rem;
-  max-width: 100%;
-  padding: 1rem;
-  border-radius: 0.75rem 0.75rem 0 0;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
-  z-index: calc(2022 + 3);
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  -o-transition: 0.75s;
-  transition: 0.75s;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  & * { margin: 0; }
+  & div { /* body */
+    position: inherit;
+    bottom: 0;
+    right: 0;
+    pointer-events: initial;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+    color: #3d374c;
+    background-color: #dcc6bb;
+    border-radius: 0.75rem;
+    -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
+    filter: drop-shadow(2px 4px 16px #3d374c80);
+    z-index: calc(2022 + 3);
+    -webkit-transition: 0.75s;
+    -moz-transition: 0.75s;
+    -o-transition: 0.75s;
+    transition: 0.75s;
+    & div {
+      top: unset;
+      bottom: unset;
+      left: unset;
+      right: unset;
+      position: relative;
+      margin: unset;
+      padding: unset;
+      text-align: right;
+      border-radius: unset;
+      -webkit-filter: unset;
+      filter: unset;
+      z-index: initial;
+      -webkit-transition: initial;
+      -moz-transition: initial;
+      -o-transition: initial;
+      transition: initial;
+    }
+    & .cookieBtns {
+      & * { margin: 0.5rem 0 0 0; }
+      & .navBtnInv { margin-left: 0.25rem; }
+    }
+  }
 }
-#cookieConsent * { margin: 0.5rem 0 0 0; }
-#cookieConsent > div { text-align: right; }
-#cookieConsent > div > * { margin: 0.5rem 0 0 0; }
-#cookieConsent > div > .navBtnInv { margin-left: 0.25rem; }
+
+@media screen and (min-width: 720px) {
+  .acceptCookiesOVL > div { width: 37.5rem; }
+}

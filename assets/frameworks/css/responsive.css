@@ -16,12 +16,12 @@
 }
 
 /* navbars */
-@media screen and (min-width: 500px) { /* desktop layout */
+@media screen and (min-width: 480px) { /* desktop layout */
   div[isDesktop] { display: flex !important; }
   div[isMobile] { display: none !important; }
   #vtmLogoHead { width: 225px; }
 }
-@media screen and (max-width: 500px) { /* mobile layout */
+@media screen and (max-width: 480px) { /* mobile layout */
   div[isDesktop] { display: none !important; }
   div[isMobile] { display: flex !important; }
   #vtmLogoHead { width: 175px; }

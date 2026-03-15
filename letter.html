@@ -55,21 +55,26 @@
         <span class="material-symbols-rounded" title="home" onclick="{ window.location.replace('/'); }">home</span>
       </div>
     </header>
-    <div id="cookieConsent">
-      <p><b>this website uses cookies to enhance your experience.</b></p>
-      <p>
-        by agreeing, you consent to the use of these cookies. don't worry -- we'll be
-        using as minimal as possible to protect your privacy.
-      </p>
-      <p>
-        also note that there are cookies placed by our partners (through embeds),
-        regardless of their promise of no-cookie policy. you can check out our Privacy
-        Policy on how they use them.
-      </p>
+    <div class="acceptCookiesOVL">
       <div>
-        <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="{ cookieAccept(); }">check</span>
-        <span class="navBtnInv navBtn material-symbols-rounded" title="decline cookies" onclick="{ cookieDecline(); }">close</span>
-        <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="{ window.open('/privacy'); }">policy</span>
+        <p><b>this website uses cookies to enhance your experience.</b></p>
+        <div style="width: 100%; height: 0.5rem;"></div>
+        <p>
+          by agreeing, you consent to the use of these cookies. don't worry -- we'll be
+          using as minimal as possible to protect your privacy.
+        </p>
+        <div style="width: 100%; height: 0.5rem;"></div>
+        <p>
+          also note that there are cookies placed by our partners (through embeds),
+          regardless of their promise of no-cookie policy. you can check out our Privacy
+          Policy on how they use them.
+        </p>
+        <div style="width: 100%; height: 0.5rem;"></div>
+        <div class="cookieBtns">
+          <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="{ cookieAccept(); }">check</span>
+          <span class="navBtnInv navBtn material-symbols-rounded" title="decline cookies" onclick="{ cookieDecline(); }">close</span>
+          <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="{ window.open('/privacy'); }">policy</span>
+        </div>
       </div>
     </div>
     <div id="cert">

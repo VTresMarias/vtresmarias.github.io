@@ -3,43 +3,36 @@
   <url>
     <loc>https://vtresmarias.github.io/</loc>
     <lastmod>2026-03-01</lastmod>
-    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vtresmarias.github.io/cosmaria</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-03-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vtresmarias.github.io/cert</loc>
     <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vtresmarias.github.io/letter</loc>
     <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vtresmarias.github.io/press</loc>
     <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vtresmarias.github.io/privacy</loc>
     <lastmod>2026-03-01</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://vtresmarias.github.io/story</loc>
     <lastmod>2026-03-01</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>

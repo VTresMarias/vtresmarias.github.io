@@ -17,10 +17,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@VTresMarias">
     <meta name="twitter:creator" content="@VTresMarias">
-    <meta name="theme-color" content="#3d374c">
-    <meta name="msapplication-TileColor" content="#3d374c">
-    <meta name="msapplication-navbutton-color" content="#3d374c">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
+    <meta name="theme-color" content="#008080">
+    <meta name="msapplication-TileColor" content="#008080">
+    <meta name="msapplication-navbutton-color" content="#008080">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#008080">
     <!-- custom css -->
     <link rel="stylesheet" href="/assets/frameworks/css/_main.css" type="text/css" media="all"> <!-- base -->
     <style type="text/css">
@@ -106,23 +106,36 @@
         <span class="material-symbols-rounded" title="Open Panel" onclick="{ panelOpen(); }">menu</span>
       </div>
     </header>
-    <div id="cookieConsent" style="color: #3d374c;">
-      <p><b>this website uses cookies to enhance your experience.</b></p>
-      <p>
-        by agreeing, you consent to the use of these cookies. don't worry -- we'll be
-        using as minimal as possible to protect your privacy.
-      </p>
-      <p>
-        also note that there are cookies placed by our partners (through embeds),
-        regardless of their promise of no-cookie policy. you can check out our Privacy
-        Policy on how they use them.
-      </p>
+    <div class="acceptCookiesOVL">
       <div>
-        <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="{ cookieAccept(); }">check</span>
-        <span class="navBtnInv navBtn material-symbols-rounded" title="decline cookies" onclick="{ cookieDecline(); }">close</span>
-        <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="{ window.open('/privacy'); }">policy</span>
+        <p><b>this website uses cookies to enhance your experience.</b></p>
+        <div style="width: 100%; height: 0.5rem;"></div>
+        <p>
+          by agreeing, you consent to the use of these cookies. don't worry -- we'll be
+          using as minimal as possible to protect your privacy.
+        </p>
+        <div style="width: 100%; height: 0.5rem;"></div>
+        <p>
+          also note that there are cookies placed by our partners (through embeds),
+          regardless of their promise of no-cookie policy. you can check out our Privacy
+          Policy on how they use them.
+        </p>
+        <div style="width: 100%; height: 0.5rem;"></div>
+        <div class="cookieBtns">
+          <span class="navBtn material-symbols-rounded" title="accept cookies" onclick="{ cookieAccept(); }">check</span>
+          <span class="navBtnInv navBtn material-symbols-rounded" title="decline cookies" onclick="{ cookieDecline(); }">close</span>
+          <span class="navBtnInv navBtn material-symbols-rounded" title="view Privacy Policy" onclick="{ window.open('/privacy'); }">policy</span>
+        </div>
       </div>
     </div>
+    <iframe
+      style="width: 100vw; height: 100vh; display: block; pointer-events: none;"
+      src="https://www.youtube-nocookie.com/embed/LLSOjWAf3vA?playlist=LLSOjWAf3vA&amp;loop=1&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;playsinline=1"
+      title="YouTube Player"
+      frameborder="0"
+      allow="autoplay"
+      loop="">
+    </iframe>
     <div class="titleHead">
       <!-- <div>
         <img style="-webkit-filter: brightness(1000%); filter: brightness(1000%);" src="/assets/images/subcollective/cosmaria/cosmaria_logo.png" alt="コスプレのマリア💐 (Cosplay Marias)">
@@ -186,9 +199,9 @@
             </p>
             <br>
             <p>
-              handpicked and supported by the First Maria🍃 (also known as the Incumbent
-              First CosMaria🍃💐), the Sub-Collective's members embrace the Marias'
-              duties by showcasing their best efforts to their audience.
+              handpicked and supported by the First Maria🍃 (performing her duties as the
+              Incumbent First CosMaria🍃💐), the Sub-Collective's members embrace the
+              Marias' duties by showcasing their best efforts to their audience.
             </p>
             <div style="width: 100%; height: calc(15rem / 2)"></div>
             <h2>explore the stories of CSM</h2>
@@ -394,7 +407,7 @@
                 <h2 csmName>Seushi</h2>
                 <p><b><i>the Ninth CosMaria💐</i></b></p>
                 <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
-                <p><i>to inaugurate 15 Mar 2026</i></p>
+                <p><i>inaugurated 15 Mar 2026</i></p>
               </div>
             </div>
             <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 10, 'Issaki'); }">
@@ -403,7 +416,7 @@
                 <h2 csmName>Issa</h2>
                 <p><b><i>the Tenth CosMaria💐</i></b></p>
                 <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
-                <p><i>to inaugurate 15 Mar 2026</i></p>
+                <p><i>inaugurated 15 Mar 2026</i></p>
               </div>
             </div>
             <div class="csmProfiler" onclick="{ csmPrfl('CosMarias', 11, 'Divi'); }">
@@ -412,7 +425,7 @@
                 <h2 csmName>Divi</h2>
                 <p><b><i>the Eleventh CosMaria💐</i></b></p>
                 <div style="width: 100%; height: calc(1.5rem * 0.5);"></div> <!-- csm spacer -->
-                <p><i>to inaugurate 15 Mar 2026</i></p>
+                <p><i>inaugurated 15 Mar 2026</i></p>
               </div>
             </div>
           </div>

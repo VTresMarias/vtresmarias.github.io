@@ -6,26 +6,28 @@ let cookie, leftOff;
 function cookieDetect() {
   cookie = document.cookie.split("; ").find((row) => row.startsWith("acceptCookie="))?.split("=")[1].toString();
   if (cookie.valueOf() == "true") {
-    document.querySelector("#cookieConsent").setAttribute("style", "display: none;");
+    document.querySelector(".acceptCookiesOVL").style.display = "none";
     document.cookie = `acceptCookie=true; path=/; max-age=604800`;
     return;
   } else if (cookie.valueOf() == "false") {
-    document.querySelector("#cookieConsent").setAttribute("style", "display: none;");
+    document.querySelector(".acceptCookiesOVL").style.display = "none";
   }
 }
 
 // accept cookies (path set to to "/", resets every week when unvisited)
 function cookieAccept() {
   document.cookie = `acceptCookie=true; path=/; max-age=604800`;
-  document.querySelector("#cookieConsent").setAttribute("style", "opacity: 0; transform: translateY(7.5rem);");
-  setTimeout(() => { document.querySelector("#cookieConsent").setAttribute("style", "display: none;"); }, 750);
+  document.querySelector(".acceptCookiesOVL > div").style.bottom = "-5rem";
+  document.querySelector(".acceptCookiesOVL > div").style.opacity = "0";
+  setTimeout(() => { document.querySelector(".acceptCookiesOVL").style.display = "none"; }, 750);
 }
 
 // decline cookies (prompt will reappear on the next site visit)
 function cookieDecline() {
   document.cookie = `acceptCookie=false; path=/;`;
-  document.querySelector("#cookieConsent").setAttribute("style", "opacity: 0; transform: translateY(7.5rem);");
-  setTimeout(() => { document.querySelector("#cookieConsent").setAttribute("style", "display: none;"); }, 750);
+  document.querySelector(".acceptCookiesOVL > div").style.bottom = "-5rem";
+  document.querySelector(".acceptCookiesOVL > div").style.opacity = "0";
+  setTimeout(() => { document.querySelector(".acceptCookiesOVL").style.display = "none"; }, 750);
 }
 
 // pick up where you left off (resets every week except when updating values)

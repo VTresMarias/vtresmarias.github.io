@@ -319,7 +319,7 @@ function showDetails(certRef, certKind, certGrantee, certGrantor, certDate) {
       case "Certificate of Ascension":
         return `for displaying their utmost dedication and love for cosplay that\nhas led to their ascension as part of one of the sub-units of CSM.\n\nthis certificate was granted on ${certDate}.`;
       case "Certificate of Baconette's Blessing":
-        return `for exerting their ways of cosplay that outlines with BACon's Core\nValues -- leading to their representation as "Baconette".\n\nthis certificate was granted on ${certDate}.`;
+        return `for exerting their ways of cosplay that outline with BACon's Core\nValues -- leading to their representation as "Baconette".\n\nthis certificate was granted on ${certDate}.`;
       default: return event.stopPropagation();
     }
   }
