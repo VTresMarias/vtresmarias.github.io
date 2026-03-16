@@ -11,6 +11,16 @@ header { color: #3d374c; }
   color: #ffffff;
 }
 .BACon-important { color: #ec4f12 !important; }
+div[isDesktop] span[onclick="{ window.open('https://youtu.be/5fFHeOJAmrI'); }"] {
+  -webkit-animation: csmFlashIcon 3s infinite linear !important;
+  -moz-animation: csmFlashIcon 3s infinite linear !important;
+  -o-animation: csmFlashIcon 3s infinite linear !important;
+  animation: csmFlashIcon 3s infinite linear !important;
+}
+@keyframes csmFlashIcon {
+  0%, 100% { color: #3e374d; }
+  40%, 60% { color: #008080; }
+}
 
 h1, h2[csmName] {
   font-family: "Imperial Script", "Windows 11 Emoji", cursive;
