@@ -43,9 +43,9 @@
   the castle balcony:
 </p>
 <p>
-  “We gathered here today to remind ourselves about Oujo-sama's legacy and
-  her desire to serve everyone through meaningful circumstances. She has served
-  us faithfully and with utmost love to all. Today, I vow to continue on that
+  “We gathered here today to remind ourselves about Oujo-sama's legacy and her
+  desire to serve everyone through meaningful circumstances. She has served us
+  faithfully and with utmost love to all. Today, I vow to continue on that
   legacy and fulfill her final wish -- that one wish that I never thought would
   come to me at an unexpected time. I aim to continue serving you all, until
   forever.”
@@ -107,7 +107,8 @@
   She smiles for a bit, sending the note to thin air.
 </p>
 <p>
-  “Let me formally introduce myself: My name is the Second King Arthur Leidram.”
+  “Let me formally introduce myself: My name is Arthur Regina Leidram. The third
+  of my kind.”
 </p>
 <p>
   Upon realizing the name, I wander in pure curiosity and worry. She adds,
