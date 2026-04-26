@@ -74,6 +74,7 @@
 <br>
 <iframe
   src="https://www.youtube-nocookie.com/embed/7cClxerJcmY?rel=0&playsinline=1"
+  allowfullscreen
 ></iframe>
 <br><br>
 <h2>summing up the rebuttal so far</h2>
