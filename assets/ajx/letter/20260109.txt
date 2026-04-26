@@ -4,7 +4,7 @@
 <p><i>
   this serves as a website copy as this was originally posted on Facebook. for
   the original copy, refer to
-  <a rel="noopener noreferrer" href="https://facebook.com/share/p/182nwZa4iy" target="_blank">this post</a>.
+  <a rel="noopener noreferrer" onclick="{ window.open('https://web.facebook.com/share/p/182nwZa4iy'); }">this post</a>.
 </i></p>
 <br><br>
 <p>
