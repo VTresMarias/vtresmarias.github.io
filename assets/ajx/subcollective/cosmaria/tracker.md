@@ -38,7 +38,7 @@ _please note that this document will serve as the Marias' part of transparency p
 | **Tris**           | the Eighth CosMaria&#x1F490;         | 24 May         | 30 Jun 2025          | :x: yellow        | :x: pink           | :white_check_mark: [VTM000000008](https://vtresmarias.github.io/cert?ref=VTM000000008)       | :x:                   | :x:                     | :x:                                |
 | **Seushi**         | the Ninth CosMaria&#x1F490;          | TBD            | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000009](https://vtresmarias.github.io/cert?ref=VTM000000009)                      | :x:                   | :x:                     | :x:                                |
 | **Issa**           | the Tenth CosMaria&#x1F490;          | TBD            | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000010](https://vtresmarias.github.io/cert?ref=VTM000000010)                      | :x:                   | :white_check_mark:      | :x:                                |
-| **Divi**           | the Eleventh CosMaria&#x1F490;       | TBD            | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000011](https://vtresmarias.github.io/cert?ref=VTM000000011)                      | :x:                   | :x:                     | :x:                                |
+| **Divi**           | the Eleventh CosMaria&#x1F490;       | 27 Apr         | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000011](https://vtresmarias.github.io/cert?ref=VTM000000011)                      | :x:                   | :x:                     | :x:                                |
 
 
 ## Mistresses of CSM
