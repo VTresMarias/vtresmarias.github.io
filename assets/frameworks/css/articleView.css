@@ -6,8 +6,8 @@
   margin: 0 auto;
   padding: 90px 15px;
   & * {
-    display: block;
-    margin: 0 0 1.125rem 0;
+    /* display: block; */
+    margin: 0;
     text-align: left;
   }
   & span { font-style: italic; }
@@ -19,4 +19,5 @@
     border-radius: 1.5rem;
   }
   & li { display: list-item; }
+  & a { cursor: pointer !important; }
 }
