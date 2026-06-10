@@ -36,7 +36,7 @@ _please note that this document will serve as the Marias' part of transparency p
 | name               | designation                          | birthday       | inclusive date       | tiara color       | bowtie color       | certificate reference                                                                        | Letter claimed?       | coscards claimed?       | NEW!! NFC cards distributed?       |
 |:------------------:|:------------------------------------:|:--------------:|:--------------------:|:-----------------:|:------------------:|:--------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|:----------------------------------:|
 | **Tris**           | the Eighth CosMaria&#x1F490;         | 24 May         | 30 Jun 2025          | :x: yellow        | :x: pink           | :white_check_mark: [VTM000000008](https://vtresmarias.github.io/cert?ref=VTM000000008)       | :x:                   | :x:                     | :x:                                |
-| **Seushi**         | the Ninth CosMaria&#x1F490;          | TBD            | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000009](https://vtresmarias.github.io/cert?ref=VTM000000009)                      | :x:                   | :x:                     | :x:                                |
+| **Seushi**         | the Ninth CosMaria&#x1F490;          | 1 Jun          | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000009](https://vtresmarias.github.io/cert?ref=VTM000000009)                      | :x:                   | :x:                     | :x:                                |
 | **Issa**           | the Tenth CosMaria&#x1F490;          | TBD            | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000010](https://vtresmarias.github.io/cert?ref=VTM000000010)                      | :x:                   | :white_check_mark:      | :x:                                |
 | **Divi**           | the Eleventh CosMaria&#x1F490;       | 27 Apr         | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000011](https://vtresmarias.github.io/cert?ref=VTM000000011)                      | :x:                   | :x:                     | :x:                                |
 
@@ -97,7 +97,6 @@ _please note that this document will serve as the Marias' part of transparency p
 | **VOLs Production**                     | 15 Mar 2025            | :x: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)                      |
 | **Connxt / Arterion**                   | 8 Jun 2025             | :white_check_mark: [VTMCSM000000008](https://vtresmarias.github.io/cert?ref=VTMCSM000000008)       |
 | **Bataan Anime Convention**             | 8 Jun 2025             | :white_check_mark: [VTMCSM000000009](https://vtresmarias.github.io/cert?ref=VTMCSM000000009)       |
-| **\*\*\* RECORDS REVOKED \*\*\***       | 23 Jun 2025            | &#x1F5D1; [VTMCSM000000010](https://vtresmarias.github.io/cert?ref=VTMCSM000000010)                |
 
 
 <!--
