@@ -1,16 +1,17 @@
-# CosMaria Resource Tracker
+# コスプレのマリア / CSM Transparency Report
 
 _please note that this document will serve as the Marias' part of transparency procedures. for more information on how we handle the details, visit the [privacy page](https://vtresmarias.github.io/privacy)._
+
+_for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](mailto:vtresmarias@outlook.jp)._
 
 **legends:**
 
 - :white_check_mark: claimed resource
 - :heavy_minus_sign: partially claimed resource
 - :x: unclaimed resource
-- &#x1F5D1; revoked resource
 
 
-## Main Lineup
+## main lineup
 
 **description:** the main lineup of CosMarias, selected to represent the Sub-Collective through cosplay and other areas of interest. they undergo a 2-week assessment in order to cement their place on a per-batch basis.
 
@@ -88,23 +89,34 @@ _please note that this document will serve as the Marias' part of transparency p
 | **Cleo M.**         | 30 Dec 2025          | :x: [VTMCSM000000019](https://vtresmarias.github.io/cert?ref=VTMCSM000000019)       | :x:                   | :x:                         |
 | **Lusherina**       | 30 Dec 2025          | :x: [VTMCSM000000020](https://vtresmarias.github.io/cert?ref=VTMCSM000000020)       | :x:                   | :x:                         |
 
+### Batch 3
 
-## Blessed Orgs (Certificate of Blessing)
+| name                | inclusive date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?       |
+|:-------------------:|:--------------------:|:-----------------------------------------------------------------------------------:|:---------------------:|:---------------------------:|
+| **Teelo**           | 30 Dec 2026          | :x: [VTMCSM000000021](https://vtresmarias.github.io/cert?ref=VTMCSM000000021)       | :x:                   | :x:                         |
+
+
+## blessed orgs (Certificate of Blessing)
 
 | name                                    | effectivity date       | certificate reference                                                                              |
 |:---------------------------------------:|:----------------------:|:--------------------------------------------------------------------------------------------------:|
 | **Samahan ng Puso**                     | 22 Dec 2024            | :white_check_mark: [VTMCSM000000001](https://vtresmarias.github.io/cert?ref=VTMCSM000000001)       |
-| **VOLs Production**                     | 15 Mar 2025            | :x: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)                      |
+| **VOLs Production**                     | 15 Mar 2025            | :white_check_mark: [VTMCSM000000007](https://vtresmarias.github.io/cert?ref=VTMCSM000000007)       |
 | **Connxt / Arterion**                   | 8 Jun 2025             | :white_check_mark: [VTMCSM000000008](https://vtresmarias.github.io/cert?ref=VTMCSM000000008)       |
 | **Bataan Anime Convention**             | 8 Jun 2025             | :white_check_mark: [VTMCSM000000009](https://vtresmarias.github.io/cert?ref=VTMCSM000000009)       |
+
+
+## &#x1F5D1; revoked records
+
+- VTMCSM000000010
 
 
 <!--
 
   # cert adjustments
 
-  - [25 Jul 2025] VTMCSM000000010 has been revoked and all records purged following further considerations from VTM due to the company culture that conflicts the Marias' values. please note that this will affect organizations that are of the same scope -- most specifically the call center industry.
-  - [21 Sep 2025] CSM is set to debut its Batch 2 Inductees due to a personal consideration from the Incumbent First🍃💐; but after an assertion with one of the supposed Inductee's "manager", their disposition outlined in VTM000000009 has been voided and replaced. VTM will issue a press release regarding the issue and the underlying clarifications on the inclusion at a later date.
-  - [30 Dec 2025] due to an internal dispute involving the Incumbent First🍃💐 (in which she takes full responsibility over what happend) during the first anniversary of the Sub-Collective, the supposed apprentice involved in VTMCSM000000019 has been replaced -- but may be reconsidered. a press release will be issued when appropriate, and considerations to be ratified when the conflicts are properly resolved.
+  - [25 Jul 2025] VTMCSM000000010 has been revoked and all records purged following further considerations from VTM due to the company culture that conflicts the Marias' values. please note that this will affect organizations that are of the same scope -- most specifically the call center industry. 
+  - [21 Sep 2025] CSM is set to debut its Batch 2 Inductees due to a personal consideration from the Incumbent First🍃💐; but after an assertion with one of the supposed Inductee's "manager", their disposition outlined in VTM000000009 has been voided and replaced.
+  - [30 Dec 2025] due to an internal dispute involving the Incumbent First🍃💐 (in which she takes full responsibility over what happend) during the first anniversary of the Sub-Collective, the supposed apprentice involved in VTMCSM000000019 has been replaced -- but may be reconsidered. considerations to be ratified when the conflicts are properly resolved.
 
  -->

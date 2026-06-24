@@ -218,6 +218,13 @@ function certInit() {
           "Mother Agatha, the First Maria🍃",
           "30 Dec 2025"
         );
+        // case "000000021": return showDetails(
+        //   ref,
+        //   "Certificate of Introduction",
+        //   "Teelo, Apprentice to the CosMarias",
+        //   "Mother Agatha, the First Maria🍃",
+        //   "30 Dec 2026"
+        // );
         default: return certInvalid(ref);
       }
     case "CSMBCN":
