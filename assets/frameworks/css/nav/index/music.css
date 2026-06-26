@@ -6,7 +6,7 @@
   display: -moz-grid;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+  grid-template-columns: 30% 70%;
 }
 .vtmMediaPlayer > div > .vtmAlbum {
   height: 100%;
