@@ -38,7 +38,7 @@ h2[csmName] {
 }
 
 .titleHead {
-  width: 100vw;
+  width: 100%;
   padding: calc(250px + 30px) 15px 250px 15px;
   /* background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png"); */
   background-image: url("/assets/images/subcollective/cosmaria/backgrounds/copilot_abstractgra_orange.png");
@@ -86,7 +86,7 @@ h2[csmName] {
 }
 .frontText > div > div > * { margin: 0; }
 
-.csmMeetV2 { width: 100vw; }
+.csmMeetV2 { width: 100%; }
 .csmMeetV2 * { margin: 0; }
 .csmMeetV2 > div {
   width: 1080px;
@@ -142,8 +142,8 @@ h2[csmName] {
 .csmProfileFscr {
   position: absolute;
   z-index: calc(2022 + 23);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   -webkit-backdrop-filter: blur(1rem);
   backdrop-filter: blur(1rem);
   display: flex;
