@@ -1,8 +1,8 @@
 body {
-  background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png");
+  background-image: url("/assets/images/backgrounds/csm_bg.png");
   color: #ffffff;
 }
-#loadBlock { background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png"); }
+#loadBlock { background-image: url("/assets/images/backgrounds/csm_bg.png"); }
 #loaderFade { filter: brightness(1000%); }
 
 header { color: #3d374c; }
@@ -40,7 +40,7 @@ h2[csmName] {
 .titleHead {
   width: 100vw;
   padding: calc(250px + 30px) 15px 250px 15px;
-  /* background-image: url("/assets/images/subcollective/cosmaria/cosmaria_bg.png"); */
+  /* background-image: url("/assets/images/backgrounds/csm_bg.png"); */
   background-image: url("/assets/images/subcollective/cosmaria/backgrounds/copilot_abstractgra_orange.png");
   background-size: cover;
   background-position: center center;

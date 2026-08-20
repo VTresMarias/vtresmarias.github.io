@@ -1,26 +1,3 @@
-<h1>VTresMarias debuts its improved look to celebrate its 2nd Anniversary</h1>
-<span>published 27 Dec 2024</span>
-<br><br>
-<p>
-  in celebration of the <b>2nd Anniversary of the Marias</b> and the upcoming
-  <b>コスプレのマリア Chapter 0: The Sisterhood</b>, we are very excited to
-  unveil the new look of our website!
-</p>
-<br>
-<p>
-  the web framework was inspired by #MamaNyoSquad's current iteration of the
-  website which was initially introduced last 18 May as part of a big makeover.
-  since then, it has been evident in other current and future websites,
-  including the current iteration of the First Maria🍃's website at the very
-  latest.
-</p>
-<br>
-<p>
-  this also introduces other features that went into planning months prior, with
-  implementations to take place on our PWA instance any time soon!!
-</p>
-<br>
-<p>
-  we can't wait to hear your thoughts on our new shift towards this move, and
-  look forward to more updates coming your way!!
-</p>
+version https://git-lfs.github.com/spec/v1
+oid sha256:872a794f7aef7348fb94073e9331e4a31ac335cea3f50f6e128c85b9ecf60d51
+size 967

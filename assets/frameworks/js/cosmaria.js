@@ -1457,7 +1457,7 @@ function csmPrfl(unit, pos, csmNm) {
           if (xhr.status === 200) { return document.querySelector("img.csmImg").setAttribute("src", csmProf); }
       }
     }
-    document.querySelector("img.csmImg").setAttribute("src", "/assets/images/subcollective/cosmaria/cosmaria_bg.png");
+    document.querySelector("img.csmImg").setAttribute("src", "/assets/images/backgrounds/csm_bg.png");
   }
 
 }
@@ -1490,7 +1490,7 @@ function csmImgLoader() {
       xhr.send();
       if (xhr.status === 200) { return csmImg.setAttribute("src", filePath); }
     }
-    csmImg.setAttribute("src", "/assets/images/subcollective/cosmaria/cosmaria_bg.png");
+    csmImg.setAttribute("src", "/assets/images/backgrounds/csm_bg.png");
   });
 }
 

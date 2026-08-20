@@ -21,7 +21,7 @@ function ajxLdr(r) {
     case "20260426":
       document.title = `rebutting all the allegations in relation to the recent cosplay visit \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `rebutting all the allegations in relation to the recent cosplay visit \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
-      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
       document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
       document.querySelector("meta[name='og:description']").setAttribute("content", `VTresMarias has been informed of a potential controversy involving the so-called "allegations" made against the First Maria🍃 in relation to her recent cosplay involvement. she is strongly rebutting those assertions.`);
       return r;
@@ -29,21 +29,21 @@ function ajxLdr(r) {
     case "20250610":
       document.title = `AN URGENT CALL: hold the Trump Administration accountable on ALL GROUNDS \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `AN URGENT CALL: hold the Trump Administration accountable on ALL GROUNDS \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
-      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
       document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
       document.querySelector("meta[name='og:description']").setAttribute("content", `VTresMarias -- along with other related organizations -- has officially denounced US President Donald J. Trump due to his contributions and role in shattering the country's democracy -- as well as his antics against Members of the Press.`);
       return r;
     case "20250605":
       document.title = `uplifting the Marias' Core Values through cosplay \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `uplifting the Marias' Core Values through cosplay \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
-      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
       document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
       document.querySelector("meta[name='og:description']").setAttribute("content", `two more organizations are set to receive the "Certificate of Blessing" in light of the First Maria🍃's observations during cosplay conventions.`);
       return r;
     case "20250312":
       document.title = `statement on the First Maria🍃's condition regarding an unfortunate event \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `statement on the First Maria🍃's condition regarding an unfortunate event \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
-      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
       document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
       document.querySelector("meta[name='og:description']").setAttribute("content", `the First Maria🍃 has suffered an unfortunate circumstance that almost cost her her own life.`);
       return r;
@@ -51,21 +51,21 @@ function ajxLdr(r) {
     case "20241227":
       document.title = `VTresMarias debuts its improved look to celebrate its 2nd Anniversary \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `VTresMarias debuts its improved look to celebrate its 2nd Anniversary \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
-      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
       document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
       document.querySelector("meta[name='og:description']").setAttribute("content", `the website has been improved in light of the Collective's Second Anniversary.`);
       return r;
     case "20241218":
       document.title = `our stance with involved persons/organizations moving forward \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `our stance with involved persons/organizations moving forward \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
-      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
       document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
       document.querySelector("meta[name='og:description']").setAttribute("content", `VTresMarias has learned that certain people or organizations have been taken advantage of the Marias' kindness for their own collective gain.`);
       return r;
     case "20241210":
       document.title = `VTresMarias announces first-ever Fortification of Blessing for Organization "Samahan ng Puso" \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `VTresMarias announces first-ever Fortification of Blessing for Organization "Samahan ng Puso" \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
-      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_3.png");
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
       document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
       document.querySelector("meta[name='og:description']").setAttribute("content", `Shunni's "Samahan ng Puso" becomes the first organization to receive the Certificate of Blessing from the Marias.`);
       return r;
