@@ -42,6 +42,7 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+          include-hidden-files: true
       - name: Finalize and Publish
         id: deployment
         uses: actions/deploy-pages@main
