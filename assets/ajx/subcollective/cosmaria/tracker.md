@@ -17,46 +17,49 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 
 ### Incumbents
 
-| name           | designation                                           | birthday       | inclusive date       | tiara color                                | bowtie color                 | certificate reference                                                                        | Letter claimed?          | coscards claimed?        | NEW!! NFC cards distributed?       |
-|:--------------:|:-----------------------------------------------------:|:--------------:|:--------------------:|:------------------------------------------:|:----------------------------:|:--------------------------------------------------------------------------------------------:|:------------------------:|:------------------------:|:----------------------------------:|
-| **Aga**        | the Incumbent First CosMaria&#x1F343;&#x1F490;        | 15 Mar         | 30 Dec 2024          | :white_check_mark: mint green (teal)       | :white_check_mark: red       | :white_check_mark: [VTM000000001](https://vtresmarias.github.io/cert?ref=VTM000000001)       | :white_check_mark:       | :white_check_mark:       | :x:                                |
-| **Dani**       | the Incumbent Second CosMaria&#x1FAB7;&#x1F490;       | 24 Oct         | 30 Dec 2024          | :x: sky blue                               | :x: red                      | :x: [VTM000000002](https://vtresmarias.github.io/cert?ref=VTM000000002)                      | :x:                      | :x:                      | :x:                                |
-| **Eri**        | the Incumbent Third CosMaria&#x1F338;&#x1F490;        | 21 Oct         | 30 Dec 2024          | :x: light peach                            | :x: red                      | :x: [VTM000000003](https://vtresmarias.github.io/cert?ref=VTM000000003)                      | :x:                      | :x:                      | :x:                                |
+| name           | designation                                      | birthday       | inclusion date       | tiara color                                | bowtie color                 | certificate reference                                                                        | Letter claimed?          | coscards claimed?        | NEW!! NFC cards distributed?       |
+|:--------------:|:------------------------------------------------:|:--------------:|:--------------------:|:------------------------------------------:|:----------------------------:|:--------------------------------------------------------------------------------------------:|:------------------------:|:------------------------:|:----------------------------------:|
+| **Aga**        | the Incumbent First CSM&#x1F343;&#x1F490;        | 15 Mar         | 30 Dec 2024          | :white_check_mark: mint green (teal)       | :white_check_mark: red       | :white_check_mark: [VTM000000001](https://vtresmarias.github.io/cert?ref=VTM000000001)       | :white_check_mark:       | :white_check_mark:       | :x:                                |
+| **Dani**       | the Incumbent Second CSM&#x1FAB7;&#x1F490;       | 24 Oct         | 30 Dec 2024          | :x: sky blue                               | :x: red                      | :x: [VTM000000002](https://vtresmarias.github.io/cert?ref=VTM000000002)                      | :x:                      | :x:                      | :x:                                |
+| **Eri**        | the Incumbent Third CSM&#x1F338;&#x1F490;        | 21 Oct         | 30 Dec 2024          | :x: light peach                            | :x: red                      | :x: [VTM000000003](https://vtresmarias.github.io/cert?ref=VTM000000003)                      | :x:                      | :x:                      | :x:                                |
 
 ### Batch 1 Inductees
 
-| name              | designation                         | birthday       | inclusive date       | tiara color                      | bowtie color                  | certificate reference                                                                        | Letter claimed?          | coscards claimed?        | NEW!! NFC cards distributed?       |
-|:-----------------:|:-----------------------------------:|:--------------:|:--------------------:|:--------------------------------:|:-----------------------------:|:--------------------------------------------------------------------------------------------:|:------------------------:|:------------------------:|:----------------------------------:|
-| **Shunni**        | the Fourth CosMaria&#x1F490;        | 20 Oct         | 15 Mar 2025          | :white_check_mark: orange        | :white_check_mark: pink       | :white_check_mark: [VTM000000004](https://vtresmarias.github.io/cert?ref=VTM000000004)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
-| **Patring**       | the Fifth CosMaria&#x1F490;         | TBD            | 15 Mar 2025          | :white_check_mark: purple        | :white_check_mark: pink       | :white_check_mark: [VTM000000005](https://vtresmarias.github.io/cert?ref=VTM000000005)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
-| **Shira**         | the Sixth CosMaria&#x1F490;         | 19 Dec         | 15 Mar 2025          | :white_check_mark: magenta       | :white_check_mark: pink       | :white_check_mark: [VTM000000006](https://vtresmarias.github.io/cert?ref=VTM000000006)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
-| **Elle**          | the Seventh CosMaria&#x1F490;       | 27 Aug         | 15 Mar 2025          | :white_check_mark: white         | :white_check_mark: pink       | :white_check_mark: [VTM000000007](https://vtresmarias.github.io/cert?ref=VTM000000007)       | :white_check_mark:       | :white_check_mark:       | :x:                                |
+| name              | designation                    | birthday       | inclusion date       | tiara color                      | bowtie color                  | certificate reference                                                                        | Letter claimed?          | coscards claimed?        | NEW!! NFC cards distributed?       |
+|:-----------------:|:------------------------------:|:--------------:|:--------------------:|:--------------------------------:|:-----------------------------:|:--------------------------------------------------------------------------------------------:|:------------------------:|:------------------------:|:----------------------------------:|
+| **Shunni**        | the Fourth CSM&#x1F490;        | 20 Oct         | 15 Mar 2025          | :white_check_mark: orange        | :white_check_mark: pink       | :white_check_mark: [VTM000000004](https://vtresmarias.github.io/cert?ref=VTM000000004)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
+| **Patring**       | the Fifth CSM&#x1F490;         | 22 Jan         | 15 Mar 2025          | :white_check_mark: purple        | :white_check_mark: pink       | :white_check_mark: [VTM000000005](https://vtresmarias.github.io/cert?ref=VTM000000005)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
+| **Shira**         | the Sixth CSM&#x1F490;         | 19 Dec         | 15 Mar 2025          | :white_check_mark: magenta       | :white_check_mark: pink       | :white_check_mark: [VTM000000006](https://vtresmarias.github.io/cert?ref=VTM000000006)       | :white_check_mark:       | :heavy_minus_sign:       | :x:                                |
+| **Elle**          | the Seventh CSM&#x1F490;       | 27 Aug         | 15 Mar 2025          | :white_check_mark: white         | :white_check_mark: pink       | :white_check_mark: [VTM000000007](https://vtresmarias.github.io/cert?ref=VTM000000007)       | :white_check_mark:       | :white_check_mark:       | :x:                                |
 
 ### Batch 2 Inductees
 
-| name               | designation                          | birthday       | inclusive date       | tiara color       | bowtie color       | certificate reference                                                                        | Letter claimed?       | coscards claimed?       | NEW!! NFC cards distributed?       |
-|:------------------:|:------------------------------------:|:--------------:|:--------------------:|:-----------------:|:------------------:|:--------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|:----------------------------------:|
-| **Tris**           | the Eighth CosMaria&#x1F490;         | 24 May         | 30 Jun 2025          | :x: yellow        | :x: pink           | :white_check_mark: [VTM000000008](https://vtresmarias.github.io/cert?ref=VTM000000008)       | :x:                   | :x:                     | :x:                                |
-| **Seushi**         | the Ninth CosMaria&#x1F490;          | 1 Jun          | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000009](https://vtresmarias.github.io/cert?ref=VTM000000009)                      | :x:                   | :x:                     | :x:                                |
-| **Issa**           | the Tenth CosMaria&#x1F490;          | TBD            | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000010](https://vtresmarias.github.io/cert?ref=VTM000000010)                      | :x:                   | :white_check_mark:      | :x:                                |
-| **Divi**           | the Eleventh CosMaria&#x1F490;       | 27 Apr         | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000011](https://vtresmarias.github.io/cert?ref=VTM000000011)                      | :x:                   | :x:                     | :x:                                |
+| name               | designation                     | birthday       | inclusion date       | tiara color       | bowtie color       | certificate reference                                                                        | Letter claimed?       | coscards claimed?       | NEW!! NFC cards distributed?       |
+|:------------------:|:-------------------------------:|:--------------:|:--------------------:|:-----------------:|:------------------:|:--------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|:----------------------------------:|
+| **Tris**           | the Eighth CSM&#x1F490;         | 24 May         | 30 Jun 2025          | :x: yellow        | :x: pink           | :white_check_mark: [VTM000000008](https://vtresmarias.github.io/cert?ref=VTM000000008)       | :x:                   | :x:                     | :x:                                |
+| **Seushi**         | the Ninth CSM&#x1F490;          | 1 Jun          | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000009](https://vtresmarias.github.io/cert?ref=VTM000000009)                      | :x:                   | :x:                     | :x:                                |
+| **Issa**           | the Tenth CSM&#x1F490;          | TBD            | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000010](https://vtresmarias.github.io/cert?ref=VTM000000010)                      | :x:                   | :white_check_mark:      | :x:                                |
+| **Divi**           | the Eleventh CSM&#x1F490;       | 27 Apr         | 15 Mar 2026          | :x: yellow        | :x: pink           | :x: [VTM000000011](https://vtresmarias.github.io/cert?ref=VTM000000011)                      | :x:                   | :x:                     | :x:                                |
 
 
 ## Mistresses of CSM
 
 **description:** they are regarded as those that exert a certain "adult" side to them, making them virtually unique from the others.
 
-| name             | inclusive date       | certificate reference                                                               |
-|:----------------:|:--------------------:|:-----------------------------------------------------------------------------------:|
-| **Lia B.**       | 30 Dec 2025          | :x: [VTMCSM000000011](https://vtresmarias.github.io/cert?ref=VTMCSM000000011)       |
-| **Sonica**       | 30 Dec 2025          | :x: [VTMCSM000000012](https://vtresmarias.github.io/cert?ref=VTMCSM000000012)       |
+| name              | inclusion date       | certificate reference                                                               |
+|:-----------------:|:--------------------:|:-----------------------------------------------------------------------------------:|
+| **Lia B.**        | 30 Dec 2025          | :x: [VTMCSM000000011](https://vtresmarias.github.io/cert?ref=VTMCSM000000011)       |
+| **Sonica**        | 30 Dec 2025          | :x: [VTMCSM000000012](https://vtresmarias.github.io/cert?ref=VTMCSM000000012)       |
+| **Bunny**         | TBD                  | TBD                                                                                 |
+| **Keileen**       | TBD                  | TBD                                                                                 |
+| **Asagi**         | TBD                  | TBD                                                                                 |
 
 
 ## Baconettes of CSM
 
 **description:** inductees of CSM that have proven to have exerted all efforts -- which earned BACon's trust in representing as Baconette.
 
-| name             | inclusive date       | certificate reference                                                               |
+| name             | inclusion date       | certificate reference                                                               |
 |:----------------:|:--------------------:|:-----------------------------------------------------------------------------------:|
 | **Shunni**       | 4 Jan 2026           | :x: [CSMBCN000000001](https://vtresmarias.github.io/cert?ref=CSMBCN000000001)       |
 | **Shira**        | 4 Jan 2026           | :x: [CSMBCN000000002](https://vtresmarias.github.io/cert?ref=CSMBCN000000002)       |
@@ -68,7 +71,7 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 
 ### Batch 1
 
-| name                 | inclusive date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?                      |
+| name                 | inclusion date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?                      |
 |:--------------------:|:--------------------:|:-----------------------------------------------------------------------------------:|:---------------------:|:------------------------------------------:|
 | **Issa**             | 30 Dec 2024          | :x: [VTMCSM000000002](https://vtresmarias.github.io/cert?ref=VTMCSM000000002)       | :x:                   | :white_check_mark: Batch 2 Inductees       |
 | **Gravity B.**       | 30 Dec 2024          | :x: [VTMCSM000000003](https://vtresmarias.github.io/cert?ref=VTMCSM000000003)       | :x:                   | :x:                                        |
@@ -78,7 +81,7 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 
 ### Batch 2
 
-| name                | inclusive date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?       |
+| name                | inclusion date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?       |
 |:-------------------:|:--------------------:|:-----------------------------------------------------------------------------------:|:---------------------:|:---------------------------:|
 | **Jaja**            | 30 Dec 2025          | :x: [VTMCSM000000013](https://vtresmarias.github.io/cert?ref=VTMCSM000000013)       | :x:                   | :x:                         |
 | **Cess**            | 30 Dec 2025          | :x: [VTMCSM000000014](https://vtresmarias.github.io/cert?ref=VTMCSM000000014)       | :x:                   | :x:                         |
@@ -91,7 +94,7 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 
 ### Batch 3
 
-| name                | inclusive date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?       |
+| name                | inclusion date       | certificate reference                                                               | Letter claimed?       | part of CSM&#x1F490;?       |
 |:-------------------:|:--------------------:|:-----------------------------------------------------------------------------------:|:---------------------:|:---------------------------:|
 | **Teelo**           | 30 Dec 2026          | :x: [VTMCSM000000021](https://vtresmarias.github.io/cert?ref=VTMCSM000000021)       | :x:                   | :x:                         |
 
