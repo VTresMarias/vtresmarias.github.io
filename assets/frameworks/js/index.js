@@ -93,8 +93,8 @@ function ytPlayer(nm) {
   `);
 }
 
-function mediaPlay(file) {
-  document.querySelector("audio[mediaExec]").src = `https://media.githubusercontent.com/media/VTresMarias/vtresmarias.github.io/refs/heads/vtm-music/${file}.mp3`;
+function mediaPlay(album, file) {
+  document.querySelector("audio[mediaExec]").src = `https://media.githubusercontent.com/media/VTresMarias/vtresmarias.github.io/refs/heads/vtm-music/${album}/${file}.mp3`;
   document.querySelector("audio[mediaExec]").play();
 }
 
