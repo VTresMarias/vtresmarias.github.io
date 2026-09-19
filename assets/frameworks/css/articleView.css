@@ -20,4 +20,9 @@
   }
   & li { display: list-item; }
   & a { cursor: pointer !important; }
+  & em {
+    display: block;
+    font-weight: 700;
+  }
+  & h1 { margin-bottom: 0.625rem !important; }
 }

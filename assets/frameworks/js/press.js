@@ -16,6 +16,13 @@ function ajxLdr(r) {
 
   switch (r) {
     // 2026
+    case "20260919":
+      document.title = `FOR IMMEDIATE RELEASE: Democracy is at the Authoritarian's Door \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
+      document.querySelector("meta[name='og:title']").setAttribute("content", `FOR IMMEDIATE RELEASE: Democracy is at the Authoritarian's Door \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
+      document.querySelector("meta[name='og:image']").setAttribute("content", "https://vtresmarias.github.io/assets/images/backgrounds/vtm_bg_3.png");
+      document.querySelector("meta[name='og:url']").setAttribute("content", `https://vtresmarias.github.io/press?ref=${r}`);
+      document.querySelector("meta[name='og:description']").setAttribute("content", `this is a joint statement by VTresMarias and thebelovedmoon and associates (tbmassoc) following Donald J. Trump's ban on CNN, MS NOW, and POLITICO to report about the White House.`);
+      return r;
     case "20260426":
       document.title = `rebutting all the allegations in relation to the recent cosplay visit \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`;
       document.querySelector("meta[name='og:title']").setAttribute("content", `rebutting all the allegations in relation to the recent cosplay visit \u2014 ${d.replace(/^0+/, "")} ${mD[m - 1]} ${y}`);
