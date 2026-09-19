@@ -80,11 +80,9 @@ function closeApp() {
 // migration from html to txt for a cleaner navigation
 function ajxLdr(r) {
 
-  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
-  let ajx = new XMLHttpRequest();
-  ajx.onload = function() { window.frames[0].document.body.innerHTML = this.responseText; }
-  ajx.open("GET", `/assets/ajx/story/chapter${r}.txt`);
-  ajx.send();
+  fetch(`/assets/ajx/story/chapter${r}.txt`)
+    .then(response => response.text())
+    .then(text => { window.frames[0].document.body.innerHTML = text; });
 
   return;
 

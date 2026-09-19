@@ -26,9 +26,14 @@ body {
   font-family: "Noto Serif Display", "Kaisei Opti", "Windows 11 Emoji", "Noto Color Emoji";
   letter-spacing: -0.08rem;
   font-weight: 500;
+  & * { margin: 0; }
 }
 
-h1, h2, h3, h4, h5, h6 { text-shadow: 2px 4px 16px #3d374c80; }
+h1, h2, h3, h4, h5, h6 {
+  /* text-shadow: 2px 4px 16px #3d374c80; */
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
+}
 h1 {
   font-style: italic;
   text-align: center;
@@ -53,13 +58,16 @@ button {
   font-size: medium;
   text-align: center;
   text-decoration: none;
+  display: block;
   margin: 0;
   cursor: pointer;
   -webkit-transition: 0.75s;
   -moz-transition: 0.75s;
   -o-transition: 0.75s;
   transition: 0.75s;
-  box-shadow: 0 0 4px #3d374c40, 0 4px 8px #3d374c80;
+  /* box-shadow: 0 0 4px #3d374c40, 0 4px 8px #3d374c80; */
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 button:hover {
   background-color: #dcc6bb;

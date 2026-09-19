@@ -14,17 +14,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 4px 100px 16px #3d374c80;
+  /* box-shadow: 6px 6px 8px #3d374c80; */
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
   -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -o-transition: 1.25s;
   transition: 1.25s;
-}
-#loaderFade {
-  -webkit-transition: 1.25s;
-  -moz-transition: 1.25s;
-  -o-transition: 1.25s;
-  transition: 1.25s;
+  & #loaderFade {
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+  }
+  & .segLdrTrial { font-size: 5rem !important; }
 }
 
 header, #mobileNav {
@@ -45,8 +48,8 @@ header {
   justify-content: space-between;
 }
 header > *, #mobileNav > * {
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 #mobileNav {
   background-color: #dcc6bb;
@@ -85,7 +88,9 @@ header > *, #mobileNav > * {
   -moz-transition: 0.75s;
   -o-transition: 0.75s;
   transition: 0.75s;
-  box-shadow: 0 0 4px #3d374c40, 0 4px 8px #3d374c80;
+  /* box-shadow: 0 0 4px #3d374c40, 0 4px 8px #3d374c80; */
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 .navBtn:hover {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;

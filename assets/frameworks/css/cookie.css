@@ -15,8 +15,8 @@
     color: #3d374c;
     background-color: #dcc6bb;
     border-radius: 0.75rem;
-    -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-    filter: drop-shadow(2px 4px 16px #3d374c80);
+    -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+    filter: drop-shadow(6px 6px 8px #3d374c80);
     z-index: calc(2022 + 3);
     -webkit-transition: 0.75s;
     -moz-transition: 0.75s;

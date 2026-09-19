@@ -51,8 +51,8 @@ h2[csmName] {
   width: 750px;
   max-width: 100%;
   margin: 0 auto;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 .titleHead > div > * {
   margin: 0 !important;
@@ -99,8 +99,8 @@ h2[csmName] {
   /* position: relative; */
   width: 100%;
   cursor: initial;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 .csmLineup * {
   -webkit-filter: none;
@@ -172,8 +172,8 @@ h2[csmName] {
   transition: 0.75s;
   transform: scale(0.95);
   opacity: 0;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 .csmPrfGridView {
   height: 100%;

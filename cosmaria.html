@@ -62,7 +62,6 @@
     <script src="/assets/frameworks/js/_main.js" type="text/javascript"></script> <!-- base -->
     <script src="/assets/frameworks/js/cookie.js" type="text/javascript"></script> <!-- cookie -->
     <script src="/assets/frameworks/js/cosmaria.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/qrcode_js/qrcode.min.js" type="text/javascript"></script> <!-- qrcode generator -->
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
@@ -75,9 +74,10 @@
       // in-page javascript
     </script>
   </head>
-  <body onload="{ init(); }">
+  <body onload="{ init(); }" data-requiresqr="true">
     <div id="loadBlock"> <!-- splash screen -->
-      <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
+      <!-- <img id="loaderFade" src="/assets/web/load_icon.png" alt=""> -->
+      <span id="loaderFade" class="segLdrTrial" data-spinnerversion="2" data-spinnertype="normal" data-spinnerspeed="30"></span>
     </div>
     <div class="csmProfileFscr" onclick="{ csmCloseView(); }">
       <div class="csmPrfDiag" onclick="{ event.stopPropagation(); }">
@@ -467,7 +467,7 @@
           "Baconette" in every event.
         </p>
         <br>
-        <button onclick="{ window.open('/cert?ref=VTMCSM000000009'); }">view related certificate</button>
+        <button style="margin: 0 auto !important;" onclick="{ window.open('/cert?ref=VTMCSM000000009'); }">view related certificate</button>
         <br><br>
         <div csmMistresses class="csmLineup">
           <div style="grid-template-columns: repeat(2, minmax(0, 1fr));">
@@ -612,7 +612,7 @@
         <br>
         <p>this report is updated regularly and is hosted on our GitHub.</p>
         <br>
-        <button onclick="{ window.open('/redirect/CSMTransparency'); }">read the report</button>
+        <button style="margin: 0 auto !important;" onclick="{ window.open('/redirect/CSMTransparency'); }">read the report</button>
       </div>
     </div>
     <footer>

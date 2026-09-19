@@ -49,8 +49,8 @@ img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
 [mCVTable] > div > * {
   display: block;
   margin: 0;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 @media screen and (max-width: 720px) {
   [mCVTable] > div { width: 100%; }
@@ -87,8 +87,8 @@ img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
       object-fit: cover;
       -o-object-position: center center;
       object-position: center center;
-      -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-      filter: drop-shadow(2px 4px 16px #3d374c80);
+      -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+      filter: drop-shadow(6px 6px 8px #3d374c80);
     }
   }
 }
@@ -139,8 +139,8 @@ img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
     margin: 0 auto;
     width: calc(15rem * 1.5);
     border-radius: 50%;
-    -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-    filter: drop-shadow(2px 4px 16px #3d374c80);
+    -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+    filter: drop-shadow(6px 6px 8px #3d374c80);
   }
 }
 .mariaDiagV3 > div {
@@ -158,8 +158,8 @@ img[alt="Hina Oujo, the Third Maria🌸"] { border: 0.5rem solid #f0a9a9; }
   transition: 0.75s;
   transform: scale(0.95);
   opacity: 0;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
   display: -moz-grid;
   display: -ms-grid;
   display: grid;
@@ -229,8 +229,8 @@ div[class^="vtmGrid"] {
   padding: 15rem 1rem;
   text-align: center;
   & h1, h2, h3, h4, h5, h6 {
-    -webkit-filter: drop-shadow(2px 4px 16px #dcc6bb80);
-    filter: drop-shadow(2px 4px 16px #dcc6bb80);
+    -webkit-filter: drop-shadow(6px 6px 8px #dcc6bb80);
+    filter: drop-shadow(6px 6px 8px #dcc6bb80);
   }
   & div {
     width: 1080px;

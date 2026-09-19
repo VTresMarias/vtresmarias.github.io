@@ -24,8 +24,8 @@ body { background-image: url("/assets/images/maria_story.png"); }
   background-color: #dcc6bb;
   overflow: hidden;
   border-radius: 0.75rem;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -71,8 +71,8 @@ body { background-image: url("/assets/images/maria_story.png"); }
   -moz-transition: 0.75s;
   -o-transition: 0.75s;
   transition: 0.75s;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 .storyNavBtn:hover {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;

@@ -19,8 +19,8 @@
   max-width: 100%;
   margin: 0 auto;
   border-radius: 0.75rem;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 .vtmMediaPlayer > div > .vtmSongSelector { padding: 0 0 0 3rem; }
 .vtmMediaPlayer > div > .vtmSongSelector * { margin: 0; }
@@ -48,8 +48,8 @@
   -o-transition: 0.75s;
   transition: 0.75s;
   font-size: 0.875em;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
 .songSelect span[class^="material-symbols"]:hover {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;

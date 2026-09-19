@@ -1421,7 +1421,7 @@ function csmPrfl(unit, pos, csmNm) {
     default: return event.stopPropagation();
   }
 
-  function csmDiagImgLdr(csmCustomState) {
+  async function csmDiagImgLdr(csmCustomState) {
     let fnames = [
         "png",
         "jpg",
@@ -1430,32 +1430,25 @@ function csmPrfl(unit, pos, csmNm) {
         "webp",
       ];
     for (let ext of fnames) {
-      let csmProf = `/assets/images/subcollective/cosmaria/profile/csm_${csmNm}.${ext}`,
-        xhr = new XMLHttpRequest(), csmProfCust;
-      switch (csmCustomState) {
-        case 1: // BCN
-          csmProfCust = `/assets/images/subcollective/cosmaria/profile/csm_${csmNm}_BCN.${ext}`;
-          xhr.open("HEAD", csmProf, false);
-          xhr.send();
-          if (xhr.status === 200) {
-            document.querySelector("img.csmImg").setAttribute("src", csmProf);
-            document.querySelector("img.csmImgCust").setAttribute("src", csmProfCust);
-            return;
+      let csmProf = `/assets/images/subcollective/cosmaria/profile/csm_${csmNm}.${ext}`;
+      try {
+        let response = await fetch(csmProf, { method: "HEAD" });
+        if (response.ok) {
+          switch (csmCustomState) {
+            case 1: // BCN
+              document.querySelector("img.csmImg").setAttribute("src", csmProf);
+              document.querySelector("img.csmImgCust").setAttribute("src", `/assets/images/subcollective/cosmaria/profile/csm_${csmNm}_BCN.${ext}`);
+              return;
+            case 2: // VTM (Aga)
+              document.querySelector("img.csmImg").setAttribute("src", csmProf);
+              document.querySelector("img.csmImgCust").setAttribute("src", "/assets/images/profile/maria_pfp_1.png");
+              return;
+            default:
+              document.querySelector("img.csmImg").setAttribute("src", csmProf);
+              return;
           }
-        case 2: // VTM (Aga)
-          csmProfCust = `/assets/images/profile/maria_pfp_1.png`;
-          xhr.open("HEAD", csmProf, false);
-          xhr.send();
-          if (xhr.status === 200) {
-            document.querySelector("img.csmImg").setAttribute("src", csmProf);
-            document.querySelector("img.csmImgCust").setAttribute("src", csmProfCust);
-            return;
-          }
-        default:
-          xhr.open("HEAD", csmProf, false);
-          xhr.send();
-          if (xhr.status === 200) { return document.querySelector("img.csmImg").setAttribute("src", csmProf); }
-      }
+        }
+      } catch (error) { continue; }
     }
     document.querySelector("img.csmImg").setAttribute("src", "/assets/images/backgrounds/csm_bg.png");
   }
@@ -1474,21 +1467,15 @@ function collapsibleEnable() {
 }
 
 function csmImgLoader() {
-  document.querySelectorAll("img[class^='csmImg_']").forEach((csmImg) => {
+  document.querySelectorAll("img[class^='csmImg_']").forEach(async (csmImg) => {
     let csmName = csmImg.getAttribute("class").replace("csmImg_", "csm_"),
-      fnames = [
-        "png",
-        "jpg",
-        "jpeg",
-        "gif",
-        "webp",
-      ];
+      fnames = [ "png", "jpg", "jpeg", "gif", "webp", ];
     for (let ext of fnames) {
-      let filePath = `/assets/images/subcollective/cosmaria/profile/${csmName}.${ext}`,
-        xhr = new XMLHttpRequest();
-      xhr.open("HEAD", filePath, false);
-      xhr.send();
-      if (xhr.status === 200) { return csmImg.setAttribute("src", filePath); }
+      let filePath = `/assets/images/subcollective/cosmaria/profile/${csmName}.${ext}`;
+      try {
+        let response = await fetch(filePath, { method: "HEAD" });
+        if (response.ok) { return csmImg.setAttribute("src", filePath); }
+      } catch (error) { } // try another format
     }
     csmImg.setAttribute("src", "/assets/images/backgrounds/csm_bg.png");
   });

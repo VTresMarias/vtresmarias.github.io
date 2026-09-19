@@ -44,7 +44,8 @@
   </head>
   <body onload="{ init(); }">
     <div id="loadBlock"> <!-- splash screen -->
-      <img id="loaderFade" src="/assets/web/load_icon.png" alt="">
+      <!-- <img id="loaderFade" src="/assets/web/load_icon.png" alt=""> -->
+      <span id="loaderFade" class="segLdrTrial" data-spinnerversion="2" data-spinnertype="normal" data-spinnerspeed="30"></span>
     </div>
     <div isMobile id="mobileNav"> <!-- mobile header -->
       <span id="btn-home-mobile" class="material-symbols-rounded" title="home" onclick="{ window.location.replace('/'); }">home</span>
@@ -236,8 +237,8 @@
         <div>
           <div class="subCollProfiler" onclick="{ subCollProfile(1); }">
             <img src="/assets/images/subcollective/cosmaria/cosmaria_logo.png" style="
-              -webkit-filter: brightness(1000%) drop-shadow(2px 4px 16px #dcc6bb80);
-              filter: brightness(1000%) drop-shadow(2px 4px 16px #dcc6bb80);
+              -webkit-filter: brightness(1000%) drop-shadow(6px 6px 8px #dcc6bb80);
+              filter: brightness(1000%) drop-shadow(6px 6px 8px #dcc6bb80);
             " alt="">
             <div style="width: 100%; height: 1.5rem;"></div> <!-- spacer -->
             <div>

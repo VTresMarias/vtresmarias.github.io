@@ -5,11 +5,9 @@ function ltrInit() {
 
 function ajxLdr(r) {
 
-  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
-  let ajx = new XMLHttpRequest();
-  ajx.onload = function() { document.querySelector("#articlTxt").innerHTML = this.responseText; }
-  ajx.open("GET", `/assets/ajx/letter/${r}.txt`);
-  ajx.send();
+  fetch(`/assets/ajx/letter/${r}.txt`)
+    .then(response => response.text())
+    .then(text => { document.querySelector("#articlTxt").innerHTML = text; });
 
   let y = r.substring(0, 4),
     m = r.substring(4, 6),

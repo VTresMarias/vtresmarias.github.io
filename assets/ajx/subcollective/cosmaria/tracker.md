@@ -6,9 +6,9 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 
 **legends:**
 
-- :white_check_mark: claimed resource
-- :heavy_minus_sign: partially claimed resource
-- :x: unclaimed resource
+- :white_check_mark: claimed physical goods
+- :heavy_minus_sign: partially claimed physical goods
+- :x: unclaimed physical goods
 
 
 ## main lineup

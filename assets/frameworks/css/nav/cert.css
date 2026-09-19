@@ -13,6 +13,7 @@
     border-radius: 0;
     background-color: unset;
   }
+  & button { display: inline-block; }
 }
 
 .frontText > div > * {
@@ -40,6 +41,6 @@ canvas {
   max-width: 100%;
   height: auto;
   aspect-ratio: 1.53 / 1;
-  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
-  filter: drop-shadow(2px 4px 16px #3d374c80);
+  -webkit-filter: drop-shadow(6px 6px 8px #3d374c80);
+  filter: drop-shadow(6px 6px 8px #3d374c80);
 }
