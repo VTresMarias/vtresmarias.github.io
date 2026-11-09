@@ -1,103 +1,3 @@
-function navQuery() {
-
-  let vtm = new URLSearchParams(window.location.search).get("vtm"),
-    importCSS = css => document.head.appendChild(document.createElement("style")).innerHTML = css; // related answer: https://stackoverflow.com/a/56825511 
-
-  switch (vtm) {
-    case "anniversary":
-      document.title = "anniversaries of the Marias";
-      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
-      navBtnHide(vtm);
-      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
-      return;
-    case "story":
-      document.title = "the story of the First Maria ～最初のマリアの物語～";
-      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
-      navBtnHide(vtm);
-      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
-      document.querySelector("#vtmLogoHead").src = "/assets/web/maria_story_logo.png";
-      return;
-    case "music":
-      document.title = "V三人のマリア: the Music of the Marias🍃🪷🌸"
-      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
-      navBtnHide(vtm);
-      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
-      return;
-    case "event":
-      document.title = "events"
-      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
-      navBtnHide(vtm);
-      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
-      return;
-    case "letter":
-      document.title = "letters from the First Maria🍃";
-      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
-      navBtnHide(vtm);
-      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
-      return;
-    case "press":
-      document.title = "press releases";
-      document.querySelector(`#${vtm}`).setAttribute("style", "display: block;");
-      navBtnHide(vtm);
-      importCSS(`@import url("/assets/frameworks/css/nav/index/${vtm}.css");`);
-      return;
-    default:
-      document.title = "「VTresMarias - V三人のマリア - 」";
-      document.querySelector("#home").setAttribute("style", "display: block;");
-      navBtnHide("home");
-      importCSS(`@import url("/assets/frameworks/css/nav/index/home.css");`);
-      return;
-  }
-
-}
-
-function panelOpen() { document.querySelector("#mobileNav").setAttribute("style", "transform: initial;"); }
-function panelClose() { document.querySelector("#mobileNav").setAttribute("style", "transform: translateY(-15rem);"); }
-
-function mus(arg) {
-  if (arg == "play") {
-    document.querySelector("#bgmPlayPause").onclick = () => { mus("pause"); };
-    document.querySelector("#bgmPlayPause").innerText = "pause";
-    document.querySelector("#storyBGM").play();
-  } else if (arg == "pause") {
-    document.querySelector("#bgmPlayPause").onclick = () => { mus("play"); };
-    document.querySelector("#bgmPlayPause").innerText = "play_arrow";
-    document.querySelector("#storyBGM").pause();
-  }
-}
-
-function launchStory() {
-  window.open("story");
-  mus("pause");
-}
-
-function navBtnHide(lbl) {
-  let format = ["desktop", "mobile"];
-  for (let v = 0; v < format.length; v++) { document.querySelector(`#btn-${lbl}-${format[v]}`).setAttribute("style", "display: none;"); }
-}
-
-function ytPlayer(nm) {
-  let wdth, aspr, ytId;
-  switch (nm) {
-    case "csm2025":
-      wdth = "75rem";
-      aspr = "16 / 9";
-      ytId = "LLSOjWAf3vA";
-      break;
-    default: return null;
-  }
-  document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mariaDiag" onclick="mariaDialogClose()">
-      <iframe style="width: ${wdth}; aspect-ratio: ${aspr};" src="https://www.youtube-nocookie.com/embed/${ytId}?controls=1&rel=0&showinfo=0&modestbranding=1&playsinline=1" title="YT Player" frameborder="0" allowfullscreen onclick="{ event.stopPropagation(); }"></iframe>
-    </div>
-  `);
-}
-
-function mediaPlay(album, file) {
-  document.querySelector("audio[mediaExec]").src = `https://media.githubusercontent.com/media/VTresMarias/vtresmarias.github.io/refs/heads/vtm-music/${album}/${file}.mp3`;
-  document.querySelector("audio[mediaExec]").play();
-}
-
 function vtmOpenView() {
   document.querySelector(".mariaDiagV3").setAttribute("style", "display: flex;");
   setTimeout(() => {
@@ -132,6 +32,7 @@ function mariaProfile(num) {
               <br>
               <div class="vtmSocials" AgaChuu>
                 <i class="bi bi-globe" title="website" onclick="{ window.open('https://thebelovedmoon.github.io'); }"></i>
+                <i class="bi bi-person-fill" title="vTubie" onclick="{ window.open('/redirect/vtubie/firstMaria'); }"></i>
                 <i class="bi bi-twitter-x" title="X" onclick="{ window.open('https://x.com/thebelovedmoon'); }"></i>
                 <i class="bi bi-facebook" title="facebook" onclick="{ window.open('https://web.facebook.com/thebelovedmoon'); }"></i>
                 <i class="bi bi-instagram" title="instagram" onclick="{ window.open('https://instagram.com/themoon_follow'); }"></i>
@@ -194,6 +95,7 @@ function mariaProfile(num) {
               <br>
               <div class="vtmSocials" AuraOstara>
                 <i class="bi bi-globe" title="website" onclick="{ window.open('https://thebelovedmoon.github.io/auraostara'); }"></i>
+                <i class="bi bi-person-fill" title="vTubie" onclick="{ window.open('/redirect/vtubie/secondMaria'); }"></i>
                 <i class="bi bi-twitter-x" title="X" onclick="{ window.open('https://x.com/AuraOstara'); }"></i>
                 <!-- <i class="bi bi-youtube" title="youtube" onclick="{ window.open('https://youtube.com/@AuraOstara'); }><"/i> -->
                 <i class="bi bi-twitch" title="twitch" onclick="{ window.open('https://twitch.tv/AuraOstara'); }"></i>
@@ -249,6 +151,7 @@ function mariaProfile(num) {
               <br>
               <div class="vtmSocials" HinaOujo>
                 <i class="bi bi-globe" title="website" onclick="{ window.open('https://thebelovedmoon.github.io/hinaoujo'); }"></i>
+                <i class="bi bi-person-fill" title="vTubie" onclick="{ window.open('/redirect/vtubie/thirdMaria'); }"></i>
                 <!-- <i class="bi bi-twitter-x" title="X" onclick="{ window.open('https://x.com/HinaSukii'); }"></i> -->
                 <i class="bi bi-youtube" title="youtube" onclick="{ window.open('https://youtube.com/@HinaSukii'); }"></i>
                 <!-- <i class="bi bi-twitch" title="twitch" onclick="{ window.open('https://twitch.tv/HinaSukii'); }"></i> -->

@@ -32,7 +32,8 @@
     <!-- custom js -->
     <script src="/assets/frameworks/js/_main.js" type="text/javascript"></script> <!-- base -->
     <script src="/assets/frameworks/js/cookie.js" type="text/javascript"></script> <!-- cookie -->
-    <script src="/assets/frameworks/js/index.js" type="text/javascript"></script>
+    <script src="/assets/frameworks/js/base.js" type="text/javascript"></script>
+    <script src="/assets/frameworks/js/youtube.js" type="text/javascript"></script>
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
@@ -57,6 +58,7 @@
       <span id="btn-letter-mobile" class="material-symbols-rounded" title="letters from the First Maria🍃" onclick="{ window.location.replace('/?vtm=letter'); }">mail</span>
       <span id="btn-press-mobile" class="material-symbols-rounded" title="press releases" onclick="{ window.location.replace('/?vtm=press'); }">newspaper</span>
       <span class="material-symbols-rounded" title="certificate validator" onclick="{ window.open('/cert'); }">license</span>
+      <span class="material-symbols-rounded" title="#StateOfVTuber" onclick="{ window.open('https://thebelovedmoon.github.io?vt=stateofvtuber'); }">podcasts</span>
       <span class="material-symbols-rounded" title="close panel" onclick="{ panelClose(); }">close</span>
     </div>
     <header> <!-- desktop header -->
@@ -70,6 +72,7 @@
         <span id="btn-letter-desktop" class="material-symbols-rounded" title="letters from the First Maria🍃" onclick="{ window.location.replace('/?vtm=letter'); }">mail</span>
         <span id="btn-press-desktop" class="material-symbols-rounded" title="press releases" onclick="{ window.location.replace('/?vtm=press'); }">newspaper</span>
         <span class="material-symbols-rounded" title="certificate validator" onclick="{ window.open('/cert'); }">license</span>
+        <span class="material-symbols-rounded" title="#StateOfVTuber" onclick="{ window.open('https://thebelovedmoon.github.io?vt=stateofvtuber'); }">podcasts</span>
       </div>
       <div isMobile class="urlRefs">
         <span class="material-symbols-rounded" title="Open Panel" onclick="{ panelOpen(); }">menu</span>
@@ -102,45 +105,25 @@
         <div onclick="{ event.stopPropagation(); }"></div>
       </div>
       <div class="frontImg" style="background-image: url('/assets/images/20240128_remaster.png');"></div>
-      <!-- <div class="frontText" style="background-image: url('/assets/images/20240128_remaster.png');">
-        <div style="background-color: #dcc6bb80;">
-          <div>
-            <h1>home of the VTuber Collective</h1>
-            <br>
-            <p>
-              since 27 Dec 2022, 「VTresMarias - V三人のマリア - 」 takes pride in uplifting
-              the spirits of our VTubers -- called the Marias -- as they tackle on any
-              challenge that comes their way together.
-            </p>
-            <br>
-            <p>
-              the Marias were chosen for their personal connections with the First Maria🍃,
-              alongside their unwavering commitment to serving their community with the best
-              they can.
-            </p>
-            <br>
-            <button onclick="{ window.open('/redirect/vtubie/vtm'); }">read more on vTubie</button>
-          </div>
-        </div>
-      </div> -->
       <div class="frontText" style="background-image: url('/assets/images/20240128_remaster.png');">
         <div style="background-color: #dcc6bb80;">
           <div>
-            <h1>celebrating 3 years of becoming one with the Marias</h1>
+            <h1>road to the 4th Anniversary of the VTuber Collective</h1>
             <br>
             <p>
-              VTresMarias has come a long way since its inception on 27 Dec 2022, pursuing
-              the Core Values for the betterment of the VTuber Community and beyond. and
-              along the way, it became more than just a VTuber Collective -- it's a
-              culmination of ideas bringing together to form a community that has uplifted
-              the spirits of not just the people around them, but also themselves.
+              despite its multi-year presence in the hearts and minds of VTubers and
+              creative arts communities, VTresMarias still remains a relatively simple
+              Collective that dreams big "for the betterment of all".
             </p>
             <br>
             <p>
-              as the Marias continue ushering on to further horizons -- with the First
-              Maria🍃 at the helm of it all -- they continue to press on with their mission
-              to bring joy and comfort to those who need it the most, no matter the
-              circumstances it may bring.
+              through the creative prowess of the Marias -- more specifically the First
+              Maria🍃 -- they keep on thriving for years to come.
+            </p>
+            <br>
+            <p>
+              as the 4th Anniversary looms, be ready for another great milestone that
+              signifies their continuous efforts despite the odds!!
             </p>
             <br>
             <button onclick="{ window.open('/redirect/vtubie/vtm'); }">the VTuber Collective on VTubie</button>
@@ -152,7 +135,6 @@
           width: max-content;
           display: block;
           margin: 0 auto;
-          font-style: italic;
         ">
           <span style="
             background-image: -webkit-linear-gradient(to right, #793a80 0%, #793a80 25%, #66a898 35%, #66a898 65%, #f0a9a9 75%, #f0a9a9 100%);
@@ -294,11 +276,7 @@
           <div>
             <h1>related asmreadings</h1>
             <br>
-            <iframe
-              class="storyEmbed"
-              src="https://www.youtube-nocookie.com/embed/yMrf3ZXDgN4?list=PLQZt5lx5sFp-gUaNyBG_a0eJZavXjNevX&rel=0&showinfo=0&modestbranding=1&playsinline=1"
-              allowfullscreen>
-            </iframe>
+            <div class="storyEmbed" id="storyEmbed" style="width: 100%; aspect-ratio: 16 / 9;"></div>
             <br><br><br>
             <h1>listen to the main theme</h1>
             <br>
@@ -347,106 +325,34 @@
       <audio mediaExec style="width: 0; height: 0;" loop></audio>
       <div class="titleHead">
         <div>
-          <h1>V三人のマリア: the Music of the Marias🍃🪷🌸</h1>
+          <h1>the Marias' Discography</h1>
           <br>
-          <p>「the music of the Marias is the music of all.」</p>
-        </div>
-      </div>
-      <div class="vtmMediaPlayer">
-        <div>
-          <div class="vtmAlbum">
-            <img src="/assets/images/album/vtm_music.png" alt="">
+          <p>explore the music that brought the Collective closer to the community.</p>
+          <br><br>
+          <div class="vtmAlbumSel" onclick="{ albumSel(1); }">
+            <img src="/assets/images/album/vtm_music.png" alt="V三人のマリア: the Music of the Marias🍃🪷🌸">
+            <div class="rightGrid">
+              <div style="text-align: left;">
+                <h2>V三人のマリア: the Music of the Marias🍃🪷🌸</h2>
+                <div style="width: 100%; height: 0.5em;"></div>
+                <p><i>updated 2026</i></p>
+              </div>
+            </div>
           </div>
-          <div class="vtmSongSelector">
-            <h2><i>feel their flow of music..</i></h2>
-            <br>
-            <p>
-              click the following music below to experience the magic of their tranquil
-              ambience. <i>all music curated by the First Maria🍃.</i>
-            </p>
-            <br>
-            <div class="songSelect">
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '01_fairyDance'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Fairy Dance</p>
-                  <p style="font-size: 0.75em; font-style: italic;">Burcu Gönül&ensp;&bull;&ensp;from Siren, Mermaid and Fairy Humming, Vol. I</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '02_storyTell'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Stories to Tell</p>
-                  <p style="font-size: 0.75em; font-style: italic;">Burcu Gönül&ensp;&bull;&ensp;from Siren, Mermaid and Fairy Humming, Vol. I</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '03_resnaAtelier'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Atelier of the Starry Sky</p>
-                  <p style="font-size: 0.75em; font-style: italic;">Kensuke Inage&ensp;&bull;&ensp;from Atelier Resleriana: Forgotten Alchemy and the Polar Night Liberator Original Soundtrack</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '04_enyaAniron'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Aniron</p>
-                  <p style="font-size: 0.75em; font-style: italic;">Burcu Gönül&ensp;&bull;&ensp;from Aniron (Lord of the Rings)</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '05_432Hz'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Drifting at 432 Hz</p>
-                  <p style="font-size: 0.75em; font-style: italic;">Unicorn Heads&ensp;&bull;&ensp;from YouTube Audio Library</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '06_mother'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Mother's Sorrow</p>
-                  <p style="font-size: 0.75em; font-style: italic;">Horror Shop Games&ensp;&bull;&ensp;from Mother Soundtrack</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '07_aradiaTheme'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Maintheme 1</p>
-                  <p style="font-size: 0.75em; font-style: italic;">D-lis&ensp;&bull;&ensp;from Night of Revenge Soundtrack</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '08_maria'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Maria</p>
-                  <p style="font-size: 0.75em; font-style: italic;">Kim Ah-joong&ensp;&bull;&ensp;from 200 Pounds Beauty - Original Motion Picture Soundtrack</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '09_mariaOrch2026'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">Maria (2026 Orchestral Ver.)</p>
-                  <p style="font-size: 0.75em; font-style: italic;">thebelovedmoon VS Kim Ah-joong&ensp;&bull;&ensp;from VTresMarias' Musical Selections</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '10_oshiLaLuna'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">La Luna</p>
-                  <p style="font-size: 0.75em; font-style: italic;">Shizaki Kanon&ensp;&bull;&ensp;from La Luna</p>
-                </div>
-              </div>
-              <div>
-                <span class="material-symbols-rounded" onclick="{ mediaPlay('MusicOfMarias', '11_heartWillBeKnown'); }">play_arrow</span>
-                <div style="padding-left: 1rem;">
-                  <p style="font-weight: bold;">My Heart Will Be Known</p>
-                  <p style="font-size: 0.75em; font-style: italic;">PRZM PILOTs & hiroki&ensp;&bull;&ensp;from Venus Vacation PRISM - DEAD OR ALIVE Xtreme - Soundtrack</p>
-                </div>
+          <br>
+          <div class="vtmAlbumSel" onclick="{ albumSel(2); }">
+            <img src="/assets/images/album/vtm_cover.png" alt="VTresMarias' Musical Selections">
+            <div class="rightGrid">
+              <div style="text-align: left;">
+                <h2>VTresMarias' Musical Selections</h2>
+                <div style="width: 100%; height: 0.5em;"></div>
+                <p><i>releases 27 Dec 2026</i></p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="vtmMediaPlayer"></div>
     </div>
     <div id="event"> <!-- /?vtm=event -->
       <div class="titleHead">

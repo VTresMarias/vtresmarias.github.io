@@ -317,3 +317,34 @@ div[class^="csmPrfQR"] {
   justify-content: center;
   align-items: center;
 }
+
+.cosMatsuriTease {
+  width: 100vw;
+  padding: 250px 0;
+  background-image: url("/assets/images/subcollective/cosmaria/backgrounds/2904880.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  & * {
+    display: block;
+    margin: 0;
+  }
+  & .innerTxt {
+    background-color: #ffffffc0;
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    color: #3d374c;
+    text-align: center;
+    & img {
+      width: 25rem;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    & button { margin: 0 auto; }
+    & p > * { display: initial; }
+  }
+}

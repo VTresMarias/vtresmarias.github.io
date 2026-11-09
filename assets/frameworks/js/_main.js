@@ -1,5 +1,51 @@
+  const emojiSegmenter = typeof Intl.Segmenter === "function" ? new Intl.Segmenter(undefined, { granularity: "grapheme" }) : null;
+const emojiPattern = /[\p{Extended_Pictographic}\p{Emoji_Presentation}\p{Regional_Indicator}\u20E3]/u;
+
+function styleEmojis(root) {
+  if (!emojiSegmenter) { return; }
+  
+  const textNodes = [];
+  if (root.nodeType === Node.TEXT_NODE) {
+    textNodes.push(root);
+  } else {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) { textNodes.push(walker.currentNode); }
+  }
+  
+  textNodes.forEach(textNode => {
+    const parent = textNode.parentElement;
+    if (!parent || parent.closest("script, style, noscript, textarea, title, option, svg, math, .emoji") || parent.isContentEditable) { return; }
+    
+    const segments = Array.from(emojiSegmenter.segment(textNode.data));
+    if (!segments.some(({ segment }) => emojiPattern.test(segment))) { return; }
+    
+    const fragment = document.createDocumentFragment();
+    segments.forEach(({ segment }) => {
+      if (emojiPattern.test(segment)) {
+        const emoji = document.createElement("span");
+        emoji.className = "emoji";
+        emoji.textContent = segment;
+        fragment.appendChild(emoji);
+      } else {
+        fragment.appendChild(document.createTextNode(segment));
+      }
+    });
+    textNode.replaceWith(fragment);
+  });
+}
+
 // root launch args
 function init() {
+  styleEmojis(document.body);
+  new MutationObserver(records => {
+    records.forEach(record => {
+      if (record.type === "characterData") {
+        styleEmojis(record.target);
+      } else {
+        record.addedNodes.forEach(styleEmojis);
+      }
+    });
+  }).observe(document.body, { childList: true, characterData: true, subtree: true });
 
   // init nextgen loader (the segoeLoaders Project)
   const segoeLdrrrr = document.createElement("script");

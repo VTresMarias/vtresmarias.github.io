@@ -25,12 +25,18 @@
 }
 
 .storyEmbed {
+  display: block;
+  position: relative;
   border: none;
   border-radius: 0.75rem;
   width: 100%;
   max-width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.storyEmbed iframe {
+  border-radius: inherit;
 }
 
 #storyBGM { display: none; }

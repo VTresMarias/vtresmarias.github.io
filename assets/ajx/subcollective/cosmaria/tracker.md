@@ -50,9 +50,10 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 | :---------: | :------------: | :---------------------------------------------------------------------------: |
 | **Lia B.**  |  30 Dec 2025   | :x: [VTMCSM000000011](https://vtresmarias.github.io/cert?ref=VTMCSM000000011) |
 | **Sonica**  |  30 Dec 2025   | :x: [VTMCSM000000012](https://vtresmarias.github.io/cert?ref=VTMCSM000000012) |
+|  **Asagi**  |  30 Dec 2026   | :x: [VTMCSM000000027](https://vtresmarias.github.io/cert?ref=VTMCSM000000027) |
 |  **Bunny**  |      TBD       |                                      TBD                                      |
 | **Keileen** |      TBD       |                                      TBD                                      |
-|  **Asagi**  |      TBD       |                                      TBD                                      |
+| **Cleo M.** |      TBD       |                                      TBD                                      |
 
 
 ## Baconettes of CSM
@@ -94,9 +95,14 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 
 ### Batch 3
 
-|   name    | inclusion date |                             certificate reference                             | Letter claimed? | part of CSM&#x1F490;? |
-| :-------: | :------------: | :---------------------------------------------------------------------------: | :-------------: | :-------------------: |
-| **Teelo** |  30 Dec 2026   | :x: [VTMCSM000000021](https://vtresmarias.github.io/cert?ref=VTMCSM000000021) |       :x:       |          :x:          |
+|    name    | inclusion date |                             certificate reference                             | Letter claimed? | part of CSM&#x1F490;? |
+| :--------: | :------------: | :---------------------------------------------------------------------------: | :-------------: | :-------------------: |
+| **Teelo**  |  30 Dec 2026   | :x: [VTMCSM000000021](https://vtresmarias.github.io/cert?ref=VTMCSM000000021) |       :x:       |          :x:          |
+| **Caelis** |  30 Dec 2026   | :x: [VTMCSM000000022](https://vtresmarias.github.io/cert?ref=VTMCSM000000022) |       :x:       |          :x:          |
+| **Runoa**  |  30 Dec 2026   | :x: [VTMCSM000000023](https://vtresmarias.github.io/cert?ref=VTMCSM000000023) |       :x:       |          :x:          |
+| **Bevvie** |  30 Dec 2026   | :x: [VTMCSM000000024](https://vtresmarias.github.io/cert?ref=VTMCSM000000024) |       :x:       |          :x:          |
+| **Bunny**  |  30 Dec 2026   | :x: [VTMCSM000000025](https://vtresmarias.github.io/cert?ref=VTMCSM000000025) |       :x:       |          :x:          |
+| **Haryu**  |  30 Dec 2026   | :x: [VTMCSM000000026](https://vtresmarias.github.io/cert?ref=VTMCSM000000026) |       :x:       |          :x:          |
 
 
 ## blessed orgs (Certificate of Blessing)
@@ -122,4 +128,14 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
   - [21 Sep 2025] CSM is set to debut its Batch 2 Inductees due to a personal consideration from the Incumbent First🍃💐; but after an assertion with one of the supposed Inductee's "manager", their disposition outlined in VTM000000009 has been voided and replaced.
   - [30 Dec 2025] due to an internal dispute involving the Incumbent First🍃💐 (in which she takes full responsibility over what happend) during the first anniversary of the Sub-Collective, the supposed apprentice involved in VTMCSM000000019 has been replaced -- but may be reconsidered. considerations to be ratified when the conflicts are properly resolved.
 
- -->
+-->
+
+<!--
+
+  BATCH 3 INDUCTEES (PLANNED)
+
+  - Zume (12th CSM)
+  - Menako (13th CSM)
+  - 
+
+-->

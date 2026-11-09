@@ -28,47 +28,36 @@
       @import url("/assets/frameworks/css/base.css");
       @import url("/assets/frameworks/css/cookie.css"); /* cookie consent dialog */
       @import url("/assets/frameworks/css/nav/cosmaria.css");
-      /* .cosMatsuriTease {
-        width: 100vw;
-        padding: 250px 0;
-        background-image: url("/assets/images/subcollective/cosmaria/backgrounds/2904880.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        & * {
-          display: block;
-          margin: 0;
-        }
-        & .innerTxt {
-          background-color: #ffffffc0;
-          width: 960px;
-          max-width: 100%;
-          margin: 0 auto;
-          padding: 2.5rem;
-          border-radius: 1.5rem;
-          color: #3d374c;
-          text-align: center;
-          & img {
-            width: 25rem;
-            max-width: 100%;
-            margin: 0 auto;
-          }
-          & button { margin: 0 auto; }
-          & p > * { display: initial; }
-        }
-      } */
     </style>
     <!-- custom js -->
     <script src="/assets/frameworks/js/_main.js" type="text/javascript"></script> <!-- base -->
     <script src="/assets/frameworks/js/cookie.js" type="text/javascript"></script> <!-- cookie -->
-    <script src="/assets/frameworks/js/cosmaria.js" type="text/javascript"></script>
+    <script src="/assets/frameworks/js/nav/cosmaria.js" type="text/javascript"></script>
+    <script src="/assets/frameworks/js/youtube.js" type="text/javascript"></script>
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
         collapsibleEnable();
         csmImgLoader();
         csmInducteesDialog();
+        createYouTubePlayer("csmBackdropPlayer", "5fFHeOJAmrI", {
+          title: "CSM YT",
+          playerVars: {
+            playlist: "5fFHeOJAmrI",
+            loop: 1,
+            controls: 0,
+            autoplay: 1,
+            mute: 1,
+            rel: 0,
+            playsinline: 1
+          },
+          events: {
+            onReady(event) {
+              event.target.mute();
+              event.target.playVideo();
+            }
+          }
+        });
       }
     </script>
     <script type="text/javascript">
@@ -87,8 +76,8 @@
     </div>
     <div isMobile id="mobileNav"> <!-- mobile header -->
       <span class="material-symbols-rounded BACon-important" title="in solidarity with Bataan Anime Convention.🧡💐" onclick="{ window.open('/letter?ref=20260109'); }">favorite</span>
-      <span class="material-symbols-rounded" title="the Inauguration Ceremony 2026 has commenced!!💐" onclick="{ window.open('https://youtu.be/5fFHeOJAmrI'); }">celebration</span>
-      <!-- <span class="material-symbols-rounded" title="listen to the main theme of the Marias -- Maria (2026 Orchestral Ver.)!!" onclick="{  }">music_note</span> -->
+      <!-- <span class="material-symbols-rounded" title="the Inauguration Ceremony 2026 has commenced!!💐" onclick="{ window.open('https://youtu.be/5fFHeOJAmrI'); }">celebration</span> -->
+      <!-- <span class="material-symbols-rounded" title="listen to the official anthem of the Marias -- Maria (2026 Orchestral Ver.)!!" onclick="{  }">music_note</span> -->
       <span class="material-symbols-rounded" title="explore #AgaCosplay" onclick="{ window.open('/redirect/AgaCosplay'); }">photo_library</span>
       <span class="material-symbols-rounded" title="visit the VTuber Collective" onclick="{ window.open('/'); }">spa</span>
       <span class="material-symbols-rounded" title="close panel" onclick="{ panelClose(); }">close</span>
@@ -97,8 +86,8 @@
       <img id="vtmLogoHead" src="/assets/images/subcollective/cosmaria/cosmaria_logo.png" alt="コスプレのマリア💐 (Cosplay Marias)">
       <div isDesktop class="urlRefs">
         <span class="material-symbols-rounded BACon-important" title="in solidarity with Bataan Anime Convention.🧡💐" onclick="{ window.open('/letter?ref=20260109'); }">favorite</span>
-        <span class="material-symbols-rounded" title="the Inauguration Ceremony 2026 has commenced!!💐" onclick="{ window.open('https://youtu.be/5fFHeOJAmrI'); }">celebration</span>
-        <!-- <span class="material-symbols-rounded" title="listen to the main theme of the Marias -- Maria (2026 Orchestral Ver.)!!" onclick="{  }">music_note</span> -->
+        <!-- <span class="material-symbols-rounded" title="the Inauguration Ceremony 2026 has commenced!!💐" onclick="{ window.open('https://youtu.be/5fFHeOJAmrI'); }">celebration</span> -->
+        <!-- <span class="material-symbols-rounded" title="listen to the official anthem of the Marias -- Maria (2026 Orchestral Ver.)!!" onclick="{  }">music_note</span> -->
         <span class="material-symbols-rounded" title="explore #AgaCosplay" onclick="{ window.open('/redirect/AgaCosplay'); }">photo_library</span>
         <span class="material-symbols-rounded" title="visit the VTuber Collective" onclick="{ window.open('/'); }">spa</span>
       </div>
@@ -128,16 +117,12 @@
         </div>
       </div>
     </div>
-    <iframe
+    <div
+      id="csmBackdropPlayer"
       style="width: 100vw; height: 100vh; display: block; pointer-events: none;"
-      src="https://www.youtube-nocookie.com/embed/5fFHeOJAmrI?playlist=5fFHeOJAmrI&amp;loop=1&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;rel=0&amp;showinfo=0&amp;modestbranding=1&amp;playsinline=1"
-      title="YouTube Player"
-      frameborder="0"
-      allow="autoplay"
-      loop="">
-    </iframe>
+    ></div>
     <div class="titleHead">
-      <!-- <div>
+      <div>
         <img style="-webkit-filter: brightness(1000%); filter: brightness(1000%);" src="/assets/images/subcollective/cosmaria/cosmaria_logo.png" alt="コスプレのマリア💐 (Cosplay Marias)">
         <br>
         <p><i>
@@ -145,44 +130,43 @@
           <br>
           est. 30 Dec 2024
         </i></p>
-      </div> -->
-      <div>
+      </div>
+      <!-- <div>
         <img src="/assets/images/subcollective/cosmaria/logos/inSolidarityWithBACon.png" alt="in solidarity with Bataan Anime Convention.🧡💐">
         <br>
         <p><i>
           in solidarity with Bataan Anime Convention.🧡💐
         </i></p>
-      </div>
+      </div> -->
     </div>
-    <!-- <div class="cosMatsuriTease">
+    <div class="cosMatsuriTease">
       <div class="innerTxt">
         <img src="/assets/images/subcollective/cosmaria/logos/CosplayMatsuri.png" alt="">
         <br>
         <h2 style="font-style: italic">
-          the Sub-Collective's 1st Anniversary is just around the corner!!
+          are you ready for the Sub-Collective's 2nd Anniversary?
         </h2>
         <br>
         <p>
-          in a few days, the CosMarias will be celebrating their <b>first anniversary</b>
-          full of achievements and memories!! alongside that, they are pretty excited
-          for a new chapter in their journey as the first Sub-Collective -- with an
-          ever-growing Cosplay Sisters that stick together through thick and thin.
+          the Incumbent First CosMaria🍃💐 returns to SMX Manila for an annual
+          celebration of collective gathering as Cosplay Marias -- VTresMarias' first
+          Sub-Collective -- celebrates its 2nd Anniverary!!
         </p>
         <br>
         <p>
-          from just 12 on the first introduction, they're about to amp it up to a total
-          of <b>23 members</b> -- a testament to a never-ending dedication in caring for
-          each other as their desire blooms into fruition.
+          with it, a new chapter will open; alongside the newest members whom
+          demonstrated the wits that earned their place in the ranks of cosplay and
+          other fields.
         </p>
         <br>
         <p>
-          are you ready to meet the newest batch of Cosplay Sisters of the Future? <b>see
-          you on Day 3 of Cosplay Matsuri -- at SMX Convention Center Manila!!</b>
+          are you ready to see the Cosplay Sisters of the Future?
+          <b>see you this Wed, 30 Dec 2026!!</b>
         </p>
-        <br>
-        <button onclick="{ window.open('https://www.ticketmax.ph/events/cosplay-matsuri-2025-day-3-pass'); }">buy tickets here</button>
+        <!-- <br>
+        <button onclick="{ window.open('https://www.ticketmax.ph/events/cosplay-matsuri-2025-day-3-pass'); }">buy tickets here</button> -->
       </div>
-    </div> -->
+    </div>
     <div class="frontText" style="background-image: url('/assets/images/subcollective/cosmaria/cosplay/20260104_191658.jpg');">
       <div style="background-color: #3d374c80;">
         <div>
@@ -430,6 +414,12 @@
             </div>
           </div>
         </div>
+        <br><br>
+        <div csmBatch3 class="csmLineup">
+          <h2>Batch 3 Inductees</h2>
+          <br>
+          <p><i>unveiling soon.. (15 Mar 2027)</i></p>
+        </div>
         <div style="width: 100%; height: calc(15rem - calc(15rem / 3));"></div> <!-- spacer -->
         <h1>Mistresses of CSM👙</h1>
         <br>
@@ -600,6 +590,12 @@
               </div>
             </div>
           </div>
+        </div>
+        <br><br>
+        <div csmApprBatch3 class="csmLineup">
+          <h2>Batch 3</h2>
+          <br>
+          <p><i>unveiling soon.. (30 Dec 2026)</i></p>
         </div>
         <div style="width: 100%; height: calc(15rem - calc(15rem / 3));"></div> <!-- spacer -->
         <h1>our Transparency Report</h1>

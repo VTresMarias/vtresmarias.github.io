@@ -7,7 +7,21 @@ function ajxLdr(r) {
 
   fetch(`/assets/ajx/press/${r}.txt`)
     .then(response => response.text())
-    .then(text => { document.querySelector("#articlTxt").innerHTML = text; });
+    .then(text => {
+      const article = document.querySelector("#articlTxt");
+      article.innerHTML = text;
+
+      const youtubeEmbed = article.querySelector("[data-youtube-video-id]");
+      if (youtubeEmbed) {
+        createYouTubePlayer(youtubeEmbed.id, youtubeEmbed.dataset.youtubeVideoId, {
+          title: youtubeEmbed.dataset.youtubeTitle,
+          playerVars: {
+            rel: 0,
+            playsinline: 1
+          }
+        });
+      }
+    });
 
   let y = r.substring(0, 4),
     m = r.substring(4, 6),
