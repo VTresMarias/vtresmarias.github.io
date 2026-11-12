@@ -41,6 +41,10 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 |  **Issa**  |  the Tenth CSM&#x1F490;   |   TBD    |  15 Mar 2026   | :x: yellow  |   :x: pink   |        :x: [VTM000000010](https://vtresmarias.github.io/cert?ref=VTM000000010)         |       :x:       | :white_check_mark: |             :x:              |
 |  **Divi**  | the Eleventh CSM&#x1F490; |  27 Apr  |  15 Mar 2026   | :x: yellow  |   :x: pink   |        :x: [VTM000000011](https://vtresmarias.github.io/cert?ref=VTM000000011)         |       :x:       |        :x:         |             :x:              |
 
+### Batch 3 Inductees
+
+_TBD_
+
 
 ## Mistresses of CSM
 
@@ -136,6 +140,116 @@ _for inquiries, you may reach out to us via email at [vtresmarias@outlook.jp](ma
 
   - Zume (12th CSM)
   - Menako (13th CSM)
-  - 
+  - Krey (14th CSM)
+  - TBD (15th CSM)
+
+-->
+
+<!--
+
+!! TO OVERWRITE THIS MAIN DOC WHEN COMPLETED !!
+
+# コスプレのマリア / CSM Transparency Report
+
+this document contains all the necessary information regarding the staffing and operations of Sub-Collective **Cosplay Marias (コスプレのマリア / CSM)**; and related vetting for **VTresMarias**, its parent VTuber Collective.
+
+each entities the Collectives have vetted -- whether it would be CSM's members or involved businesses -- will have their own credentials for reference (we refer to it as goods). any goods received will be confirmed as a checkbox in this tracker.
+
+additional information that's not present in our pages (eg. `/cosmaria`) is also indicated here. we use public data to process information, and we ensure that it's in accordance to our privacy policies where applicable. for details, see the link "privacy" below this document.
+
+## main lineup
+
+the main lineup of CosMarias, selected to represent the Sub-Collective through cosplay and other areas of interest. they undergo a 2-week assessment in order to cement their place on a per-batch basis.
+
+### Incumbents
+
+#### Aga, the Incumbent First CosMaria&#x1F343;&#x1F490;
+
+- birthday: 15 Mar
+- inducted: 30 Dec 2024
+
+claimed goods:
+
+- [x] mint green (teal) tiara
+- [x] red bowtie
+- [x] physical certificate - [VTM000000001](https://vtresmarias.github.io/cert?ref=VTM000000001)
+- [x] Letter of Appreciation
+- [ ] cosplay cards
+  - [x] A5 prints (old-gen)
+  - [x] card-size prints (old-gen)
+  - [ ] A5 prints (new-gen NFC)
+  - [ ] card-size prints (new-gen NFC)
+
+#### Dani, the Incumbent Second CosMaria&#x1FAB7;&#x1F490;
+
+- birthday: 24 Oct
+- inducted: 30 Dec 2024
+
+claimed goods:
+
+- [x] sky blue tiara
+- [ ] red bowtie
+- [ ] physical certificate - [VTM000000002](https://vtresmarias.github.io/cert?ref=VTM000000002)
+- [ ] Letter of Appreciation
+- [ ] cosplay cards
+  - [ ] A5 prints (old-gen)
+  - [ ] card-size prints (old-gen)
+  - [ ] A5 prints (new-gen NFC)
+  - [ ] card-size prints (new-gen NFC)
+
+#### Eri, the Incumbent Third CosMaria&#x1F338;&#x1F490;
+
+- birthday: 21 Oct
+- inducted: 30 Dec 2024
+
+claimed goods:
+
+- [x] sky blue tiara
+- [ ] red bowtie
+- [ ] physical certificate - [VTM000000003](https://vtresmarias.github.io/cert?ref=VTM000000003)
+- [ ] Letter of Appreciation
+- [ ] cosplay cards
+  - [ ] A5 prints (old-gen)
+  - [ ] card-size prints (old-gen)
+  - [ ] A5 prints (new-gen NFC)
+  - [ ] card-size prints (new-gen NFC)
+
+### Batch 1 Inductees
+
+#### Shunni, the Fourth CosMaria&#x1F490;
+
+#### Patring, the Fifth CosMaria&#x1F490;
+
+#### Shira, the Sixth CosMaria&#x1F490;
+
+#### Elle, the Seventh CosMaria&#x1F490;
+
+### Batch 2 Inductees
+
+#### Tris, the Eighth CosMaria&#x1F490;
+
+#### Seushi, the Ninth CosMaria&#x1F490;
+
+#### Issa, the Tenth CosMaria&#x1F490;
+
+#### Divi, the Eleventh CosMaria&#x1F490;
+
+### Batch 3 Inductees
+
+#### Zume, the Twelfth CosMaria&#x1F490;
+
+#### Menako, the Thirteenth CosMaria&#x1F490;
+
+#### Krey, the Fourteenth CosMaria&#x1F490;
+
+#### TBD, the Fifteenth CosMaria&#x1F490;
+
+<br>
+
+<div align="center">
+
+  <sub>©2024 「VTresMarias - V三人のマリア - 」&ensp;&bull;&ensp;[privacy](https://vtresmarias.github.io/privacy)&ensp;&bull;&ensp;[inquiries](mailto:vtresmarias@outlook.jp)</sub>
+
+</div>
 
 -->
