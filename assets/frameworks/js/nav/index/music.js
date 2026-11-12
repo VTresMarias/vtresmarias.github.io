@@ -13,9 +13,9 @@ function albumSel(num) {
           </div>
           <div class="vtmSongSelector">
             <h2><i>
-              「the music of the Marias
+              the music of the Marias
               <br>
-              is the music of all.」
+              is the music of all.
             </i></h2>
             <br>
             <p>
